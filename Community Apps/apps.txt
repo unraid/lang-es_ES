@@ -218,7 +218,6 @@ NetworkVOIP=Red:VOIP
 NetworkVPN=Red:VPN
 NetworkWeb=Red:Web
 NetworkOther=Red:Otros
-Tools=Herramientas
 ToolsSystem=Herramientas:Sistema
 ToolsThemes=Herramientas:Temas
 ToolsUtilities=Herramientas:Utilidades
