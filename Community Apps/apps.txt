@@ -29,7 +29,6 @@ Installations of apps disabled You must accept the warning to be able to install
 Click here=haga clic aquí
 
 ; Plugin Disclaimer
-Plugins=Plugins
 Community Applications contains both docker containers and plugin applications Plugins are designed for OS enhancements, and run with full privileges on your system and are clearly identified within CA=Aplicaciones de la Comunidad (CA) tiene dos tipos de aplicaciones: contenedores Docker y plugins. Los plugins añaden funciones adicionales al sistema operativo, se ejecutan con derechos de administrador en el sistema y están claramente identificados en CA.
 Plugin Note=Nota del Plugin
 
@@ -193,7 +192,6 @@ Tools Utilities=Herramientas / Utilidades
 System=Sistema
 Themes=Temas
 Utilities=Utilidades
-Plugins=Plugins
 Private Apps=Apps Privadas
 Uncategorized=Sin Categorizar
 
@@ -225,7 +223,6 @@ Tools=Herramientas
 ToolsSystem=Herramientas:Sistema
 ToolsThemes=Herramientas:Temas
 ToolsUtilities=Herramientas:Utilidades
-Plugins=Plugins
 Other=Otros
 OtherUncategorized=Otros:SinCategorizar
 and %s more=y %s más
