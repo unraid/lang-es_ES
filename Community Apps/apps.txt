@@ -101,7 +101,6 @@ Top New Installs=Top Nuevas Instalaciones
 Trending Apps=Apps Populares
 All Apps=Todas las Apps
 OTHER=OTROS
-Settings=Ajustes
 Statistics=Estadísticas
 Credits=Créditos
 Support=Soporte
