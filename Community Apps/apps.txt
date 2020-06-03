@@ -1,343 +1,343 @@
 ; Translation Credit.  Will appear in CA's credits
 translationCredit=<Author> (<Language>)
-Cancel=
+Cancel=Cancelar
 
 ; My PSAs / banners
-Happy New Year=
-Happy Holidays from Andrew, Tracey, and family=
-Please Enjoy Responsibly=
-Popup Blocked CA requires popups to be enabled under certain circumstances You must white list your server within your browser to allow popups=
-Docker Service Not Enabled - Only Plugins Available To Be Installed Or Managed=
-Community Applications works best when cookies are enabled in your browser Certain features may not be available=
-Backup Server Active Some icons may not appear, and plugin installations may be affected=
+Happy New Year=Feliz Año Nuevo
+Happy Holidays from Andrew, Tracey, and family=Felices Fiestas de parte de Andrew, Tracey y familia
+Please Enjoy Responsibly=Por favor disfrute responsablemente
+Popup Blocked CA requires popups to be enabled under certain circumstances You must white list your server within your browser to allow popups=Ventana emergente bloqueada. Aplicaciones de la Comunidad (CA) requiere que las ventanas emergentes estén habilitadas bajo ciertas circunstancias. Debe incluir su servidor a la lista de excepciones del navegador para que permita las ventanas emergentes.
+Docker Service Not Enabled - Only Plugins Available To Be Installed Or Managed=Servicio Docker deshabilitado. Únicamente se pueden instalar o administrar plugins.
+Community Applications works best when cookies are enabled in your browser Certain features may not be available=Aplicaciones de la Comunidad (CA) requiere que las cookies están habilitadas en su navegador. De lo contrario algunas funciones podrían no estar disponibles.
+Backup Server Active Some icons may not appear, and plugin installations may be affected=Servidor de reserva de CA activo. No se ha podido obtener la lista de aplicaciones del servidor principal. Puede que algunos iconos no aparezcan y se vea afectada la instalación de plugins.
 
 ; Sorting Options
-Sorting options=
-Sorting options unavailable=
-Sort By Name Ascending=
-Sort By Name Descending=
-Sort By Downloads=
-Sort By Trend=
-Sort By Date Added=
+Sorting options=Ordenar lista
+Sorting options unavailable=Ordenado de lista disponible
+Sort By Name Ascending=Ordenar por Nombre Ascendente
+Sort By Name Descending=Ordenar por Nombre Descendente
+Sort By Downloads=Ordenar por Descargas
+Sort By Trend=Ordenar por Tendencia
+Sort By Date Added=Ordenar por Fecha
 ; Initial disclaimer translations
-Disclaimer=
-All applications listed here are 3rd party additions to Unraid Neither the authors of Community Applications nor Limetech make any warranty as to the suitability of any application listed here=
-Every attempt is made to ensure that only safe and compatible applications are present=
-Application Policy=
-I Understand=
-Installations of apps disabled You must accept the warning to be able to install applications=
-Click here=
+Disclaimer=Exención de responsabilidad
+All applications listed here are 3rd party additions to Unraid Neither the authors of Community Applications nor Limetech make any warranty as to the suitability of any application listed here=Todas las aplicaciones mostradas aquí son programas de terceros ajenos a Unraid. Ni los autores del plugin Aplicaciones de la Comunidad (CA) ni Limetech garantizan la idoneidad de las aplicaciones de este listado.
+Every attempt is made to ensure that only safe and compatible applications are present=Se hace todo lo posible para asegurar que solo las aplicaciones seguras y compatibles estén disponibles.
+Application Policy=Politica de la Aplicación
+I Understand=Entendido
+Installations of apps disabled You must accept the warning to be able to install applications=La instalacion de aplicaciones está deshabilitada. Debe aceptar el aviso para poder instalar aplicaciones.
+Click here=haga clic aquí
 
 ; Plugin Disclaimer
-Plugins=
-Community Applications contains both docker containers and plugin applications Plugins are designed for OS enhancements, and run with full privileges on your system and are clearly identified within CA=
-Plugin Note=
+Plugins=Plugins
+Community Applications contains both docker containers and plugin applications Plugins are designed for OS enhancements, and run with full privileges on your system and are clearly identified within CA=Aplicaciones de la Comunidad (CA) tiene dos tipos de aplicaciones: contenedores Docker y plugins. Los plugins añaden funciones adicionales al sistema operativo, se ejecutan con derechos de administrador en el sistema y están claramente identificados en CA.
+Plugin Note=Nota del Plugin
 
 ; Multi Install
-Install Plugin Applications=
+Install Plugin Applications=Instalar Plugins
 
 ; Searches
-Search=
-Please enter search term=
-Click Here To Get More Results From DockerHub=
-No Matching Applications Found On Docker Hub=
-No Matching Applications Found=
+Search=Buscar
+Please enter search term=Por favor introduzca el término a buscar
+Click Here To Get More Results From DockerHub=Pulse aquí para obtener más resultados de DockerHub
+No Matching Applications Found On Docker Hub=No se encontró ninguna aplicación en DockerHub
+No Matching Applications Found=No se encontró ninguna aplicación
 
 ; Install Plugin title of openbox
-Install Plugin=
+Install Plugin=Instalar Plugin
 
 ; Remove App from previously installed
-Delete Template=
-Yes, delete it=
+Delete Template=Eliminar Plantilla
+Yes, delete it=Sí, eliminar
 
 ; Uninstall  popup
-Uninstall Application=
-Yes uninstall it=
+Uninstall Application=Desinstalar Aplicación
+Yes uninstall it=Sí, desinstalar
 
 ; Remove Private Application
-Remove Private Application=
-Yes, remove it=
+Remove Private Application=Eliminar Aplicación Privada
+Yes, remove it=Sí, eliminar
 
 ; App Pinning
-Click to pin this application=
-Click to unpin this application=
+Click to pin this application=Haga clic para anclar esta aplicación
+Click to unpin this application=Haga clic para desanclar esta aplicación
 
 ; Branch installations
-Choose A Branch To Install=
+Choose A Branch To Install=Elija la Rama a Instalar
 
 ; Multiple application installs
 ; no apps selected
-Install Selected Applications=
+Install Selected Applications=Instalar las Aplicaciones Seleccionadas
 
-Yes, install it=
+Yes, install it=Sí, instalar
 
 ; Multi-install popup
-Yes, install them=
-Cookies not enabled Plugins must be separately installed from docker applications=
-Docker applications will be installed utilizing the most recently saved template with no user input on your part=
-Updating Support Links=
-Finished Installing If the DONE button did not appear, then you will need to click the red X in the top right corner=
+Yes, install them=Sí, instalarlas
+Cookies not enabled Plugins must be separately installed from docker applications=Las cookies no están habilitadas. Los plugins deben de ser instalados por separado de las aplicaciones Docker.
+Docker applications will be installed utilizing the most recently saved template with no user input on your part=Las aplicaciones Docker serán instalados utilizando la última versión guardada de la plantilla sin ninguna interacción por su parte.
+Updating Support Links=Actualizando Los Enlaces De Soporte
+Finished Installing If the DONE button did not appear, then you will need to click the red X in the top right corner=Instalación Finalizada. Si el botón HECHO no aparece, haga clic en la X roja de la esquina superior derecha.
 
 ; error messages
-No data was returned It is probable that another browser session has rebooted your server Reloading this browser tab will probably fix this error=
-An error occurred Could not find any %s Apps=
-Download of appfeed failed=
+No data was returned It is probable that another browser session has rebooted your server Reloading this browser tab will probably fix this error=No se obtuvo respuesta. Es posible que otra sesión del navegador haya reiniciado el servidor. Para arreglar este error es probable que tenga que actualizar la página.
+An error occurred Could not find any %s Apps=A ocurrido un error. No se pudieron encontrar las Apps %s
+Download of appfeed failed=La descarga de la lista de aplicaciones ha fallado
 ; the %s here refers to a function being called
-Something really went wrong here=
-Post the ENTIRE contents of this message in the Community Applications Support Thread=
-Unknown error happened Please post a screenshot in the support thread of the Statistics screen=
-Something really wrong happened Reloading the Apps tab will probably fix the problem=
-This plugin has a duplicated name from another plugin %s This will impact your ability to install both plugins simultaneously=
+Something really went wrong here=Ha sucedido un problema aquí
+Post the ENTIRE contents of this message in the Community Applications Support Thread=Publique el contenido COMPLETO de este mensaje en el sitio de soporte de Aplicaciones de la Comunidad (CA).
+Unknown error happened Please post a screenshot in the support thread of the Statistics screen=Ha ocurrido un error desconocido. Por favor publique una captura de pantalla de la página de Estadísticas en el sitio de soporte de Aplicaciones de la Comunidad (CA).
+Something really wrong happened Reloading the Apps tab will probably fix the problem=Ha sucedido un error. Para solucionar este problema es probable que tenga que recargar la página de su navegador.
+This plugin has a duplicated name from another plugin %s This will impact your ability to install both plugins simultaneously=Este plugin tiene el mismo nombre que el plugin %s . Debido a esto no podrá instalar ambos plugins a la vez.
 
 ; CA Sections Keep the length reasonable
-MENU=
-Installed Apps=
-Previous Apps=
-Pinned Apps=
-CATEGORIES=
-New Apps=
-Updated Apps=
-Random Apps=
-Top New Installs=
-Trending Apps=
-All Apps=
-OTHER=
-Settings=
-Statistics=
-Credits=
-Support=
-VERSION=
-Change Log=
+MENU=MENÚ
+Installed Apps=Apps Instaladas
+Previous Apps=Apps Anteriores
+Pinned Apps=Apps Ancladas
+CATEGORIES=CATEGORÍAS
+New Apps=Apps Nuevas
+Updated Apps=Apps Actualizadas
+Random Apps=Apps Aleatorias
+Top New Installs=Top Nuevas Instalaciones
+Trending Apps=Apps Populares
+All Apps=Todas las Apps
+OTHER=OTROS
+Settings=Ajustes
+Statistics=Estadísticas
+Credits=Créditos
+Support=Soporte
+VERSION=VERSIÓN
+Change Log=Notas de la Versión
 
 ; Credits
-Development=
-Additional Contributions=
-GUI Layout Design=
-Application Feed=
-Additional Testing=
-Moderation=
-Additional Libraries=
-Copyright=
-Translation=
+Development=Desarrollo
+Additional Contributions=Contribuciones Adicionales
+GUI Layout Design=Diseño de la Interfaz Gráfica
+Application Feed=Lista De Aplicaciones
+Additional Testing=Pruebas Adicionales
+Moderation=Moderadores
+Additional Libraries=Librerías Adicionales
+Copyright=Derechos de Autor
+Translation=Traducción
 
 ; Statistics page
-Deprecated Applications are able to still be installed if you have previously had them installed New installations of these applications are blocked unless you enable Display Deprecated Applications within CAs General Settings=
-The following applications are blacklisted CA will never allow you to install or reinstall these applications=
-While highly not recommended to do, incompatible applications can be installed by enabling Display Incompatible Applications within CAs General Settings=
-This display is informational ONLY=
-unknown=
-Last Change To Application Feed=
-Number Of Docker Applications=
-Number Of Plugin Applications=
-Number Of Templates=
-Number Of Repositories=
-Number Of Private Docker Applications=
-Number Of Invalid Templates=
-Number Of Template Errors=
-Number Of Blacklisted Apps=
-Number Of Incompatible Applications=
-Number Of Deprecated Applications=
-Number Of Moderation Entries=
-Primary Server=
-Backup Server=
+Deprecated Applications are able to still be installed if you have previously had them installed New installations of these applications are blocked unless you enable Display Deprecated Applications within CAs General Settings=Todavía se pueden instalar las aplicaciones obsoletas que ya hubiera instalado anteriormente. Las nuevas instalaciones de estas aplicaciones están bloqueadas a menos que tenga deshabilitada la opción "Ocultar aplicaciones obsoletas" en la sección de Ajustes.
+The following applications are blacklisted CA will never allow you to install or reinstall these applications=Las siguientes aplicaciones están en la lista negra. Aplicaciones de la Comunidad (CA) bloqueará la instalación o reinstalación de estas aplicaciones.
+While highly not recommended to do, incompatible applications can be installed by enabling Display Incompatible Applications within CAs General Settings=Aunque no sea recomendable en absoluto, se pueden instalar aplicaciones incompatibles si se deshabilita la opción "Ocultar aplicaciones incompatibles" en la sección de Ajustes.
+This display is informational ONLY=Esta pantalla es SOLO informativa
+unknown=desconocido
+Last Change To Application Feed=Último cambio en la lista de aplicaciones
+Number Of Docker Applications=Número de aplicaciones Docker
+Number Of Plugin Applications=Número de plugins
+Number Of Templates=Número de plantillas
+Number Of Repositories=Número de repositorios
+Number Of Private Docker Applications=Número de aplicaciones Docker privadas
+Number Of Invalid Templates=Número de plantillas inválidas
+Number Of Template Errors=Número errores en plantillas
+Number Of Blacklisted Apps=Número de aplicaciones en la lista negra
+Number Of Incompatible Applications=Número de aplicaciones incompatibles
+Number Of Deprecated Applications=Número de aplicaciones obsoletas
+Number Of Moderation Entries=Numero de anotaciones de moderación
+Primary Server=Servidor principal
+Backup Server=Servidor de reserva
 
 ; Statistics Popup Titles
-Repository List=
-All Invalid Templates Found=
-Template Errors=
-All Moderation Entries=
+Repository List=Lista de Repositorios
+All Invalid Templates Found=Plantillas Inválidas Encontradas
+Template Errors=Errores en Plantillas
+All Moderation Entries=Anotaciones de Moderación
 
 ; Statistics Popup
-No invalid templates found=
-These templates are invalid and the application they are referring to is unknown=
-No templates were automatically fixed=
-All of these errors found have been fixed automatically=
-Note that many of these errors can be avoided by following the directions=
-HERE=
-The following plugins have duplicated filenames and are not able to be installed simultaneously=
-The following docker applications refer to the same docker repository but may have subtle changes in the template to warrant this=
-If any of these entries are incorrect then contact the moderators of CA to discuss=
-Global Repository Comments=
-Applied to all applications=(Applied to all applications)
-Individual Application Moderation=
+No invalid templates found=No se encontraron plantillas inválidas
+These templates are invalid and the application they are referring to is unknown=Estas plantillas son inválidas y la aplicación a la que hacen referencia es desconocida
+No templates were automatically fixed=No se corrigió automáticamente ninguna plantilla
+All of these errors found have been fixed automatically=Todos estos errores encontrados han sido corregidos automáticamente
+Note that many of these errors can be avoided by following the directions=Tenga en cuenta que muchos de estos errores se pueden evitar si se siguen las instrucciones mostradas
+HERE=AQUÍ
+The following plugins have duplicated filenames and are not able to be installed simultaneously=Los siguientes plugins tienen nombres repetidos y no se pueden instalar simultáneamente.
+The following docker applications refer to the same docker repository but may have subtle changes in the template to warrant this=Las siguientes aplicaciones Docker hacen referencia al mismo repositorio Docker, pero pueden tener cambios sutiles en la plantilla para que funcionen correctamente.
+If any of these entries are incorrect then contact the moderators of CA to discuss=Si alguna de estas anotaciones es incorrecta, por favor póngase en contacto con los moderadores de Aplicaciones de la Comunidad (CA).
+Global Repository Comments=Commentarios Globales por Repositorio
+Applied to all applications=(Aplica a todas las aplicaciones)
+Individual Application Moderation=Moderación Individual por Aplicación
 
 ; Misc
-Community Applications Changelog=
+Community Applications Changelog=Registro de Cambios de Aplicaciones de la Comunidad (CA)
 
 ; Categories try not to be excessively long This is displayed on the left of CA screen
 
-Backup=
-Cloud=
-Downloaders=
-Game Servers=
-Home Automation=
-Media Applications=
-Books=
-Music=
-Photos=
-Video=
-Other=
-Media Servers=
-Network Services=
-DNS=
-FTP=
-Management=
-Messenger=
-Proxy=
-VOIP=
-VPN=
-Web=
-Productivity=
-Security=
-Tools Utilities=Tools / Utilities
-System=
-Themes=
-Utilities=
-Plugins=
-Private Apps=
-Uncategorized=
+Backup=Copia de Seguridad
+Cloud=Nube
+Downloaders=Gestores de Descarga
+Game Servers=Servidores de Juego
+Home Automation=Automatización del Hogar
+Media Applications=Apps Multimedia
+Books=Libros
+Music=Música
+Photos=Fotos
+Video=Vídeo
+Other=Otros
+Media Servers=Servidores Multimedia
+Network Services=Servicios de Red
+DNS=DNS
+FTP=FTP
+Management=Administración
+Messenger=Mensajería
+Proxy=Proxy
+VOIP=VOIP
+VPN=VPN
+Web=Web
+Productivity=Productividad
+Security=Seguridad
+Tools Utilities=Herramientas / Utilidades
+System=Sistema
+Themes=Temas
+Utilities=Utilidades
+Plugins=Plugins
+Private Apps=Apps Privadas
+Uncategorized=Sin Categorizar
 
 ; Categories displayed within a popup or on the card
-GameServers=
-HomeAutomation=
-MediaApp=
-MediaAppBooks=MediaApp:Books
-MediaAppMusic=MediaApp:Music
-MediaAppPhotos=MediaApp:Photos
-MediaAppVideo=MediaApp:Video
-MediaAppOther=MediaApp:Other
-MediaServer=
-MediaServerBooks=MediaServer:Books
-MediaServerMusic=MediaServer:Music
-MediaServerPhotos=MediaServer:Photos
-MediaServerVideo=MediaServer:Video
-MediaServerOther=MediaServer:Other
-Network=
-NetworkDNS=Network:DNS
-NetworkFTP=Network:FTP
-NetworkManagement=Network:Management
-NetworkProxy=Network:Proxy
-NetworkVOIP=Network:VOIP
-NetworkVPN=Network:VPN
-NetworkWeb=Network:Web
-NetworkOther=Network:Other
-Tools=
-ToolsSystem=Tools:System
-ToolsThemes=Tools:Themes
-ToolsUtilities=Tools:Utilities
-Plugins=
-Other=
-OtherUncategorized=Other:Uncategorized
-and %s more=
+GameServers=ServidoresJuego
+HomeAutomation=AutomatizaciónHogar
+MediaApp=AppMultimedia
+MediaAppBooks=AppMultimedia:Libros
+MediaAppMusic=AppMultimedia:Música
+MediaAppPhotos=AppMultimedia:Fotos
+MediaAppVideo=AppMultimedia:Vídeo
+MediaAppOther=AppMultimedia:Otros
+MediaServer=ServidorMultimedia
+MediaServerBooks=ServidorMulti:Libros
+MediaServerMusic=ServidorMultimedia:Música
+MediaServerPhotos=ServidorMultimedia:Fotos
+MediaServerVideo=ServidorMultimedia:Vídeo
+MediaServerOther=ServidorMultimedia:Otros
+Network=Red
+NetworkDNS=Red:DNS
+NetworkFTP=Red:FTP
+NetworkManagement=Red:Administración
+NetworkProxy=Red:Proxy
+NetworkVOIP=Red:VOIP
+NetworkVPN=Red:VPN
+NetworkWeb=Red:Web
+NetworkOther=Red:Otros
+Tools=Herramientas
+ToolsSystem=Herramientas:Sistema
+ToolsThemes=Herramientas:Temas
+ToolsUtilities=Herramientas:Utilidades
+Plugins=Plugins
+Other=Otros
+OtherUncategorized=Otros:SinCategorizar
+and %s more=y %s más
 
 ; App Popup Related
-Donate To Author=
-Donate To Maintainer=
-Author=
-Maintainer=
-DockerHub=
-Application Template=
-Base OS=
-DockerHub Stars=
-Added to CA=
-Date Updated=
-Current Version=
-Minimum OS=
-Max OS=
-Total Downloads=
-Licence=
-30 Day Trend=
-Ranked #%s=
+Donate To Author=Donar al Autor
+Donate To Maintainer=Donar al Mantenedor
+Author=Autor
+Maintainer=Mantenedor
+DockerHub=DockerHub
+Application Template=Plantilla de Aplicación
+Base OS=SO Base
+DockerHub Stars=Estrellas en DockerHub
+Added to CA=Añadido a CA
+Date Updated=Última Actualización
+Current Version=Versión Actual
+Minimum OS=Versión Mínima SO
+Max OS=Versión Máxima SO
+Total Downloads=Descargas Totales
+Licence=Licencia
+30 Day Trend=Tendencia Último Mes
+Ranked #%s=Posición #%s
 ; as in Trending up or down arrow
-Trending %s=
+Trending %s=Tendencia %s
 ; as in As of some date
-As of %s=(As of %s)
-This application template has been blacklisted=This application / template has been blacklisted
-This application template has been deprecated=This application / template has been deprecated
-This application is not compatible with your version of Unraid=
-Another browser tab or device has updated the displayed templates Some actions are not available=Another browser tab or device has updated the displayed templates.  Some actions are not available
-Reinstall default=Reinstall (default)
-WebUI=
-Reinstall=
-Install=
-Project=
-Install Using The Templates Default Tag=Install Using The Template's Default Tag
-Moderator Comments=Moderator Comments:
-Note not all authors keep up to date on change logs=
-Note not all maintainers keep up to date on change logs=
+As of %s=(A fecha de %s)
+This application template has been blacklisted=Esta aplicación / plantilla ha sido incluida en la lista negra
+This application template has been deprecated=Esta aplicación / plantilla está considerada obsoleta
+This application is not compatible with your version of Unraid=Esta aplicación no es compatible con su versión de Unraid
+Another browser tab or device has updated the displayed templates Some actions are not available=Otra pestaña del navegador o dispositivo ha actualizado las plantillas mostradas.  Algunas acciones no están disponibles.
+Reinstall default=Reinstalar (por defecto)
+WebUI=Interfaz Web
+Reinstall=Reinstalar
+Install=Instalar
+Project=Proyecto
+Install Using The Templates Default Tag=Instalar Usando la Etiqueta de la Plantilla Por Defecto
+Moderator Comments=Comentarios del Moderador:
+Note not all authors keep up to date on change logs=Tenga en cuenta que no todos los autores actualizan el registro de cambios
+Note not all maintainers keep up to date on change logs=Tenga en cuenta que no todos los mantenedores actualizan el registro de cambios
 ;the following if using a space you MUST use nbsp  but keep it down to one word if at all possible
-Donate=
-Currently Installed Version=
-Install The Update=
+Donate=Donar
+Currently Installed Version=Versión&nbsp;Instalada&nbsp;Actualmente
+Install The Update=Instalar&nbsp;la&nbsp;Actualización
 ; as in you have the latest version already installed
-Latest Version=
-Multi Language Support=
+Latest Version=Última Versión
+Multi Language Support=Soporte para Múltiples Idiomas
 ; as in more than 100000
-More than %s=
+More than %s=Más de %s
 
 ; Graphs
-Trend Per Month=
-Downloads Per Month=
-Total Downloads=
+Trend Per Month=Tendencia Mensual
+Downloads Per Month=Descargas Mensuales
+Total Downloads=Descargas Totales
 
 ; Multi install script
-Installing docker applications %s=
-Starting %s=
-%s failed to start You should install it by itself to fix the errors=
-Setting installed applications to autostart=
-Docker Application Installation finished=
+Installing docker applications %s=Instalando las aplicaciones Docker %s
+Starting %s=Iniciando %s
+%s failed to start You should install it by itself to fix the errors=La inicialización de %s ha fallado. Intente instalar la aplicación por separado para corregir los errores
+Setting installed applications to autostart=Configurando las aplicaciones instaladas para que se inicien automáticamente
+Docker Application Installation finished=La instalación de las aplicaciones Docker ha finalizado
 
 ; Application Cards
-Private dockerHub Conversion=Private (dockerHub Conversion)
-Go to the project page=
-Go to the support thread=
-Uninstall Application=
-Remove Private Application=
-Remove Application From List=
-Check off to select multiple reinstalls=
-Go to the plugin settings=
-Click to reinstall the application using default values=
-Click to edit the application values=
-Click to reinstall=
-Click to install=
-Install plugin=
-Click to go to the WebUI=
-This application has been marked as being Beta=
-This application template has been deprecated=
-This application is not compatible with your version of Unraid=
-This application template has been blacklisted=
-Search for more applications from %s=
-Click for more information=
+Private dockerHub Conversion=Privado (conversión de DockerHub)
+Go to the project page=Ir a la página del proyecto
+Go to the support thread=Ir al sitio de soporte
+Uninstall Application=Desinstalar la Aplicación
+Remove Private Application=Eliminar la Aplicación Privada
+Remove Application From List=Eliminar de la Lista de Aplicaciones
+Check off to select multiple reinstalls=Marque para seleccionar múltiples reinstalaciones
+Go to the plugin settings=Ir a los ajustes del plugin
+Click to reinstall the application using default values=Haga clic para reinstalar la aplicación utilizando los valores por defecto
+Click to edit the application values=Haga clic para editar los valores de la aplicación
+Click to reinstall=Haga clic para reinstalar
+Click to install=Haga clic para instalar
+Install plugin=Instalar plugin
+Click to go to the WebUI=Haga clic para ir a la interfaz web
+This application has been marked as being Beta=Esta aplicación ha sido marcada como Beta
+This application template has been deprecated=Esta plantilla está considerada obsoleta
+This application is not compatible with your version of Unraid=Esta aplicación no es compatible con su versión de Unraid
+This application template has been blacklisted=Esta plantilla está en la lista negra
+Search for more applications from %s=Buscar más aplicaciones en %s
+Click for more information=Haga clic para más información
 
 ; Dockerhub searches
-Search For Containers From %s=
-Search for similar containers=
+Search For Containers From %s=Buscar contenedores en %s
+Search for similar containers=Buscar contenedores similares
 
 ; Page Navigation
-Displaying %s - %s of %s=Displaying %1$s - %2$s (of %3$s)
+Displaying %s - %s of %s=Mostrando %1$s - %2$s (de %3$s)
 
-Updating Content=
-Language=
-Switch to this language=
-Country Code=
-Install Language Pack=
-Remove Language Pack=
-Update Language Pack=
-Installed Version=
+Updating Content=Actualizando Contenido
+Language=Idioma
+Switch to this language=Cambiar a este idioma
+Country Code=Código de País
+Install Language Pack=Instalar el Paquete de Idioma
+Remove Language Pack=Eliminar el Paquete de Idioma
+Update Language Pack=Actualizar el Paquete de Idioma
+Installed Version=Versión Instalada
 
 ; Help Text
-This chooses how to sort the results=
-These icons respectively will Install or Edit an application=
-Clicking these icons will take you to an application's GUI or settings=
-This will update an application=
-This will take you to the appropriate support thread for an application=
-This will immediately switch to the language=
-This will take you to the project page for an application=
-Clicking this icon will uninstall the application or delete it from the lists depending upon your current section=
-Clicking these icons will pin or unpin an application for later viewer from the Pinned Apps section=
-Clicking this will display more information about the application NOTE You can also click on the applications icon to display more information=
-Clicking this will display any warnings or extra comments about the application=
-On the previous apps section you can select multiple applications to install simultaneously=
-This is the recommended version to install by the application author themselves=
-For support for this plugin visit=
-To view the policies Community Applications has=
+This chooses how to sort the results=Este icono sirve para elegir cómo organizar los resultados
+These icons respectively will Install or Edit an application=Haga clic en estos iconos para instalar o editar una aplicación
+Clicking these icons will take you to an applications GUI or settings=A través de estos iconos puede ir a la interfaz gráfica o a los ajustes de una aplicación
+This will update an application=Este icono sirve para actualizar una aplicación
+This will take you to the appropriate support thread for an application=Haga clic en este icono para ir al sitio de soporte de una aplicación
+This will immediately switch to the language=Haga clic en este icono para cambiar inmediatamente de idioma
+This will take you to the project page for an application=Este icono le llevará a la página del proyecto de una aplicación
+Clicking this icon will uninstall the application or delete it from the lists depending upon your current section=Haga clic en este icono para desinstalar una aplicación  o eliminarla de las listas (dependiendo de la sección en la que se encuentre)
+Clicking these icons will pin or unpin an application for later viewer from the Pinned Apps section=A través de estos iconos puede anclar o desanclar una aplicación (para ser vista más adelante en la sección Apps Ancladas)
+Clicking this will display more information about the application NOTE You can also click on the applications icon to display more information=Este icono sirve para mostrar más información acerca de una aplicación. NOTA: También puede pulsar en el icono de la aplicación para mostrar más información
+Clicking this will display any warnings or extra comments about the application=Haga clic en este icono para ver cualquier advertencia o comentario sobre la aplicación
+On the previous apps section you can select multiple applications to install simultaneously=En la sección Apps Anteriores, puede seleccionar múltiples aplicaciones a instalar simultáneamente
+This is the recommended version to install by the application author themselves=Este icono muestra que es la versión recomendada para instalar según el autor de la aplicación
+For support for this plugin visit=Para soporte con este plugin, por favor
+To view the policies Community Applications has=Para ver la política de Aplicaciones de la Comunidad (CA), por favor
