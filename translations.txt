@@ -227,6 +227,7 @@ Please select one file only=Por favor seleccione solo un archivo
 Please summarize your suggestion here=Por favor resuma su sugerencia aquí
 Please try again later=Por favor inténtelo de nuevo más tarde
 Please wait=Por favor espere
+Plugins=
 Plus=Plus
 Private=Privado
 Pro=Pro
