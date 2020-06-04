@@ -1591,4 +1591,3 @@ NOTA IMPORTANTE: Si ajusta las asignaciones de puertos, no modifique la configur
 Para los contenedores que requieren acceso directo a dispositivos del host o que necesitan una exposición total a las capacidades del host, se deberá seleccionar esta opción.
 Para obtener más información, consulte este enlace: <a href="https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities" target="_blank">https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities</a>
 :end
-
