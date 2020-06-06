@@ -176,7 +176,7 @@ Al hacer clic en **Descargar** comenzará el proceso de recolección, tras el cu
 *No se incluye información personal como nombres de usuario, contraseñas o cualquier otro contenido de archivos no especificado anteriormente;
 sin embargo, Unraid OS **sí** *incluirá* el nombre del servidor, la dirección IP y los nombres de las carpetas compartidas.
 
-*Tenga en cuenta que los plugins de terceros **pueden tener** o no información personal almacenada en archivos de configuración específicos del plugin y/o 
+*Tenga en cuenta que los plugins de terceros **pueden tener** o no información personal almacenada en archivos de configuración específicos del plugin y/o
 en los mensajes que envían al registro del sistema.*
 
 *Marque la casilla* **Hacer anónima la información de diagnóstico** *al publicar el archivo de diagnóstico en el foro de Unraid. Si se comunica de forma privada con Limetech, se recomienda desmarcar esta casilla para capturar toda la información sin modificar.*
