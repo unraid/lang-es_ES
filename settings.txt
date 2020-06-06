@@ -4,7 +4,7 @@
 Active Directory Settings=Ajustes de Active Directory
 Active Directory=Active Directory
 active-backup=backup-activo
-AD account login=Cuenta de usuario de AD 
+AD account login=Cuenta de usuario de AD
 AD account password=Contraseña de AD
 AD domain name=Nombre de dominio de AD
 AD initial group=Grupo inicial de AD
@@ -500,7 +500,7 @@ Workgroup=Grupo de Trabajo
 Write corrections to parity disk=Escribir correcciones al disco de paridad
 WSD options experimental=Opciones de WSD [experimental]
 Yearly=Anual
-Your existing Docker image file needs to be recreated due to an issue from an earlier beta of Unraid 6=Su archivo de imagen de Docker debe ser recreado debido a un problema con una versión beta previa de Unraid 6 
+Your existing Docker image file needs to be recreated due to an issue from an earlier beta of Unraid 6=Su archivo de imagen de Docker debe ser recreado debido a un problema con una versión beta previa de Unraid 6
 Your hardware does not have Intel VT-x or AMD-V capability=Su hardware no soporta la tecnología de virtualización Intel VT-x o AMD-V
 Your Lets Encrypt SSL Certificate has been provisioned and a DNS record for local IP address=Su certificado SSL de Let's Encrypt ha sido aprovisionado y un registro DNS para la dirección IP local
 Your Lets Encrypt SSL Certificate has been renewed=Su certificado SSL de Let's Encrypt ha sido renovado
