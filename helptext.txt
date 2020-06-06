@@ -83,7 +83,7 @@ cada disco (para distribuir los datos uniformemente por el array).
 
 **Llenar**
 Escoge el disco con el número más bajo que todavía tenga una cantidad de espacio libre superior al parámetro **Espacio libre mínimo en
-disco**. 
+disco**.
 
 **Más-libre**
 Escoge el disco que tenga la mayor cantidad de espacio libre.
@@ -724,7 +724,7 @@ cargarlo en el servidor. Nota: Es **altamente** recomendado el uso de una direcc
 **Actualizar DNS** puede ser usado para iniciar manualmente una actualización del registro-A DNS del FQDN de su servidor en unraid.net. Tenga en cuenta
 que la propagación de los cambios en el DNS puede tardar de 1 minuto a varias horas (nosotros ajustamos el TTL a 60 segundos).
 
-Nota: **Aprovisionar** podría fallar si su router o servidor DNS tiene habilitada la 
+Nota: **Aprovisionar** podría fallar si su router o servidor DNS tiene habilitada la
 [protección contra revinculación de DNS](https://es.wikipedia.org/wiki/DNS_rebinding) habilitado. La protección contra revinculación de DNS
 evita la resolución DNS de un rango de direcciones IP privadas. El propósito de esta protección es
 añadir una capa de seguridad adicional a redes locales (LAN) que tengan conectados dispositivos antiguos con interfaces "web" inseguras.
@@ -843,12 +843,12 @@ Cuando NFS está habilitado, este parámetro puede ajustar para mitigar o resolv
 que pueda experimentar con su cliente NFS.
 
 En esencia, (fuse_remember) le indica al subsistema interno (llamado "fuse") cuanto tiempo debe "recordar" o "guardar en caché"
-la información de archivos y directorios asociados con las carpetas compartidas.  El error "NFS Stale File Handles" 
+la información de archivos y directorios asociados con las carpetas compartidas.  El error "NFS Stale File Handles"
 puede surgir cuando un cliente NFS intenta acceder a un archivo (o directorio) del servidor, y ese nombre de archivo (o directorio)
 no está en caché.
 
 El valor de este parámetro es el tiempo (en segundos) que el subsistema "fuse" tiene que mantener los nombres de archivos/directorios en caché,
-donde el valor de 330 indica 5 minutos y medio.  Se pueden introducir dos 
+donde el valor de 330 indica 5 minutos y medio.  Se pueden introducir dos
 valores especiales:
 
 * 0 que significa que no almacene ningún nombre de archivos/directorios en caché, y
@@ -866,7 +866,7 @@ archivos/directorios acceda vía NFS, esto podría o no causar un uso excesivo d
 :shares_enable_disk_help:
 Si la opción 'No' está seleccionada, la función Discos Compartidos está desactivada de forma incondicional.
 
-Si la opción 'Sí' está seleccionada, la función Discos Compartidos está activada.  **ADVERTENCIA:** No copie datos desde un disco compartido a una carpeta compartida 
+Si la opción 'Sí' está seleccionada, la función Discos Compartidos está activada.  **ADVERTENCIA:** No copie datos desde un disco compartido a una carpeta compartida
 a menos que *tenga conocimiento* de lo que esté haciendo. Esto no está soportado y puede provocar una pérdida de datos.
 
 Si la opción 'Auto' está seleccionada, solo los discos duros que no contengan ninguna carpeta compartida pueden ser compartidos.
