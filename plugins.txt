@@ -2,7 +2,7 @@
 anonymous=anónimo
 Author=Autor
 Check For Updates=Buscar Actualizaciones
-Click here to install version %s=Pulse aquí para instalar la versión %s 
+Click here to install version %s=Pulse aquí para instalar la versión %s
 DOWNGRADE TO VERSION=VOLVER A LA VERSIÓN
 Enter URL of remote plugin file or local plugin file=Introduzca la URL del complemento remoto o la ruta local del complemento
 ERROR=ERROR
