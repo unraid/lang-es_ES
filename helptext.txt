@@ -1,3 +1,448 @@
+:main_array_devices_help:
+**Indicador de Estado** el significado del indicador que aparece al principio de cada fila en **Dispositivos del Array** es el siguiente:
+
+<i class='fa fa-circle orb green-orb'</iOperación Normal, dispositivo activo.
+
+<i class='fa fa-circle orb grey-orb'</iDispositivo en estado de reposo.
+
+<i class='fa fa-warning orb yellow-orb'</iContenido del dispositivo emulado.
+
+<i class='fa fa-times orb red-orb'</iDispositivo deshabilitado, contenido emulado.
+
+<i class='fa fa-square orb blue-orb'</iNuevo dispositivo.
+
+<i class='fa fa-square orb grey-orb'</iNo hay dispositivo, posición vacía.
+
+**Identificación** es el *código* que identifica de forma única a cada dispositivo de almacenamiento. Este código
+incluye el modelo del dispositivo, su número de serie, su identificador en Linux, y su capacidad.
+
+**Temp.** (temperatura) es obtenida directamente del dispositivo. Puede configurar sus unidades
+en la página [Ajustes de Pantalla](Settings/DisplaySettings).  Cuando los discos están en reposo, su temperatura no puede ser obtenida
+sin forzar su activación, por lo que en estos casos se mostrará el símbolo `*` en su lugar. El símbobo
+`*` también se suele mostrar con dispositivos SSD y flash, aunque a veces estos dispositivos reportan correctamente la
+temperatura, y otras veces reportan el valor `0`.
+
+**Capacidad, Usado, Disponible** muestra la capacidad total del dispositivo, el espacio ocupado y el espacio libre para almacenamiento.  Estas
+unidades también se pueden configurar en la página [Ajustes de Pantalla](Settings/DisplaySettings).  Debido
+al sistema de archivos del disco, aunque el disco esté completamente vacío, el espacio ocupado nunca será cero.
+
+*Nota: para un grupo de almacenamiento caché de múltiples dispositivos, esta información se muestra para el grupo de almacenamiento completo, tal y como la reporta el sistema de archivos btrfs.*
+
+**Lecturas, Escrituras** es el conteo de peticiones E/S enviadas al controlador del dispositivo.  Estas estadísticas pueden ser
+borradas en cualquier momento desde a la sección Estado del Array mostrada más abajo.
+
+**Errores** cuenta el número de errores *irrecuperables* reportados por el controlador del dispositivo.
+Los datos que falten debido a errores irrecuperables de lectura del array, son reconstruidos en tiempo real con ayuda
+del dispositivo de paridad (y se intenta sobrescribir esos datos en el sector o sectores que hayan fallado). Cualquier
+error irrecuperable de escritura hará que el disco sea *deshabilitado*.
+
+**FS** indica el sistema de archivos detectado en la partición 1 del dispositivo.
+
+**Ver** esta columna contiene el icono de una carpeta indicando que el dispositivo está *montado*. Haga clic en el icono
+para explorar los contenidos del disco.
+
+Si la opción "Mostrar estadísticas totales del array" está habilitada en la página [Ajustes de Pantalla](Settings/DisplaySettings),
+se muestra una fila adicional con los valores totales de las estadísticas de todos los discos del array, incluyendo la
+temperatura media de los dispositivos.
+
+El array debe ser Detenido para poder cambiar la asignación de dispositivos del Array.
+
+Un array de Unraid está compuesto por uno o varios discos de almacenamiento de Datos y uno o dos discos de Paridad. Los discos de
+Datos se usan exclusivamente para guardar archivos del usuario, mientras que el/los disco(s) de Paridad proporciona(n)
+la redundancia necesaria para mantener a salvo todos los datos en caso de que falle algún disco.
+
+Como ningún archivo individual es dividido entre los discos del array, el/los disco(s) de paridad deben tener una capacidad igual o superior a
+la del mayor disco de datos.  El disco de Paridad también debería ser de ser el de mayor rendimiento.
+
+Cada disco de Datos tiene su propio sistema de archivos y puede ser compartido
+de forma individual.
+
+Haga clic en el nombre del Dispositivo para configurar sus ajustes individuales y ejecutar ciertas utilidades.
+:end
+
+:main_slots_help:
+**Espacios** seleccione el número de espacios reservados para los discos usados como dispositivos del Array.
+El número mínimo de espacios es 2, y debe asignar al menos 1 dispositivo al Array.
+:end
+
+:cache_devices_help:
+**Indicador de Estado** el significado del indicador que aparece al principio de cada fila en **Dispositivos del Grupo de Almacenamiento** es el siguiente:
+
+<i class='fa fa-circle orb green-orb'</iOperación Normal, dispositivo activo.
+
+<i class='fa fa-circle orb grey-orb'</iDispositivo en estado de reposo.
+
+<i class='fa fa-square orb blue-orb'</iNuevo dispositivo.
+
+<i class='fa fa-square orb grey-orb'</iNo hay dispositivo, posición vacía.
+
+Un **Grupo de Almacenamiento** puede estar formado por uno o múltiples dispositivos *externos* al array de Unraid.  Cada dispositivo puede ser compartido en red
+como cualquier otro dispositivo del array. Al estar fuera del array de Unraid, la velocidad de escritura en disco es significativamente más rápida.
+
+Un Grupo de Almacenamiento se puede configurar de dos formas:
+
+1. Como un dispositivo único, o
+2. Como un grupo de múltiples dispositivos.
+
+En el primer caso, el dispositivo se puede formatear usando cualquier sistema de archivos compatible (btrfs, reiserfs,
+o xfs).  Esta configuración ofrece el mejor rendimiento, pero a costa de no tener ninguna redundancia – si el
+dispositivo falla, se pueden perder todos los datos.
+
+Cuando se configura como un grupo de múltiples dispositivos, Unraid OS seleccionará automaticamente el formato *btrfs-raid1* (para los datos
+y metadatos).  Btrfs permite añadir múltiples dispositivos al grupo de almacenamiento garantizando que que todos los datos
+sean guardados a la vez en dos dispositivos diferentes.  Por lo tanto, tolera el fallo de un dispositivo sin que se pierda ninguna información.
+
+Cuando las [Carpetas Compartidas](/Settings/ShareSettings) están habilitadas, éstas pueden ser configuradas
+para que automáticamente hagan uso del Grupo de Almacenamiento para
+mejorar la velocidad de escritura.  Es posible programar un servicio especial (ejecutado en segundo plano) llamado *Mover*
+para que mueva periódicamente el contenido de las carpetas compartidas seleccionadas del Caché al Array.
+:end
+
+:cache_slots_help:
+**Espacios** seleccione el número de espacios reservados para los discos usados como dispositivos Caché.
+:end
+
+:boot_device_help:
+El dispositivo flash USB contiene configuración vital del array; por esta razón, debe mantenerlo conectado
+al servidor.  Haga clic en [Flash](/Main/Flash?name=flash) para ver el GUID, hacer una copia de seguridad
+y/o acceder a los ajustes para compartir la unidad en red.  Como el dispositivo flash USB tiene formato FAT,
+solo puede ser compartido usando el protocolo SMB.
+:end
+
+:array_status_help:
+**Indicador de Estado** el significado del indicador de estado del *Array* es el siguiente:
+
+<i class='fa fa-circle orb green-orb'</iEl Array está Iniciado, la Paridad es válida.
+
+<i class='fa fa-circle orb grey-orb'</iEl Array está Detenido, la Paridad es válida.
+
+<i class='fa fa-warning orb yellow-orb'</iEl Array está Iniciado, la Paridad no es válida.
+
+<i class='fa fa-warning orb grey-orb'</iEl Array está Detenido, la Paridad no es válida.
+
+:end
+
+:array_devices_help:
+#### Asignando Dispositivos
+
+Un array de Unraid consiste en un disco de Paridad y uno o varios discos para el almacenamiento
+de datos. Los discos de datos son exclusivamente para guardar archivos del usuario, mientras
+que el disco de Paridad proporciona la redundancia necesaria para mantener a salvo los datos en caso de que falle un único disco.
+
+Tenga en cuenta que tenemos cuidado al usar el termino *disco* cuando nos referimos a un dispositivo de almacenamiento del array. Solo
+utilizamos el término *disco duro* para referirnos al dispositivo físico del hardware (HDD).
+Diferenciamos ambos términos, porque en un sistema RAID es posible ejecutar operaciones de lectura/escritura en un disco
+del array, aunque su disco duro correspondiente esté deshabilitado o incluso falte! Además, es conveniente poder usar expresiones como, "¿Qué dispositivo está asignado
+como disco de paridad" o "¿Qué dispositivo corresponde al disk2?".
+
+Por lo tanto, es necesario que exista la manera de asignar discos duros a discos del array. Esto se hace desde aquí, en la
+página Principal cuando el array está detenido. Cada disco del array tiene su propio menú desplegable con todos
+los dispositivos sin asignar. Para asignar un dispositivo, simplemente selecciónelo en el desplegable. Cada vez que
+se asigna un nuevo dispositivo, el sistema actualiza un archivo de configuración que guarda las asignaciones de todos los discos.
+
+#### Requisitos
+
+A diferencia de los sistemas RAID tradicionales que dividen los archivos a nivel individual entre todos los dispositivos del array, en un servidor Unraid
+los archivos se almacenan en cada disco duro individualmente. Como resultado, en todas las operaciones de escritura se
+utiliza el disco de datos donde se guarda el archivo y el disco de paridad. Por estas razones,
+
+* la capacidad del disco de paridad debe de ser igual o superior a la de cualquiera de los discos de datos*,
+
+y
+
+* si es posible elegir, el disco de paridad debería ser el disco con mayor rendimiento*
+
+#### Instrucciones
+
+Estos son los pasos que debe seguir cuando esté configurando su array de Unraid:
+
+1. Decida qué disco duro va a usar para la paridad, y qué discos duros de datos va a usar para
+disk1, disk 2, etc. y etiquételos de alguna forma. También apunte el número de serie de cada disco duro,
+ya que necesitará esta información más adelante.
+
+2. Instale los discos duros, arranque el servidor Unraid y acceda a la interfaz web. Si es un sistema nuevo,
+la página Principal no mostrará ningún disco instalado. Esto no quiere decir que el sistema no detecta los discos
+duros; solo significa que todavía no han sido asignados.
+
+3. ¿Recuerda los números de serie que anotó en el paso 1? A través del menú desplegable del disco de paridad y los
+discos de datos, seleccione el disco duro correspondiente para cada caso basándose en su número de serie.
+
+#### Conexión en Caliente
+
+También puede *conectar en caliente* discos duros al servidor si el hardware lo soporta. Por ejemplo,
+si utiliza cajas externas de discos duros, las podría conectar al servidor mientras esté encendido y
+el array esté detenido. Al hace esto, deberá recargar la página Principal para ver los nuevos dispositivos sin asignar
+en los menús desplegables.
+
+#### Próximos Pasos
+
+Una vez tenga asignados todos los discos duros, podrá Iniciar el array desde la sección Estado del Array
+mostrada más abajo.
+:end
+
+:encryption_help:
+#### Cifrado
+
+Con el array detenido, el usuario puede especificar una nueva clave de cifrado. Tenga en cuenta que una vez un dispositivo
+es formateado con una clave en particular, solo se podrá acceder a él con esa misma clave. Si se cambia la clave de cifrado,
+los dispositivos cifrados deberán ser reformateados **provocando una perdida permanente de todos los datos en estos dispositivos.**
+
+#### Frase de Contraseña
+
+Introduzca una frase de contraseña de hasta 512 caracteres. Es altamente recomendable que solo utilice los primeros 95 caracteres imprimibles de los
+128 caracteres de la [tabla ASCII](https://en.wikipedia.org/wiki/ASCII), ya que estos siempre tendrán la misma representación
+binaria. Otros caracteres pueden tener una codificación diferente dependiendo de la configuración del sistema y su frase de contraseña no
+funcionará con una codificación distinta. Si quiere usar una frase de contraseña mas larga o incluir datos binarios, suba un archivo de claves en su lugar.
+
+Por favor consulte [cryptsetup FAQ](https://gitlab.com/cryptsetup/cryptsetup/wikis/FrequentlyAskedQuestions#5-security-aspects)
+para ayudarle a elegir una frase de contraseña *segura*.
+
+**Memoríce** la frase de contraseña, **SI LA OLVIDA, EL CONTENIDO ENCRIPTADO NO PODRÁ SER RECUPERADO!**
+
+#### Archivo de Claves
+
+Seleccione un archivo de claves local con una clave de cifrado guardada o un archivo binario. El tamaño máximo del archivo es 8MB (8388608 byte).
+
+Haga una **Copia de Seguridad** del archivo de claves. **SI LO PIERDE, EL CONTENIDO ENCRIPTADO NO PODRÁ SER RECUPERADO!**
+:end
+
+:info_warning_temp_help:
+El *umbral de temperatura de disco para advertencia* ajusta el umbral para advertencia de la temperatura del disco duro. Si se excede este valor, se enviará una notificación de advertencia.
+
+Un valor de cero deshabilita el umbral de advertencia (incluyendo las notificaciones).
+:end
+
+:info_critical_temp_help:
+El *umbral de temperatura de disco crítica* ajusta el umbral al cual la temperatura del disco duro se considera crítica.  Si se excede este valor, se enviará una notificación de alerta.
+
+Un valor de cero deshabilita el umbral crítico (incluyendo las notificaciones).
+:end
+
+:info_file_system_help:
+Introduzca el sistema de archivos que quiera. Al cambiar el sistema de archivos de un dispositivo le permitirá reformatear
+ese dispositivo con el nuevo sistema de archivos. Tenga en cuenta que **todos los datos guardados en ese dispositivo serán borrados**.
+:end
+
+:info_comments_help:
+Este texto aparecerá debajo de la columna de *Comentarios* del recurso compartido en el Explorador de Windows.
+Introduzca cualquier comentario de hasta 256 caracteres.
+:end
+
+:info_warning_utilization_help:
+El *umbral de uso de disco para advertencia* ajusta el umbral para advertencia del uso del disco duro. Si se excede este valor, se enviará una notificación de advertencia.
+
+Cuando el umbral de advertencia coincida o sea mayor que el umbral crítico, solo se mostrarán notificaciones críticas (no habrá notificaciones de advertencia).
+
+Un valor de cero deshabilita el umbral de advertencia (incluyendo las notificaciones).
+:end
+
+:info_critical_utilization_help:
+El *umbral de uso de disco crítico* ajusta el umbral al cual el nivel de uso del disco duro se considera crítico.  Si se excede este valor, se enviará una notificación de alerta.
+
+Un valor de cero deshabilita el umbral crítico (incluyendo las notificaciones).
+:end
+
+:info_btrfs_balance_help:
+**Balancear** ejecutará el programa *btrfs balance* para redistribuir los datos entre los dispositivos del grupo de almacenamiento, por ejemplo,
+para convertir el grupo de almacenamiento de raid1 a raid0 o viceversa.
+
+Cuando un se ejecuta un *balance completo*, básicamente se reescribe todo en el sistema de archivos actual.
+
+Los *modos de conversión* afectan al modo en el que btrfs almacena los datos. Los metadatos siempre utilizan raid1 y son convertidos a raid1 si lo requiere alguna operación de balance.
+
+El tiempo de ejecución puede ser muy largo, dependiendo del tamaño del sistema de archivos y de la velocidad del dispositivo.
+
+Unraid utiliza estas opciones por defecto cuando está creando un grupo de almacenamiento de múltiples dispositivos:
+
+`-dconvert=raid1 -mconvert=raid1`
+
+Para más información, por favor consulte la documentación del balance-btrfs [Aquí](https://btrfs.wiki.kernel.org/index.php/Manpage/btrfs-balance)
+
+*Nota: raid5 y raid6 son generalmente considerados **experimentales** por la comunidad de Linux*
+:end
+
+:info_balance_cancel_help:
+**Cancelar** cancelará la operación de Balance en progreso.
+:end
+
+:info_btrfs_scrub_help:
+**Depurar** ejecutará el programa de *depuración del btrfs* el cual inspeccionará los dispositivos de almacenamiento
+y detectará cualquier inconsistencia que encuentre en los datos.
+
+Si *Reparar bloques corruptos* esta seleccionada, la *depuración de btrfs* reparará los bloques corruptos si hay una copia en buen estado disponible.
+:end
+
+:info_scrub_cancel_help:
+**Cancelar** cancelará la operación de Depuración en progreso.
+:end
+
+:info_btrfs_check_help:
+**Comprobar** ejecutara el programa de *comprobación de btrfs* para verificar la integridad del sistema de archivos en el dispositivo.
+
+El campo de *Opciones* se inicializa con *--readonly* el cual especifica que sea solo una revisión. Si es necesario reparar algo, se
+recomienda ejecutar una segunda comprobación, configurando las *Opciones* con *--repair*; esto permitirá que el programa de *comprobación de btrfs* repare el sistema de archivos.
+
+Al empezar la comprobación, debe recargar la página para hacer el seguimiento del progreso y el estado. Dependiendo del
+tamaño del sistema de archivos y de los errores que puedan estar presentes, la operación puede tardar *mucho tiempo* (horas).
+No se muestra mucha información en pantalla, pero puede comprobar que la operación está en ejecución simplemente observando como aumenta el contador
+de lecturas/escrituras en la página Principal.
+:end
+
+:info_check_cancel_help:
+**Cancelar** cancelará la operación de Comprobación en progreso.
+:end
+
+:info_reiserfs_check_help:
+**Comprobar** ejecutará el programa *reiserfsck* para verificar la integridad del sistema de archivos en el dispositivo.
+
+El campo de *Opciones* se puede llenar con opciones específicas para arreglar problemas en el sistema de archivos. Lo normal es
+hacer una primera revisión dejando el campo de *Opciones* en blanco. Cuando termine, si *reiserfsck* encuentra algún problema, deberá ejecutar
+una segunda comprobación usando la opción específica que se le haya indicado tras la primera pasada de *reiserfsck*.
+
+Al empezar la comprobación, debe recargar la página para hacer el seguimiento del progreso y el estado. Dependiendo del
+tamaño del sistema de archivos y de los errores que puedan estar presentes, la operación puede tardar *mucho tiempo* (horas).
+No se muestra mucha información en pantalla, pero puede comprobar que la operación está en ejecución simplemente observando como aumenta el contador
+de lecturas/escrituras en la página Principal.
+:end
+
+:info_reiserfs_cancel_help:
+**Cancelar** cancelará la operación de Comprobación en progreso.
+:end
+
+:info_xfs_check_help:
+**Comprobar** ejecutará el programa *xfs_repair* para verificar la integridad del sistema de archivos en el dispositivo.
+
+El campo de *Opciones* está inicializado con *-n* lo cual especifica que se haga solo una revision. Si es necesario reparar algo, deberá ejecutar
+una segunda comprobación dejando el campo de *Opciones* en blanco; esto permitirá que *xfs_repair* pueda reparar el sistema de archivos.
+
+Al empezar la comprobación, debe recargar la página para hacer el seguimiento del progreso y el estado. Dependiendo del
+tamaño del sistema de archivos y de los errores que puedan estar presentes, la operación puede tardar *mucho tiempo* (horas).
+No se muestra mucha información en pantalla, pero puede comprobar que la operación está en ejecución simplemente observando como aumenta el contador
+de lecturas/escrituras en la página Principal.
+:end
+
+:info_xfs_cancel_help:
+**Cancelar** cancelara la operación de Comprobación en progreso.
+:end
+
+:info_smart_notifications_help:
+Las notificaciones SMART son generadas cuando el valor RAW de un atributo se incrementa o cuando su valor NORMALIZADO disminuye por debajo del umbral predefinido por el fabricante del disco.
+
+Cada disco puede tener su propia configuración específica anulando los 'ajustes globales por defecto' (consulte Configuración Global de SMART en la sección de Ajustes de Disco).
+:end
+
+:info_tolerance_level_help:
+Se puede especificar un nivel de tolerancia para prevenir que un cambio menor genere una notificación. Establecer una tolerancia muy alta podría resultar que cambios críticos no produzcan notificaciones.
+
+Cada disco puede tener su propia configuración específica anulando los 'ajustes globales por defecto' (consulte Configuración Global de SMART en la sección de Ajustes de Disco).
+:end
+
+:info_controller_type_help:
+Por defecto, la selección automática del controlador es realizada por smartctl para recolectar la información SMART. Sin embargo, ciertos controladores requieren ajustes específicos para funcionar adecuadamente.
+Use este ajuste para seleccionar su tipo de controlador y provea el nombre de dispositivo e índice de disco para su situación específica. Use la documentación del fabricante para encontrar información al respecto.
+
+Cada disco puede tener su propia configuración específica anulando los 'ajustes globales por defecto' (consulte Configuración Global de SMART en la sección de Ajustes de Disco).
+:end
+
+:info_attribute_notifications_help:
+El usuario puede habilitar o deshabilitar las notificaciones para los atributos SMART mostrados. Se recomienda mantener los valores por defecto, que son TODOS los atributos seleccionados.
+Ciertos atributos pueden ser excluidos cuando no se encuentran presentes en un disco duro o no proporcionan la información correcta.
+Adicionalmente se pueden generar notificaciones para algunos atributos SMART personalizados. Tenga cuidado con esta selección,
+ya que podría causar una avalancha de notificaciones si los atributos SMART no son escogidos apropiadamente.
+
+Cada disco puede tener su propia configuración específica anulando los 'ajustes globales por defecto' (consulte Configuración Global de SMART en la sección de Ajustes de Disco).
+:end
+
+:selftest_history_help:
+Presione **Mostrar** para ver el historial de autodiagnóstico almacenado en el propio disco.
+Esta característica solo está disponible cuando el disco está en modo activo.
+:end
+
+:selftest_error_log_help:
+Presione **Mostrar** para ver el informe de errores almacenado en el propio disco.
+Esta característica solo está disponible cuando el disco está en modo activo.
+:end
+
+:selftest_short_test_help:
+Inicia una prueba *rápida* de SMART, el tiempo estimado de duración puede verse en la sección de *Funcionalidades*. Normalmente tarda unos minutos.
+
+Si el disco entra en estado de reposo, cualquier prueba que esté en progreso será abortada.
+Esta característica solo está disponible cuando el disco está en modo activo.
+:end
+
+:selftest_long_test_help:
+Inicia una prueba *extendida* de SMART, el tiempo estimado de duración puede verse en la sección de *Funcionalidades*. Normalmente tarda varias horas.
+
+Si el disco entra en estado de reposo, cualquier prueba que esté en progreso será abortada. Se recomienda deshabilitar el retardo para poner el disco en reposo
+y así prevenir la interrupción del autodiagnóstico.
+
+Esta característica solo está disponible cuando el disco está en modo activo.
+:end
+
+:selftest_result_help:
+Cuando no haya ninguna prueba en progreso, aquí se mostrarán el resultado del último autodiagnóstico (si está disponible).
+De lo contrario, se mostrará un indicador con el progreso (porcentaje) de la prueba en curso.
+:end
+
+:smart_attributes_help:
+Esta lista muestra los atributos SMART que son soportados por este disco. Para más información sobre cada atributo SMART, se recomienda buscar por internet.
+
+Los atributos en *naranja* pueden requerir atención. Estos tienen un *valor raw* mayor que cero y pueden indicar un futuro fallo del disco.
+
+Es necesario prestar una atención especial a los atributos cuyo valor raw se incremente con el tiempo. Cuando tenga alguna duda, consulte los foros de Limetech para más ayuda.
+:end
+
+:smart_capabilities_help:
+Esta lista muestra las funcionalidades SMART soportadas por este disco.
+
+Observe aquí el tiempo de duración estimado de las pruebas rápidas y extendidas de autodiagnóstico SMART.
+:end
+
+:smart_identity_help:
+Esta lista muestra las especificaciones SMART de este disco.
+:end
+
+:open_devices_help:
+Estos son dispositivos que están instalados en su servidor, pero no están asignados al
+array o al disco/grupo de caché.
+:end
+
+:flash_backup_help:
+Haga clic en *Copia de Seguridad* para crear un archivo zip con la copia de seguridad del dispositivo flash USB que se guardará localmente.
+:end
+
+:syslinux_cfg_help:
+Use esta página para hacer cambios en su archivo ‘syslinux.cfg’.
+Deberá reiniciar su servidor para que los cambios tengan efecto.
+:end
+
+:syslinux_button_help:
+Haga clic en el botón **Por Defecto** para restablecer el archivo de
+configuración Syslinux por defecto.  Deberá hacer clic en **Aplicar** para
+guardar los cambios.
+
+Haga clic en **Aplicar** para guardar los cambios. Haga clic en **Resetear** para
+deshacer los cambios realizados (antes de guardarlos). Haga clic en **Listo** para salir de esta página.
+:end
+
+:info_free_space_help:
+Esto especifica el *espacio disponible mínimo* que debe tener un disco.
+Si el espacio disponible en disco es menor a este valor, no se podrán crear nuevos archivos y se mostrará el error "no hay espacio suficiente".
+
+Escriba un valor numérico con alguno de estos sufijos:
+
+**KB** = 1,000<br
+**MB** = 1,000,000<br
+**GB** = 1,000,000,000<br
+**TB** = 1,000,000,000,000<br
+**K** = 1,024 (ej, 2^10)<br
+**M** = 1,048,576 (ej, 2^20)<br
+**G** = 1,073,741,824 (ej, 2^30)<br
+**T** = 1,099,511,627,776 (ej, 2^40)<br
+
+Si no hay un sufijo, se asume un conteo de bloques de 1024-bytes.
+:end
+
 :share_list_help:
 **Indicador de Estado** -- el indicador de estado al principio de cada línea en *Carpetas Compartidas* significa lo siguiente:
 
@@ -528,6 +973,16 @@ La ruta de la carpeta debe finalizar con un carácter de barra oblicua (/). De l
 Se recomienda crear esta carpeta de imagen fuera del array, por ejemplo en el almacenamiento caché. Los dispositivos de estado sólido SSD proporcionan el mejor rendimiento.
 
 Este ajuste solo tiene efecto cuando se instalan nuevas aplicaciones Docker. No afectará la edición de aplicaciones Docker existentes.
+:end
+
+:docker_appdata_location_help:
+You can specify a folder to automatically generate and store subfolders containing configuration files for each Docker app (via the /config mapped volume).
+
+The folder's path must end with a trailing slash (/) character. If not the input is not accepted and marked red.
+
+It is recommended to create this folder outside the array, e.g. on the Cache pool. For best performance SSD devices are preferred.
+
+Only used when adding new Docker apps. Editing existing Docker apps will not be affected by this setting.
 :end
 
 :docker_log_rotation_help:
@@ -1590,4 +2045,33 @@ NOTA IMPORTANTE: Si ajusta las asignaciones de puertos, no modifique la configur
 :docker_privileged_help:
 Para los contenedores que requieren acceso directo a dispositivos del host o que necesitan una exposición total a las capacidades del host, se deberá seleccionar esta opción.
 Para obtener más información, consulte este enlace: <a href="https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities" target="_blank">https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities</a>
+:end
+
+; sysdevs help - added May 18, 2020
+:sysdevs_iommu_groups_help:
+This displays a list of IOMMU groups available on your system along with the output of the `lspci` command for each IOMMU group.  The numeric identifiers are used to configure PCI pass-through.
+
+Devices you select will be bound to the vfio-pci driver at boot, which makes them available for assignment to a virtual machine, and also prevents the Linux kernel from automatically binding them to any present host driver.
+
+**Note that selecting a device will bind not only the specified device(s), but *all* other devices in the same IOMMU group as well.**
+
+&nbsp;<i class="fa fa-circle orb green-orb middle"></i>&nbsp;This symbol indicates the device is currently bound to the vfio-pci driver.
+
+&nbsp;<i class="fa fa-retweet grey-orb middle"></i>&nbsp;&nbsp;&nbsp;This symbol indicates the device supports FLR (Function Level Reset).
+
+<input type="checkbox" value="" disabled>&nbsp;&nbsp;If a checkbox is greyed out it means the device is in use by Unraid and can not be passed through.
+:end
+
+:sysdevs_thread_pairings_help:
+This displays a list of CPU thread pairings.
+:end
+
+:sysdevs_usb_devices_help:
+This displays the output of the `lsusb` command.  The numeric identifiers are used to configure PCI pass-through.
+:end
+
+:sysdevs_scsi_devices_help:
+This displays the output of the `lsscsi` command.  The numeric identifiers are used to configure PCI pass-through.
+
+Note that linux groups ATA, SATA and SAS devices with true SCSI devices.
 :end
