@@ -22,7 +22,7 @@ sin forzar su activación, por lo que en estos casos se mostrará el símbolo `*
 `*` también se suele mostrar con dispositivos SSD y flash, aunque a veces estos dispositivos reportan correctamente la
 temperatura, y otras veces reportan el valor `0`.
 
-**Capacidad, Usado, Disponible** muestra la capacidad total del dispositivo, el espacio ocupado y el espacio libre para almacenamiento.  Estas
+**Capacidad, Usado, Disponible** muestra la capacidad total del dispositivo, el espacio ocupado y el espacio disponible para almacenamiento.  Estas
 unidades también se pueden configurar en la página [Ajustes de Pantalla](Settings/DisplaySettings).  Debido
 al sistema de archivos del disco, aunque el disco esté completamente vacío, el espacio ocupado nunca será cero.
 
@@ -269,7 +269,7 @@ Para más información, por favor consulte la documentación del balance-btrfs [
 **Depurar** ejecutará el programa de *depuración del btrfs* el cual inspeccionará los dispositivos de almacenamiento
 y detectará cualquier inconsistencia que encuentre en los datos.
 
-Si *Reparar bloques corruptos* esta seleccionada, la *depuración de btrfs* reparará los bloques corruptos si hay una copia en buen estado disponible.
+Si *Reparar bloques corruptos* esta seleccionada, la *depuración de btrfs* reparará los bloques corruptos si hay una copia disponible en buen estado.
 :end
 
 :info_scrub_cancel_help:
@@ -421,12 +421,12 @@ Haga clic en el botón **Por Defecto** para restablecer el archivo de
 configuración Syslinux por defecto.  Deberá hacer clic en **Aplicar** para
 guardar los cambios.
 
-Haga clic en **Aplicar** para guardar los cambios. Haga clic en **Resetear** para
-deshacer los cambios realizados (antes de guardarlos). Haga clic en **Listo** para salir de esta página.
+Haga clic en **Aplicar** para guardar los cambios. Haga clic en **Restablecer** para
+deshacer los cambios realizados (antes de guardarlos). Haga clic en **Atrás** para salir de esta página.
 :end
 
 :info_free_space_help:
-Esto especifica el *espacio disponible mínimo* que debe tener un disco.
+Esto especifica el *espacio mínimo disponible* que debe tener un disco.
 Si el espacio disponible en disco es menor a este valor, no se podrán crear nuevos archivos y se mostrará el error "no hay espacio suficiente".
 
 Escriba un valor numérico con alguno de estos sufijos:
@@ -518,24 +518,24 @@ Use este campo para agregar cualquier comentario, hasta 256 caracteres.
 Esta opción determina la estrategia de Unraid a la hora de escoger en qué disco debe guardar un nuevo archivo o subdirectorio:
 
 **Equilibrar**
-Escoge el disco con el número más bajo que todavía tenga espacio libre superior al *nivel de equilibrio* actual. El
+Escoge el disco con el número más bajo que todavía tenga una cantidad de espacio disponible superior al *nivel de equilibrio* actual. El
 *nivel de equilibrio* es definido inicialmente como el tamaño del disco con mayor capacidad dividido entre dos. Si ningún disco tiene una
-cantidad de espacio libre superior a este *nivel de equilibrio*, se divide el *nivel de equilibrio* entre dos y se escoge un disco de nuevo.
+cantidad de espacio disponible superior a este *nivel de equilibrio*, se divide el *nivel de equilibrio* entre dos y se escoge un disco de nuevo.
 
 El objetivo de **Equilibrar** es almacenar la mayor cantidad de datos posible en cada dispositivo (para maximizar el tiempo
-de los discos en estado de reposo), mientras que, al mismo tiempo, intenta mantener la misma cantidad de espacio libre en
+de los discos en estado de reposo), mientras que, al mismo tiempo, intenta mantener la misma cantidad de espacio disponible en
 cada disco (para distribuir los datos uniformemente por el array).
 
 **Llenar**
-Escoge el disco con el número más bajo que todavía tenga una cantidad de espacio libre superior al parámetro **Espacio libre mínimo en
+Escoge el disco con el número más bajo que todavía tenga una cantidad de espacio disponible superior al parámetro **Espacio mínimo disponible en
 disco**.
 
 **Más-libre**
-Escoge el disco que tenga la mayor cantidad de espacio libre.
+Escoge el disco que tenga la mayor cantidad de espacio disponible.
 :end
 
 :share_edit_free_space_help:
-Este parámetro especifica el *espacio libre mínimo* que debe tener cualquier disco para permitir su uso almacenando nuevos datos de la carpeta compartida.<br>
+Este parámetro especifica el *espacio mínimo disponible* que debe tener cualquier disco para permitir su uso almacenando nuevos datos de la carpeta compartida.<br>
 
 Introduzca un valor igual o superior al tamaño de archivo más grande que tenga intención de copiar a la carpeta compartida.
 Incluya las unidades que sean apropiadas: KB, MB, GB y TB. Por ejemplo, 10MB.
@@ -584,17 +584,17 @@ Esta opción también afecta al comportamiento del servicio *Mover*.
 El servicio *Mover* no llevará a cabo ninguna acción, por lo tanto, cualquier archivo de la carpeta compartida existente en el caché se dejará allí.
 
 **Sí** indica que todos los nuevos archivos y subdirectorios deben ser creados en el almacenamiento caché si tiene
-suficiente espacio libre.
-Si no hay suficiente espacio libre en el caché, los nuevos archivos y directorios se almacenan en el array.
+suficiente espacio disponible.
+Si no hay suficiente espacio disponible en el caché, los nuevos archivos y directorios se almacenan en el array.
 Cuando se inicia el servicio *Mover*, los archivos y directorios presentes en el caché son movidos al array.
 
 **Únicamente** indica que todos los nuevos archivos y subdirectorios deben ser creados en el almacenamiento caché.
-Si no hay suficiente espacio libre en el caché, las operaciones de *crear* producirán el error *espacio insuficiente*.
+Si no hay suficiente espacio disponible en el caché, las operaciones de *crear* producirán el error *espacio insuficiente*.
 El servicio *Mover* no llevará a cabo ninguna acción, por lo tanto, cualquier archivo de la carpeta compartida existente en el array se dejará allí.
 
 **Preferir** indica que todos los nuevos archivos y subdirectorios deben ser creados en el almacenamiento caché si tiene
-suficiente espacio libre.
-Si no hay suficiente espacio libre en el caché, los nuevos archivos y directorios se almacenan en el array.
+suficiente espacio disponible.
+Si no hay suficiente espacio disponible en el caché, los nuevos archivos y directorios se almacenan en el array.
 Cuando se inicia el servicio *Mover*, los archivos y directorios presentes en el array son movidos al caché.
 
 **NOTA** el servicio Mover no moverá nunca los archivos que estén en uso.
@@ -636,8 +636,8 @@ hace que la carpeta compartida no se muestre en el explorador de archivos, pero 
 :end
 
 :smb_time_machine_volume_help:
-Este ajuste limita el tamaño reportado de volumen, evitando que Time Machine use el dispositivo entero
-en copias de seguridad. Por ejemplo, introduciendo el valor "1024" limitaría el tamaño del dispositivo a 1GB.
+Este ajuste limita la capacidad reportada por el volumen, evitando que Time Machine use el disco entero
+en copias de seguridad. Por ejemplo, introduciendo el valor "1024" limitaría el tamaño del volumen a 1GB.
 :end
 
 :smb_case_sensitive_names_help:
@@ -772,7 +772,7 @@ Seleccione su zona horaria de la lista desplegable.
 Seleccione 'Sí' para usar el Network Time Protocol (NTP) para mantener sincronizada la hora de su servidor.
 El uso de servidores externos para sincronizar la hora es **altamente** recomendado, especialmente si planea hacer uso de Active Directory.
 
-Nota: si está utilizando los servidores de tiempo `pool.ntp.org`, por favor vea también [su documentación](http://www.pool.ntp.org/en/use.html).
+Nota: si está utilizando los servidores de tiempo `pool.ntp.org`, por favor consulte también [su documentación](http://www.pool.ntp.org/en/use.html).
 :end
 
 :ntp_server1_help:
@@ -839,7 +839,7 @@ antes de forzar el apagado del sistema.
 :end
 
 :disk_tunable_poll_attributes_help:
-Este valor define la frecuencia (en segundos) con la que los discos duros son escaneados en busca de errores SMART.  Un valor de 0 deshabilita la comprobación de SMART (no recomendado).
+Este valor define la frecuencia (en segundos) con la que los discos duros son escaneados en busca de errores SMART.  Un valor de 0 deshabilita la programación de pruebas SMART (no recomendado).
 :end
 
 :disk_tunable_enable_ncq_help:
@@ -892,29 +892,29 @@ Seleccione el método de escritura para los discos de un array protegido por par
 :end
 
 :disk_default_warning_utilization_help:
- Este porcentaje ajusta el límite de utilización por defecto de todos los discos duros para advertencia. El resultado de sobrepasar este límite será una notificación de *advertencia de utilización de disco*.
+ Este porcentaje ajusta el umbral de uso por defecto de todos los discos duros para advertencia . Si se excede este valor, se enviará una notificación de advertencia *de uso de disco*.
 
-Cuando el límite de advertencia coincida o sea mayor que el límite crítico, solo se mostrarán notificaciones críticas (no habrá notificaciones de advertencia).
+Cuando el umbral de advertencia coincida o sea mayor que el umbral crítico, solo se mostrarán notificaciones críticas (no habrá notificaciones de advertencia).
 
-Un valor de cero deshabilitará el límite de advertencia (incluyendo las notificaciones).
+Un valor de cero deshabilita el umbral de advertencia (incluyendo las notificaciones).
 :end
 
 :disk_default_critical_utilization_help:
-Este porcentaje ajusta el límite de utilización crítico por defecto de todos los discos duros. El resultado de sobrepasar este límite será una notificación de alerta de *utilización de disco crítica*.
+Este porcentaje ajusta el umbral de uso crítico por defecto de todos los discos duros. Si se excede este valor, se enviará una notificación de alerta de *uso de disco crítico*.
 
-Un valor de cero deshabilitará el límite crítico (incluyendo las notificaciones).
+Un valor de cero deshabilita el umbral crítico (incluyendo las notificaciones).
 :end
 
 :disk_default_warning_temperature_help:
-Este parámetro ajusta el límite de temperatura por defecto de todos los discos duros para advertencia. El resultado de sobrepasar este límite será una notificación de *advertencia de temperatura de disco*.
+Este parámetro ajusta el umbral de temperatura por defecto de todos los discos duros para advertencia. Si se excede este valor, se enviará una notificación de advertencia *de temperatura de disco*.
 
-Un valor de cero deshabilitará el límite de advertencia (incluyendo las notificaciones).
+Un valor de cero deshabilita el umbral de advertencia (incluyendo las notificaciones).
 :end
 
 :disk_default_critical_temperature_help:
-Este parámetro ajusta el límite de temperatura crítica por defecto de todos los discos duros. El resultado de sobrepasar este límite será una notificación de alerta de *temperatura de disco crítica*.
+Este parámetro ajusta el umbral de temperatura crítica por defecto de todos los discos duros. Si se excede este valor, se enviará una notificación de alerta de temperatura *de disco crítica*.
 
-Un valor de cero deshabilitará el límite crítico (incluyendo las notificaciones).
+Un valor de cero deshabilita el umbral crítico (incluyendo las notificaciones).
 :end
 
 :disk_default_smart_notification_help:
@@ -1065,9 +1065,9 @@ Seleccione si las redes creadas por el usuario fuera de la interfaz gráfica son
 :end
 
 :docker_scrub_help:
-**Depurar** ejecuta el proceso de *depuración btrfs* para comprobar la integridad del sistema de archivos.
+**Depurar** ejecuta el proceso de *depuración btrfs* para verificar la integridad del sistema de archivos.
 
-Si se detecta algún problema, se debe activar la casilla *Corregir errores en el sistema de archivos* y ejecutar la depuración otra vez; esto permitirá que la *depuración btrfs* pueda reparar el sistema de archivos.
+Si se detecta algún problema, se debe marcar la casilla *Corregir errores en el sistema de archivos* y ejecutar la depuración de nuevo; esto permitirá que la *depuración btrfs* pueda reparar cualquier inconsistencia que encuentre en el sistema de archivos.
 :end
 
 :docker_cancel_help:
@@ -1252,7 +1252,7 @@ Si la opción 'No' está seleccionada, los archivos cuyo nombre comienza con un 
 :smb_enhanced_macos_help:
 Si la opción 'Sí' está seleccionada, está activada la compatibilidad mejorada con clientes SMB de Apple, obteniendo, por ejemplo, un mejor rendimiento
 al usar el Finder, y la habilidad de exportar recursos compartidos de Time Machine.  Esto puede causar problemas con algunos clientes Windows.
-Para más información, por favor vea el [MANUAL DE VFS_FRUIT](https://www.mankier.com/8/vfs_fruit).
+Para más información, por favor consulte el [MANUAL DE VFS_FRUIT](https://www.mankier.com/8/vfs_fruit).
 :end
 
 :smb_enable_netbios_help:
@@ -1271,26 +1271,26 @@ que el equipo de soporte le instruya poner algo aquí.
 :end
 
 :smb_extra_conf_help:
-Haga clic en el botón **Aplicar** para guardar los cambios actuales.  Haga clic en **Restablecer** para
-deshacer cualquier cambio que haya hecho (antes de guardar). Haga clic en **Hecho** para salir de esta página.
+Use esta página para modificar el archivo `smb-extra.conf`. Deberá reiniciar
+Samba para que los cambios tengan efecto.
 :end
 
 :smb_extra_button_help:
-Ingrese el nombre de Grupo de Trabajo de su red local. Normalmente es "WORKGROUP".
+Haga clic en el botón **Aplicar** para guardar los cambios actuales.  Haga clic en **Restablecer** para
+deshacer cualquier cambio que haya hecho (antes de guardar). Haga clic en **Atrás** para salir de esta página.
 :end
 
 :smb_workgroup_help:
-Si la opción 'Sí' está seleccionada, el servidor participará activamente en las elecciones de explorador, y en la ausencia
-de otros servidores, este usualmente se volverá el explorador maestro local.
+Ingrese el nombre de Grupo de Trabajo de su red local. Normalmente es "WORKGROUP".
 :end
 
 :smb_local_master_help:
-If set to 'Yes' then the server will fully participate in browser elections, and in the absense
-of other servers, will usually become the local Master Browser.
+Si la opción 'Sí' está seleccionada, el servidor participará activamente en las elecciones del explorador, y en la ausencia
+de otros servidores, este se convertirá en el Explorador Maestro local.
 :end
 
 :nfs_enable_help:
-Seleccione 'Si' para habilitar el protocolo NFS.
+Seleccione 'Sí' para habilitar el protocolo NFS.
 :end
 
 :nfs_tunable_fuse_remember_help:
@@ -1517,7 +1517,7 @@ Por favor visite los [foros de Lime Technology](https://forums.unraid.net/forum/
 :end
 
 :vms_libvirt_log_help:
-Vea el registro de libvirt: <a id="openlog" title="/var/log/libvirt/libvirtd.log" href="#" onclick="openWindow('/webGui/scripts/tail_log&arg1=libvirt/libvirtd.log','_(Libvirt Log)_',600,900);">/var/log/libvirt/libvirtd.log</a>
+Consulte el registro de libvirt: <a id="openlog" title="/var/log/libvirt/libvirtd.log" href="#" onclick="openWindow('/webGui/scripts/tail_log&arg1=libvirt/libvirtd.log','_(Libvirt Log)_',600,900);">/var/log/libvirt/libvirtd.log</a>
 :end
 
 :vms_scrub_help:
@@ -1730,7 +1730,7 @@ Especifique el cable especial por su número de modelo, solo aplica cuando la se
 :end
 
 :apc_ups_type_help:
-Especifique el *tipo de SAI* que tiene conectado a su sistema (vea la descripción para más detalles).
+Especifique el *tipo de SAI* que tiene conectado a su sistema (consulte la descripción para más detalles).
 
 + **USB** - la mayoría de los SAIs actuales son USB
 + **APCsmart** - dispositivos actuales con interfaz de serie, apropiados para modelos SmartUPS usando un cable de serie (no USB)
@@ -1924,7 +1924,7 @@ Especifique si se debe usar SSL/TLS para comunicarse con el servidor SMTP.
 :end
 
 :smtp_use_starttls_help:
-Especifique si se debe usar STARTTLS antes de iniciar la negociación SSL - Vea RFC 2487.
+Especifique si se debe usar STARTTLS antes de iniciar la negociación SSL - Consulte RFC 2487.
 :end
 
 :smtp_define_tls_cert_help:
@@ -2035,11 +2035,11 @@ Seleccionar uno o varios núcleos de CPU limitará a que el contenedor se ejecut
 :end
 
 :docker_fixed_ip_help:
-Si se selecciona el tipo Puente, el acceso a la red de la aplicación se limitará a comunicarse únicamente en los puertos especificados en la sección de asignaciones de puertos.
-Si se selecciona el tipo Host, la aplicación tendrá acceso para comunicarse utilizando cualquier puerto del host que no esté asignado a otra aplicación/servicio en uso.
+Si se selecciona el tipo Puente, la aplicación solo podrá comunicarse en red ser a través de los puertos especificados en la sección de asignación de puertos.
+Si se selecciona el tipo Host, la aplicación podrá comunicarse en red utilizando cualquier puerto del host que no esté asignado a otra aplicación/servicio en uso.
 En términos generales, se recomienda dejar este ajuste en su valor predeterminado según lo especificado por la plantilla de la aplicación.
 
-NOTA IMPORTANTE: Si ajusta las asignaciones de puertos, no modifique la configuración para el puerto del contenedor ya que solo se puede ajustar el puerto del host.
+NOTA IMPORTANTE: Si ajusta la asignación de puertos, no modifique la configuración para el puerto del contenedor ya que solo se puede ajustar el puerto del host.
 :end
 
 :docker_privileged_help:
