@@ -47,7 +47,7 @@ Yes=Sí
 ; footer messages
 Array Starting=Iniciando Array
 Array Stopping=Deteniendo Array
-Mounting disks=Montanmdo discos
+Mounting disks=Montando discos
 Spinning up all drives=Activando todos los discos
 Starting services=Iniciando servicios
 Stopping services=Deteniendo servicios
