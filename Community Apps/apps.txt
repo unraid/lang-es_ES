@@ -20,7 +20,7 @@ Sort By Downloads=Ordenar por Descargas
 Sort By Trend=Ordenar por Tendencia
 Sort By Date Added=Ordenar por Fecha
 ; Initial disclaimer translations
-Disclaimer=Exención de responsabilidad
+Disclaimer=Descargo de responsabilidad 
 All applications listed here are 3rd party additions to Unraid Neither the authors of Community Applications nor Limetech make any warranty as to the suitability of any application listed here=Todas las aplicaciones mostradas aquí son programas de terceros ajenos a Unraid. Ni los autores del plugin Aplicaciones de la Comunidad (CA) ni Limetech garantizan la idoneidad de las aplicaciones de este listado.
 Every attempt is made to ensure that only safe and compatible applications are present=Se hace todo lo posible para asegurar que solo las aplicaciones seguras y compatibles estén disponibles.
 Application Policy=Politica de la Aplicación
