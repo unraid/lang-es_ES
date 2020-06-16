@@ -167,7 +167,7 @@ recolectados se muestran a continuación:
 + *Informe SMART*
   <br>guarda un informe SMART individual de cada disco presente en su sistema.
 + *Docker*
-  <br>guarda archivos *docker.log*, *libvirtd.log* y *libvirt/qemu/\*.log*.
+  <br>guarda archivos *docker.log*, *libvirtd.log*, *libvirt/qemu/\*.log* y *vfio-pci*.
 :end
 
 :diagnostics_3_plug:
