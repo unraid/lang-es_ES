@@ -8,6 +8,7 @@ Enter URL of remote plugin file or local plugin file=Introduzca la URL del compl
 ERROR=ERROR
 Install Plugin=Instalar Complemento
 install=instalar
+Install=Instalar
 Installed Plugins=Complementos Instalados
 Installing Update=Instalando Actualización
 need check=necesita revisión
