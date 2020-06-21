@@ -1,6 +1,6 @@
-Add User=Agregar Usuario
-Add=Agregar
-Click to select PNG file=
+Add User=Crear Usuario
+Add=Crear
+Click to select PNG file=Haga clic para seleccionar una imagen PNG
 Custom image=Imagen personalizada
 Description=Descripción
 Do not use reserved names=No use nombres reservados

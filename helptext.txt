@@ -1,17 +1,17 @@
 :main_array_devices_help:
 **Indicador de Estado** el significado del indicador que aparece al principio de cada fila en **Dispositivos del Array** es el siguiente:
 
-<i class='fa fa-circle orb green-orb'</iOperación Normal, dispositivo activo.
+<i class='fa fa-circle orb green-orb'</i>Operación Normal, dispositivo activo.
 
-<i class='fa fa-circle orb grey-orb'</iDispositivo en estado de reposo.
+<i class='fa fa-circle orb grey-orb'</i>Dispositivo en estado de reposo.
 
-<i class='fa fa-warning orb yellow-orb'</iContenido del dispositivo emulado.
+<i class='fa fa-warning orb yellow-orb'</i>Contenido del dispositivo emulado.
 
-<i class='fa fa-times orb red-orb'</iDispositivo deshabilitado, contenido emulado.
+<i class='fa fa-times orb red-orb'</i>Dispositivo deshabilitado, contenido emulado.
 
-<i class='fa fa-square orb blue-orb'</iNuevo dispositivo.
+<i class='fa fa-square orb blue-orb'</i>Nuevo dispositivo.
 
-<i class='fa fa-square orb grey-orb'</iNo hay dispositivo, posición vacía.
+<i class='fa fa-square orb grey-orb'</i>No hay dispositivo, posición vacía.
 
 **Identificación** es el *código* que identifica de forma única a cada dispositivo de almacenamiento. Este código
 incluye el modelo del dispositivo, su número de serie, su identificador en Linux, y su capacidad.
@@ -68,13 +68,13 @@ El número mínimo de espacios es 2, y debe asignar al menos 1 dispositivo al Ar
 :cache_devices_help:
 **Indicador de Estado** el significado del indicador que aparece al principio de cada fila en **Dispositivos del Grupo de Almacenamiento** es el siguiente:
 
-<i class='fa fa-circle orb green-orb'</iOperación Normal, dispositivo activo.
+<i class='fa fa-circle orb green-orb'></i>Operación Normal, dispositivo activo.
 
-<i class='fa fa-circle orb grey-orb'</iDispositivo en estado de reposo.
+<i class='fa fa-circle orb grey-orb'</i>Dispositivo en estado de reposo.
 
-<i class='fa fa-square orb blue-orb'</iNuevo dispositivo.
+<i class='fa fa-square orb blue-orb'</i>Nuevo dispositivo.
 
-<i class='fa fa-square orb grey-orb'</iNo hay dispositivo, posición vacía.
+<i class='fa fa-square orb grey-orb'</i>No hay dispositivo, posición vacía.
 
 Un **Grupo de Almacenamiento** puede estar formado por uno o múltiples dispositivos *externos* al array de Unraid.  Cada dispositivo puede ser compartido en red
 como cualquier otro dispositivo del array. Al estar fuera del array de Unraid, la velocidad de escritura en disco es significativamente más rápida.
@@ -112,13 +112,13 @@ solo puede ser compartido usando el protocolo SMB.
 :array_status_help:
 **Indicador de Estado** el significado del indicador de estado del *Array* es el siguiente:
 
-<i class='fa fa-circle orb green-orb'</iEl Array está Iniciado, la Paridad es válida.
+<i class='fa fa-circle orb green-orb'</i>El Array está Iniciado, la Paridad es válida.
 
-<i class='fa fa-circle orb grey-orb'</iEl Array está Detenido, la Paridad es válida.
+<i class='fa fa-circle orb grey-orb'</i>El Array está Detenido, la Paridad es válida.
 
-<i class='fa fa-warning orb yellow-orb'</iEl Array está Iniciado, la Paridad no es válida.
+<i class='fa fa-warning orb yellow-orb'</i>El Array está Iniciado, la Paridad no es válida.
 
-<i class='fa fa-warning orb grey-orb'</iEl Array está Detenido, la Paridad no es válida.
+<i class='fa fa-warning orb grey-orb'</i>El Array está Detenido, la Paridad no es válida.
 
 :end
 
@@ -530,7 +530,7 @@ cada disco (para distribuir los datos uniformemente por el array).
 Escoge el disco con el número más bajo que todavía tenga una cantidad de espacio disponible superior al parámetro **Espacio mínimo disponible en
 disco**.
 
-**Más-libre**
+**Más libre**
 Escoge el disco que tenga la mayor cantidad de espacio disponible.
 :end
 
@@ -588,8 +588,8 @@ suficiente espacio disponible.
 Si no hay suficiente espacio disponible en el caché, los nuevos archivos y directorios se almacenan en el array.
 Cuando se inicia el servicio *Mover*, los archivos y directorios presentes en el caché son movidos al array.
 
-**Únicamente** indica que todos los nuevos archivos y subdirectorios deben ser creados en el almacenamiento caché.
-Si no hay suficiente espacio disponible en el caché, las operaciones de *crear* producirán el error *espacio insuficiente*.
+**Solo** indica que todos los nuevos archivos y subdirectorios deben ser creados en el almacenamiento caché.
+Si no hay suficiente espacio disponible en el caché, las operaciones de *crear* nuevos archivos arrojarán un error por *espacio insuficiente*.
 El servicio *Mover* no llevará a cabo ninguna acción, por lo tanto, cualquier archivo de la carpeta compartida existente en el array se dejará allí.
 
 **Preferir** indica que todos los nuevos archivos y subdirectorios deben ser creados en el almacenamiento caché si tiene
@@ -1231,7 +1231,7 @@ Si no quiere permitir el acceso a ningún usuario deje este campo vacío.
 
 Unraid incluye el popular servidor FTP `vsftpd`.  La configuración de `vsftp` es actualmente muy
 simple: **Todos** los usuarios introducidos arriba tienen permiso para acceder al servidor vía FTP y tendrán
-*acceso completo para leer/escribir/eliminar* en todo el servidor, así que tenga cuidado con este servicio.
+*acceso completo para leer/modificar/eliminar* en todo el servidor, así que tenga cuidado con este servicio.
 :end
 
 :smb_enable_help:
@@ -1495,11 +1495,11 @@ las VMs entrarán en estado de hibernación (si está soportado), de lo contrari
 
 :vms_shutdown_timeout_help:
 Cuando el servidor se encuentra en proceso de apagado, este valor define cuanto tiempo esperar (en segundos) para completar el apagado de las máquinas virtuales (VMs) de forma *normal* antes de forzar su apagado.
-NOTA: Se recomienda apagar las VMs desde adentro de la propia VM.
+NOTA: Se recomienda apagar las VMs desde dentro de las mismas.
 :end
 
 :vms_acs_override_help:
-*Anular PCIe ACS* permite que diversos componentes de hardware puedan exponerse como dispositivos aislados.
+La *Anulación de ACS PCIe* permite que diversos componentes de hardware puedan exponerse como dispositivos aislados.
 Típicamente es suficiente con aislar los puertos en *Sentido descendente*.
 Sin embargo, algún componente de hardware podría requerir el ajuste *Multifunción* o *Ambos* para aislar completamente las diferentes funciones de hardware.<br>
 Es necesario reiniciar el sistema para que el cambio de este ajuste tenga efecto.
@@ -1742,7 +1742,7 @@ Especifique el *tipo de SAI* que tiene conectado a su sistema (consulte la descr
 :end
 
 :apc_ups_device_help:
-Introduzca el *dispositivo* que corresponda a su situación. Solo aplica cuando el *tipo de SAI* no está ajustado a USB.
+Introduzca el *dispositivo* que corresponda a su situación. Solo aplica cuando el *tipo de SAI* no es USB.
 
 + **apcsmart** - /dev/tty**
 + **red** - nombredehost:puerto. Nombre de host es la dirección IP del servidor NIS. El puerto por defecto es 3551.
@@ -1878,7 +1878,7 @@ Iniciar una comprobación periódica del estado/salud del array (mantenimiento p
 
 :notifications_agent_selection_help:
 Use las casillas mostradas abajo para seleccionar el método de envío de las notificaciones: a través del navegador web, vía email y/o usando un servicio personalizado.<br>
-<b>Consejo:</bpuede usar servicios de notificación personalizados; solo agréguelos al directorio "/boot/config/plugins/dynamix/notification/agents" y marque la casilla 'Servicios'.
+<b>Consejo:</b> puede usar servicios de notificación personalizados, solo tiene que agregarlos al directorio "/boot/config/plugins/dynamix/notification/agents" y marcar la casilla 'Servicios'.
 :end
 
 :notifications_classification_help:
@@ -1892,7 +1892,7 @@ Escoja como quiere ser notificado en función de cada clasificación.
 :end
 
 :smtp_preset_service_help:
-Seleccione un servicio predefinido para configurar los ajustes básicos del servicio.
+Seleccione un servicio preconfigurado para configurar los ajustes básicos del servicio.
 :end
 
 :smtp_email_address_help:
@@ -1944,18 +1944,18 @@ Introduzca el nombre de usuario y la contraseña para iniciar sesión en su cuen
 :end
 
 :plugin_install_help:
-Para descarger e instalar un complemento, introduzca la URL del archivo .plg y pulse **Instalar**. Se abrirá una ventana
+Para descarger e instalar un plugin, introduzca la URL del archivo .plg y pulse **Instalar**. Se abrirá una ventana
 con el progreso de la instalación. No cierre la ventana hasta que la instalación haya concluido. También puede especificar
-la ruta local del complemento.
+la ruta local del plugin.
 :end
 
 :plugin_error_help:
-Estos complementos no se pudieron instalar porque ocurrió algún error de instalación. Elimine primero estos
-complementos y después **reinicie** el servidor.*
+Estos plugins no se pudieron instalar porque ocurrió algún error de instalación. Debería eliminarlos y 
+después **reiniciar** el servidor.*
 :end
 
 :plugin_stale_help:
-Estos complementos no fueron instalados porque su función ya está implementada en Unraid. Puede eliminarlos sin problema.
+Estos plugins no fueron instalados porque su función ya está implementada en Unraid. Puede eliminarlos sin problema.
 :end
 
 :docker_client_general_help:

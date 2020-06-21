@@ -1,5 +1,5 @@
 ; Translation Credit.  Will appear in CA's credits
-translationCredit=<Author> (<Language>)
+translationCredit=<Sergio Fraile> (<Español>)
 Cancel=Cancelar
 
 ; My PSAs / banners
@@ -13,17 +13,17 @@ Backup Server Active Some icons may not appear, and plugin installations may be 
 
 ; Sorting Options
 Sorting options=Ordenar lista
-Sorting options unavailable=Ordenado de lista disponible
+Sorting options unavailable=Ordenado de lista no disponible
 Sort By Name Ascending=Ordenar por Nombre Ascendente
 Sort By Name Descending=Ordenar por Nombre Descendente
 Sort By Downloads=Ordenar por Descargas
-Sort By Trend=Ordenar por Tendencia
+Sort By Trend=Ordenar por Popularidad
 Sort By Date Added=Ordenar por Fecha
 ; Initial disclaimer translations
-Disclaimer=Descargo de responsabilidad 
+Disclaimer=Exención de responsabilidad 
 All applications listed here are 3rd party additions to Unraid Neither the authors of Community Applications nor Limetech make any warranty as to the suitability of any application listed here=Todas las aplicaciones mostradas aquí son programas de terceros ajenos a Unraid. Ni los autores del plugin Aplicaciones de la Comunidad (CA) ni Limetech garantizan la idoneidad de las aplicaciones de este listado.
 Every attempt is made to ensure that only safe and compatible applications are present=Se hace todo lo posible para asegurar que solo las aplicaciones seguras y compatibles estén disponibles.
-Application Policy=Politica de la Aplicación
+Application Policy=Política de Aplicaciones de la Comunidad
 I Understand=Entendido
 Installations of apps disabled You must accept the warning to be able to install applications=La instalacion de aplicaciones está deshabilitada. Debe aceptar el aviso para poder instalar aplicaciones.
 Click here=haga clic aquí
@@ -119,7 +119,7 @@ Copyright=Derechos de Autor
 Translation=Traducción
 
 ; Statistics page
-Deprecated Applications are able to still be installed if you have previously had them installed New installations of these applications are blocked unless you enable Display Deprecated Applications within CAs General Settings=Todavía se pueden instalar las aplicaciones obsoletas que ya hubiera instalado anteriormente. Las nuevas instalaciones de estas aplicaciones están bloqueadas a menos que tenga deshabilitada la opción "Ocultar aplicaciones obsoletas" en la sección de Ajustes.
+Deprecated Applications are able to still be installed if you have previously had them installed New installations of these applications are blocked unless you enable Display Deprecated Applications within CAs General Settings=Aún es posible instalar las aplicaciones obsoletas que ya estuvieran instaladas con anterioridad. Las nuevas instalaciones de estas aplicaciones están bloqueadas a menos que tenga deshabilitada la opción "Ocultar aplicaciones obsoletas" en la sección de Ajustes.
 The following applications are blacklisted CA will never allow you to install or reinstall these applications=Las siguientes aplicaciones están en la lista negra. Aplicaciones de la Comunidad (CA) bloqueará la instalación o reinstalación de estas aplicaciones.
 While highly not recommended to do, incompatible applications can be installed by enabling Display Incompatible Applications within CAs General Settings=Aunque no sea recomendable en absoluto, se pueden instalar aplicaciones incompatibles si se deshabilita la opción "Ocultar aplicaciones incompatibles" en la sección de Ajustes.
 This display is informational ONLY=Esta pantalla es SOLO informativa
@@ -149,7 +149,7 @@ All Moderation Entries=Anotaciones de Moderación
 No invalid templates found=No se encontraron plantillas inválidas
 These templates are invalid and the application they are referring to is unknown=Estas plantillas son inválidas y la aplicación a la que hacen referencia es desconocida
 No templates were automatically fixed=No se corrigió automáticamente ninguna plantilla
-All of these errors found have been fixed automatically=Todos estos errores encontrados han sido corregidos automáticamente
+All of these errors found have been fixed automatically=Los siguientes errores encontrados han sido corregidos automaticamente
 Note that many of these errors can be avoided by following the directions=Tenga en cuenta que muchos de estos errores se pueden evitar si se siguen las instrucciones mostradas
 HERE=AQUÍ
 The following plugins have duplicated filenames and are not able to be installed simultaneously=Los siguientes plugins tienen nombres repetidos y no se pueden instalar simultáneamente.
