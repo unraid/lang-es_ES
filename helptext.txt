@@ -1,19 +1,19 @@
 :main_array_devices_help:
 **Indicador de Estado** el significado del indicador que aparece al principio de cada fila en **Dispositivos del Array** es el siguiente:
 
-<i class='fa fa-circle orb green-orb'</iOperación Normal, dispositivo activo.
+<i class='fa fa-circle orb green-orb'></i>Operación Normal, dispositivo activo.
 
-<i class='fa fa-circle orb grey-orb'</iDispositivo en estado de reposo.
+<i class='fa fa-circle orb grey-orb'></i>Dispositivo en estado de reposo.
 
-<i class='fa fa-warning orb yellow-orb'</iContenido del dispositivo emulado.
+<i class='fa fa-warning orb yellow-orb'></i>Contenido del dispositivo emulado.
 
-<i class='fa fa-times orb red-orb'</iDispositivo deshabilitado, contenido emulado.
+<i class='fa fa-times orb red-orb'></i>Dispositivo deshabilitado, contenido emulado.
 
-<i class='fa fa-square orb blue-orb'</iNuevo dispositivo.
+<i class='fa fa-square orb blue-orb'></i>Nuevo dispositivo.
 
-<i class='fa fa-square orb grey-orb'</iNo hay dispositivo, posición vacía.
+<i class='fa fa-square orb grey-orb'></i>No hay dispositivo, posición vacía.
 
-**Identificación** es el *código* que identifica de forma única a cada dispositivo de almacenamiento. Este código
+**Identificación** es el *nombre* que identifica de forma única cada dispositivo de almacenamiento. Este nombre
 incluye el modelo del dispositivo, su número de serie, su identificador en Linux, y su capacidad.
 
 **Temp.** (temperatura) es obtenida directamente del dispositivo. Puede configurar sus unidades
@@ -45,7 +45,7 @@ Si la opción "Mostrar estadísticas totales del array" está habilitada en la p
 se muestra una fila adicional con los valores totales de las estadísticas de todos los discos del array, incluyendo la
 temperatura media de los dispositivos.
 
-El array debe ser Detenido para poder cambiar la asignación de dispositivos del Array.
+El Array debe estar Detenido para poder cambiar la asignación de dispositivos del Array.
 
 Un array de Unraid está compuesto por uno o varios discos de almacenamiento de Datos y uno o dos discos de Paridad. Los discos de
 Datos se usan exclusivamente para guardar archivos del usuario, mientras que el/los disco(s) de Paridad proporciona(n)
@@ -68,13 +68,13 @@ El número mínimo de espacios es 2, y debe asignar al menos 1 dispositivo al Ar
 :cache_devices_help:
 **Indicador de Estado** el significado del indicador que aparece al principio de cada fila en **Dispositivos del Grupo de Almacenamiento** es el siguiente:
 
-<i class='fa fa-circle orb green-orb'</iOperación Normal, dispositivo activo.
+<i class='fa fa-circle orb green-orb'></i>Operación Normal, dispositivo activo.
 
-<i class='fa fa-circle orb grey-orb'</iDispositivo en estado de reposo.
+<i class='fa fa-circle orb grey-orb'></i>Dispositivo en estado de reposo.
 
-<i class='fa fa-square orb blue-orb'</iNuevo dispositivo.
+<i class='fa fa-square orb blue-orb'></i>Nuevo dispositivo.
 
-<i class='fa fa-square orb grey-orb'</iNo hay dispositivo, posición vacía.
+<i class='fa fa-square orb grey-orb'></i>No hay dispositivo, posición vacía.
 
 Un **Grupo de Almacenamiento** puede estar formado por uno o múltiples dispositivos *externos* al array de Unraid.  Cada dispositivo puede ser compartido en red
 como cualquier otro dispositivo del array. Al estar fuera del array de Unraid, la velocidad de escritura en disco es significativamente más rápida.
@@ -112,13 +112,13 @@ solo puede ser compartido usando el protocolo SMB.
 :array_status_help:
 **Indicador de Estado** el significado del indicador de estado del *Array* es el siguiente:
 
-<i class='fa fa-circle orb green-orb'</iEl Array está Iniciado, la Paridad es válida.
+<i class='fa fa-circle orb green-orb'></i>El Array está Iniciado, la Paridad es válida.
 
-<i class='fa fa-circle orb grey-orb'</iEl Array está Detenido, la Paridad es válida.
+<i class='fa fa-circle orb grey-orb'></i>El Array está Detenido, la Paridad es válida.
 
-<i class='fa fa-warning orb yellow-orb'</iEl Array está Iniciado, la Paridad no es válida.
+<i class='fa fa-warning orb yellow-orb'></i>El Array está Iniciado, la Paridad no es válida.
 
-<i class='fa fa-warning orb grey-orb'</iEl Array está Detenido, la Paridad no es válida.
+<i class='fa fa-warning orb grey-orb'></i>El Array está Detenido, la Paridad no es válida.
 
 :end
 
@@ -194,7 +194,7 @@ Introduzca una frase de contraseña de hasta 512 caracteres. Es altamente recome
 binaria. Otros caracteres pueden tener una codificación diferente dependiendo de la configuración del sistema y su frase de contraseña no
 funcionará con una codificación distinta. Si quiere usar una frase de contraseña mas larga o incluir datos binarios, suba un archivo de claves en su lugar.
 
-Por favor consulte [cryptsetup FAQ](https://gitlab.com/cryptsetup/cryptsetup/wikis/FrequentlyAskedQuestions#5-security-aspects)
+Por favor, consulte [cryptsetup FAQ](https://gitlab.com/cryptsetup/cryptsetup/wikis/FrequentlyAskedQuestions#5-security-aspects)
 para ayudarle a elegir una frase de contraseña *segura*.
 
 **Memoríce** la frase de contraseña, **SI LA OLVIDA, EL CONTENIDO ENCRIPTADO NO PODRÁ SER RECUPERADO!**
@@ -256,7 +256,7 @@ Unraid utiliza estas opciones por defecto cuando está creando un grupo de almac
 
 `-dconvert=raid1 -mconvert=raid1`
 
-Para más información, por favor consulte la documentación del balance-btrfs [Aquí](https://btrfs.wiki.kernel.org/index.php/Manpage/btrfs-balance)
+Para más información, por favor, consulte la documentación del balance-btrfs [Aquí](https://btrfs.wiki.kernel.org/index.php/Manpage/btrfs-balance)
 
 *Nota: raid5 y raid6 son generalmente considerados **experimentales** por la comunidad de Linux*
 :end
@@ -444,7 +444,7 @@ Si no hay un sufijo, se asume un conteo de bloques de 1024-bytes.
 :end
 
 :share_list_help:
-**Indicador de Estado** -- el indicador de estado al principio de cada línea en *Carpetas Compartidas* significa lo siguiente:
+**Indicador de Estado** -- el indicador de estado al principio de cada fila en *Carpetas Compartidas* significa lo siguiente:
 
 <i class='fa fa-circle orb green-orb'></i>Todos los archivos están almacenados en unidades protegidas por paridad.
 
@@ -465,7 +465,7 @@ Si no hay un sufijo, se asume un conteo de bloques de 1024-bytes.
 :end
 
 :disk_list_help:
-**Indicador de Estado** -- el indicador de estado al principio de cada línea en *Discos Compartidos* significa lo siguiente:
+**Indicador de Estado** -- el indicador de estado al principio de cada fila en *Discos Compartidos* significa lo siguiente:
 
 <i class='fa fa-circle orb green-orb'></i>Montado, el dispositivo tiene redundancia/protección por paridad.
 
@@ -486,19 +486,19 @@ Si no hay un sufijo, se asume un conteo de bloques de 1024-bytes.
 :end
 
 :share_edit_global1_help:
-*Carpeta Compartida* es simplemente el nombre dado a un directorio existente en la raíz de uno o varios de sus dispositivos de
-almacenamiento (array y caché). Se pueden controlar los permisos de acceso en red a cada carpeta compartida. Cuando explora una carpeta compartida,
+Una *Carpeta Compartida* es un tipo de Recurso Compartido. Se trata de un directorio existente en la raíz de uno o varios de sus dispositivos de
+almacenamiento (array y/o caché), el cual tiene sus propios permisos de acceso en red que pueden ser modificados por el administrador. Cuando se accede a una carpeta compartida,
 Unraid muestra una vista combinada de todos sus archivos y subdirectorios, los cuales pueden estar distribuidos entre varios dispositivos de almacenamiento.
 
-*Importar los ajustes de* se usa para preconfigurar una carpeta compartida nueva con los ajustes de una carpeta compartida ya existente.
+*Importar los ajustes de* se usa para preconfigurar un nuevo recurso compartido con los ajustes de un recurso compartido ya existente.
 
-Seleccione la carpeta compartida existente y haga clic en **Importar** para copiar sus ajustes.
+Seleccione el recurso compartido existente y haga clic en **Importar** para copiar sus ajustes.
 :end
 
 :share_edit_global2_help:
-*Exportar los ajustes a* se usa para copiar los ajustes de la carpeta compartida actual a otra u otras carpetas compartidas ya existentes.
+*Exportar los ajustes a* se usa para copiar los ajustes del recurso compartido actual a otro u otros recursos compartidos ya existentes.
 
-Seleccione la/las carpeta(s) compartida(s) a las que quiera copiar los ajustes presentes en pantalla y haga clic en **Exportar**.
+Seleccione el/los recurso(s) compartido(s) a las que quiera copiar los ajustes presentes en pantalla y haga clic en **Exportar**.
 :end
 
 :share_edit_name_help:
@@ -530,7 +530,7 @@ cada disco (para distribuir los datos uniformemente por el array).
 Escoge el disco con el número más bajo que todavía tenga una cantidad de espacio disponible superior al parámetro **Espacio mínimo disponible en
 disco**.
 
-**Más-libre**
+**Más libre**
 Escoge el disco que tenga la mayor cantidad de espacio disponible.
 :end
 
@@ -588,8 +588,8 @@ suficiente espacio disponible.
 Si no hay suficiente espacio disponible en el caché, los nuevos archivos y directorios se almacenan en el array.
 Cuando se inicia el servicio *Mover*, los archivos y directorios presentes en el caché son movidos al array.
 
-**Únicamente** indica que todos los nuevos archivos y subdirectorios deben ser creados en el almacenamiento caché.
-Si no hay suficiente espacio disponible en el caché, las operaciones de *crear* producirán el error *espacio insuficiente*.
+**Solo** indica que todos los nuevos archivos y subdirectorios deben ser creados en el almacenamiento caché.
+Si no hay suficiente espacio disponible en el caché, las operaciones de *crear* nuevos archivos arrojarán un error por *espacio insuficiente*.
 El servicio *Mover* no llevará a cabo ninguna acción, por lo tanto, cualquier archivo de la carpeta compartida existente en el array se dejará allí.
 
 **Preferir** indica que todos los nuevos archivos y subdirectorios deben ser creados en el almacenamiento caché si tiene
@@ -621,18 +621,18 @@ La carpeta compartida *no se puede eliminar* mientras contenga datos. Tenga en c
 :end
 
 :smb_security_help:
-*Importar los ajustes de* se usa para preconfigurar los ajustes de seguridad SMB de la carpeta compartida actual a partir de los ajustes de una carpeta compartida ya existente.
+*Importar los ajustes de* se usa para preconfigurar los ajustes de seguridad SMB del recurso compartido actual a partir de los ajustes de un recurso compartido ya existente.
 
-Seleccione la carpeta compartida existente y haga clic en **Importar** para copiar sus ajustes de seguridad SMB.
+Seleccione el recurso compartido existente y haga clic en **Importar** para copiar sus ajustes de seguridad SMB.
 
-*Exportar los ajustes a* se usa para copiar los ajustes de seguridad SMB de la carpeta compartida actual a otra u otras carpetas compartidas ya existentes.
+*Exportar los ajustes a* se usa para copiar los ajustes de seguridad SMB del recurso compartido actual a otro u otros recursos compartidos ya existentes.
 
-Seleccione la/las carpeta(s) compartida(s) a las que quiera copiar los ajustes de seguridad SMB presentes en pantalla y haga clic en **Exportar**.
+Seleccione el/los recurso(s) compartido(s) a los que quiera copiar los ajustes de seguridad SMB presentes en pantalla y haga clic en **Exportar**.
 :end
 
 :smb_export_help:
-Esta opción determina si la carpeta compartida es visible y/o accesible en red. La opción 'Sí (oculta)'
-hace que la carpeta compartida no se muestre en el explorador de archivos, pero sigue siendo accesible si conoce su nombre.
+Esta opción determina si el recurso compartido es visible y/o accesible en red. La opción 'Sí (ocultar)'
+hace que el recurso compartido no se muestre en el explorador de archivos, pero sigue siendo accesible si conoce su nombre.
 :end
 
 :smb_time_machine_volume_help:
@@ -672,33 +672,33 @@ quiera conceder permisos de lectura/escritura o solo lectura.
 :end
 
 :smb_secure_access_help:
-*Importar los ajustes de* se usa para preconfigurar los ajustes de acceso de usuario en SMB de la carpeta compartida actual a partir de los ajustes de una carpeta compartida ya existente.
+*Importar los ajustes de* se usa para preconfigurar los ajustes de acceso de usuario en SMB del recurso compartido actual a partir de los ajustes de un recurso compartido ya existente.
 
-Seleccione la carpeta compartida existente y haga clic en **Importar** para copiar sus ajustes de acceso de usuario en SMB.
+Seleccione el recurso compartido existente y haga clic en **Importar** para copiar sus ajustes de acceso de usuario en SMB.
 
-*Exportar los ajustes a* se usa para copiar los ajustes de acceso de usuario en SMB de la carpeta compartida actual a otra u otras carpetas compartidas ya existentes.
+*Exportar los ajustes a* se usa para copiar los ajustes de acceso de usuario en SMB del recurso compartido actual a otro u otros recursos compartidos ya existentes.
 
-Seleccione la/las carpeta(s) compartida(s) a las que quiera copiar los ajustes de acceso de usuario en SMB presentes en pantalla y haga clic en **Exportar**.
+Seleccione el/los recurso(s) compartido(s) a los que quiera copiar los ajustes de acceso de usuario en SMB presentes en pantalla y haga clic en **Exportar**.
 :end
 
 :smb_private_access_help:
-*Importar los ajustes de* se usa para preconfigurar los ajustes de acceso de usuario en SMB de la carpeta compartida actual a partir de los ajustes de una carpeta compartida ya existente.
+*Importar los ajustes de* se usa para preconfigurar los ajustes de acceso de usuario en SMB del recurso compartido actual a partir de los ajustes de un recurso compartido ya existente.
 
-Seleccione la carpeta compartida existente y haga clic en **Importar** para copiar sus ajustes de acceso de usuario en SMB.
+Seleccione el recurso compartido existente y haga clic en **Importar** para copiar sus ajustes de acceso de usuario en SMB.
 
-*Exportar los ajustes a* se usa para copiar los ajustes de acceso de usuario en SMB de la carpeta compartida actual a otra u otras carpetas compartidas ya existentes.
+*Exportar los ajustes a* se usa para copiar los ajustes de acceso de usuario en SMB del recurso compartido actual a otro u otros recursos compartidos ya existentes.
 
-Seleccione la/las carpeta(s) compartida(s) a las que quiera copiar los ajustes de acceso de usuario en SMB presentes en pantalla y haga clic en **Exportar**.
+Seleccione el/los recurso(s) compartido(s) a los que quiera copiar los ajustes de acceso de usuario en SMB presentes en pantalla y haga clic en **Exportar**.
 :end
 
 :nfs_security_help:
-*Importar los ajustes de* se usa para preconfigurar los ajustes de seguridad NFS de la carpeta compartida actual a partir de los ajustes de una carpeta compartida ya existente.
+*Importar los ajustes de* se usa para preconfigurar los ajustes de seguridad NFS del recurso compartido actual a partir de los ajustes de un recurso compartido ya existente.
 
-Seleccione la carpeta compartida existente y haga clic en **Importar** para copiar sus ajustes de seguridad NFS.
+Seleccione el recurso compartido existente y haga clic en **Importar** para copiar sus ajustes de seguridad NFS.
 
-*Exportar los ajustes a* se usa para copiar los ajustes de seguridad NFS de la carpeta compartida actual a otra u otras carpetas compartidas ya existentes.
+*Exportar los ajustes a* se usa para copiar los ajustes de seguridad NFS del recurso compartido actual a otro u otros recursos compartidos ya existentes.
 
-Seleccione la/las carpeta(s) compartida(s) a las que quiera copiar los ajustes de seguridad NFS presentes en pantalla y haga clic en **Exportar**.
+Seleccione el/los recurso(s) compartido(s) a los que quiera copiar los ajustes de seguridad NFS presentes en pantalla y haga clic en **Exportar**.
 :end
 
 :user_add_username_help:
@@ -735,7 +735,7 @@ Las VMs detenidas son modificadas instantáneamente y sus nuevas asignaciones de
 
 Al presionar el botón **Aplicar** se ejecutará un escaneo para buscar los cambios, subsecuentemente solo las VMs que hayan sido alteradas serán modificadas a la vez.
 
-*Importante: Por favor espere hasta que todas las actualizaciones hayan finalizado antes de abandonar esta página*.
+*Importante: Por favor, espere hasta que todas las actualizaciones hayan finalizado antes de abandonar esta página*.
 :end
 
 :cpu_pinning_help:
@@ -747,7 +747,7 @@ Los contenedores detenidos son modificados instantáneamente y sus nuevas asigna
 
 Al presionar el botón **Aplicar** se ejecutará un escaneo para buscar los cambios, subsecuentemente solo los contenedores que hayan sido alterados serán modificados a la vez.
 
-*Importante: Por favor espere hasta que todas las actualizaciones hayan finalizado antes de abandonar esta página*.
+*Importante: Por favor, espere hasta que todas las actualizaciones hayan finalizado antes de abandonar esta página*.
 
 Por defecto los contenedores Docker no tienen seleccionado NINGÚN núcleo, lo que significa que usan todos los núcleos disponibles.<br>
 No seleccione **TODOS** los núcleos para los contenedores, simplemente **NO** seleccione ningún núcleo si quiere que puedan usarlos todos sin restricciones.
@@ -772,7 +772,7 @@ Seleccione su zona horaria de la lista desplegable.
 Seleccione 'Sí' para usar el Network Time Protocol (NTP) para mantener sincronizada la hora de su servidor.
 El uso de servidores externos para sincronizar la hora es **altamente** recomendado, especialmente si planea hacer uso de Active Directory.
 
-Nota: si está utilizando los servidores de tiempo `pool.ntp.org`, por favor consulte también [su documentación](http://www.pool.ntp.org/en/use.html).
+Nota: si está utilizando los servidores de tiempo `pool.ntp.org`, por favor, consulte también [su documentación](http://www.pool.ntp.org/en/use.html).
 :end
 
 :ntp_server1_help:
@@ -946,7 +946,7 @@ Esta sección es usada para modificar los ajustes globales de todos los discos. 
 :end
 
 :docker_repositories_help:
-Antes de que pueda iniciar el servicio Docker por primera vez, por favor especifique un archivo de imagen para la instalación de Docker.
+Antes de que pueda iniciar el servicio Docker por primera vez, por favor, especifique un archivo de imagen para la instalación de Docker.
 
 Una vez iniciado, el servicio Docker siempre se iniciará automáticamente cuando el array haya sido iniciado.
 :end
@@ -1231,7 +1231,7 @@ Si no quiere permitir el acceso a ningún usuario deje este campo vacío.
 
 Unraid incluye el popular servidor FTP `vsftpd`.  La configuración de `vsftp` es actualmente muy
 simple: **Todos** los usuarios introducidos arriba tienen permiso para acceder al servidor vía FTP y tendrán
-*acceso completo para leer/escribir/eliminar* en todo el servidor, así que tenga cuidado con este servicio.
+*acceso completo para leer/modificar/eliminar* en todo el servidor, así que tenga cuidado con este servicio.
 :end
 
 :smb_enable_help:
@@ -1252,7 +1252,7 @@ Si la opción 'No' está seleccionada, los archivos cuyo nombre comienza con un 
 :smb_enhanced_macos_help:
 Si la opción 'Sí' está seleccionada, está activada la compatibilidad mejorada con clientes SMB de Apple, obteniendo, por ejemplo, un mejor rendimiento
 al usar el Finder, y la habilidad de exportar recursos compartidos de Time Machine.  Esto puede causar problemas con algunos clientes Windows.
-Para más información, por favor consulte el [MANUAL DE VFS_FRUIT](https://www.mankier.com/8/vfs_fruit).
+Para más información, por favor, consulte el [MANUAL DE VFS_FRUIT](https://www.mankier.com/8/vfs_fruit).
 :end
 
 :smb_enable_netbios_help:
@@ -1495,11 +1495,11 @@ las VMs entrarán en estado de hibernación (si está soportado), de lo contrari
 
 :vms_shutdown_timeout_help:
 Cuando el servidor se encuentra en proceso de apagado, este valor define cuanto tiempo esperar (en segundos) para completar el apagado de las máquinas virtuales (VMs) de forma *normal* antes de forzar su apagado.
-NOTA: Se recomienda apagar las VMs desde adentro de la propia VM.
+NOTA: Se recomienda apagar las VMs desde dentro de las mismas.
 :end
 
 :vms_acs_override_help:
-*Anular PCIe ACS* permite que diversos componentes de hardware puedan exponerse como dispositivos aislados.
+La *Anulación de ACS PCIe* permite que diversos componentes de hardware puedan exponerse como dispositivos aislados.
 Típicamente es suficiente con aislar los puertos en *Sentido descendente*.
 Sin embargo, algún componente de hardware podría requerir el ajuste *Multifunción* o *Ambos* para aislar completamente las diferentes funciones de hardware.<br>
 Es necesario reiniciar el sistema para que el cambio de este ajuste tenga efecto.
@@ -1513,7 +1513,7 @@ Si su sistema no soporta remapeo de interrupciones, éstas pueden ser habilitada
 Es necesario reiniciar el sistema para que el cambio de este ajuste tenga efecto.
 
 **Advertencia: el uso de este ajuste podría causar corrupción de datos con ciertas configuraciones de hardware.**
-Por favor visite los [foros de Lime Technology](https://forums.unraid.net/forum/51-vm-engine-kvm) para más información.
+Por favor, visite los [foros de Lime Technology](https://forums.unraid.net/forum/51-vm-engine-kvm) para más información.
 :end
 
 :vms_libvirt_log_help:
@@ -1742,7 +1742,7 @@ Especifique el *tipo de SAI* que tiene conectado a su sistema (consulte la descr
 :end
 
 :apc_ups_device_help:
-Introduzca el *dispositivo* que corresponda a su situación. Solo aplica cuando el *tipo de SAI* no está ajustado a USB.
+Introduzca el *dispositivo* que corresponda a su situación. Solo aplica cuando el *tipo de SAI* no es USB.
 
 + **apcsmart** - /dev/tty**
 + **red** - nombredehost:puerto. Nombre de host es la dirección IP del servidor NIS. El puerto por defecto es 3551.
@@ -1878,7 +1878,7 @@ Iniciar una comprobación periódica del estado/salud del array (mantenimiento p
 
 :notifications_agent_selection_help:
 Use las casillas mostradas abajo para seleccionar el método de envío de las notificaciones: a través del navegador web, vía email y/o usando un servicio personalizado.<br>
-<b>Consejo:</bpuede usar servicios de notificación personalizados; solo agréguelos al directorio "/boot/config/plugins/dynamix/notification/agents" y marque la casilla 'Servicios'.
+<b>Consejo:</b> puede usar servicios de notificación personalizados, solo tiene que agregarlos al directorio "/boot/config/plugins/dynamix/notification/agents" y marcar la casilla 'Servicios'.
 :end
 
 :notifications_classification_help:
@@ -1892,7 +1892,7 @@ Escoja como quiere ser notificado en función de cada clasificación.
 :end
 
 :smtp_preset_service_help:
-Seleccione un servicio predefinido para configurar los ajustes básicos del servicio.
+Seleccione un servicio preconfigurado para configurar los ajustes básicos del servicio.
 :end
 
 :smtp_email_address_help:
@@ -1944,18 +1944,18 @@ Introduzca el nombre de usuario y la contraseña para iniciar sesión en su cuen
 :end
 
 :plugin_install_help:
-Para descarger e instalar un complemento, introduzca la URL del archivo .plg y pulse **Instalar**. Se abrirá una ventana
+Para descarger e instalar un plugin, introduzca la URL del archivo .plg y pulse **Instalar**. Se abrirá una ventana
 con el progreso de la instalación. No cierre la ventana hasta que la instalación haya concluido. También puede especificar
-la ruta local del complemento.
+la ruta local del plugin.
 :end
 
 :plugin_error_help:
-Estos complementos no se pudieron instalar porque ocurrió algún error de instalación. Elimine primero estos
-complementos y después **reinicie** el servidor.*
+Estos plugins no se pudieron instalar porque ocurrió algún error de instalación. Debería eliminarlos y 
+después **reiniciar** el servidor.*
 :end
 
 :plugin_stale_help:
-Estos complementos no fueron instalados porque su función ya está implementada en Unraid. Puede eliminarlos sin problema.
+Estos plugins no fueron instalados porque su función ya está implementada en Unraid. Puede eliminarlos sin problema.
 :end
 
 :docker_client_general_help:

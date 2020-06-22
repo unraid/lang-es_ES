@@ -1,11 +1,11 @@
 ; Translation Credit.  Will appear in CA's credits
-translationCredit=<Author> (<Language>)
+translationCredit=<Sergio Fraile> (<Español>)
 Cancel=Cancelar
 
 ; My PSAs / banners
 Happy New Year=Feliz Año Nuevo
 Happy Holidays from Andrew, Tracey, and family=Felices Fiestas de parte de Andrew, Tracey y familia
-Please Enjoy Responsibly=Por favor disfrute responsablemente
+Please Enjoy Responsibly=Por Favor, Disfrute Responsablemente
 Popup Blocked CA requires popups to be enabled under certain circumstances You must white list your server within your browser to allow popups=Ventana emergente bloqueada. Aplicaciones de la Comunidad (CA) requiere que las ventanas emergentes estén habilitadas bajo ciertas circunstancias. Debe incluir su servidor a la lista de excepciones del navegador para que permita las ventanas emergentes.
 Docker Service Not Enabled - Only Plugins Available To Be Installed Or Managed=Servicio Docker deshabilitado. Únicamente se pueden instalar o administrar plugins.
 Community Applications works best when cookies are enabled in your browser Certain features may not be available=Aplicaciones de la Comunidad (CA) requiere que las cookies están habilitadas en su navegador. De lo contrario algunas funciones podrían no estar disponibles.
@@ -13,17 +13,17 @@ Backup Server Active Some icons may not appear, and plugin installations may be 
 
 ; Sorting Options
 Sorting options=Ordenar lista
-Sorting options unavailable=Ordenado de lista disponible
+Sorting options unavailable=Ordenar lista no disponible
 Sort By Name Ascending=Ordenar por Nombre Ascendente
 Sort By Name Descending=Ordenar por Nombre Descendente
 Sort By Downloads=Ordenar por Descargas
-Sort By Trend=Ordenar por Tendencia
+Sort By Trend=Ordenar por Popularidad
 Sort By Date Added=Ordenar por Fecha
 ; Initial disclaimer translations
-Disclaimer=Descargo de responsabilidad 
+Disclaimer=Exención de responsabilidad 
 All applications listed here are 3rd party additions to Unraid Neither the authors of Community Applications nor Limetech make any warranty as to the suitability of any application listed here=Todas las aplicaciones mostradas aquí son programas de terceros ajenos a Unraid. Ni los autores del plugin Aplicaciones de la Comunidad (CA) ni Limetech garantizan la idoneidad de las aplicaciones de este listado.
 Every attempt is made to ensure that only safe and compatible applications are present=Se hace todo lo posible para asegurar que solo las aplicaciones seguras y compatibles estén disponibles.
-Application Policy=Politica de la Aplicación
+Application Policy=Política de CA
 I Understand=Entendido
 Installations of apps disabled You must accept the warning to be able to install applications=La instalacion de aplicaciones está deshabilitada. Debe aceptar el aviso para poder instalar aplicaciones.
 Click here=haga clic aquí
@@ -37,7 +37,7 @@ Install Plugin Applications=Instalar Plugins
 
 ; Searches
 Search=Buscar
-Please enter search term=Por favor introduzca el término a buscar
+Please enter search term=Por favor, introduzca el término a buscar
 Click Here To Get More Results From DockerHub=Pulse aquí para obtener más resultados de DockerHub
 No Matching Applications Found On Docker Hub=No se encontró ninguna aplicación en DockerHub
 No Matching Applications Found=No se encontró ninguna aplicación
@@ -84,7 +84,7 @@ Download of appfeed failed=La descarga de la lista de aplicaciones ha fallado
 ; the %s here refers to a function being called
 Something really went wrong here=Ha sucedido un problema aquí
 Post the ENTIRE contents of this message in the Community Applications Support Thread=Publique el contenido COMPLETO de este mensaje en el sitio de soporte de Aplicaciones de la Comunidad (CA).
-Unknown error happened Please post a screenshot in the support thread of the Statistics screen=Ha ocurrido un error desconocido. Por favor publique una captura de pantalla de la página de Estadísticas en el sitio de soporte de Aplicaciones de la Comunidad (CA).
+Unknown error happened Please post a screenshot in the support thread of the Statistics screen=Ha ocurrido un error desconocido. Por favor, publique una captura de pantalla de la página de Estadísticas en el sitio de soporte de Aplicaciones de la Comunidad (CA).
 Something really wrong happened Reloading the Apps tab will probably fix the problem=Ha sucedido un error. Para solucionar este problema es probable que tenga que recargar la página de su navegador.
 This plugin has a duplicated name from another plugin %s This will impact your ability to install both plugins simultaneously=Este plugin tiene el mismo nombre que el plugin %s . Debido a esto no podrá instalar ambos plugins a la vez.
 
@@ -113,13 +113,13 @@ Additional Contributions=Contribuciones Adicionales
 GUI Layout Design=Diseño de la Interfaz Gráfica
 Application Feed=Lista De Aplicaciones
 Additional Testing=Pruebas Adicionales
-Moderation=Moderadores
+Moderation=Moderación
 Additional Libraries=Librerías Adicionales
 Copyright=Derechos de Autor
 Translation=Traducción
 
 ; Statistics page
-Deprecated Applications are able to still be installed if you have previously had them installed New installations of these applications are blocked unless you enable Display Deprecated Applications within CAs General Settings=Todavía se pueden instalar las aplicaciones obsoletas que ya hubiera instalado anteriormente. Las nuevas instalaciones de estas aplicaciones están bloqueadas a menos que tenga deshabilitada la opción "Ocultar aplicaciones obsoletas" en la sección de Ajustes.
+Deprecated Applications are able to still be installed if you have previously had them installed New installations of these applications are blocked unless you enable Display Deprecated Applications within CAs General Settings=Aún es posible instalar las aplicaciones obsoletas que ya estuvieran instaladas con anterioridad. Las nuevas instalaciones de estas aplicaciones están bloqueadas a menos que tenga deshabilitada la opción "Ocultar aplicaciones obsoletas" en la sección de Ajustes.
 The following applications are blacklisted CA will never allow you to install or reinstall these applications=Las siguientes aplicaciones están en la lista negra. Aplicaciones de la Comunidad (CA) bloqueará la instalación o reinstalación de estas aplicaciones.
 While highly not recommended to do, incompatible applications can be installed by enabling Display Incompatible Applications within CAs General Settings=Aunque no sea recomendable en absoluto, se pueden instalar aplicaciones incompatibles si se deshabilita la opción "Ocultar aplicaciones incompatibles" en la sección de Ajustes.
 This display is informational ONLY=Esta pantalla es SOLO informativa
@@ -149,12 +149,12 @@ All Moderation Entries=Anotaciones de Moderación
 No invalid templates found=No se encontraron plantillas inválidas
 These templates are invalid and the application they are referring to is unknown=Estas plantillas son inválidas y la aplicación a la que hacen referencia es desconocida
 No templates were automatically fixed=No se corrigió automáticamente ninguna plantilla
-All of these errors found have been fixed automatically=Todos estos errores encontrados han sido corregidos automáticamente
+All of these errors found have been fixed automatically=Los siguientes errores encontrados han sido corregidos automaticamente
 Note that many of these errors can be avoided by following the directions=Tenga en cuenta que muchos de estos errores se pueden evitar si se siguen las instrucciones mostradas
 HERE=AQUÍ
 The following plugins have duplicated filenames and are not able to be installed simultaneously=Los siguientes plugins tienen nombres repetidos y no se pueden instalar simultáneamente.
 The following docker applications refer to the same docker repository but may have subtle changes in the template to warrant this=Las siguientes aplicaciones Docker hacen referencia al mismo repositorio Docker, pero pueden tener cambios sutiles en la plantilla para que funcionen correctamente.
-If any of these entries are incorrect then contact the moderators of CA to discuss=Si alguna de estas anotaciones es incorrecta, por favor póngase en contacto con los moderadores de Aplicaciones de la Comunidad (CA).
+If any of these entries are incorrect then contact the moderators of CA to discuss=Si alguna de estas anotaciones es incorrecta, por favor, póngase en contacto con los moderadores de Aplicaciones de la Comunidad (CA).
 Global Repository Comments=Commentarios Globales por Repositorio
 Applied to all applications=(Aplica a todas las aplicaciones)
 Individual Application Moderation=Moderación Individual por Aplicación
@@ -241,7 +241,7 @@ Minimum OS=Versión Mínima SO
 Max OS=Versión Máxima SO
 Total Downloads=Descargas Totales
 Licence=Licencia
-30 Day Trend=Tendencia Último Mes
+30 Day Trend=Tendencia 30 Días
 Ranked #%s=Posición #%s
 ; as in Trending up or down arrow
 Trending %s=Tendencia %s
@@ -335,5 +335,5 @@ Clicking this will display more information about the application NOTE You can a
 Clicking this will display any warnings or extra comments about the application=Haga clic en este icono para ver cualquier advertencia o comentario sobre la aplicación
 On the previous apps section you can select multiple applications to install simultaneously=En la sección Apps Anteriores, puede seleccionar múltiples aplicaciones a instalar simultáneamente
 This is the recommended version to install by the application author themselves=Este icono muestra que es la versión recomendada para instalar según el autor de la aplicación
-For support for this plugin visit=Para soporte con este plugin, por favor
-To view the policies Community Applications has=Para ver la política de Aplicaciones de la Comunidad (CA), por favor
+For support for this plugin visit=Para soporte con este plugin, por favor,
+To view the policies Community Applications has=Para ver la política de Aplicaciones de la Comunidad (CA), por favor,
