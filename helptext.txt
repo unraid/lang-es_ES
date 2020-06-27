@@ -1950,7 +1950,7 @@ la ruta local del plugin.
 :end
 
 :plugin_error_help:
-Estos plugins no se pudieron instalar porque ocurrió algún error de instalación. Debería eliminarlos y 
+Estos plugins no se pudieron instalar porque ocurrió algún error de instalación. Debería eliminarlos y
 después **reiniciar** el servidor.*
 :end
 
