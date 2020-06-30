@@ -319,7 +319,7 @@ Remove Language Pack=Eliminar el Paquete de Idioma
 Update Language Pack=Actualizar el Paquete de Idioma
 Installed Version=Versión Instalada
 A note about translations=Una nota sobre traduciones
-Click here to view the language changelog=Has click aquí pata ver el registro de cambios de idioma 
+Click here to view the language changelog=Has click aquí para ver el registro de cambios de idioma 
 
 ; Help Text
 This chooses how to sort the results=Este icono sirve para elegir cómo organizar los resultados
