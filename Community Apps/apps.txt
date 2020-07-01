@@ -85,7 +85,7 @@ Post the ENTIRE contents of this message in the Community Applications Support T
 Unknown error happened Please post a screenshot in the support thread of the Statistics screen=Ha ocurrido un error desconocido. Por favor, publique una captura de pantalla de la página de Estadísticas en el sitio de soporte de Aplicaciones de la Comunidad (CA).
 Something really wrong happened Reloading the Apps tab will probably fix the problem=Ha sucedido un error. Para solucionar este problema es probable que tenga que recargar la página de su navegador.
 This plugin has a duplicated name from another plugin %s This will impact your ability to install both plugins simultaneously=Este plugin tiene el mismo nombre que el plugin %s . Debido a esto no podrá instalar ambos plugins a la vez.
-You have been logged out=
+You have been logged out=Has sido desconnectado
 
 ; CA Sections Keep the length reasonable
 MENU=MENÚ
@@ -318,8 +318,8 @@ Install Language Pack=Instalar el Paquete de Idioma
 Remove Language Pack=Eliminar el Paquete de Idioma
 Update Language Pack=Actualizar el Paquete de Idioma
 Installed Version=Versión Instalada
-A note about translations=
-Click here to view the language changelog=
+A note about translations=Una nota sobre traducciones
+Click here to view the language changelog=Haz clic aquí para ver el registro de cambios de idioma 
 
 ; Help Text
 This chooses how to sort the results=Este icono sirve para elegir cómo organizar los resultados
