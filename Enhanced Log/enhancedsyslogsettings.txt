@@ -32,131 +32,131 @@ Login Highlight Color=Color de resaltado de Inicio de Sesión
 emhttp Highlight Color=Color de resaltado de emhttp
 Other Highlight Color=Otro Color de Resaltado
 ;
-; Help=Ayuda
+; Help
 ;
 :enhanced_syslog_show_all_lines_plug:
-> Set to 'Yes' to show all lines in the enhanced log.  Set to 'No' to show only highlighted lines.
+> Establezca'Sí' para mostrar todas las líneas en el registro mejorado. Establezca 'No' para mostrar solo las líneas resaltadas.
 :end
 
 :enhanced_log_number_of_lines_plug:
-> Number of lines to display in the Enhanced Syslog.  Default is 1000.
+> Número de líneas para mostrar en el registro de sistema mejorado. El valor predeterminado es 1000.
 :end
 
 :enhanced_log_enable_error_plug:
-> Set to 'Yes' to enable 'Errors' highlighting in the enhanced log.
+> Establezca 'Sí' para habilitar el resaltado de 'Errores' en el registro mejorado.
 :end
 
 :enhanced_log_enable_minor_plug:
-> Set to 'Yes' to enable 'Minor Issues' highlighting in the enhanced log.
+> Establezca 'Sí' para habilitar el resaltado de 'Problemas menores' en el registro mejorado.
 :end
 
 :enhanced_log_enable_limetch_plug:
-> Set to 'Yes' to enable 'Lime Tech' highlighting in the enhanced log.
+> Establezca 'Sí' para habilitar el resaltado 'Lime Tech' en el registro mejorado.
 :end
 
 :enhanced_log_enable_array_plug:
-> Set to 'Yes' to enable 'Array' highlighting in the enhanced log.
+> Establezca 'Sí' para habilitar el resaltado 'Matriz' en el registro mejorado.
 :end
 
 :enhanced_log_enable_system_plug:
-> Set to 'Yes' to enable 'System' highlighting in the enhanced log.
+> Establezca 'Sí' para habilitar el resaltado 'Sistema' en el registro mejorado.
 :end
 
 :enhanced_log_enable_file_system_plug:
-> Set to 'Yes' to enable 'File System' highlighting in the enhanced log.
+> Establezca 'Sí' para habilitar el resaltado 'Sistema de archivos' en el registro mejorado.
 :end
 
 :enhanced_log_enable_drive_plug:
-> Set to 'Yes' to enable 'Drive Related' highlighting in the enhanced log.
+> Establezca 'Sí' para habilitar el resaltado 'Relacionado con la unidad' en el registro mejorado.
 :end
 
 :enhanced_log_enable_network_plug:
-> Set to 'Yes' to enable 'Network' highlighting in the enhanced log.
+> Establezca 'Sí' para habilitar el resaltado de 'Red' en el registro mejorado.
 :end
 
 :enhanced_log_enable_login_plug:
-> Set to 'Yes' to enable 'Login' highlighting in the enhanced log.
+> Configure 'Sí' para habilitar el resaltado 'Iniciar sesión' en el registro mejorado.
 :end
 
 :enhanced_log_enable_emhttp_plug:
-> Set to 'Yes' to enable 'emhttp' highlighting in the enhanced log.
+> Establezca 'Sí' para habilitar el resaltado 'emhttp' en el registro mejorado.
 :end
 
 :enhanced_log_enable_other_plug:
-> Set to 'Yes' to enable 'Other' highlighting in the enhanced log.
+> Establezca en 'Sí' para habilitar el resaltado 'Otro' en el registro mejorado.
 :end
 
 :enhancd_log_default_plug:
-> 'Default' resets the Configuration and Colors.  Click 'Apply' to save your changes.  Click 'Done' when you are finished with your changes.
+> 'Predeterminado' restablece la configuración y los colores. Haga clic en 'Aplicar' para guardar sus cambios. Haga clic en 'Listo' cuando haya terminado con sus cambios.
 :end
 
 :enhanced_log_color_error_plug:
-> Color to use for 'Error' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Color a utilizar para resaltar 'Error'. Puede usar el nombre o número de color. El número de color comienza con un '#'.
 :end
 
 :enhanced_log_color_minor_plug:
-> Color to use for 'Minor Issues' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Color a utilizar para resaltar 'Problemas menores'. Puede usar el nombre o número de color. El número de color comienza con un '#'.
 :end
 
 :enhanced_log_color_limetech_plug:
-> Color to use for 'Lime Tech' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Color a utilizar para resaltar 'Lime Tech'. Puede usar el nombre o número de color. El número de color comienza con un '#'.
 :end
 
 :enhanced_log_color_array_plug:
-> Color to use for 'Array' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Color a utilizar para resaltar 'Matriz'. Puede usar el nombre o número de color. El número de color comienza con un '#'.
 :end
 
 :enhanced_log_color_system_plug:
-> Color to use for 'System' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Color a utilizar para resaltar 'Sistema'. Puede usar el nombre o número de color. El número de color comienza con un '#'.
 :end
 
 :enhanced_log_color_file_system_plug:
-> Color to use for 'File System' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Color a utilizar para resaltar 'Sistema de archivos'. Puede usar el nombre o número de color. El número de color comienza con un '#'.
 :end
 
 :enhanced_log_color_drive_plug:
-> Color to use for 'Drive Related' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Color a utilizar para el resaltado 'Relacionado con la unidad'. Puede usar el nombre o número de color. El número de color comienza con un '#'.
 :end
 
 :enhanced_log_color_network_plug:
-> Color to use for 'Network' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Color a utilizar para resaltar 'Red'. Puede usar el nombre o número de color. El número de color comienza con un '#'.
 :end
 
 :enhanced_log_color_login_plug:
-> Color to use for 'Login' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Color a utilizar para resaltar 'Iniciar sesión'. Puede usar el nombre o número de color. El número de color comienza con un '#'.
 :end
 
 :enhanced_log_color_emhttp_plug:
-> Color to use for 'emhttp' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Color a utilizar para resaltar 'emhttp'. Puede usar el nombre o número de color. El número de color comienza con un '#'.
 :end
 
 :enhanced_log_color_other_plug:
-> Color to use for 'Other' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Color a utilizar para resaltar 'Otro'. Puede usar el nombre o número de color. El número de color comienza con un '#'.
 :end
 
 :enhanced_log_custom_plug:
-> Enter any custom events you want highlighted in the log.  Any custom events you enter will be processed after the built in events.
-> The events are entered as: "search string", "event"
-> Case is ignored in the search string and wild cards are allowed.
-> Examples:
-> "found.*chip" will match any string with 'found' and 'chip' with any text in between,
-> "(spinup|spindown)" will match any string with either 'spinup' or 'spindown'. 
-> The search string and event are quoted, and each line contains one match string and event combination.  Errors in the strings can cause php errors.
-> Events are: "error", "minor issues", "lime tech", "array", "system", "file system", "drive related", "network", "login", "emhttp", "other".
+> Ingrese cualquier evento personalizado que desee resaltar en el registro. Cualquier evento personalizado que ingrese se procesará después de los eventos integrados.
+> Los eventos se ingresan como: "cadena de búsqueda", "evento"
+> "Case" se ignora en la cadena de búsqueda y se permiten comodines.
+> Ejemplos:
+> "found.*chip" coincidirá con cualquier cadena con 'found' y 'chip' con cualquier texto intermedio,
+> "(spinup | spindown)" coincidirá con cualquier cadena con 'spinup' o 'spindown'. 
+> La cadena de búsqueda y el evento se citan, y cada línea contiene una combinación de cadena y evento coincidente. Los errores en las cadenas pueden causar errores de php.
+> Los eventos son: "errore", "problemas menores", "lime tech", "array", "sistema", "sistema de archivos", "relacionado con la unidad", "red", "inicio de sesión", "emhttp", "otro"
 :end
 
 :enhanced_log_custom_buttons_plug:
-> Click the **Apply** button to save your custom events.  Click **Reset** to
-> undo any changes you make before you have saved the custom events. Click **Done** to exit this page.
+> Haga clic en el botón **Aplicar** para guardar sus eventos personalizados. Haga clic en **Restablecer** para
+> deshacer los cambios que realice antes de guardar los eventos personalizados. Haga clic en **Listo** para salir de esta página.
 :end
 
 :enhanced_log_filter_plug:
-> You can filter out log entries to keep your Syslog from being overwhelmed with debig or redundant log entries.  You should only filter out log entries that you know are unnecessary or redundant.
-> Because the Syslog is very important for debugging issues, don't filter out entries unnecessarily.
-> Enter the log strings you want to filtered from the Syslog.  Each entry is on a separate line with leading and trailing quotes.
+> Puede filtrar las entradas de registro para evitar que su registro de sistema se vea abrumado con entradas de registro de depuración o redundantes. Solo debe filtrar las entradas de registro que sabe que son innecesarias o redundantes.
+> Debido a que el registro de sistema es muy importante para los problemas de depuración, no filtre las entradas innecesariamente.
+> Ingrese las cadenas de registro que desea filtrar del registro del sistema. Cada entrada está en una línea separada con comillas iniciales y finales.
 :end
 
 :enhanced_log_filter_buttons_plug:
-> Click the **Apply** button to Apply the Syslog filter. Click **Reset** to
-> undo any changes you make before you have saved the Syslog filter. Click **Done** to exit this page.
+> Haga clic en el botón **Aplicar** para aplicar el filtro del registro del sistema. Haga clic en **Restablecer** para
+> deshacer los cambios que realice antes de guardar el filtro del registro del sistema. Haga clic en **Listo** para salir de esta página.
 :end
