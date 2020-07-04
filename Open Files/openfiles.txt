@@ -1,22 +1,22 @@
-Program=
-Kill Process=
-Process ID=
-Open Files=
-Files that may prevent shutdown=
-File Name and Path=
-An entry for bash means you have a terminal session open with the working directory on the array=
-If smbd is listed, it means that another computer has a samba share mounted=
-Files open by Samba usually wont prevent array shutdown=
-No open files=
-Kill=
-Command timed out=
-Cannot get list of open files=
+Program=Programa
+Kill Process=Proceso de Terminación 
+Process ID=Identificacion de Proceso
+Open Files=Abrir Archivo
+Files that may prevent shutdown=Archivos que pueden evitar el apagado 
+File Name and Path=Nombre de archivo y Ruta
+An entry for bash means you have a terminal session open with the working directory on the array=Una entrada para "bash" significa que tiene una sesión de terminal abierta con el directorio de trabajo en la matriz
+If smbd is listed, it means that another computer has a samba share mounted=Si "smbd" aparece en la lista, significa que otra computadora tiene un recurso compartido de samba montado
+Files open by Samba usually wont prevent array shutdown=Los archivos abiertos por Samba generalmente no impedirán el apagado de la matriz
+No open files=No hay archivos abiertos
+Kill=Terminar
+Command timed out=El Comando ha agotado el tiempo de espera
+Cannot get list of open files=No se puede obtener la lista de archivos abiertos
 ;
 ; Help
 ;
 :open_files_help_plug:
-> Click on the 'Kill' button to stop the process that is holding the files open.
->  A dialog box will open showing you the progress of killing the process holding those files open.
+> Haga clic en el botón 'Terminar' para detener el proceso que mantiene abiertos los archivos.
+> Se abrirá un cuadro de diálogo que mostrará el progreso de terminar el proceso que mantiene esos archivos abiertos.
 >
->Click on 'Program', Process ID', or 'File Name and Path' to change the sort order.
+>Haga clic en 'Programa', ID de proceso 'o' Nombre de archivo y ruta 'para cambiar el orden de clasificación.
 :end
