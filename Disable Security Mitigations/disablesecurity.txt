@@ -1,4 +1,4 @@
-Disabling Spectre, Meltdown and Zombieload MDS mitigations may improve your CPU speed But these are security risks for certain workloads, and disabling the mitigations is purely all at your own risk=Deshabilitar las mitigaciones de Spectre, Meltdown y Zombieload MDS puede mejorar la velocidad del CPU, estos son riesgos de seguridad para ciertas cargas de trabajo; La desactivación de las mitigaciones es bajo su propio riesgo
+Disabling Spectre, Meltdown and Zombieload MDS mitigations may improve your CPU speed But these are security risks for certain workloads, and disabling the mitigations is purely all at your own riskDeshabilitar las mitigaciones de Spectre, Meltdown y Zombieload MDS puede mejorar la velocidad del CPU, pero hay riesgos de seguridad para ciertas cargas de trabajo; La desactivación de las mitigaciones es bajo su propio riesgo
 Mitigations currently disabled=Mitigaciones actualmente deshabilitadas
 Mitigations currently enabled=Mitigaciones actualmente habilitadas
 Status=Estado
