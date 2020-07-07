@@ -1,5 +1,5 @@
-Tips=
-Tweaks=
+Tips=Consejos
+Tweaks=Ajustes
 The Tips below are suggestions, workarounds for known problems, and potential fixes=
 It is recommended that you update Unraid to the latest stable version to get the latest features, bug fixes, and security updates=
 Support for older versions of Unraid is being phased out=

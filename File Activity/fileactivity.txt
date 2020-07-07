@@ -13,13 +13,13 @@ Enable for Cache=Habilitar para Caché
 :file_activity_loggging_plug:
 > Registro de actividad de archivo:
 >
-> Archivo leído/Escritura/la actividad de Modificación se monitorea y registra en la matriz usando "inotify" y se muestra por disco, discos UD y caché.
+> Archivo leído/Escritura/la actividad de Modificación se monitorea y registra en el Array usando "inotify" y se muestra por disco, discos UD y caché.
 > Debe iniciar la actividad de archivo para registrar la actividad del disco.
 > La actividad de archivo está diseñada para ejecutarse durante períodos cortos para que pueda verificar la actividad del disco.
 > Un servidor con mucha actividad de archivo puede llenar el espacio de registro.
 > El directorio 'appdata' está excluido.
 >
-> Nota: El registro de actividad de archivo se detiene si se detiene la matriz.
+> Nota: El registro de actividad de archivo se detiene si se detiene el Array.
 :end
 
 :file_activity_enable_logging_plug:

@@ -11,7 +11,7 @@ Number of Lines to Display=Número de Líneas a mostrar
 Enable Error Highlighting=Habilitar resaltado de error
 Enable Minor Issues Highlighting=Habilitar resaltado de Problemas menores
 Enable Lime Tech Highlighting=Habilitar resaltado de Lime Tech
-Enable Array Highlighting=Habilitar resaltado de matriz
+Enable Array Highlighting=Habilitar resaltado del Array
 Enable System Highlighting=Habilitar resaltado del Sistema
 Enable File System Highlighting=Habilitar resaltado del Sistema de Archivos
 Enable Drive Related Highlighting=Habilitar resaltado relacionado con la unidad
@@ -23,7 +23,7 @@ Color Selection Chart=Carta de selección de Colores
 Error Highlight Color=Color de resaltado de Error
 Minor Issues Highlight Color=Color de resaltado de problemas menores
 Lime Tech Highlight Color=Colores de resaltado de Lime Tech
-Array Highlight Color=Color de resaltado de Matriz
+Array Highlight Color=Color de resaltado del Array
 System Highlight Color= Color de resaltado del Sistema
 File System Highlight Color=Color de resaltado del Sistema de Archivos
 Drive Related Highlight Color=Color de resaltado relacionado con la unidad
@@ -55,7 +55,7 @@ Other Highlight Color=Otro Color de Resaltado
 :end
 
 :enhanced_log_enable_array_plug:
-> Establezca 'Sí' para habilitar el resaltado 'Matriz' en el registro mejorado.
+> Establezca 'Sí' para habilitar el resaltado 'Array' en el registro mejorado.
 :end
 
 :enhanced_log_enable_system_plug:
@@ -103,7 +103,7 @@ Other Highlight Color=Otro Color de Resaltado
 :end
 
 :enhanced_log_color_array_plug:
-> Color a utilizar para resaltar 'Matriz'. Puede usar el nombre o número de color. El número de color comienza con un '#'.
+> Color a utilizar para resaltar 'Array'. Puede usar el nombre o número de color. El número de color comienza con un '#'.
 :end
 
 :enhanced_log_color_system_plug:
