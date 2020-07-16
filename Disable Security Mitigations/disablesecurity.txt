@@ -1,11 +1,11 @@
-Disabling Spectre, Meltdown and Zombieload MDS mitigations may improve your CPU speed But these are security risks for certain workloads, and disabling the mitigations is purely all at your own risk=
-Mitigations currently disabled=
-Mitigations currently enabled=
-Status=
-will be updated after rebooting the server=
-Enable Mitigations=
-Disable Mitigations=
-Disable Security Mitigations A Reboot Is Required For Changes To Take Effect=
-A Reboot Is Required For Changes To Take Effect=
-Mitigations will be enabled after a reboot=
-Mitigations will be disabled after a reboot=
+Disabling Spectre, Meltdown and Zombieload MDS mitigations may improve your CPU speed But these are security risks for certain workloads, and disabling the mitigations is purely all at your own riskDeshabilitar las mitigaciones de Spectre, Meltdown y Zombieload MDS puede mejorar la velocidad del CPU, pero hay riesgos de seguridad para ciertas cargas de trabajo; La desactivación de las mitigaciones es bajo su propio riesgo
+Mitigations currently disabled=Mitigaciones actualmente deshabilitadas
+Mitigations currently enabled=Mitigaciones actualmente habilitadas
+Status=Estado
+will be updated after rebooting the server=Se actualizará después de reiniciar el servidor
+Enable Mitigations=Habilitar Mitigaciones
+Disable Mitigations=Deshabilitar Mitigaciones
+Disable Security Mitigations A Reboot Is Required For Changes To Take Effect=Se requiere reiniciar para que la desactivación de mitigación de seguridad tome efecto
+A Reboot Is Required For Changes To Take Effect=Se requiere un reinicio para que los cambios tomen efecto
+Mitigations will be enabled after a reboot=Las mitigaciones serán habilitadas después de reiniciar
+Mitigations will be disabled after a reboot=Las mitigaciones serán deshabilitadas después de reiniciar

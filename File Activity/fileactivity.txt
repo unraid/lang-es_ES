@@ -1,35 +1,35 @@
-File Activity=
-File Activity Logging=
-Start File Activity=
-Stop File Activity Logging=
-Clear the File Activity log=
-Refresh log=
-Enable File Activity Logging=
-Enable for Unassigned Devices=
-Enable for Cache=
+File Activity=Actividad de Archivo
+File Activity Logging=Registro de Actividad de Archivo
+Start File Activity=Iniciar Actividad de Archivo
+Stop File Activity Logging=Detener Actividad de Archivo
+Clear the File Activity log=Borrar el Registro de Actividad de Archivo
+Refresh log=Actualizar Registro
+Enable File Activity Logging=Habilitar Actividad de Archivo
+Enable for Unassigned Devices=Habilitar para Dispositivos no asignados
+Enable for Cache=Habilitar para Caché
 ;
 ; Help
 ;
 :file_activity_loggging_plug:
-> File Activity Logging:
+> Registro de actividad de archivo:
 >
-> File read/write/modify activity is monitored and logged on the array using inotify and is displayed by disk, UD disks, and cache.
-> You need to start the File Activity in order to log the disk activity.
-> File Activity is intended to be running for short periods so you can check disk activity.
-> A server with a lot of file activity can fill the log space.
-> The 'appdata' directory is excluded.
+> Archivo leído/Escritura/la actividad de Modificación se monitorea y registra en la matriz usando "inotify" y se muestra por disco, discos UD y caché.
+> Debe iniciar la actividad de archivo para registrar la actividad del disco.
+> La actividad de archivo está diseñada para ejecutarse durante períodos cortos para que pueda verificar la actividad del disco.
+> Un servidor con mucha actividad de archivo puede llenar el espacio de registro.
+> El directorio 'appdata' está excluido.
 >
-> Note: File Activity logging is stopped if the array is stopped.
+> Nota: El registro de actividad de archivo se detiene si se detiene la matriz.
 :end
 
 :file_activity_enable_logging_plug:
-> Set to 'Yes' to enable File Activity logging when the server is started.
+> Establezca 'Sí' para habilitar el registro de Actividad de archivo cuando se inicie el servidor.
 :end
 
 :file_activity_enable_ud_plug:
-> Set to 'Yes' to enable File Activity logging for Unassigned Devices if the Unassigned Devices plugin is installed.
+> Establezca 'Sí' para habilitar el registro de Actividad de archivos para dispositivos no asignados, si está instalado el complemento Dispositivos no asignados.
 :end
 
 :file_activity_eenable_cache_plug:
-> Set to 'Yes' to enable File Activity logging for the Cache Disk(s).
+> Establezca 'Sí' para habilitar el registro de Actividad de archivo para los discos de caché.
 :end

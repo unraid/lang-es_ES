@@ -14,6 +14,6 @@ Minute=Minuto
 Custom cron expression=Expresión cron personalizada
 Credits=Créditos
 Docker Must Be Enabled For This Module To Operate=Docker debe estar habilitado para que este módulo funcione
-Time to wait for graceful stop before killing=Tiempo de espera para la parada agraciada antes de matar 
+Time to wait for graceful stop before killing=Tiempo de espera para la parada agraciada antes de terminación 
 Update All Docker Applications=Actualización de todas las aplicaciones de Docker
 Do not overlap with autoupdate=No coincidir con actualización automática
