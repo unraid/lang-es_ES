@@ -158,5 +158,5 @@ Other Highlight Color=Color de resaltado de 'Otros' (Personalizado)
 
 :enhanced_log_filter_buttons_plug:
 > Haga clic en el botón **Aplicar** para aplicar el filtro del Registro del Sistema. Haga clic en **Restablecer** para
-> deshacer los cambios que realice antes de guardar el filtro del Registro del Sistema. Haga clic en **Listo** para salir de esta página.
+> deshacer los cambios que realice antes de guardar el filtro del Registro del Sistema. Haga clic en **Atrás** para salir de esta página.
 :end
