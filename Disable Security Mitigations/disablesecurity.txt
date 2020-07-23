@@ -1,11 +1,11 @@
-Disabling Spectre, Meltdown and Zombieload MDS mitigations may improve your CPU speed But these are security risks for certain workloads, and disabling the mitigations is purely all at your own riskDeshabilitar las mitigaciones de Spectre, Meltdown y Zombieload MDS puede mejorar la velocidad del CPU, pero hay riesgos de seguridad para ciertas cargas de trabajo; La desactivación de las mitigaciones es bajo su propio riesgo
+Disabling Spectre, Meltdown and Zombieload MDS mitigations may improve your CPU speed But these are security risks for certain workloads, and disabling the mitigations is purely all at your own risk=Deshabilitar las mitigaciones de Spectre, Meltdown y Zombieload (MDS) puede mejorar el rendimiento del procesador, pero conlleva riesgos de seguridad bajo ciertas cargas de trabajo. Puede desactivar estas mitigaciones bajo su propio riesgo.
 Mitigations currently disabled=Mitigaciones actualmente deshabilitadas
 Mitigations currently enabled=Mitigaciones actualmente habilitadas
-Status=Estado
-will be updated after rebooting the server=Se actualizará después de reiniciar el servidor
+Status=Estado:
+will be updated after rebooting the server=se actualizará después de reiniciar el servidor
 Enable Mitigations=Habilitar Mitigaciones
 Disable Mitigations=Deshabilitar Mitigaciones
-Disable Security Mitigations A Reboot Is Required For Changes To Take Effect=Se requiere reiniciar para que la desactivación de mitigación de seguridad tome efecto
-A Reboot Is Required For Changes To Take Effect=Se requiere un reinicio para que los cambios tomen efecto
+Disable Security Mitigations A Reboot Is Required For Changes To Take Effect=Deshabilitar Mitigaciones de Seguridad: Es Necesario Reiniciar Para que los Cambios Tengan Efecto
+A Reboot Is Required For Changes To Take Effect=Es Necesario Reiniciar Para que los Cambios Tengan Efecto
 Mitigations will be enabled after a reboot=Las mitigaciones serán habilitadas después de reiniciar
 Mitigations will be disabled after a reboot=Las mitigaciones serán deshabilitadas después de reiniciar
