@@ -1,4 +1,4 @@
-Enhanced System Log=Registro del sistema mejorado
+Enhanced System Log=Registro del Sistema Mejorado
 Minor Issues=Problemas Menores
-File System=Sistema de Archivo
-Drive Related=Unidad Relacionada
+File System=Sistema de Archivos
+Drive Related=Dispositivos
