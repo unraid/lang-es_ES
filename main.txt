@@ -67,6 +67,7 @@ Do not use user share names=No use nombres de carpetas compartidas
 Download SMART report=Descargar el informe de SMART
 Dual parity valid requires ALL disks in their original slots=Para que la *paridad doble* sea válida, ** TODOS** los discos deben estar en sus posiciones originales
 Elapsed time=Tiempo transcurrido
+Enable user share assignment=
 encrypted=cifrado
 Encryption input=Tipo de clave de cifrado
 Encryption status=Estado del cifrado
