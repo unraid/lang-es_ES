@@ -1,29 +1,29 @@
-Default Script=
-Edit Script=
-Enter Script File Name=
-Enter and Edit the Script that runs when a udev or operator event occurs=
-Load the default script=
-Remove Script File=
-Run in background=
-Save your changes and save to Script File=
-Save=
-Script content=
-Turn on to run Script File in the background=
-Undo your changes since last Save=
+Default Script=Script predeterminado
+Edit Script=Editar Script
+Enter Script File Name=Ingrese el nombre del Script
+Enter and Edit the Script that runs when a udev or operator event occurs=Ingrese y edite el script que se ejecuta cuando se produce un evento del operador o udev
+Load the default script=Cargue el script predeterminado
+Remove Script File=Elimine el Script
+Run in background=Ejecutar en segundo plano
+Save your changes and save to Script File=Guarde los cambios y guarde el Script
+Save=Guardar
+Script content=Contenido del Script
+Turn on to run Script File in the background=Active para ejecutar el Script en segundo plano
+Undo your changes since last Save=Deshacer sus cambios desde la última vez que guardó
 ;
 ; Help
 ;
 :ud_edit_script_choose_name_plug:
-> Choose your script name from the file selection dropdown, or enter your desired script name.
+> Elija el nombre de su script en el menú desplegable de selección de archivos o ingrese el nombre de script que desee.
 :end
 
 :ud_edit_script_run_background_plug:
-> Turn on the 'Run in Background' to have the script run as a background task.  This can keep the Unassigned Devices UI from hanging when the script is run from the UI.
+> Active 'Ejecutar en segundo plano' para que el script se ejecute como una tarea en segundo plano. Esto puede evitar que la IU de dispositivos no asignados se frize cuando el script se ejecuta desde la IU.
 :end
 
 :ud_edit_script_buttons_plug:
-> Click the **Save** button to commit the current edits.  Click **Reset** to undo any changes you make (before Saving). Click **Done** to exit this page.
+> Haga clic en el botón **Guardar** para confirmar las ediciones actuales. Haga clic en **Restablecer** para deshacer los cambios que realice (antes de guardar). Haga clic en **Listo** para salir de esta página.
 >
-> Click the **Default Script** button to initialize the edit box with a default script.
-> You still need to click **Save** in order to commit the change.
+> Haga clic en el botón **Script predeterminado** para inicializar el cuadro de edición con un script predeterminado.
+> Aún debe hacer clic en **Guardar** para confirmar el cambio.
 :end
