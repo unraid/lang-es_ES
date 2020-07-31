@@ -72,104 +72,104 @@ Governor=Gobernador
 ; Help
 ;
 :tips_tweaks_general_plug:
-> Some General Recommendations:
+> Algunas Recomendaciones Generales:
 >
-> + Use of a static IP address can help in certain cases.  NFS shares are referenced by IP address.  Be sure you reserve the IP address on your router, or set a very high IP address to prevent conflicts.
-> + Use of Jumbo Frames is discouraged.  Jumbo Frames have been known to cause issues with some Dockers.
-> + Don't set vm.dirty.ratio above 20% unless you have a UPS backup for your Unraid.  You may lose data that has not been written to disk on a power failure.
-> + A value of vm.dirty_background_ratio over 1/2 of vm.dirty_ratio is not recommended unless using single digits for both values.
+> + El uso de una dirección IP estática puede ayudar en ciertos casos. Los recursos compartidos NFS están referenciados por la dirección IP. Asegúrese de reservar la dirección IP en su router, o configure una dirección IP muy alta para evitar conflictos.
+> + No es recomendable el uso de Jumbo Frames. Se sabe que los Jumbo Frames causan problemas con algunos contenedores de Dockers.
+> + No establezca vm.dirty.ratio por encima del 20% a menos que tenga una bateria de backup UPS para su Unraid. Es posible que pierda datos que no se hayan escrito en el disco debido a una falla de energía.
+> + No se recomienda un valor de vm.dirty_background_ratio sobre 1/2 de vm.dirty_ratio a menos que se usen dígitos únicos para ambos valores.
 :end
 
 :tips_tweaks_nic_flow_control_plug:
-> Set to 'Yes' to disable NIC Flow Control.  NIC Flow Control was originally implemented to help in
-> networks with mixed speed devices.  It doesn't seem to be as necessary on today's networks.  If you
-> have a managed switch, flow control can generally be turned on and off on the switch.  If you have
-> a consumer grade switch, you won't have that level of control.  Flow Control has been known to create
-> network issues in certain circumstances.  It is recommended to disable Flow Control if you experience network issues.
+> Escoja 'Sí' para deshabilitar el NIC Flow Control. NIC Flow Control se implementó originalmente para ayudar en
+> redes con dispositivos de velocidad mixta. No parece ser tan necesario en las redes actuales. Si tu
+> tiene un interruptor administrado, el control de flujo generalmente se puede activar y desactivar en el interruptor. Si usted tiene
+> un interruptor de grado del consumidor, no tendrá ese nivel de control. Se sabe que Flow Control crea
+> problemas de red en determinadas circunstancias. Se recomienda deshabilitar el control de flujo si experimenta problemas de red.
 :end
 
 :tips_tweaks_nic_offload_plug:
-> Set to 'Yes' to disable NIC offloads.  Offloads were developed to offload some network processing
-> to the NIC and off the main CPU and deal with large packets.  This was intended to save some CPU processing
-> load and increase network throughput.  TSO offload has been known to cause network issues in certain circumstances.
-> It is recommended to disable NIC Offloads if you experience network issues.
+> Establezca en 'Sí' para deshabilitar NIC offloads. Offload fue desarrollado para offloads parte del procesamiento de la red
+> a la NIC y fuera de la CPU principal y tratar con paquetes grandes. Esto estaba destinado a ahorrar algo de procesamiento de la
+> cargar del CPU e incrementar el rendimiento de la red. Se sabe que la descarga de TSO causa problemas de red en ciertas circunstancias.
+> Se recomienda deshabilitar NIC offloads si experimenta problemas de red.
 :end
 
 :tips_tweaks_rx_buffer_plug:
-> Select the size of the NIC Rx ring buffer.  Some NICs have a limit on the size of the Rx ring buffer.  The default value of 256 is recommended.
+> Seleccione el tamaño del anillo del búfer NIC Rx. Algunas NIC tienen un límite en el tamaño del anillo del búfer Rx. Se recomienda el valor predeterminado de 256.
 :end
 
 :tips_tweaks_tx_buffer_plug:
-> Select the size of the NIC Tx ring buffer.  Some NICs have a limit on the size of the Tx ring buffer.  The default value of 256 is recommended.
+> Seleccione el tamaño del anillo del búfer NIC Tx. Algunas NIC tienen un límite en el tamaño del anillo del búfer Tx. Se recomienda el valor predeterminado de 256.
 :end
 
 :tips_tweaks_nics_plug:
-> List the NICs to apply the above settings separated by commas.  If you have multiple NICs that are bonded, be sure to include all of them.  Flow Control, TSO, and NIC buffer settings will
-> be applied to these NICs.
+> Enumere las NIC para aplicar las configuraciones anteriores separadas por comas. Si tiene varias NIC unidas, asegúrese de incluirlas todas. La configuración delFlow Control, TSO y NIC
+> se aplicará a estas NIC.
 :end
 
 :tips_tweaks_dirty_background_plug:
-> For streaming and gaming VMs, set the values low in the single digits.  Recommended values are: vm.dirty_background_ratio=2% and vm.dirty_ratio=3%.
-> If you have large amounts of RAM, smaller is better.
-> Caution: Don't increase these values beyond the default settings unless you have a UPS that will reliably shut down Unraid.
+> Para transmitir y jugar videos juegos en los VMs, configure los valores bajos en un solo dígito. Los valores recomendados son: vm.dirty_background_ratio = 2% y vm.dirty_ratio = 3%.
+> Si tiene grandes cantidades de RAM, mientras más pequeño es mejor.
+> Precaución: no aumente estos valores más allá de la configuración predeterminada al menos que tenga un UPS que se apague de manera confiable a Unraid.
 >
-> Set the 'vm.dirty_background_ratio' as a percentage of total RAM memory.
-> The default setting of 10% is recommended in most cases.  If you have a media streaming or gaming VM, use a value of 2%.  If you experience OOM errors, it is recommended you set this to 1%.
+> Establezca 'vm.dirty_background_ratio' como un porcentaje de la memoria RAM total.
+> Se recomienda la configuración predeterminada del 10% en la mayoría de los casos. Si tiene una máquina virtual de transmisión de medios o juegos, use un valor del 2%. Si experimenta errores OOM, se recomienda que establezca esto en 1%.
 :end
 
 :tips_tweaks_dirty_ratio_plug:
-> Set the 'vm.dirty_ratio' as a percentage of total RAM memory.
-> Setting this too high may cause Linux to terminate some processes to gain more memory.  The default setting of 20% is recommended in most cases.  If you have a media streaming or gaming VM, use a value of 3%.  If you experience OOM errors, it is recommended you set this to 2%.
+> Establezca 'vm.dirty_ratio' como un porcentaje de la memoria RAM total.
+> Establecer "esto" demasiado alto puede hacer que Linux finalice algunos procesos para ganar más memoria. La configuración predeterminada del 20% se recomienda en la mayoría de los casos. Si tiene una máquina virtual de transmisión de medios o juegos, use un valor del 3%. Si experimenta errores de OOM, se recomienda establecer esto en 2%.
 :end
 
 :tips_tweaks_max_watches_plug:
-> If inotify fails to start because there are not enough user watches, increase the max_user_watches.
+> Si no se puede iniciar inotify porque no hay suficientes user watches, aumente max_user_watches.
 >
-> The default is 524288.
+> El valor predeterminado es 524288.
 :end
 
 :tips_tweaks_cpu_governor_plug:
-> Select the CPU Scaling Governor you want to use.
+> Seleccione el regulador de escala de CPU que desea usar.
 >
-> + "Power Save" - default for the Intel Pstate driver.  Scales CPU frequency based on load.
-> + "On Demand" - default for ACPI CPU Freq driver.  Scales CPU frequency based on load.  Frequency stepping is aggressive.
-> + "Conservative" - Scales CPU frequency based on load.  Frequency stepping is gentler.  Can cause some latency.
-> + "Performance" - set all CPUs at full frequency regardless of load.  This can have a positive influence on performance and latency.
-> + "Scheduled" - At start time set governor to "Performance".  At stop time set governor to "Powersave" or "On Demand" depending on driver used.
+> + "Ahorro de energía": predeterminado para el controlador Intel Pstate. Escala la frecuencia de la CPU en función de la carga.
+> + "On Demand": predeterminado para el controlador ACPI CPU Freq. Escala la frecuencia de la CPU en función de la carga. El escalonamiento de frecuencia es agresivo.
+> + "Conservador": escala la frecuencia de la CPU en función de la carga. Los pasos de frecuencia son más suaves. Puede causar algo de latencia.
+> + "Rendimiento": configura todas las CPU a una frecuencia completa, independientemente de la carga. Esto puede tener una influencia positiva en el rendimiento y la latencia.
+> + "Programado": en la hora de inicio, configure el governor en "Rendimiento". En el momento de la parada, configure el regulador en "Powersave" o "On Demand", según el controlador utilizado.
 >
-> You can now set the CPU governor with the rc.tweaks script.  Use the command:
+> Ahora puede configurar el regulador del CPU con el script rc.tweaks. Usa el comando:
 > /usr/local/sbin/rc.tweaks set_governor 'governor'
-> The 'governor' choices are: 'ondemand', 'performance', 'powersave', and 'conservative'.
+> Las opciones de 'governor' son: 'ondemand', 'performance', 'powersave' y 'conservative'.
 :end
 
 :tips_tweak_turbo_plug:
-> Set to 'Yes' to enable the Intel Turbo or AMD Performance Boost Mode.
+> Establezca 'Sí' para habilitar el modo Intel Turbo o AMD Performance Boost.
 :end
 
 :tips_tweaks_performance_plug:
-> Enter the time you want to set the governor to "Performance" in 24 hour format hh:mm.
+> Ingrese la hora en que desea establecer el governor en "Rendimiento" en formato de 24 horas hh:mm.
 :end
 
 :tips_tweaks_cpu_state_plug:
-> Enter the time you want to set the governor to "Power Save" for Intel Pstate or "On Demand" in 24 hour format hh:mm.
+> Ingrese la hora a la que desea configurar el governor en "Ahorro de energía" para Intel Pstate o "Bajo demanda" en formato de 24 horas hh:mm.
 :end
 
 :tips_tweaks_ftp_plug:
-> Set to 'Yes' to disable the FTP Server.  You will have to reboot to enable it again once you select 'No'.
+> Establezca 'Sí' para deshabilitar el servidor FTP. Tendrá que reiniciar para habilitarlo nuevamente una vez que seleccione 'No'.
 :end
 
 :tips_tweaks_syslog_archive_plug:
-> Set to 'Yes' to enable the capture and archive of syslogs and run a diagnostics on shutdown.  Logs and diagnostics are saved to /boot/logs/.
+> Establezca 'Sí' para habilitar la captura y el archivo del syslog y ejecutar un diagnóstico al apagar. Los registros y diagnósticos se guardan en /boot/logs/.
 :end
 
 :tips_tweaks_number_syslogs_plug:
-> Set the number of syslogs to save in the archive.
-> Set zero to save only last syslog.  Set to -1 to save all logs.  Default setting is 10.
+> Establezca el número del syslog para guardar en el archivo.
+> Establezca cero para guardar solo el último syslog. Establezca en -1 para guardar todos los registros. La configuración predeterminada es 10.
 :end
 
 :tips_tweaks_kill_processes_plug:
-> Enter the names of processes to kill before stopping the array, separated by commas.  For example, 'ssh' and 'bash'.  These processes can keep the array disks from unmounting causing Unraid to hang when the array is being stopped.
+> Ingrese los nombres de los procesos a terminar antes de detener el array, separados por comas. Por ejemplo, 'ssh' y 'bash'. Estos procesos pueden evitar que los discos del array se desmonten, provocando que Unraid se bloquee cuando la matriz se está deteniendo.
 >
-> Note: Be careful with the processes you kill here.  You could lose data!
+> Nota: Tenga cuidado con los procesos que termina aquí. ¡Podrías perder datos!
 :end
 
