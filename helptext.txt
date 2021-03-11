@@ -2075,3 +2075,31 @@ This displays the output of the `lsscsi` command.  The numeric identifiers are u
 
 Note that linux groups ATA, SATA and SAS devices with true SCSI devices.
 :end
+
+; unraid.net help - added March 11, 2021
+:unraidnet_wanpanel_help:
+El puerto WAN es la configuración del número de puerto TCP externo en su enrutador para el tráfico de reenvío de puerto / NAT desde Internet a este
+Puerto SSL del servidor Unraid para un tráfico web seguro.
+:end
+
+:unraidnet_inactivespanel_help:
+Haga clic en Activar para configurar un repositorio de git local para su dispositivo de arranque flash USB local y conéctese a un control remoto dedicado en unraid.net vinculado a este servidor.
+:end
+
+:unraidnet_changespanel_help:
+El estado "No actualizado" indica que hay archivos locales que se cambiaron en comparación con la copia de seguridad remota en unraid.net.
+
+Haga clic en "Actualizar" para enviar los cambios al servidor remoto.
+
+Haga clic en "Cambios" para ver qué ha cambiado.
+:end
+
+:unraidnet_uptodatepanel_help:
+El estado "actualizado" indica que su configuración local coincide con la almacenada en el servidor remoto de unraid.net.
+:end
+
+:unraidnet_activepanel_help:
+Haga clic en "Desactivar" para pausar la comunicación con su copia de seguridad remota en unraid.net.
+
+Haga clic en "Reinicializar" para borrar todo el historial de cambios en el servidor local y remoto de Unraid.net.
+:end
