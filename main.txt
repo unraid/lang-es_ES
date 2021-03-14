@@ -292,3 +292,18 @@ Wrong key=Clave incorrecta
 xfs_repair status=estado de xfs_repair
 You may not add new disks and also remove existing disks=No puede añadir nuevos discos y eliminar discos existentes a la vez
 your server=su servidor
+
+; New entries - 2021-03-14
+completed=
+Device locked wrong encryption key=Device locked: wrong encryption key
+Erase=
+Erase Device Content=
+Existing content is permanently lost=
+Invalid, missing or expired=
+SMART controller type=
+SMART notification tolerance level=
+SMART self-test in progress=
+This Unraid OS release has been withdrawn and may no longer be used Please=This Unraid OS release has been withdrawn and may no longer be used. Please
+This will ERASE ALL device content=
+This will ERASE content of ALL devices in the pool=
+To confirm your action type %s=To confirm your action type: %s
