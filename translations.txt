@@ -549,6 +549,7 @@ Back to Sign In=Regresar a Iniciar sesión
 Unraidnet Sign In=Iniciar Sesión en Unraid.net
 Unraidnet Sign In to Recover Key=Iniciar sesión en Unraid.net para Recuperar la Clave
 Unraidnet Sign In to Replace Key=Iniciar sesión en Unraid.net para Recuperar la Clave
+Please sign in with your Unraidnet forum account=Inicie sesión con su cuenta del foro de Unraid.net
 Please sign in with the same email with which you purchased your license=Por favor inicie sesión con el mismo correo electrónico con el que compró su licencia
 Acknowledge Replacement Conditions=Reconocer Condiciones de Reemplazo
 I acknowledge that replacing a license key results in permanently blacklisting the previous USB Flash GUID=Reconozco que reemplazar una clave de licencia resulta en el GUID del flash USB anterior entrar en la lista negra permanentemente
