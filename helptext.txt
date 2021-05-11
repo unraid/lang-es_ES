@@ -460,7 +460,6 @@ Si no hay un sufijo, se asume un conteo de bloques de 1024-bytes.
 **Modos especiales:**
 
 + Si en SMB el modo de seguridad se muestra en *cursiva*, la carpeta está compartida de forma oculta.
-+ Si en AFP el modo de seguridad se muestra en *cursiva*, la carpeta está compartida en modo Time Machine.
 + El protocolo NFS no tiene ningún modo especial para compartir carpetas.
 :end
 
@@ -481,7 +480,6 @@ Si no hay un sufijo, se asume un conteo de bloques de 1024-bytes.
 **Modos especiales:**
 
 + Si en SMB el modo de seguridad se muestra en *cursiva*, el disco está compartido de forma oculta.
-+ Si en AFP el modo de seguridad se muestra en *cursiva*, el disco está compartido en modo Time Machine.
 + El protocolo NFS no tiene ningún modo especial para compartir discos.
 :end
 
