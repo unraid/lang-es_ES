@@ -60,6 +60,5 @@ Time Machine volume size limit=Tamaño límite del volumen de Time Machine
 Unknown encryption state=Estado de cifrado desconocido
 Use cache pool for new filesdirectories=Utilizar el almacenamiento caché (para nuevos archivos/directorios)
 User Shares=Carpetas Compartidas
-Volume dbpath=Ubicación de la base de datos
 Write=Exportar
 You cannot use the following within share names=No use los siguientes caracteres en el nombre de la carpeta compartida

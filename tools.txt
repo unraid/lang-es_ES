@@ -103,7 +103,6 @@ This will update folder file permissions=Esto actualizará los permisos de carpe
 Time=Hora
 To install a registration key, paste the key file URL in the box below and click Install Key=Para instalar una licencia, pegue la URL del archivo de licencia en el siguiente campo y haga clic en **Instalar Licencia**
 to select your language=para seleccionar su idioma
-To support more storage devices as your server grows, click Upgrade Key below=Para soportar más dispositivos de almacenamiento a medida que expande su servidor, haga clic en *Actualizar Licencia*
 Trial key expires on=Caducidad de la ***Versión de Evaluación***
 Trial=Versión de Evaluación
 Update OS=Actualizar SO
