@@ -13,12 +13,15 @@ Choose ISO File=
 Choose Server=
 Choose Share=
 Click on Icon to Choose Protocol=
-Click to Change Device Mount Point - Press Enter to save=
-Click to change ISO File Mount Point - Press Enter to save=
-Click to change Remote SMBNFS Mount Point - Press Enter to save=
+Change Disk Mount Point=
+Change ISO File Mount Point=
+Change SMBNFS Mount Point=
+Changing the Mount Point will also change the disk label=
 Click to select ISO file=
-Click to view partitionsmount points=
+Click to view/hide partitions and mount points=
 Complete=
+Disks=
+Disk Label=
 Disk Log Information=
 Domain=
 Edit Device Script=
@@ -32,40 +35,45 @@ Execute Script as udev simulating a device being installed=
 Fail=
 file share for=
 File System Check=
+File System Scrub=
 Format=
 Formatting=
 Free=
 from disk=
 Historical Devices=
+ISO File is=
 ISO File Shares=
 Identification=
 If using a disk password be sure to enter the password for this disk in UD Settings so it can be mounted=
 Leave blank to use the array passwordpassphrase=
 Load Shares=
+Loading=
 Log=
-missing=
 Mount=
 Mounting=
 NFS Shares=
 Next=
 No Remote SMBNFS or ISO File Shares configured=
 No Unassigned Disks available=
+not installed=
 Note=
 Open=
 Partition and Format Disk=
 Pass Thru=
 Password=
 Read only=
+Refresh Disks and Configuration=
 Remember your password It cannot be recovered=
+Remote Share is=
+Remote share mounts are dependent on a solid and reliable network connection and that is difficult to achieve=
 Remove Device configuration=
 Remove ISO File Share=
 Remove Partition=
 Remove Remote SMBNFS Share=
 Remove partition=
-Rescan Disks=
 Run with CORRECT flag=
 Running=
-SMART Attributes on=
+Shares=
 SMB Shares=
 Script=
 Search For Servers=
@@ -76,23 +84,17 @@ Serial Number Mountpoint=
 share for=
 Simple=
 Source=
+SSD cannot be spun down=
 Success=
-Switch Display Mode=
-Switch On to Show All Partitions=
+Show Historical Devices=
+Show SMB/NFS/ISO Shares=
+Show Disk Devices=
 This will remove the ISO file share for=
 This will remove the remote=
 This will remove the saved configuration of=
 This will remove the=
 to confirm=
 to format=
-Turn on to Mount Device Read only=
-Turn on to Mount Device when Array is Started=
-Turn on to Mount ISO File when Array is Started=
-Turn on to Mount Remote SMBNFS Share when Array is Started=
-Turn on to Share Device with SMB andor NFS=
-Turn on to Share Remote Mount with SMB andor NFS=
-Turn on to mark this Device as passed through to a VM or Docker=
-Unassigned Devices Settings=
 Unmount=
 Unmounting=
 Used=
@@ -100,6 +102,9 @@ Username=
 View Device Script Log=
 View ISO File Script Log=
 View Remote SMBNFS Script Log=
+You must enable the Destructive Mode in UD Settings before you can Format this disk=
+WARNING: Do NOT use a remote share local mount in a Docker container or VM for critical data=
+You WILL have problems if you do=
 You will need to enter credentials for Windows 10 shares just to list them=
 
 ; Help
@@ -112,6 +117,12 @@ You will need to enter credentials for Windows 10 shares just to list them=
 > Click on the <i style='color:black;font-weight:bold;' class="fa fa-refresh"></i> icon to rescan disks.
 >
 > Click on the <i style='color:black;font-weight:bold;' class="fa fa-gear"></i> icon to go to the UD Settings.
+> Click on the <i style='color:black;font-weight:bold;' class="fa fa-refresh"></i> icon to refresh disks and configuration.
+> Click on the <i style='color:black;font-weight:bold;' class="fa fa-gear"></i> icon to go to the UD Settings.
+> You can spin a disk up or down by clicking on the disk ball <i class='fa fa-circle orb green-orb'></i>or <i class='fa fa-circle orb grey-orb'></i>indicator. Applies to version 6.9 RC2 and later only.
+> Click on the <i style='color:black;font-weight:bold;' class="fa fa-refresh"></i> icon to refresh disks and configuration.
+> Click on the <i style='color:black;font-weight:bold;' class="fa fa-gear"></i> icon to go to the UD Settings.
+> You can spin a disk up or down by clicking on the disk ball <i class='fa fa-circle orb green-orb'></i>or <i class='fa fa-circle orb grey-orb'></i>indicator. Applies to version 6.9 RC2 and later only.
 :end
 
 :unassigned_devices_general_help_plug:
@@ -153,5 +164,11 @@ You will need to enter credentials for Windows 10 shares just to list them=
 > + '/usr/local/sbin/rc.unassigned mount /dev/sdX' - mount device sdX where 'X' is the device designator.
 > + '/usr/local/sbin/rc.unassigned umount /dev/sdX' - unmount device sdX where 'X' is the device designator. You can use this command in a UD script to unmount the device when the script has completed.
 > + '/usr/local/sbin/rc.unassigned refresh /dev/sdX' - used at the end of the 'ADD' case of a script so the 'Running...' indicator will be updated.
+> Additional options are available when you click on the <i style='color:black;font-weight:bold;' class="fa fa-plus-square"></i> icon by device identification. When the disk is unmounted, the mount point of the device can be changed. The disk label will also be changed. A disk can be formatted and an fsck run to check the disk.
+> + Disk must have all partitions removed. Unmount disk, click on the <i style='color:black;font-weight:bold;' class='fa fa-plus-square'></i> icon, and click on all <i style='color:red;font-weight:bold;' class='fa fa-remove hdd'></i> icons to delete partitions.
+> + If the disk has been precleared and shows a grayed 'Format' button, click on the <i style='color:black;font-weight:bold;' class='fa fa-plus-square'></i> icon, then click on the <i style='color:red;font-weight:bold;' class='fa fa-remove hdd'></i> icon to delete the preclear status file.
+> Additional options are available when you click on the <i style='color:black;font-weight:bold;' class="fa fa-plus-square"></i> icon by device identification. When the disk is unmounted, the mount point of the device can be changed. The disk label will also be changed. A disk can be formatted and an fsck run to check the disk.
+> + Disk must have all partitions removed. Unmount disk, click on the <i style='color:black;font-weight:bold;' class='fa fa-plus-square'></i> icon, and click on all <i style='color:red;font-weight:bold;' class='fa fa-remove hdd'></i> icons to delete partitions.
+> + If the disk has been precleared and shows a grayed 'Format' button, click on the <i style='color:black;font-weight:bold;' class='fa fa-plus-square'></i> icon, then click on the <i style='color:red;font-weight:bold;' class='fa fa-remove hdd'></i> icon to delete the preclear status file.
 :end
 
