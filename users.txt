@@ -1,29 +1,29 @@
 Add User=Crear Usuario
 Add=Crear
+Click Add User to create a user for remote shares access=Click **Add User** to create a user for remote shares access
 Click to select PNG file=Haga clic para seleccionar una imagen PNG
 Custom image=Imagen personalizada
 Description=Descripción
 Do not use reserved names=No use nombres reservados
 Drag-n-drop a PNG file or click the image at the left=Arrastre y suelte un archivo PNG o pulse en la imagen de la izquierda
 Edit User=Editar Usuario
+Invalid Key=
 Invalid user name=Nombre de usuario inválido
+Management Access=
+No users are defined=
 Only PNG images are allowed=Solo están permitidas las imagenes PNG
 Password too long=Contraseña demasiado larga
 Password=Contraseña
 Restore default image=Restablecer imagen por defecto
 Retype password=Repetir contraseña
+Save=
+Shares Access=
 Show Hide password=Mostrar / Ocultar contraseña
+SSH authorized keys=
+Syntax of the key is incorrect=
 Use a password up to 128 characters=Use una contraseña de hasta 128 caracteres
 Use only lowercase letters, digits, underscores and dashes=Use solo letras minúsculas, números, guiones bajos y guiones
 User %s has been deleted=El usuario %s ha sido eliminado
 User name=Nombre de usuario
 
-; New entries (8) - 2021-05-31
-Click Add User to create a user for remote shares access=Click **Add User** to create a user for remote shares access
-Invalid Key=
-Management Access=
-No users are defined=
-Save=
-Shares Access=
-SSH authorized keys=
-Syntax of the key is incorrect=
+; Note: November 14, 2021 - 7 missing translations

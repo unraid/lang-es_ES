@@ -1,4 +1,9 @@
+%s ago=
 %s used of %s %s %%=%s usados de %s (%s %%)
+10 s=
+30 s=
+1 m=
+2 m=
 Active tunnels=Túneles activos
 Activity=Actividad
 ago=atrás
@@ -7,6 +12,7 @@ All Apps=Todas las Apps
 All VMs=Todas las VMs
 Battery charge=Carga de la batería
 BIOS dated=Fecha de la BIOS
+Click to toggle CPU chart=
 Click to toggle details=Haga clic para mostrar/ocultar los detalles
 Completed=Completado
 Counters info=Info de paquetes
@@ -53,6 +59,7 @@ Last check incomplete on %s=Última comprobación incompleta el **%s**
 Last checked on %s=Última comprobación el **%s**
 Maximum size=RAM máxima
 Mode of operation=Modo de operación
+Network traffic=
 Next check scheduled on %s=Siguiente comprobación programada para el **%s**
 No docker containers defined=No hay ningún contenedore Docker instalado
 No running docker containers=No hay ningún contenedore Docker en ejecución
@@ -61,6 +68,7 @@ No shares present=No hay ninguna carpeta compartida
 No virtual machines defined=No hay ninguna máquina virtual definida
 Nominal power=Potencia nominal
 not received=no recibido
+Only PNG images are allowed=Only PNG images are allowed!
 Outbound=Envío
 Overall Load=Uso Total
 Parity disk not present=No hay disco de paridad
@@ -75,16 +83,19 @@ Received packets=Paquetes recibidos
 Runtime left=Tiempo de batería restante
 Scheduled parity check is disabled=No hay comprobaciones de paridad programadas
 Select Case Model=Seleccione un Modelo de Caja
+Select time frame=
 Share count %s with %s cache only and %s encrypted=Número de carpetas: %s con %s solo en caché y %s cifrada(s)
 Show details=Mostrar detalles
 Show Information=Mostrar Información
 Shutdown the system=Apagar el sistema
 SMART error=Error de SMART
+SMART health-check failed=
 SMART=SMART
 sn=n/s
 Start the array=Iniciar el array
 Started only=Solo en ejecución
 Stop the array=Detener el array
+Temp=
 This will put the system to sleep=Esto suspenderá el sistema
 This will reboot the system=Esto reiniciará el sistema
 This will shutdown the system=Esto apagará el sistema
@@ -100,21 +111,4 @@ utilization warning=advertencia de uso de almacenamiento
 View Running Processes=Ver procesos en ejecución
 Virtual Machines=Máquinas Virtuales
 
-; New entries (3) - 2021-05-08
-%s ago=
-Only PNG images are allowed=Only PNG images are allowed!
-Temp=
-
-; New entries (1) - 2021-05-15
-SMART health-check failed=
-
-; New entries (2) - 2021-05-20
-Click to toggle CPU chart=
-Network traffic=
-
-; New entries (5) - 2021-05-31
-10 s=
-30 s=
-1 m=
-2 m=
-Select time frame=
+; Note: November 14, 2021 - 10 missing translations

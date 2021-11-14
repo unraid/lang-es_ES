@@ -10,8 +10,10 @@ Are you sure=Está seguro
 Array has been Reset=El array ha sido **restablecido**
 Array must be Started to change permissions=El array debe estar **Iniciado** para cambiar los permisos
 Array must be Stopped to change=El array debe estar **Detenido** para cambiar
+Array slots=
 Array=Array
 Author=Autor
+Beta=
 Blacklisted USB Flash GUID=GUID del dispositivo flash USB en la lista negra
 Branch=Rama
 By using this software, you agree with our=Al usar este programa, está de acuerdo con nuestro
@@ -23,11 +25,13 @@ collecting diagnostic information this may take several minutes=recolectando inf
 Component=Componente
 Credits=Créditos
 Data slots=Espacios para discos de datos
+Delete all notifications=
 Delete notification=Eliminar notificación
 Developer=Desarrollador
 Diagnostics=Diagnóstico
 Disks=Disco
 Display Settings=Ajustes de Pantalla
+Downloading=
 End-User License Agreement=Acuerdo de Licencia de Usuario Final
 Enter URL of language pack XML file=Introduzca la URL del archivo XML del paquete de idioma
 Error accessing your physical USB Flash boot device=Error al acceder a su dispositivo flash USB de arranque
@@ -42,6 +46,7 @@ Hide Details=Ocultar Detalles
 If you do not receive an email, please check your spam or junk-email folder=Si no recibe un correo electrónico, por favor, revise sus carpetas de correo no deseado y correo basura (spam).
 Importance=Importancia
 Important=Importante
+Install Language=
 Install=Instalar
 Installed languages=Idiomas instalados
 Invalid Trial Installation=Activación Inválida de la **Versión de Evaluación**
@@ -55,6 +60,7 @@ Missing Language=Falta el Idioma
 Network Settings=Ajustes de Red
 New Config=Nueva Configuración
 New Permissions=Nuevos Permisos
+Next=
 No notifications present=
 No personal information such as user names, passwords, or any other file contents is included in the hardware profile=Ninguna información personal como nombres de usuario, contraseñas o cualquier otro contenido de archivos se incluye en el perfil de hardware
 normal=normal
@@ -62,8 +68,10 @@ Only ZIP files are allowed=Solo se permiten archivos ZIP
 Page Map=Mapa de Sitio Web
 Parity slots=Espacios para discos de paridad
 Please check your=Por favor, compruebe su
+please configure=
 Please select a language before proceeding=Por favor, seleccione un idioma antes de continuar
 Please=Por favor
+Pool slots=
 Preserve current assignments=Conservar las asignaciones actuales
 previous=anterior
 Privacy Policy=Política de Privacidad
@@ -84,6 +92,7 @@ Select language file=Seleccionar archivo de idioma
 Select language=Seleccionar idioma
 Show Details=Mostrar Detalles
 slots=espacios
+Stable=
 Subject=Asunto
 System Devices=Dispositivos del Sistema
 System Update Check=Buscar Actualización del Sistema
@@ -107,6 +116,7 @@ Trial key expires on=Caducidad de la ***Versión de Evaluación***
 Trial=Versión de Evaluación
 Update OS=Actualizar SO
 Upgrade Key=Actualizar Licencia
+Uploaded=
 uploading hardware information=enviando información de hardware
 Uploading=Enviando
 Use this to develop language packs=Use este menú para desarrollar paquetes de idiomas
@@ -114,6 +124,8 @@ Use this to install official language packs=Use este menú para instalar paquete
 User Shares=Carpetas Compartidas
 User=Usuario
 Vars=Variables
+VFIO-PCI Log=
+View VFIO-PCI Log=
 warning=advertencia
 webGUI=Interfaz Web
 When received, please paste the URL into the Key file URL box and=Cuando lo reciba, por favor, pegue la URL en el campo de <i>URL del Archivo de Licencia</i> y
@@ -134,6 +146,7 @@ In use by Unraid=En uso por Unraid
 Kernel driver in use vfio-pci=Controlador del Kernel en uso: vfio-pci
 No changes=Sin cambios
 PCI Devices and IOMMU Groups=Dispositivos PCI y Grupos IOMMU
+PCI Devices No IOMMU Groups Available=PCI Devices (No IOMMU Groups Available)
 Reboot to take effect=Es necesario reiniciar para que tenga efecto
 SCSI Devices=Dispositivos SCSI
 The below list doesnt not reflect the way IOMMU would naturally group devices=La lista mostrada abajo no refleja la forma con la que IOMMU agruparía los dispositivos por defecto
@@ -149,6 +162,7 @@ Posteriormente, este archivo se puede enviar por email a LimeTech o subir al for
 
 Esto hará posible que otros puedan obtener rápidamente la información interna de su sistema y le puedan proporcionar mejor soporte con su problema. La información y los archivos de configuración
 recolectados se muestran a continuación:
+
 :end
 
 :diagnostics_2_plug:
@@ -180,6 +194,9 @@ sin embargo, Unraid OS **sí** *incluirá* el nombre del servidor, la dirección
 en los mensajes que envían al registro del sistema.*
 
 *Marque la casilla* **Hacer anónima la información de diagnóstico** *al publicar el archivo de diagnóstico en el foro de Unraid. Si se comunica de forma privada con Limetech, se recomienda desmarcar esta casilla para capturar toda la información del sistema sin modificar.*
+
+
+
 :end
 
 :newconfig_plug:
@@ -193,6 +210,9 @@ Utilice *'Conservar asignaciones actuales'* para seleccionar en la lista despleg
 
 ** NO UTILICE ESTA UTILIDAD PENSANDO QUE RECONSTRUIRÁ UN DISCO DEFECTUOSO ** - Tendrá el efecto contrario, y
 hará que sea ***imposible*** reconstruir una unidad defectuosa existente - ¡Tenga en cuenta esta advertencia!
+
+
+
 :end
 
 :newperms_1_plug:
@@ -205,6 +225,8 @@ directorios al realizar la transición de Active Directory a una integración qu
 La utilidad inicia un proceso en segundo plano que accede a cada uno de sus discos del array, discos de caché y carpetas compartidas
 seleccionadas y cambia la propiedad de archivos y directorios a *nobody/users* (ej. uid/gid to 99/100), y establece los siguientes
 permisos:
+
+
 :end
 
 :newperms_2_plug:
@@ -216,6 +238,8 @@ Para archivos con permisos de lectura y escritura:
 
 Para archivos de solo lectura:
   -r--r--r--
+
+
 :end
 
 :newperms_3_plug:
@@ -224,6 +248,8 @@ Al hacer clic en **Iniciar** se abrirá otra ventana e iniciará el proceso en s
 Cerrar la ventana antes de que se haya completado terminará el proceso en segundo plano, así que no lo haga. Este proceso puede tardar mucho tiempo si tiene muchos archivos.
 
 Tenga en cuenta que esta herramienta puede afectar negativamente cualquier contenedor de Docker si permite que se incluya la carpeta appdata.
+
+
 :end
 
 :registration_1_plug:
@@ -234,6 +260,8 @@ Las licencias están ligadas al número de serie del dispositivo flash USB de ar
 al menos 1GB de capacidad.
 
 Nota: Los lectores de tarjetas de memoria USB por lo general **no** son están soportados debido a que la mayoría no tiene números de serie únicos.
+
+
 :end
 
 :registration_2_plug:
@@ -247,12 +275,15 @@ La *Versión de Evaluación* proporciona la misma funcionalidad y soporte de dis
 Cuando la *Versión de Evaluación* haya caducado, su servidor **seguirá funcionando normalmente** hasta la siguiente vez que **Detenga** el array.
 
 En ese momento, puede comprar una Licencia o solicitar una extensión de la *Versión de Evaluación*.
+
+
 :end
 
 :registration_4_plug:
 Para continuar usando Unraid OS puede comprar una Licencia. Como alternativa, puede solicitar una extensión de la *Versión de Evaluación*.
 
 La mayoría de las solicitudes para extender la *Versión de Evaluación* se procesan de inmediato; pero por favor, tenga en cuenta que este proceso puede tardar hasta un día hábil.
+
 :end
 
 :registration_5_plug:
@@ -261,6 +292,8 @@ No es posible activar la *Versión de Evaluación* con la instalación existente
 Puede comprar una Licencia que será registrada con este dispositivo flash USB para continuar usando esta instalación.
 
 Para más información, por favor [Contacte con el Soporte de Unraid](https://lime-technology.com/contact).
+
+
 :end
 
 :registration_6_plug:
@@ -270,12 +303,15 @@ Parece que su archivo de Licencia está dañado o no existe.  El archivo Licenci
 Si no tiene una copia de seguridad de su archivo de Licencia, [Contacte con el Soporte de Unraid](https://lime-technology.com/contact).
 
 Si se trata de una *Versión de Evaluación*, puede comprar una Licencia.
+
+
 :end
 
 :registration_7_plug:
 Las *Versiones de Evaluación* solo son válidas con el dispositivo flash USB registrado originalmente.
 
 Para continuar usando esta instalación de Unraid OS con este dispositivo flash USB, puede comprar una Licencia.
+
 :end
 
 :registration_8_plug:
@@ -288,6 +324,8 @@ reemplazada en cualquier momento. Tras esto, una Licencia de reemplazo puede ser
 reemplazar su Licencia antes de este periodo, [Contacte con el Soporte de Unraid](https://lime-technology.com/contact).
 
 **Nota:** Reemplazar una Licencia hará que el GUID del dispositivo flash USB usado previamente sea incluido de forma permanente en la lista negra, y no se pueda volver a usar con esta instalación de Unraid OS.
+
+
 :end
 
 :registration_9_plug:
@@ -298,23 +336,8 @@ Un dispositivo flash USB también puede ser incluido en la *lista negra* si no t
 no es único (esto es común con los lectores de tarjetas de memoria USB).
 
 Para más información, por favor [Contacte con el Soporte de Unraid](https://lime-technology.com/contact).
+
+
 :end
 
-; New entries (10) - 2021-05-08
-Array slots=
-Delete all notifications=
-Downloading=
-Install Language=
-please configure=
-Pool slots=
-Uploaded=
-VFIO-PCI Log=
-View VFIO-PCI Log=
-PCI Devices No IOMMU Groups Available=PCI Devices (No IOMMU Groups Available)
-
-; New entries (2) - 2021-05-10
-Next=
-Stable=
-
-; New entries (1) - 2021-05-20
-Beta=
+; Note: November 14, 2021 - 13 missing translations
