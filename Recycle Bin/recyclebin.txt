@@ -51,7 +51,7 @@ Update Recycle Bin Size in Background=Actualizar el tamaño de la papelera de re
 
 :recycle_bin_enable_plug:
 > Establezca 'Sí' para habilitar la funcionalidad de la Papelera de reciclaje para archivos eliminados cuando se inicia el servidor.
-> To hide the Recycle Bin folder, set 'Hide Dot Files to 'Yes' in the SMB settings <a href='/Settings/SMB'>here</a>.
+>
 > To hide the Recycle Bin folder, set 'Hide Dot Files to 'Yes' in the SMB settings <a href='/Settings/SMB'>here</a>.
 :end
 
