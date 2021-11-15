@@ -307,4 +307,4 @@ xfs_repair status=estado de xfs_repair
 You may not add new disks and also remove existing disks=No puede añadir nuevos discos y eliminar discos existentes a la vez
 your server=su servidor
 
-; Note: November 14, 2021 - 20 missing translations
+; Note: November 15, 2021 - 20 missing translations
