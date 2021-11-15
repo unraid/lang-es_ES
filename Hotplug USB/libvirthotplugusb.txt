@@ -20,3 +20,5 @@ No USB devices=Sin dispositivos USB
 :libvirt_hot_plug:
 > Seleccione la VM para el dispositivo USB que se va a conectar/desconectar y el dispositivo USB para la VM seleccionada.
 :end
+
+; Note: November 15, 2021 - 1 missing translations

@@ -123,3 +123,5 @@ Update Recycle Bin Size in Background=Actualizar el tamaño de la papelera de re
 > Los archivos eliminados se mostrarán en el registro como archivos no vinculados.
 > Haga clic en el botón "Borrar" para borrar el registro.
 :end
+
+; Note: November 15, 2021 - 6 missing translations

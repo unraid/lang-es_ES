@@ -169,3 +169,5 @@ Governor=
 > Note: Be careful with the processes you kill here.  You could lose data!
 :end
 
+
+; Note: November 15, 2021 - 70 missing translations
