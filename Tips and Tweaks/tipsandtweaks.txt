@@ -170,4 +170,4 @@ Governor=
 :end
 
 
-; Note: November 15, 2021 - 70 missing translations
+; Note: December 16, 2021 - 70 missing translations
