@@ -21,4 +21,4 @@ Cannot get list of open files=No se puede obtener la lista de archivos abiertos
 >Haga clic en 'Programa', ID de proceso 'o' Nombre de archivo y ruta 'para cambiar el orden de clasificación.
 :end
 
-; Note: December 16, 2021 - 1 missing translations
+; Note: January 8, 2022 - 1 missing translations
