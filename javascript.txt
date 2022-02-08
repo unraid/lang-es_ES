@@ -47,6 +47,8 @@ Yes, update it=Sí, actualizar
 Yes=Sí
 
 ; footer messages
+Array Copying=
+Array Clearing=
 Array Starting=Iniciando Array
 Array Stopping=Deteniendo Array
 Mounting disks=Montando discos
@@ -65,4 +67,4 @@ Container Variable=
 Container Label=
 Container Device=
 
-; Note: February 8, 2022 - 7 missing translations
+; Note: February 8, 2022 - 9 missing translations
