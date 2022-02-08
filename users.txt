@@ -26,4 +26,4 @@ Use only lowercase letters, digits, underscores and dashes=Use solo letras minú
 User %s has been deleted=El usuario %s ha sido eliminado
 User name=Nombre de usuario
 
-; Note: November 18, 2021 - 7 missing translations
+; Note: February 8, 2022 - 7 missing translations

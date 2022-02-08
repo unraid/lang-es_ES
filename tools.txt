@@ -313,4 +313,4 @@ no es único (esto es común con los lectores de tarjetas de memoria USB).
 Para más información, por favor [Contacte con el Soporte de Unraid](https://lime-technology.com/contact).
 :end
 
-; Note: November 18, 2021 - 13 missing translations
+; Note: February 8, 2022 - 13 missing translations
