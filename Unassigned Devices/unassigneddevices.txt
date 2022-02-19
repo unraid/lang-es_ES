@@ -46,6 +46,7 @@ ISO File is=
 ISO File Shares=
 Identification=
 If using a disk password be sure to enter the password for this disk in UD Settings so it can be mounted=
+Device=
 Leave blank to use the array passwordpassphrase=
 Load Shares=
 Loading=
@@ -173,4 +174,4 @@ You will need to enter credentials for Windows shares just to list them=
 > + '/usr/local/sbin/rc.unassigned refresh /dev/sdX' - used at the end of the 'ADD' case of a script so the 'Running...' indicator will be updated.
 :end
 
-; Note: January 8, 2022 - 118 missing translations
+; Note: February 19, 2022 - 119 missing translations
