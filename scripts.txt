@@ -3,5 +3,3 @@ Docker=Docker
 Language=Idioma
 Notice %s - Version update %s=Aviso [%s] - Actualización de la versión %s
 Plugin=Plugin
-
-; Note: February 8, 2022 - 4 missing translations

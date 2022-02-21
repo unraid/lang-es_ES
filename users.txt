@@ -25,5 +25,3 @@ Use a password up to 128 characters=Use una contraseña de hasta 128 caracteres
 Use only lowercase letters, digits, underscores and dashes=Use solo letras minúsculas, números, guiones bajos y guiones
 User %s has been deleted=El usuario %s ha sido eliminado
 User name=Nombre de usuario
-
-; Note: February 8, 2022 - 7 missing translations

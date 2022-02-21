@@ -36,5 +36,3 @@ Update All Plugins=Actualizar Todos los Plugins
 Update Plugin=Actualizar Plugin
 Upgrade=Actualizar
 View Release Notes=Ver Notas de la Versión
-
-; Note: February 8, 2022 - 9 missing translations

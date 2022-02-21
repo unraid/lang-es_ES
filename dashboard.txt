@@ -111,4 +111,4 @@ utilization warning=advertencia de uso de almacenamiento
 View Running Processes=Ver procesos en ejecución
 Virtual Machines=Máquinas Virtuales
 
-; Note: February 8, 2022 - 10 missing translations
+; Note: February 21, 2022 - 10 missing translations
