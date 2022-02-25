@@ -174,4 +174,4 @@ You will need to enter credentials for Windows shares just to list them=
 > + '/usr/local/sbin/rc.unassigned refresh /dev/sdX' - used at the end of the 'ADD' case of a script so the 'Running...' indicator will be updated.
 :end
 
-; Note: February 19, 2022 - 119 missing translations
+; Note: February 25, 2022 - 119 missing translations

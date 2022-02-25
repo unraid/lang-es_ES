@@ -124,4 +124,4 @@ Update Recycle Bin Size in Background=Actualizar el tamaño de la papelera de re
 > Haga clic en el botón "Borrar" para borrar el registro.
 :end
 
-; Note: February 19, 2022 - 6 missing translations
+; Note: February 25, 2022 - 6 missing translations
