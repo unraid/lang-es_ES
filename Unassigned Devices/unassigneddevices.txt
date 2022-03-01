@@ -116,7 +116,7 @@ You must enable SMB in Settings->SMB to mount SMB shares=
 You must enable the Destructive Mode in UD Settings before you can Format this disk=
 WARNING=
 You WILL have problems if you do=
-You will need to enter credentials for Windows shares just to list them=
+You will need to enter credentials to list the shares=
 
 ; Help
 ;
@@ -174,4 +174,4 @@ You will need to enter credentials for Windows shares just to list them=
 > + '/usr/local/sbin/rc.unassigned refresh /dev/sdX' - used at the end of the 'ADD' case of a script so the 'Running...' indicator will be updated.
 :end
 
-; Note: February 27, 2022 - 119 missing translations
+; Note: March 1, 2022 - 119 missing translations
