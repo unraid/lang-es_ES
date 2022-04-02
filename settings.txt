@@ -722,4 +722,4 @@ Your server has been registered=Su servidor ha sido registrado
 Your Unraid Server is reachable from the internet=Su servidor Unraid es accesible desde Internet
 YYYY-MM-DD=AAAA-MM-DD
 
-; Note: March 18, 2022 - 177 missing translations
+; Note: April 2, 2022 - 177 missing translations
