@@ -113,6 +113,7 @@ Yes, install them=Sí, instalarlas
 Cookies not enabled Plugins must be separately installed from docker applications=Las cookies no están habilitadas. Los plugins deben de ser instalados por separado de las aplicaciones Docker.
 Docker applications will be installed utilizing the most recently saved template with no user input on your part=Las aplicaciones Docker serán instalados utilizando la última versión guardada de la plantilla sin ninguna interacción por su parte.
 Updating Support Links=Actualizando Los Enlaces De Soporte
+Downloading docker icons=
 Finished Installing If the DONE button did not appear, then you will need to click the red X in the top right corner=Instalación Finalizada. Si el botón HECHO no aparece, haga clic en la X roja de la esquina superior derecha.
 
 ; error messages
@@ -134,12 +135,13 @@ This template is set up to use a custom network You may have to adjust the netwo
 One or more ports used by this application are already in use by another service or app running on your server You will need to adjust the host ports accordingly on the template=
 
 ; CA Sections Keep the length reasonable
+Home=
 Installed Apps=Apps Instaladas
 Previous Apps=Apps Anteriores
 Pinned Apps=Apps Ancladas
 Favourite Repo=
+Action Centre=
 Recently Added=
-Updated Apps=Apps Actualizadas
 Random Apps=Apps Aleatorias
 Top New Installs=Top Nuevas Instalaciones
 Top Trending Apps=
@@ -298,8 +300,8 @@ Ranked #%s=Posición #%s
 Trending %s=Tendencia %s
 ; as in As of some date
 As of %s=(A fecha de %s)
-Show Charts=
-Hide Charts=
+Play Video=
+Play Video %s=
 This application is not compatible with your version of Unraid=Esta aplicación no es compatible con su versión de Unraid
 Another browser tab or device has updated the displayed templates Some actions are not available=Otra pestaña del navegador o dispositivo ha actualizado las plantillas mostradas. Algunas acciones no están disponibles.
 WebUI=Interfaz Web
@@ -326,6 +328,7 @@ Support Forum=
 ; as in more than 100000
 More than %s=Más de %s
 Remove from Previous Apps=
+Remove=
 See All Apps=
 Favourite=
 Application Type=
@@ -409,4 +412,4 @@ An error occurred - Could not determine configuration=
 ; WebGui
 Click Install to download and install the Community Applications plugin=Click **Install** to download and install the **Community Applications** plugin
 
-; Note: April 2, 2022 - 131 missing translations
+; Note: May 7, 2022 - 135 missing translations
