@@ -132,4 +132,4 @@ Web=Web
 WebUI=Interfaz Web
 Writable=Grabable
 
-; Note: May 7, 2022 - 8 missing translations
+; Note: May 20, 2022 - 8 missing translations
