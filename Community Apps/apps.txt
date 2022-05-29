@@ -17,9 +17,9 @@ Browser translation detected Display issues may result=
 Sort By=
 Name Ascending=
 Name Descending=
-Downloads=
+Downloads=Descargas
 Date Added=
-Number Of Apps=
+Number Of Apps=Número de aplicaciones
 ; Initial disclaimer translations
 Disclaimer=Exención de responsabilidad
 All applications listed here are 3rd party additions to Unraid Neither the authors of Community Applications nor Limetech make any warranty as to the suitability of any application listed here=Todas las aplicaciones mostradas aquí son programas de terceros ajenos a Unraid. Ni los autores del plugin Aplicaciones de la Comunidad (CA) ni Limetech garantizan la idoneidad de las aplicaciones de este listado.
