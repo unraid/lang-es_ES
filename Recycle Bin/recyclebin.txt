@@ -15,6 +15,7 @@ Excluded Files=Archivos Excluidos
 Excluded Shares=Recursos Compartidos Excluidos
 Log Deleted Files=Registo de archivos eliminados
 Recycle Bin=Papelera de Reciclaje
+Recycle Bin is empty=
 Recycle Bin Log=Registro de la Papelera de Reciclaje
 Recycle Bin parameters=Parámetros de la papelera de reciclaje
 Recycle Bin permissions=
@@ -123,4 +124,4 @@ Update Recycle Bin Size in Background=Actualizar el tamaño de la papelera de re
 > Haga clic en el botón "Borrar" para borrar el registro.
 :end
 
-; Note: May 26, 2022 - 6 missing translations
+; Note: May 29, 2022 - 7 missing translations
