@@ -1515,7 +1515,7 @@ Por favor, visite los [foros de Lime Technology](https://forums.unraid.net/forum
 :end
 
 :vms_libvirt_log_help:
-Consulte el registro de libvirt: <a id="openlog" title="/var/log/libvirt/libvirtd.log" href="#" onclick="openWindow('/webGui/scripts/tail_log&arg1=libvirt/libvirtd.log','_(Libvirt Log)_',600,900);">/var/log/libvirt/libvirtd.log</a>
+Consulte el registro de libvirt: <a onclick="openTerminal('log','libvirt','libvirt/libvirtd.log')">View libvirtd.log</a>
 :end
 
 :vms_scrub_help:
