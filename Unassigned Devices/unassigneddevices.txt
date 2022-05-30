@@ -47,7 +47,7 @@ Free=
 from disk=
 Go to Settings->Global Share Settings and set Enable Disk Shares to Auto or Off=
 Historical Devices=
-If this disk was pre-cleared, you will remove the pre-clear signature. =
+If this disk was pre-cleared, you will remove the pre-clear signature.=
 If you add the disk to the array and the pre-clear signature is removed, Unraid will go through the lengthy process of clearing the disk again=
 ISO File is=
 ISO File Shares=
@@ -77,6 +77,7 @@ Partition and Format Disk=
 Pass Thru=
 Password=
 Read only=
+Reboot=
 Refresh Disks and Configuration=
 Remember your password It cannot be recovered=
 Remote Share is=
@@ -188,4 +189,4 @@ You will need to enter credentials to list the shares=
 > + '/usr/local/sbin/rc.unassigned refresh /dev/sdX' - used at the end of the 'ADD' case of a script so the 'Running...' indicator will be updated.
 :end
 
-; Note: May 26, 2022 - 133 missing translations
+; Note: May 29, 2022 - 134 missing translations
