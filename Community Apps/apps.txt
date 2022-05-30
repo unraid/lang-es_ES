@@ -45,43 +45,45 @@ Click Here To Get More Results From DockerHub=Pulse aquí para obtener más resu
 No Matching Applications Found=No se encontró ninguna aplicación
 
 ; Repository Related
-%s removed as favourite repository=
-%s set as favourite repository=
-Click to remove favourite repository=
-Click to set %s as favourite repository=
-Search for apps in repository=
-No description present=
-Go to the forum page=
-Go to the webpage=
-Go to reddit=
-Go to facebook=
-Go to discord=
-Go to forum profile=
-Show Profile=
-SHOW MORE=
-SHOW LESS=
-Read more=
-Total Applications=
+%s removed as favourite repository=%s eliminado como repositorio favorito
+%s set as favourite repository=%s añadido como repositorio favorito
+Click to remove favourite repository=Click para eliminarlo de como repositorio favorito
+Click to set %s as favourite repository=Click para añadir a %s como repositorio favorito
+Search for apps in repository=Buscar aplicaciones en el repositorio
+No description present=Sin descripción
+Go to the forum page=Ir a la página del foro
+Go to the webpage=Ir a la página web
+Go to reddit=Ir a reddit
+Go to facebook=Ir a facebook
+Go to discord=Ir a discord
+Go to forum profile=Ir al foro
+Show Profile=Mostrar perfil
+SHOW MORE=Mostrar más
+SHOW LESS=Mostrar menos
+Read more=Leer más
+Total Applications=Total aplicaciones
 Total Known Downloads=
 Total Docker Applications=
 Total Plugin Applications=
-Total Languages=
+Total Languages=Total lenguajes
 Average Downloads Per App=
-Web Page=
-Forum=
+Web Page=Página web
+Forum=Foro
 Forum Profile=
-Profile=
-Facebook=
-Reddit=
-Twitter=
-Discord=
-Search Apps=
+Profile=Perfil
+Facebook=Facebook
+Reddit=Reddit
+Twitter=Twitter
+Discord=Discord
+Search Apps=Buscar aplicaciones
 Registry=Registro
 Details=Detalles
 Added=Añadido
 ; Install Plugin title of openbox
-Install Plugin=Instalar plugin
-BACK=ATRÁS
+
+Install Plugin=Instalar puglin
+BACK=Atrás
+
 
 ; Remove App from previously installed
 Delete Template=Eliminar Plantilla
