@@ -80,7 +80,7 @@ Registry=Registro
 Details=Detalles
 Added=Añadido
 ; Install Plugin title of openbox
-Install Plugin=Instalar puglin
+Install Plugin=Instalar plugin
 BACK=Atrás
 
 ; Remove App from previously installed
