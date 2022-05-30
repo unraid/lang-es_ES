@@ -348,7 +348,7 @@ Setting installed applications to autostart=Configurando las aplicaciones instal
 Docker Application Installation finished=La instalación de las aplicaciones Docker ha finalizado
 
 ; Application Cards
-Actions=Acciones
+Actions=Opciones
 This application is a driver plugin=This application is a driver (plugin)
 This is a language pack=Paquete de idiomas
 This application is a docker container=Aplicación Docker
@@ -394,7 +394,7 @@ Info=Info
 Attention=Atención
 Repository=Repositorio
 Why we picked it=
-Application Spotlight %s=
+Application Spotlight %s=Aplicación destacada %s
 Unraid Staff=Unraid Staff
 
 ; Page Navigation
