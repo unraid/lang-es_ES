@@ -9,7 +9,7 @@ day=día
 days=días
 disk image and definition=imagen de disco y archivo de configuración
 Disks=Discos
-Donate=
+Donate=Donar
 Done=Atrás
 Edit=Editar
 Execution error=Error de ejecución
@@ -25,7 +25,7 @@ Ok=Ok
 Pause=Suspender
 Proceed=Seguir
 Project Page=Página del Proyecto
-Read Me First=
+Read Me First=Leer primero
 Remove container=Eliminar contenedor
 Remove definition=Eliminar archivo de configuración
 Remove image=Eliminar imagen
@@ -47,8 +47,8 @@ Yes, update it=Sí, actualizar
 Yes=Sí
 
 ; footer messages
-Array Copying=
-Array Clearing=
+Array Copying=Copiando array
+Array Clearing=Limpiando array
 Array Starting=Iniciando Array
 Array Stopping=Deteniendo Array
 Mounting disks=Montando discos
@@ -61,10 +61,10 @@ Missing encryption key=Falta la clave de cifrado
 Opening encrypted volumes=Abriendo volúmenes cifrados
 
 ; docker variables
-Container Path=
-Container Port=
-Container Variable=
-Container Label=
+Container Path=Ruta del contenedor
+Container Port=Puerto del contenedor
+Container Variable=Varible del contenedor
+Container Label=Etiqueta del contenedor
 Container Device=
 
 ; Note: May 29, 2022 - 9 missing translations
