@@ -9,7 +9,7 @@
 %s second ago=hace %s segundo
 %s seconds ago=hace %s segundos
 %s week ago=hace %s semana
-%s weeks ago=hacs %s semanas
+%s weeks ago=hace %s semanas
 aborted=abortado
 Absolute=Absoluto
 Acknowledge=Restablecer
