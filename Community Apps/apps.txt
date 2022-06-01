@@ -137,23 +137,23 @@ This template is set up to use a custom network You may have to adjust the netwo
 One or more ports used by this application are already in use by another service or app running on your server You will need to adjust the host ports accordingly on the template=Uno o varios puertos utilizados por esta aplicación ya están en uso por otro servicio o aplicación. Deberá ajustar los puertos de host según corresponda en la plantilla.
 
 ; CA Sections Keep the length reasonable
-Home=Home
+Home=Inicio
 Installed Apps=Apps Instaladas
 Previous Apps=Apps Anteriores
 Pinned Apps=Apps Ancladas
 Favourite Repo=Repo. favoritos
-Action Centre=
+Action Centre=Noticias
 Recently Added=Añadido recientemente
 Random Apps=Apps Aleatorias
-Top New Installs=Top Nuevas Instalaciones
+Top New Installs=Top nuevas instalaciones
 Top Trending Apps=Top tendencias
 Spotlight Apps=Aplicaciones destacadas
-All Apps=Todas las Apps
+All Apps=Todas las aplicaciones
 Statistics=Estadísticas
 Credits=Créditos
 Support=Soporte
 VERSION=VERSIÓN
-Change Log=Notas de la Versión
+Change Log=Notas de la versión
 Debugging=Depuración
 
 ; Credits
@@ -213,9 +213,9 @@ An assortment of randomly chosen apps=Aplicaciones elegidas al azar
 ; Categories try not to be excessively long This is displayed on the left of CA screen
 
 Backup=Copia de Seguridad
-Cloud=Nube
-Crypto Currency=
-Downloaders=Gestores de Descarga
+Cloud=Cloud
+Crypto Currency=Criptomonedas
+Downloaders=Gestores de descarga
 Drivers=Drivers
 Game Servers=Servidores de Juego
 Home Automation=Automatización del Hogar
