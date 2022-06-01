@@ -10,7 +10,7 @@ days=días
 disk image and definition=imagen de disco y archivo de configuración
 Disks=Discos
 Donate=Donar
-Done=Atrás
+Done=Hecho
 Edit=Editar
 Execution error=Error de ejecución
 Force Stop=Forzar Parada
@@ -27,7 +27,7 @@ Proceed=Seguir
 Project Page=Página del Proyecto
 Read Me First=Leer primero
 Remove container=Eliminar contenedor
-Remove definition=Eliminar archivo de configuración
+Remove definition=Eliminar definición
 Remove image=Eliminar imagen
 Remove VM=Eliminar VM
 Remove=Eliminar
@@ -42,8 +42,8 @@ Updating all Containers=Actualizando todos los Contenedores
 Updating the container=Actualizando el contenedor
 VNC Remote=VNC Remoto
 WebUI=Interfaz Web
-Yes, delete it=Sí, eliminar
-Yes, update it=Sí, actualizar
+Yes, delete it=Sí, eliminalo
+Yes, update it=Sí, actualizalo
 Yes=Sí
 
 ; footer messages
@@ -65,6 +65,6 @@ Container Path=Ruta del contenedor
 Container Port=Puerto del contenedor
 Container Variable=Varible del contenedor
 Container Label=Etiqueta del contenedor
-Container Device=
+Container Device=Dispositivo del contenedor
 
 ; Note: May 29, 2022 - 9 missing translations
