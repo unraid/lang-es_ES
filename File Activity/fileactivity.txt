@@ -1,12 +1,12 @@
 File Activity=Actividad de Archivo
-File Activity Monitoring=
+File Activity Monitoring=Monitorizando actividad de archivo
 Start File Activity=Iniciar Actividad de Archivo
-Stop File Activity Monitoring=
+Stop File Activity Monitoring=Parar monitorización de actividad de archivo
 Clear the File Activity log=Borrar el Registro de Actividad de Archivo
 Refresh log=Actualizar Registro
-Enable File Activity Monitoring=
+Enable File Activity Monitoring=Habilitar monitorización de archivo
 Enable for Unassigned Devices=Habilitar para Dispositivos no asignados
-Enable for Cache and Pool Disks=
+Enable for Cache and Pool Disks=Habilitar para cache y pool de discos
 ;
 ; Help
 ;
