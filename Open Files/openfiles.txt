@@ -1,12 +1,12 @@
-Process=
+Process=Proceso
 Kill Process=Proceso de Terminación 
-Process ID=Identificacion de Proceso
-Open Files=Abrir Archivo
-Files that may prevent shutdown=Archivos que pueden evitar el apagado 
+Process ID=Identificación de Proceso
+Open Files=Abrir Archivos
+Files that may prevent shutdown=Archivos que pueden impedir que se apague 
 File Name and Path=Nombre de archivo y Ruta
-An entry for bash means you have a terminal session open with the working directory on the array=Una entrada para "bash" significa que tiene una sesión de terminal abierta con el directorio de trabajo en la matriz
+An entry for bash means you have a terminal session open with the working directory on the array=Una entrada para "bash" significa que tiene una sesión de terminal abierta con el directorio de trabajo en el array
 If smbd is listed, it means that another computer has a samba share mounted=Si "smbd" aparece en la lista, significa que otra computadora tiene un recurso compartido de samba montado
-Files open by Samba usually wont prevent array shutdown=Los archivos abiertos por Samba generalmente no impedirán el apagado de la matriz
+Files open by Samba usually wont prevent array shutdown=Los archivos abiertos por Samba normalmente no impedirán el apagado del array
 No open files=No hay archivos abiertos
 Kill=Terminar
 Command timed out=El Comando ha agotado el tiempo de espera
@@ -15,10 +15,10 @@ Cannot get list of open files=No se puede obtener la lista de archivos abiertos
 ; Help
 ;
 :open_files_help_plug:
-> Haga clic en el botón 'Terminar' para detener el proceso que mantiene abiertos los archivos.
-> Se abrirá un cuadro de diálogo que mostrará el progreso de terminar el proceso que mantiene esos archivos abiertos.
+> Haga clic en el botón **Terminar** para detener el proceso que mantiene los archivos abiertos.
+> Se abrirá un cuadro de diálogo que le mostrará el progreso de la eliminación del proceso que mantiene esos archivos abiertos.
 >
->Haga clic en 'Programa', ID de proceso 'o' Nombre de archivo y ruta 'para cambiar el orden de clasificación.
+>Haga clic en **Proceso**, **ID de proceso**, **Archivos que pueden impedir que se apague**, o **Nombre de archivo y ruta** para cambiar el orden de clasificación.
 :end
 
 ; Note: May 30, 2022 - 1 missing translations
