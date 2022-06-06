@@ -320,7 +320,7 @@ Self-Test=Autodiagnóstico
 Server=Servidor
 Set Password=Configurar contraseña
 Settings=Ajustes
-Share name=Nombre
+Share name=Nombre del recursos
 Share=Recurso Compartido
 Shares List=Lista de Recursos Compartidos
 Shares=Compartido
@@ -335,6 +335,7 @@ Sorry, an error occurred=Lo sentimos, ha ocurrido un error
 Sorry, this feature is not supported by MSIEEdge=Lo sentimos, esta característica no es compatible con MSIE/Edge
 Standby=En Reposo
 standby=en reposo
+Stale configuration=
 Start=Iniciar
 Started=Iniciado
 started=iniciada
@@ -683,7 +684,7 @@ Ignore this message if you are currently connected via Remote Access or VPN=Igno
 
 Automated flash backups will be disabled until you sign in again=Las copias de seguridad flash automáticas se desactivarán hasta que vuelva a iniciar sesión
 Click to copy LAN IP %s=Haga click aqui para copiar la IP LAN %s
-DNS issue, unable to resolve wanip4unraidnet=Problemas con los DNS, no se puede resolver wanip4.unraid.net
+DNS issue, unable to resolve wanip4unraidnet=Problemas con el DNS, no se puede resolver wanip4.unraid.net
 Download latest backup from My Servers Dashboard=Descargue la copia de seguridad más reciente desde el panel de Mis Servidores
 Have the code now Go Back=Have the code now? Go Back
 LAN IP Copied=IP LAN copiada
@@ -824,7 +825,7 @@ DNS issue, unable to resolve wanip4unraidnet=Problemas con el DNS, no se puede r
 Enhance your experience with My Servers=Mejore su experiencia con My Servers
 Enhance your Unraid experience with these My Servers BETA features=Mejore su experiencia en Unraid con las funciones de My Servers (BETA)
 Enhance your Unraid experience with these<br> My Servers BETA features=Mejore su experiencia en Unraid con las funciones de <br class=\"hidden sm:block\"/> My Servers (BETA)
-Executes `unraid-api start`; no terminal needed=Ejecuta 'unraid-api start', no requiere terminal
+Executes `unraid-api start`; no terminal needed=
 Get started by installing the plugin=Comience instalando el plugin
 Go to My Servers Dashboard=Ir al panel My Servers
 Important=Importante
@@ -874,4 +875,4 @@ Local T2FA requires Unraid 610 or higher=Local T2FA requires Unraid 6.10 or high
 Local T2FA requires Unraid 610 or higher and a myunraidnet certificate=Local T2FA requires Unraid 6.10 or higher and a *.myunraid.net certificate
 Local T2FA requires a myunraidnet certificate=Local T2FA requires a *.myunraid.net certificate
 
-; Note: May 29, 2022 - 241 missing translations
+; Note: June 6, 2022 - 19 missing translations

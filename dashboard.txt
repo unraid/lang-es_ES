@@ -110,5 +110,3 @@ User count %s with %s unprotected=Número de usuarios: %s con %s desprotegido(s)
 utilization warning=advertencia de uso de almacenamiento
 View Running Processes=Ver procesos en ejecución
 Virtual Machines=Máquinas Virtuales
-
-; Note: May 29, 2022 - 10 missing translations

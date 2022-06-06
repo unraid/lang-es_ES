@@ -19,4 +19,4 @@ Enable developer mode=Activar modo desarrollador
 This unlocks some extra features within CA generally only used by developers Not recommended to enable=Esto desbloquea algunas funciones adicionales dentro de CA que generalmente solo usan los desarrolladores. No se recomienda habilitar
 Support Thread=Sitio de Soporte
 
-; Note: May 30, 2022 - 9 missing translations
+; Note: June 6, 2022 - 1 missing translations

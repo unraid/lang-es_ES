@@ -37,5 +37,3 @@ Enable for Cache and Pool Disks=Habilitar para cache y pool de discos
 :file_activity_log_by_plug:
 > Set to **Disk** to log disk activity.  Set to **Share** to log share activity.
 :end
-
-; Note: May 30, 2022 - 4 missing translations
