@@ -12,6 +12,8 @@ Community Applications works best when cookies are enabled in your browser Certa
 Backup Server Active Some icons may not appear, and plugin installations may be affected=Servidor de reserva de CA activo. No se ha podido obtener la lista de aplicaciones del servidor principal. Puede que algunos iconos no aparezcan y se vea afectada la instalación de plugins.
 Debugging enabled This significantly increases the memory used by your browser=Depuración habilitada. Esto aumenta significativamente la memoria utilizada por su navegador
 Browser translation detected Display issues may result=Traducción del navegador detectada. Se pueden producir problemas de visualización
+Running Background Application Tests=
+Action Centre Enabled=
 
 ; Sorting Options
 Sort By=Ordenar por
@@ -438,4 +440,4 @@ An error occurred - Could not determine configuration=Error - No se puede determ
 Click Install to download and install the Community Applications plugin=Haga clic en **Instalar** para descargar e instalar el plugin **Community Applications**
 
 
-; Note: June 11, 2022 - 19 missing translations
+; Note: June 19, 2022 - 21 missing translations
