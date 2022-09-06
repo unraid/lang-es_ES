@@ -12,7 +12,7 @@ Community Applications works best when cookies are enabled in your browser Certa
 Backup Server Active Some icons may not appear, and plugin installations may be affected=Servidor de reserva de CA activo. No se ha podido obtener la lista de aplicaciones del servidor principal. Puede que algunos iconos no aparezcan y se vea afectada la instalación de plugins.
 Debugging enabled This significantly increases the memory used by your browser=Depuración habilitada. Esto aumenta significativamente la memoria utilizada por su navegador
 Browser translation detected Display issues may result=Traducción del navegador detectada. Se pueden producir problemas de visualización
-Action Centre Enabled=
+Action Centre Enabled=Centro de acción habilitado
 
 ; Sorting Options
 Sort By=Ordenar por
@@ -22,7 +22,7 @@ Downloads=Descargas
 Date Added=Añadido
 Number Of Apps=Número de aplicaciones
 ; Initial disclaimer translations
-Disclaimer=Exención de responsabilidad
+Disclaimer=Descargo de responsabilidad
 All applications listed here are 3rd party additions to Unraid Neither the authors of Community Applications nor Limetech make any warranty as to the suitability of any application listed here=Todas las aplicaciones mostradas aquí son programas de terceros ajenos a Unraid. Ni los autores del plugin Aplicaciones de la Comunidad (CA) ni Limetech garantizan la idoneidad de las aplicaciones de este listado.
 Every attempt is made to ensure that only safe and compatible applications are present=Se hace todo lo posible para asegurar que solo las aplicaciones seguras y compatibles estén disponibles.
 Application Policy=Política de CA
@@ -43,7 +43,7 @@ Install Application=Instalar la Aplicación
 Install Applications=Instalar las Aplicaciones
 Update Applications=Actualizar la Aplicación
 Are you sure you want to update %s applications=Estas seguro de que quieres actualizar %s aplicaciones
-Are you sure you want to install %s docker and %s plugin applications=Are you sure you want to install %1$s docker and %2$s plugin application(s)
+Are you sure you want to install %s docker and %s plugin applications=Está seguro de que desea instalar %s docker y %s aplicación(es) plugin ?
 
 ; Searches
 Search=Buscar
@@ -90,8 +90,8 @@ Install Plugin=Instalar plugin
 Update Plugin=Actualizar Plugin
 
 Requirements not met=
-The requirements for this upgrade have not been met on your system=
-The sidebar for the app click info will list the details=The sidebar for the app (click info) will list the details
+The requirements for this upgrade have not been met on your system=Los requisitos para esta actualización no se han cumplido en este sistema
+The sidebar for the app click info will list the details=En la barra lateral de la aplicación (haga clic en información) aparecerán los detalles
 
 BACK=Atrás
 
@@ -110,8 +110,8 @@ Yes, remove it=Sí, eliminar
 ; App Pinning
 Click to pin this application=Haga clic para anclar esta aplicación
 Click to unpin this application=Haga clic para desanclar esta aplicación
-Pin App=Anclar app
-Unpin App=Desanclar app
+Pin App=Anclar App
+Unpin App=Desanclar App
 
 ; Branch installations
 Choose A Branch To Install=Elija la Rama a Instalar
@@ -141,7 +141,7 @@ Unknown error happened Please post a screenshot in the support thread of the Sta
 Something really wrong happened Reloading the Apps tab will probably fix the problem=Ha sucedido un error. Para solucionar este problema es probable que tenga que recargar la página de su navegador.
 This plugin has a duplicated name from another plugin %s This will impact your ability to install both plugins simultaneously=Este plugin tiene el mismo nombre que el plugin %s . Debido a esto no podrá instalar ambos plugins a la vez.
 You have been logged out=Su sesión ha sido cerrada
-Fatal Flash Drive Error=Error fatal de unidad flash
+Fatal Flash Drive Error=Error fatal de la unidad de memoria flash
 This usually means your flash drive is corrupted or has dropped offline The rest of the Unraid GUI will also be affected Post a new thread in the Unraid forums if this error continues=Esto generalmente significa que su unidad flash está dañada o se ha desconectado. El resto de la GUI de Unraid también se verá afectada. Publique un nuevo hilo en los foros de Unraid si este error continúa.
 Fatal Docker Image Error=Error fatal de imagen de Docker
 Your docker image or folder is either read-only or completely full Issues will result because of this You should create a new post in the Unraid forums and include your diagnostics=La imagen docker es de solo lectura o está completamente llena lo que producirán problemas. Debe crear una nueva publicación en los foros de Unraid e incluir sus diagnósticos.
@@ -194,7 +194,7 @@ Template Errors=Errores en Plantillas
 Blacklisted Apps=Aplicaciones en la lista negra
 Incompatible Applications=Aplicaciones incompatibles
 Deprecated Applications=Aplicaciones obsoletas
-Moderation Entries=
+Moderation Entries=Entradas de la moderación
 Primary Server=Servidor principal
 Backup Server=Servidor de reserva
 Installs not allowed from this page=Instalaciones no permitidas desde esta página
@@ -225,10 +225,10 @@ An assortment of randomly chosen apps=Aplicaciones elegidas al azar
 ; Categories try not to be excessively long This is displayed on the left of CA screen
 
 Backup=Copia de Seguridad
-Cloud=Cloud
+Cloud=Nube
 Crypto Currency=Criptomonedas
 Downloaders=Gestores de descarga
-Drivers=Drivers
+Drivers=Controladores
 Game Servers=Servidores de Juego
 Home Automation=Automatización del Hogar
 Media Applications=Apps Multimedia
@@ -260,7 +260,7 @@ Uncategorized=Sin Categorizar
 
 ; Categories displayed within a popup or on the card.  Where an entry exists after the "=" it is not translated, but rather how it should look
 GameServers=ServidoresJuego
-HomeAutomation=AutomatizaciónHogar
+HomeAutomation=IoT
 MediaApp=AppMultimedia
 MediaAppBooks=AppMultimedia:Libros
 MediaAppMusic=AppMultimedia:Música
@@ -280,7 +280,7 @@ NetworkManagement=Red:Administración
 NetworkProxy=Red:Proxy
 NetworkVOIP=Red:VOIP
 NetworkVPN=Red:VPN
-NetworkPrivacy=Network:Privacy
+NetworkPrivacy=Red:Privacidad
 NetworkWeb=Red:Web
 NetworkOther=Red:Otros
 ToolsSystem=Herramientas:Sistema
@@ -305,8 +305,8 @@ DockerHub Stars=Estrellas en DockerHub
 Added to CA=Añadido a CA
 Date Updated=Última Actualización
 Current Version=Versión Actual
-Min OS=Min. OS
-Max OS=Max. OS
+Min OS=Min. S.O.
+Max OS=Max. S.O.
 Total Downloads=Descargas Totales
 Licence=Licencia
 Ranked #%s=Posición #%s
@@ -320,7 +320,7 @@ This application is not compatible with your version of Unraid=Esta aplicación 
 Another browser tab or device has updated the displayed templates Some actions are not available=Otra pestaña del navegador o dispositivo ha actualizado las plantillas mostradas. Algunas acciones no están disponibles.
 WebUI=Interfaz Web
 Reinstall=Reinstalar
-Reinstall From Previous Apps=
+Reinstall From Previous Apps=Reinstalación de aplicaciones anteriores
 Install=Instalar
 Uninstall=Desinstalar
 Project=Proyecto
@@ -331,7 +331,7 @@ Moderator Comments=Comentarios del Moderador:
 Note not all authors keep up to date on change logs=Tenga en cuenta que no todos los autores actualizan el registro de cambios
 Note not all maintainers keep up to date on change logs=Tenga en cuenta que no todos los mantenedores actualizan el registro de cambios
 Last Update=Última actualización
-Note All statistics are only gathered every 30 days=
+Note All statistics are only gathered every 30 days=Nota: Todas las estadísticas se recogen sólo cada 30 días
 ;the following if using a space you MUST use nbsp but keep it down to one word if at all possible
 Donate=Donar
 Currently Installed Version=Versión&nbsp;Instalada&nbsp;Actualmente
@@ -361,8 +361,8 @@ Docker Application Installation finished=La instalación de las aplicaciones Doc
 
 ; Application Cards
 Actions=Opciones
-Pending=
-This application is a driver plugin=This application is a driver (plugin)
+Pending=Pendiente
+This application is a driver plugin=Esta aplicación es un driver (plugin)
 This is a language pack=Paquete de idiomas
 This application is a docker container=Aplicación Docker
 This application is a plugin=Aplicación plugin
@@ -388,8 +388,8 @@ INSTALLED=Instalado
 OFFICIAL=Oficial
 UPDATED=Actualización
 This is an official container=Contenedor oficial
-Digitally Signed=
-This container is digitally signed=
+Digitally Signed=Firmado digitalmente
+This container is digitally signed=Este contenedor está firmado digitalmente
 Docker Hub=Docker Hub
 NOTE You must visit the dockerHub page to gather the information required to install correctly=NOTA Debe visitar la página de dockerHub para obtener información necesaria para una instalación correcta
 Show CA templates=Mostrar plantillas CA
@@ -406,7 +406,7 @@ Template already exists in Apps=La plantilla ya existe en las aplicaciones
 Info=Info
 Attention=Atención
 Repository=Repositorio
-Why we picked it=
+Why we picked it=Por qué lo elegimos
 Application Spotlight %s=Aplicación destacada %s
 Unraid Staff=Unraid Staff
 
@@ -426,16 +426,16 @@ Click here to view the language changelog=Haga clic aquí para ver el registro d
 View Missing Translations=Ver traducciones que faltan
 
 ; Update Checks
-Check For Updates=
-Check for updates already running=
-Checking for docker container updates=
-Checking for plugin updates=
-Checking for language updates=
-Checking %s=
+Check For Updates=Comprobar las actualizaciones.
+Check for updates already running=Comprobar si hay actualizaciones en curso
+Checking for docker container updates=Comprobación de las actualizaciones de los contenedores Docker
+Checking for plugin updates=Comprobación de las actualizaciones de los plugins
+Checking for language updates=Comprobación de las actualizaciones de los idiomas
+Checking %s=Comprobación de %s
 
 ; dockerHub conversions
 Determine configuration=Configuración determinada
-Would you like CA to attempt to determine any applicable paths, ports, and variables for the template This will entail performing a test installation of the container It will be automatically deleted after processing The container will not be started=Would you like CA to attempt to determine any applicable paths, ports, and variables for the template?  This will entail performing a test installation of the container.  It will be automatically deleted after processing.  The container will not be started.
+Would you like CA to attempt to determine any applicable paths, ports, and variables for the template This will entail performing a test installation of the container It will be automatically deleted after processing The container will not be started=Quiere que CA intente determinar las rutas, puertos y variables aplicables a la plantilla?  Esto implicará realizar una instalación de prueba del contenedor.  Se eliminará automáticamente después del proceso.  El contenedor no se iniciará.
 An error occurred - Could not determine configuration=Error - No se puede determinar la configuración
 ; WebGui
 Click Install to download and install the Community Applications plugin=Haga clic en **Instalar** para descargar e instalar el plugin **Community Applications**
