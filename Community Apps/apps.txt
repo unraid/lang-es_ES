@@ -216,7 +216,7 @@ Individual Application Moderation=Moderación Individual por Aplicación
 ; Misc
 Community Applications Changelog=Registro de Cambios de Aplicaciones de la Comunidad (CA)
 
-Each month we highlight some of the amazing work from our community=Cada mes destacamos algunos de los increíbles trabajos de nuestra comunidad.
+Each month we highlight some of the amazing work from our community=Cada mes destacamos algunos de los increíbles trabajos de nuestra comunidad
 Check out these newly added applications from our awesome community=Mostrar aplicaciones agregadas recientemente a nuestra increíble comunidad
 Check out these up and coming apps=Echa un vistazo a estas aplicaciones emergentes
 These apps have the highest percentage of new installs=Aplicaciones frecuentemente instaladas
