@@ -1,1 +1,1 @@
-Script Log=Script Log
+Script Log=Registro del Script
