@@ -1,6 +1,6 @@
 Age Days=Días de edad
 Array=Array
-Array is stopped=Array denenida
+Array is stopped=Array denenido
 Browse the Share Recycle Bin=Examinar la papelera de reciclaje compartida
 Deleted Files=Archivos Eliminados
 Deleted Files Log=Registro de Archivos Eliminados
