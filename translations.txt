@@ -26,9 +26,9 @@ Anonymize diagnostics may make troubleshooting more difficult=Hacer anónima la 
 Anonymous Mode=Modo anónimo
 Apply=Aplicar
 Apps=Apps
-Array must be Stopped to change=El Array debe estar Detenido para cambiar
-Array Clearing=Borrado de Array
-Array Copying=Copiado de Array
+Array must be Stopped to change=El array debe estar Detenido para cambiar
+Array Clearing=Borrando el Array
+Array Copying=Copiando el Array
 Array Started=Array Iniciado
 Array Starting=Iniciando Array
 Array Stopped=Array Detenido
@@ -876,8 +876,8 @@ Local T2FA requires Unraid 610 or higher and a myunraidnet certificate=T2FA requ
 Local T2FA requires a myunraidnet certificate=T2FA requiere un certificado *.myunraid.net
 Key file not valid=Archivo de claves no válido
 My Servers plugin install failed=Fallo en la instalación del plugin My Servers
-The My Servers plugin install is incomplete=La instalación del plugin Mis Servidores está incompleta
-Please uninstall and reinstall the My Servers plugin=Por favor, desinstale y vuelva a instalar el plugin Mis Servidores
+The My Servers plugin install is incomplete=La instalación del plugin My Servers está incompleta
+Please uninstall and reinstall the My Servers plugin=Por favor, desinstale y vuelva a instalar el plugin My Servers
 Be sure to let the install complete before you close the window=Asegúrese de dejar que la instalación se complete antes de cerrar la ventana
 
 ; Note: August 13, 2022 - 25 missing translations
