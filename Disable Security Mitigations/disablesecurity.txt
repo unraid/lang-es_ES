@@ -2,7 +2,7 @@ Disabling Spectre, Meltdown and Zombieload MDS mitigations may improve your CPU 
 Mitigations currently disabled=Mitigaciones actualmente deshabilitadas
 Mitigations currently enabled=Mitigaciones actualmente habilitadas
 Status=Estado:
-will be updated after rebooting the server=se actualizará después de reiniciar el servidor
+will be updated after rebooting the server=Se actualizará después de reiniciar el servidor
 Enable Mitigations=Habilitar Mitigaciones
 Disable Mitigations=Deshabilitar Mitigaciones
 Disable Security Mitigations A Reboot Is Required For Changes To Take Effect=Deshabilitar Mitigaciones de Seguridad: Es Necesario Reiniciar Para que los Cambios Tengan Efecto

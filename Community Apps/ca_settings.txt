@@ -7,7 +7,7 @@ This option enables another button on the cards and popups which will allow you 
 Show descriptions on application cards=Mostrar descripción en las tarjetas de la aplicación
 This option dictates whether the descriptions appear on the cards or not=Esta opción establece si las descripciones aparecen en las tarjetas o no.
 Allow CA to check for updates to applications=Permitir que CA busque actualizaciones de las aplicaciones
-This setting enables CA to check for updates to applications Note that Community Applications will always check for updates to itself=
+This setting enables CA to check for updates to applications Note that Community Applications will always check for updates to itself=Esta configuración permite que CA compruebe las actualizaciones de las aplicaciones Tenga en cuenta que las aplicaciones comunitarias siempre comprobarán las actualizaciones de sí mismas
 Allow CA to send any emergency notifications=Permitir que CA envíe notificaciones de emergencia
 This setting allows CA to periodically scan your system and alert you to the presence of=Esta opción permite que el plugin Aplicaciones de la Comunidad (CA) escanee su sistema y le notifique la presencia de:
 1 Known malware and security vulnerabilities within applications=1. Malware conocido y vulnerabilidades de seguridad de las aplicaciones
