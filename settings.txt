@@ -762,4 +762,4 @@ Transient errors in this log can be ignored unless you are having issues=Los err
 Unraid API extra origins=Orígenes extra de la API de Unraid
 View Flash Backup Error Log=Ver el registro de errores de la copia de seguridad de Flash
 
-; Note: September 16, 2022 - 94 missing translations
+; Note: September 16, 2022 - 24 missing translations

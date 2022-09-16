@@ -131,5 +131,3 @@ Was this container created using this plugin=Se creó este contenedor usando est
 Web=Web
 WebUI=Interfaz Web
 Writable=Grabable
-
-; Note: June 6, 2022 - 2 missing translations

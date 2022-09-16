@@ -825,7 +825,7 @@ DNS issue, unable to resolve wanip4unraidnet=Problemas con el DNS, no se puede r
 Enhance your experience with My Servers=Mejore su experiencia con My Servers
 Enhance your Unraid experience with these My Servers BETA features=Mejore su experiencia en Unraid con las funciones de My Servers (BETA)
 Enhance your Unraid experience with these<br> My Servers BETA features=Mejore su experiencia en Unraid con las funciones de <br class=\"hidden sm:block\"/> My Servers (BETA)
-Executes `unraid-api start`; no terminal needed=Ejecuta `unraid-api start`; no necesita terminal
+Executes `unraid-api start`; no terminal needed=
 Get started by installing the plugin=Comience instalando el plugin
 Go to My Servers Dashboard=Ir al panel My Servers
 Important=Importante
@@ -880,4 +880,4 @@ The My Servers plugin install is incomplete=La instalación del plugin My Server
 Please uninstall and reinstall the My Servers plugin=Por favor, desinstale y vuelva a instalar el plugin My Servers
 Be sure to let the install complete before you close the window=Asegúrese de dejar que la instalación se complete antes de cerrar la ventana
 
-; Note: August 13, 2022 - 25 missing translations
+; Note: September 16, 2022 - 6 missing translations

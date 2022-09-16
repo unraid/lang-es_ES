@@ -350,4 +350,4 @@ System in sleep mode=Sistema en modo de reposo
 This will put the system in sleep mode=Esto pondrá el sistema en modo de reposo
 wiki entry=entrada en la wiki
 
-; Note: June 6, 2022 - 39 missing translations
+; Note: September 16, 2022 - 2 missing translations

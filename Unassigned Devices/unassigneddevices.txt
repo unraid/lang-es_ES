@@ -203,4 +203,4 @@ You will need to enter credentials to list the shares=Deberá ingresar las crede
 > Be careful using the /dev/sdX designation because it can change after a reboot.
 :end
 
-; Note: June 11, 2022 - 39 missing translations
+; Note: September 16, 2022 - 2 missing translations
