@@ -1,117 +1,117 @@
-Console=
-Counters only=
-Custom commands after wake-up=
-Custom commands before sleep=
-Device activity monitoring=
-DHCP renewal after wake-up=
-Enable DEBUG mode=
-Enter custom commands here=
-Ethernet interface=
-Excluded days=
-Excluded hours=
-Execute function=
-Extra delay after array inactivity=
-Force gigabit speed after wake-up=
-High traffic=
-IP address=
-Local Remote=Local & Remote
-Local=
-Log will be stored in bootlogss3_sleeplog=Log will be stored in **/boot/logs/s3_sleep.log**
-Low traffic=
-Medium traffic=
-Mega traffic=
-Monitor disks outside array=
-Network idle threshold=
-no host=
-Remote=
-Set WOL options before sleep=
-Silent traffic=
-Status counters=Status & counters
-Status only=
-Syslog and flash=
-Syslog=
-Wait for array inactivity=
-Wait for host inactivity=
-Wait for network inactivity=
-Wait for user login inactivity=
-Yes, exclude Cache=
+Console=Consola
+Counters only=Sólo para los contadores
+Custom commands after wake-up=Comandos personalizados después de despertar
+Custom commands before sleep=Órdenes personalizadas antes de dormir
+Device activity monitoring=Seguimiento de la actividad del dispositivo
+DHCP renewal after wake-up=Renovación de DHCP después de despertar
+Enable DEBUG mode=Activar el modo DEBUG
+Enter custom commands here=Introduce aquí los comandos personalizados
+Ethernet interface=Interfaz Ethernet
+Excluded days=Días excluidos
+Excluded hours=Horas excluidas
+Execute function=Ejecutar la función
+Extra delay after array inactivity=Retraso adicional tras la inactividad del Array
+Force gigabit speed after wake-up=Forzar la velocidad gigabit tras el despertar
+High traffic=Tráfico alto
+IP address=Dirección IP
+Local Remote=Local y remoto
+Local=Local
+Log will be stored in bootlogss3_sleeplog=El registro se almacenará en **/boot/logs/s3_sleep.log**
+Low traffic=Tráfico bajo
+Medium traffic=Tráfico medio
+Mega traffic=Mega tráfico
+Monitor disks outside array=Supervisar los discos fuera del Array
+Network idle threshold=Umbral de inactividad de la red
+no host=no hay anfitrión
+Remote=Remoto
+Set WOL options before sleep=Configurar las opciones de WOL (Wake on Lan) antes de dormir
+Silent traffic=Tráfico silencioso
+Status counters=Estado y contadores
+Status only=Sólo el estado
+Syslog and flash=Log del sistema y flash
+Syslog=Log del sistema
+Wait for array inactivity=Esperar a la inactividad del Array
+Wait for host inactivity=Esperar a la inactividad del anfitrión
+Wait for network inactivity=Esperar a la inactividad de la red
+Wait for user login inactivity=Esperar a la inactividad del usuario
+Yes, exclude Cache=Sí, excluir la caché
 
 :s3sleep_function_plug:
-> Select the mode of operation. The system can be either put to sleep (and wake-up) or completely shutdown.
+> Seleccione el modo de funcionamiento. El sistema puede ponerse en reposo (y despertarse) o apagarse por completo.
 >
-> The next settings determine the conditions under which the system will be put to sleep or shutdown.
+> Los siguientes ajustes determinan las condiciones en las que el sistema se pondrá en reposo o se apagará.
 :end
 
 :s3sleep_excluded_days_plug:
-> By default all days are included, select here the days that sleep or shutdown is not effective. This setting works in combination with excluded hours.
+> Por defecto se incluyen todos los días, seleccione aquí los días en los que el sueño o el apagado no son efectivos. Este ajuste funciona en combinación con las horas excluidas.
 :end
 
 :s3sleep_excluded_hours_plug:
-> By default all hours are included, select here the hours that sleep or shutdown is not effective. This setting works in combination with excluded days.
+> Por defecto se incluyen todas las horas, seleccione aquí las horas en las que el sueño o el apagado no son efectivos. Este ajuste funciona en combinación con los días excluidos.
 :end
 
 :s3sleep_inactivity_plug:
-> Select whether the array must be completely inactive (all disks are spun down) before sleep or shutdown can take place.
+> Seleccione si la matriz debe estar completamente inactiva (todos los discos están apagados) antes de que pueda tener lugar la suspensión o el apagado.
 >
-> The Cache disk can be included or excluded in this setting, e.g. when the Cache disk is used continuously and never spins down.
+> El disco de caché puede incluirse o excluirse en esta configuración, por ejemplo, cuando el disco de caché se utiliza de forma continua y nunca se apaga.
 :end
 
 :s3sleep_activity_plug:
-> *Status* monitors the hardware status of the device
+> *Estado* supervisa el estado del hardware del dispositivo
 >
-> *Counters* monitors the read/write counters of the device
+> *Contadores* supervisa los contadores de lectura/escritura del dispositivo
 :end
 
 :s3sleep_outside_plug:
-> If there any other disks present outside the array, then these can be monitored separately.
+> Si hay otros discos presentes fuera de la matriz, entonces estos pueden ser monitoreados por separado.
 :end
 
 :s3sleep_extra_delay_plug:
-> Specify an additional delay after the array has become inactive. Value may be 0 for no delay.
+> Especifica un retardo adicional después de que la matriz se haya vuelto inactiva. El valor puede ser 0 para que no haya retardo.
 :end
 
 :s3sleep_network_plug:
-> Select whether network activity must be taken as a condition before going to sleep or shutdown.
-:end
+> Seleccione si la actividad de la red debe ser tomada como condición antes de pasar al estado de reposo o apagado.
+:fin
 
 :s3sleep_ethernet_plug:
-> In case of multiple network interfaces, select here the interface to use for checking the network activity.
+> En el caso de múltiples interfaces de red, seleccione aquí la interfaz que se utilizará para comprobar la actividad de la red.
 :end
 
 :s3sleep_idle_plug:
-> Network activity is measured under different thresholds. Ranging from completely silent to megabit traffic. Experiment with this setting to find to right balance for your situation.
+> La actividad de la red se mide bajo diferentes umbrales. Desde el silencio total hasta el tráfico de megabits. Experimenta con esta configuración para encontrar el equilibrio adecuado para tu situación.
 :end
 
 :s3sleep_host_plug:
-> Select whether external hosts need to be monitored and non-responding as a sleep or shutdown condition.
+> Seleccione si los hosts externos deben ser monitoreados y no responden como una condición de reposo o apagado.
 >
-> External hosts are given by their IP address, use a comma to separate multiple IP addresses. As long as one of the external hosts responds to a ping then sleep/shutdown won't be invoked.
+> Los hosts externos se indican por su dirección IP, utilice una coma para separar varias direcciones IP. Mientras uno de los hosts externos responda a un ping, no se invocará el sleep/shutdown.
 :end
 
 :s3sleep_login_plug:
-> Select whether local (console) or remote (telnet or ssh) logged in users need to log out first before sleep or shutdown can proceed.
+> Seleccione si los usuarios registrados locales (consola) o remotos (telnet o ssh) deben cerrar la sesión antes de proceder a la suspensión o al apagado.
 :end
 
 :s3sleep_wol_plug:
-> Set additional WOL options for proper support of S3 sleep. Refer to your system documentation for possibilities.
+> Configure las opciones adicionales de WOL para el soporte adecuado del sueño S3. Consulte la documentación de su sistema para conocer las posibilidades.
 :end
 
 :s3sleep_before_plug:
-> Any extra commands before sleep or shutdown is invoked can be placed here. This maybe cleanup or other desirable actions.
+> Cualquier comando extra antes de que se invoque la suspensión o el apagado puede colocarse aquí. Esto puede ser la limpieza u otras acciones deseables.
 :end
 
 :s3sleep_after_plug:
-> Any extra commands after wake-up of sleep can be placed here. This might be helpful for restoring a previous situation.
+> Cualquier comando extra después de despertar del sueño puede ser colocado aquí. Esto puede ser útil para restaurar una situación anterior.
 :end
 
 :s3sleep_gigabit_plug:
-> Leave this default OFF, in case the interface doesn't start properly after wake-up, see if forcing this setting helps.
+> Deje este valor por defecto en OFF, en caso de que la interfaz no se inicie correctamente después de despertar, vea si forzar esta configuración ayuda.
 :end
 
 :s3sleep_dhcp_plug:
-> Leave this default OFF, in case the system doesn't start properly after wake-up, see if forcing this setting helps.
+> Deje este valor por defecto en OFF, en caso de que el sistema no se inicie correctamente después de despertar, vea si forzar esta configuración ayuda.
 :end
 
 :s3sleep_debug_plug:
-> By default debug is OFF. Use this setting only in case of troubleshooting, it will generate additional messages to report the various stages within the s3_sleep script.
+> Por defecto la depuración está desactivada. Utilice esta configuración sólo en caso de resolución de problemas, generará mensajes adicionales para informar de las distintas etapas dentro del script s3_sleep.
 :end
