@@ -1,42 +1,42 @@
-Array fan speed=
-Available drivers=
-Click DETECT=
-Detect=
-Load drivers=
-Mainboard temperature=
-No drivers detected=
-Not used=
-Perl must be installed to do automated driver detection=**Perl** must be installed to do automated driver detection
-Processor temperature=
-Rescan=
-Save=
-Sensors=
-Unload drivers=
+Array fan speed=Velocidad de los ventiladores del array
+Available drivers=Drivers disponibles
+Click DETECT=Haga clic en DETECTAR
+Detect=Detectar
+Load drivers=Cargar drivers
+Mainboard temperature=Temperatura de la placa base
+No drivers detected=No se han detectado controladores
+Not used=No utilizado
+Perl debe estar instalado para realizar la detección automática de controladores=**Perl** debe estar instalado para realizar la detección automática de controladores
+Processor temperature=Temperatura del procesador
+Rescan=Volver a escanear
+Save=Guardar
+Sensors=Sensores
+Unload drivers=Descarga drivers
 
 :temp_drivers_plug:
-> Use 'detect' to search for available drivers using the 'sensors-detect' script. After detection proceed with saving the list.<br>
-> Use 'save' to store the drivers list to disk, the drivers field may be edited before saving (e.g. add a non-specified driver). Saving is mandatory.<br>
-> Use 'load drivers / unload drivers' to manually load or unload the available driver modules.
+> Utilice 'detect' para buscar los controladores disponibles utilizando el 'sensors-detect' script. Tras la detección, proceda a guardar la lista.<br>
+> Utilice 'save' para almacenar la lista de controladores en el disco, el campo de controladores puede editarse antes de guardar (por ejemplo, añadir un controlador no especificado). Guardar es obligatorio.<br>
+> Utilice 'load drivers / unload drivers' para cargar o descargar manualmente los módulos de controladores disponibles.
 :end
 
 :temp_processor_plug:
-> Select one of the available probes as the processor temperature indicator.
-> The output of this probe is shown at the bottom of the page.
-> Select 'Not used' to suppress display of this probe.
+> Seleccione una de las sondas disponibles como indicador de la temperatura del procesador.
+> La visualización de esta sonda se muestra en la parte inferior de la página.
+> Seleccione "No utilizado" para suprimir la visualización de esta sonda.
 :end
 
 :temp_mainboard_plug:
-> Select one of the available probes as the mainboard temperature indicator.
-> The output of this probe is shown at the bottom of the page.
-> Select 'Not used' to suppress display of this probe.
+> Seleccione una de las sondas disponibles como indicador de temperatura de la placa base.
+> La visualización de esta sonda se muestra en la parte inferior de la página.
+> Seleccione "No utilizado" para suprimir la visualización de esta sonda.
 :end
 
 :temp_fan_plug:
-> Select one of the available probes as the array fan speed indicator.
-> The output of this probe is shown at the bottom of the page.
-> Select 'Not used' to suppress display of this probe.
+> Seleccione una de las sondas disponibles como indicador de la velocidad del ventilador del Array.
+> La visualización de esta sonda se muestra en la parte inferior de la página.
+> Seleccione "No utilizado" para suprimir la visualización de esta sonda.
 :end
 
 :temp_rescan_plug:
-> 'Rescan' refreshes the selection list and can be used when new probes are available, e.g. a new fan probe has been installed.
+> 'Rescan' refresca la lista de selección y puede utilizarse cuando hay nuevas sondas disponibles, por ejemplo, cuando se ha instalado una nueva sonda de ventilador.
 :end
