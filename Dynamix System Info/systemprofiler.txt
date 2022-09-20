@@ -1,5 +1,5 @@
-Not available=
-P + Q algorithm=
-System Overview=
-Unraid server=
-Unraid system=
+Not available=No hay datos disponibles
+P + Q algorithm=Algoritmo P + Q
+System Overview=Resumen del sistema
+Unraid server=Servidor Unraid
+Unraid system=Sistema Unraid
