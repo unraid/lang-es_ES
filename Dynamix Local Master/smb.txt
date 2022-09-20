@@ -1,24 +1,24 @@
-Current elected master=
-is current local master browser=
-Local master=
-Monitor local master election=
-please wait, obtaining=
-Workgroup=
+Current elected master=Maestro actual elegido
+is current local master browser=es el actual navegador principal local
+Local master=Maestro local
+Monitor local master election=Controlar la elección maestra local
+please wait, obtaining=por favor, espere, obteniendo
+Workgroup=Grupo de trabajo
 
 :smb_workgroup_plug:
-> Enter your local network Workgroup name. Usually this is "WORKGROUP".
+> Introduzca el nombre del grupo de trabajo de su red local. Normalmente es "WORKGROUP".
 :end
 
 :smb_master_plug:
-> If set to 'Yes' then the server will fully participate in browser elections, and in the absense
-> of other servers, will usually become the local Master Browser.
+> Si se establece en "Sí", el servidor participará plenamente en las elecciones del navegador, y en ausencia
+> de otros servidores, normalmente se convertirá en el Navegador Maestro local.
 :end
 
 :smb_master_election_plug:
-> Enable or disable background monitoring of the local master election.
-> The result of the monitoring is displayed in the header at the top-right position.
+> Activar o desactivar la supervisión en segundo plano de la elección del maestro local.
+> El resultado del control se muestra en la cabecera, en la posición superior derecha.
 :end
 
 :smb_master_current_plug:
-> Shows in real-time the current elected local master browser.
+> Muestra en tiempo real el navegador maestro local elegido actualmente.
 :end
