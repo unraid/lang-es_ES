@@ -26,7 +26,7 @@ no host=no hay anfitrión
 Remote=Remoto
 Set WOL options before sleep=Configurar las opciones de WOL (Wake on Lan) antes de dormir
 Silent traffic=Tráfico silencioso
-Status counters=Estado y contadores
+Status counters=Estado de los contadores
 Status only=Sólo el estado
 Syslog and flash=Log del sistema y flash
 Syslog=Log del sistema
@@ -43,7 +43,7 @@ Yes, exclude Cache=Sí, excluir la caché
 :end
 
 :s3sleep_excluded_days_plug:
-> Por defecto se incluyen todos los días, seleccione aquí los días en los que el sueño o el apagado no son efectivos. Este ajuste funciona en combinación con las horas excluidas.
+> Por defecto se incluyen todos los días, seleccione aquí los días en los que el reposo o el apagado no son efectivos. Este ajuste funciona en combinación con las horas excluidas.
 :end
 
 :s3sleep_excluded_hours_plug:
@@ -51,7 +51,7 @@ Yes, exclude Cache=Sí, excluir la caché
 :end
 
 :s3sleep_inactivity_plug:
-> Seleccione si la matriz debe estar completamente inactiva (todos los discos están apagados) antes de que pueda tener lugar la suspensión o el apagado.
+> Seleccione si el Array debe estar completamente inactivo (todos los discos están apagados) antes de que pueda tener lugar el reposo o el apagado.
 >
 > El disco de caché puede incluirse o excluirse en esta configuración, por ejemplo, cuando el disco de caché se utiliza de forma continua y nunca se apaga.
 :end
@@ -63,11 +63,11 @@ Yes, exclude Cache=Sí, excluir la caché
 :end
 
 :s3sleep_outside_plug:
-> Si hay otros discos presentes fuera de la matriz, entonces estos pueden ser monitoreados por separado.
+> Si hay otros discos presentes fuera del Array, entonces estos pueden ser monitoreados por separado.
 :end
 
 :s3sleep_extra_delay_plug:
-> Especifica un retardo adicional después de que la matriz se haya vuelto inactiva. El valor puede ser 0 para que no haya retardo.
+> Especifica un retardo adicional después de que el Array se haya vuelto inactivo. El valor puede ser 0 para que no haya retardo.
 :end
 
 :s3sleep_network_plug:
@@ -85,31 +85,31 @@ Yes, exclude Cache=Sí, excluir la caché
 :s3sleep_host_plug:
 > Seleccione si los hosts externos deben ser monitoreados y no responden como una condición de reposo o apagado.
 >
-> Los hosts externos se indican por su dirección IP, utilice una coma para separar varias direcciones IP. Mientras uno de los hosts externos responda a un ping, no se invocará el sleep/shutdown.
+> Los hosts externos se indican por su dirección IP, utilice una coma para separar varias direcciones IP. Mientras uno de los hosts externos responda a un ping, no se invocará el reposo o el apagado.
 :end
 
 :s3sleep_login_plug:
-> Seleccione si los usuarios registrados locales (consola) o remotos (telnet o ssh) deben cerrar la sesión antes de proceder a la suspensión o al apagado.
+> Seleccione si los usuarios registrados locales (consola) o remotos (telnet o ssh) deben cerrar la sesión antes de proceder al reposo o al apagado.
 :end
 
 :s3sleep_wol_plug:
-> Configure las opciones adicionales de WOL para el soporte adecuado del sueño S3. Consulte la documentación de su sistema para conocer las posibilidades.
+> Configure las opciones adicionales de WOL para el soporte adecuado del reposo de S3. Consulte la documentación de su sistema para conocer las posibilidades.
 :end
 
 :s3sleep_before_plug:
-> Cualquier comando extra antes de que se invoque la suspensión o el apagado puede colocarse aquí. Esto puede ser la limpieza u otras acciones deseables.
+> Cualquier comando extra antes de que se invoque el reposo o el apagado puede colocarse aquí. Esto puede ser la limpieza u otras acciones deseables.
 :end
 
 :s3sleep_after_plug:
-> Cualquier comando extra después de despertar del sueño puede ser colocado aquí. Esto puede ser útil para restaurar una situación anterior.
+> Cualquier comando extra después de despertar del reposo puede ser colocado aquí. Esto puede ser útil para restaurar una situación anterior.
 :end
 
 :s3sleep_gigabit_plug:
-> Deje este valor por defecto en OFF, en caso de que la interfaz no se inicie correctamente después de despertar, vea si forzar esta configuración ayuda.
+> Deje este valor por defecto en OFF, en caso de que la interfaz no se inicie correctamente después del reposo, vea si forzar esta configuración ayuda.
 :end
 
 :s3sleep_dhcp_plug:
-> Deje este valor por defecto en OFF, en caso de que el sistema no se inicie correctamente después de despertar, vea si forzar esta configuración ayuda.
+> Deje este valor por defecto en OFF, en caso de que el sistema no se inicie correctamente después del reposo, vea si forzar esta configuración ayuda.
 :end
 
 :s3sleep_debug_plug:
