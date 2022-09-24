@@ -1,134 +1,134 @@
-Apple metadata=
-Array must be Started to use this feature=Array must be **Started** to use this feature
-Automatically protect new and modified files=
-BLAKE2=
-Build=
-Continue=
-Corz=
-Custom files=
-Custom folders=
-Day of the month=
-Day of the week=
-Disk selection=
-Disk verification schedule=
-Dont start=Don't start
-Download Now=
-Dynamix File Integrity=
-Error logging=
-Excluded files=
-Excluded folders and files=
-Excluded folders=
-File Duplicates Check=
-Find=
-Generate Corz Files=
-hash files=
-Hashing method=
-Header menu=
+Apple metadata=Metadatos de Apple
+Array must be Started to use this feature=El Array debe estar **iniciado** para utilizar esta función
+Automatically protect new and modified files=Proteja automáticamente los archivos nuevos y modificados
+BLAKE2=BLAKE2
+Build=Construir
+Continue=Continuar
+Corz=Corz
+Custom files=Archivos personalizados
+Custom folders=Carpetas personalizadas
+Day of the month=Día del mes
+Day of the week=Día de la semana
+Disk selection=Selección de discos
+Disk verification schedule=Programa de verificación de discos
+Dont start=No empieces
+Download Now=Descargar ahora
+Dynamix File Integrity=Dynamix File Integrity
+Error logging=Registro de errores
+Excluded files=Archivos excluidos
+Excluded folders and files=Carpetas y archivos excluidos
+Excluded folders=Carpetas excluidas
+File Duplicates Check=Comprobación de duplicados de archivos
+Find=Encuentre
+Generate Corz Files=Generar archivos Corz
+hash files=archivos hash
+Hashing method=Método Hashing
+Header menu=Menú de cabecera
 HHMM=HH:MM
-Import=
-Include duplicate file hashes in Find command=Include duplicate file hashes in **Find** command
-log files=
-Low=
-MD5=
-Output file=
-Placement of file integrity control=
-Process priority=
-Save new hashing results to flash=
-saved files=
-Send notifications=
-SHA2=
-Syslog only=
-Syslog Output file=Syslog & Output file
-Task=
-Time of the day=
-Toggle all=
-Tools menu=
-Verification tasks=
-view hash files=
-view log files=
-view saved files=
-When parity operation is running=
+Import=Importar
+Include duplicate file hashes in Find command=Incluir hashes de archivos duplicados en el comando **Find**.
+log files=archivos de registro
+Low=Bajo
+MD5=MD5
+Output file=Archivo de salida
+Placement of file integrity control=Colocación del control de integridad de los archivos
+Process priority=Prioridad del proceso
+Save new hashing results to flash=Guardar los nuevos resultados del hashing en flash
+saved files=archivos guardados
+Send notifications=Enviar notificaciones
+SHA2=SHA2
+Syslog only=Sólo Syslog
+Syslog Output file=Archivo Syslog y Output
+Task=Tarea
+Time of the day=Hora del día
+Toggle all=Alternar todo
+Tools menu=Menú de herramientas
+Verification tasks=Tareas de verificación
+view hash files=ver archivos hash
+view log files=ver los archivos de registro
+view saved files=ver los archivos guardados
+When parity operation is running=Cuando la operación de paridad está en marcha
 
 :integrity_control_plug:
-> Select the placement of the file integrity control page. By default it is placed under the *Tools* menu, but it may be moved under the *header* menu.
+> Seleccione la ubicación de la página de control de la integridad de los archivos. Por defecto se coloca bajo el menú *Herramientas*, pero puede moverse bajo el menú *cabecera*.
 >
-> Keep in mind that the *header* menu has limited space.
+> Tenga en cuenta que el menú *cabecera* tiene un espacio limitado.
 :end
 
 :integrity_service_plug:
-> When enabled a checksum value is automatically calculated and added to the extended attributes of the newly created or modified file.
-> When it is detected that a file change has occured, but its modification time hasn't changed, then an automatic checksum verification is performed to check for any silent file corruption.
+> Cuando se activa, se calcula automáticamente un valor de suma de comprobación y se añade a los atributos extendidos del archivo recién creado o modificado.
+> Cuando se detecta que se ha producido un cambio en el archivo, pero su tiempo de modificación no ha cambiado, se realiza una verificación automática de la suma de comprobación para comprobar si hay alguna corrupción silenciosa del archivo.
 >
-> The area selection can be filtered by excluding folders (shares) and/or excluding disks all together (see table below).
+> La selección de áreas puede filtrarse excluyendo las carpetas (recursos compartidos) y/o excluyendo todos los discos (véase la tabla siguiente).
 >
-> When the automatic hashing is disabled then manual control is required to keep information up-to-date.
+> Cuando se desactiva el hashing automático, se requiere un control manual para mantener la información actualizada.
 :end
 
 :integrity_hashing_plug:
-> Select the preferred hashing method. SHA2 generates a 256 bits checksum value, MD5 generates a 128 bits checksum value, while BLAKE2 generates a 512 bits checksum value per file.
+> Seleccione el método de hash preferido. SHA2 genera un valor de suma de control de 256 bits, MD5 genera un valor de suma de control de 128 bits, mientras que BLAKE2 genera un valor de suma de control de 512 bits por archivo.
 >
-> MD5 is the most commonly used method and should be selected when compatibility with external programs is required, BLAKE2 is the fastest method and has the highest detection grade, this is a proprietary solution though.
-> SHA2 is the official standard and is selected by default. It is the slowest of all three methods though. The BLAKE2 option is disabled if it is not supported by your processor.
-> All methods require substantial computing power from the processor and a too weak processor may not be able to perform up to expectations.
+> MD5 es el método más utilizado y debe seleccionarse cuando se requiere compatibilidad con programas externos, BLAKE2 es el método más rápido y tiene el mayor grado de detección, aunque es una solución propietaria.
+> SHA2 es el estándar oficial y se selecciona por defecto. Sin embargo, es el más lento de los tres métodos. La opción BLAKE2 se desactiva si su procesador no la soporta.
+> Todos los métodos requieren una gran potencia de cálculo del procesador y un procesador demasiado débil puede no estar a la altura de las expectativas.
 :end
 
 :integrity_flash_plug:
-> When enabled a daily file on the flash device will be created, holding the checksum results for all newly or modified files of that particular day.
-> The format of this file is the same as the standard export file. The daily file is saved as */config/plugins/dynamix.file.integrity/saved/disks.export.&lt;date&gt;.new.hash*
+> Cuando se activa, se crea un archivo diario en el dispositivo flash, que contiene los resultados de la suma de comprobación de todos los archivos nuevos o modificados de ese día en particular.
+> El formato de este archivo es el mismo que el del archivo de exportación estándar. El archivo diario se guarda como */config/plugins/dynamix.file.integrity/saved/disks.export.&lt;date&gt;.new.hash*.
 :end
 
 :integrity_exluded_plug:
-> Select here any folders (shares) you want to exclude from the automatic hashing and verification functionality. A share existing on multiple disks will be skipped on any disk where it is present.
+> Seleccione aquí las carpetas (recursos compartidos) que desee excluir de la función de hash y verificación automática. Un recurso compartido que exista en varios discos se omitirá en cualquier disco en el que esté presente.
 >
-> Use **Custom folders / Custom files** to manually enter exclusions. Multiple exclusions are separated by a comma.<br>
-> Examples are folder names, e.g. **`.Recycle.Bin`**, file names, e.g. **`my_workfile.tmp`** or file extensions, e.g. **`*.tmp`**.
+> Utilice **Carpetas personalizadas / Archivos personalizados** para introducir manualmente las exclusiones. Las exclusiones múltiples se separan con una coma.<br>
+> Algunos ejemplos son los nombres de las carpetas, por ejemplo **`.Recycle.Bin`**, los nombres de los archivos, por ejemplo **`my_workfile.tmp`** o las extensiones de los archivos, por ejemplo **`*.tmp`**.
 >
-> Select **Apple metadata** to exclude metadata files created by Apple's netatalk (.AppleDB and .DS_Store).
+> Seleccione **Metadatos de Apple** para excluir los archivos de metadatos creados por netatalk de Apple (.AppleDB y .DS_Store).
 :end
 
 :integrity_verification_plug:
-> When enabled a cron schedule is created to do file verification in the background. You need to select which disks participate in the automatic hashing and verification process (see table below).
-> The cron schedule can run on a selectable daily, weekly or monthly basis.
+> Cuando se activa, se crea una programación cron para realizar la verificación de archivos en segundo plano. Es necesario seleccionar qué discos participan en el proceso de hashing y verificación automáticos (véase la tabla siguiente).
+> El programa cron puede ejecutarse de forma diaria, semanal o mensual.
 >
-> One or more tasks can be created, each containing one or more disks. All disks under the same task are verified in parallel. This decreases the total run-time, but increases the
-> processor load. Make sure your processor can handle this load, and change grouping accordingly. At one end all disks can be put in a single task, resulting in the highest concurrency.
-> At the other end every disk can be put in its own task, resulting in the lowest processor load.
+> Se pueden crear una o varias tareas, cada una de las cuales contiene uno o varios discos. Todos los discos bajo la misma tarea se verifican en paralelo. Esto disminuye el tiempo total de ejecución, pero aumenta el
+> carga del procesador. Asegúrese de que su procesador puede soportar esta carga y cambie la agrupación en consecuencia. En un extremo se pueden poner todos los discos en una sola tarea, lo que resulta en la mayor concurrencia.
+> En el otro extremo, cada disco puede colocarse en su propia tarea, lo que da lugar a la menor carga del procesador.
 >
-> A disk with a disabled checksum box and a red background, indicates a background verification process is currently in progress for this disk. It can not be stopped.
+> Un disco con una casilla de suma de comprobación desactivada y un fondo rojo, indica que un proceso de verificación en segundo plano está actualmente en curso para este disco. No se puede detener.
 >
-> When multiple tasks exist then each task is executed in the next schedule in a rotating fashion. E.g. when you have set up a weekly schedule with 3 tasks then every week
-> another task is executed and after 3 weeks the verification function has done all selected disks.
+> Cuando existen múltiples tareas, cada una de ellas se ejecuta en el siguiente horario de forma rotativa. Por ejemplo, si ha establecido un programa semanal con 3 tareas, cada semana
+> se ejecuta otra tarea y después de 3 semanas la función de verificación ha realizado todos los discos seleccionados.
 >
-> When the verification schedule is disabled then manual control is required to verify the correctness of the files.
+> Cuando el programa de verificación está desactivado, se requiere un control manual para verificar la corrección de los archivos.
 :end
 
 :integrity_priority_plug:
-> Background processes can be run in either normal or low priority mode.
+> Los procesos en segundo plano pueden ejecutarse en modo normal o de baja prioridad.
 :end
 
 :integrity_parity_plug:
-> Before a verification task starts it can either continue as usual when a parity operation is running, or the verification task doesn't start at all.
-> In the latter case you need to wait for the next scheduled time to execute the task.
+> Antes de que se inicie una tarea de verificación, ésta puede continuar como de costumbre cuando se está ejecutando una operación de paridad, o la tarea de verificación no se inicia en absoluto.
+> En este último caso hay que esperar a la siguiente hora programada para ejecutar la tarea.
 :end
 
 :integrity_day_of_the_week_plug:
-> When a weekly schedule is chosen, then select here the day of execution.
+> Si se elige una programación semanal, seleccione aquí el día de ejecución.
 :end
 
 :integrity_day_of_the_month_plug:
-> When a monthly schedule is chosen, then select here the date of execution.
+> Si se elige una programación mensual, seleccione aquí la fecha de ejecución.
 :end
 
 :integrity_time_of_the_day_plug:
-> Select the hour and minute at which time the scheduled task will be executed. Granularity is 5 minutes.
+> Seleccione la hora y el minuto en que se ejecutará la tarea programada. La granularidad es de 5 minutos.
 :end
 
 :integrity_notifications_plug:
-> Set to YES if you want to receive notifications when file corruption is detected.
-> See the notification settings on how to set up and receive "alert" notifications.
+> Establezca en SÍ si desea recibir notificaciones cuando se detecte la corrupción de archivos.
+> Consulte la configuración de las notificaciones para saber cómo configurar y recibir notificaciones de "alerta".
 :end
 
 :integrity_logging_plug:
-> Error logging, including file corruption detection information can be given in the system log, or saved as a file on flash.
-> Disabling error logging will suppress log creation, but it is still possible to receive notifications.
+> El registro de errores, incluyendo la información de detección de corrupción de archivos se puede dar en el registro del sistema, o guardar como un archivo en flash.
+> Si se desactiva el registro de errores se suprime la creación de registros, pero sigue siendo posible recibir notificaciones.
 :end
