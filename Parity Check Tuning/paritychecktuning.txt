@@ -134,19 +134,19 @@ will be started=se pondrá en marcha
 
 ; Swal warnings
 
-A crontab entry should have 5 space-separated values defining the minutes, hour, day of the month, month, day of the week=
-At the moment there is no mechanism to stop this file from growing forever so it is up to you to manage this manually=
-Are you sure you have not got these the wrong way around=
-Before you can set this option to Yes you must first have enabled system notifications=
-Click on the crontab link to get more details on valid formats=
-Debug mode can generate frequent additional log entries in the syslog file so do not leave debug mode active if you are not interested in this information=
-Debug mode is intended to give users a feel for when the plugin is active=
-Do not leave this active if you are not interested in this information=
-Do you really want Debug logging mode=
-Do you really want Testing logging mode=
-Do you really want to log to the flash drive=
-Do you really want this=
-Error in custom entry=
+A crontab entry should have 5 space-separated values defining the minutes, hour, day of the month, month, day of the week=Una entrada de crontab debe tener 5 valores separados por espacios que definan los minutos, la hora, el día del mes, el mes, el día de la semana
+At the moment there is no mechanism to stop this file from growing forever so it is up to you to manage this manually=Por el momento no hay ningún mecanismo que impida que este archivo crezca eternamente, por lo que es usted quien debe gestionarlo manualmente
+Are you sure you have not got these the wrong way around=¿Estás seguro de que no tienes esto al revés?
+Before you can set this option to Yes you must first have enabled system notifications=Antes de poder establecer esta opción en Sí, debe haber activado las notificaciones del sistema
+Click on the crontab link to get more details on valid formats=Haga clic en el enlace crontab para obtener más detalles sobre los formatos válidos
+Debug mode can generate frequent additional log entries in the syslog file so do not leave debug mode active if you are not interested in this information=El modo de depuración puede generar frecuentes entradas de registro adicionales en el archivo syslog, así que no deje el modo de depuración activo si no está interesado en esta información
+Debug mode is intended to give users a feel for when the plugin is active=El modo de depuración está pensado para que los usuarios sepan cuándo está activo el plugin
+Do not leave this active if you are not interested in this information=No deje esto activo si no está interesado en esta información
+Do you really want Debug logging mode=¿Realmente quieres el modo de registro de depuración?
+Do you really want Testing logging mode=¿Realmente quieres el modo de registro de pruebas?
+Do you really want to log to the flash drive=¿Realmente quieres registrarte en la unidad flash
+Do you really want this=¿Realmente quieres esto
+Error in custom entry=Error en la entrada personalizada
 extra time that will elapse before the system is once again in a protected state=Una entrada de crontab debe tener 5 valores separados por espacios que definan los minutos, la hora, el día del mes, el mes, el día de la semana
 Logging to the flash drive can cause a lot additional writes thus potentially shortening its lifetime=El registro en la unidad flash puede causar muchas escrituras adicionales, acortando así su vida útil
 Notifications not enabled=Notificaciones no habilitadas
