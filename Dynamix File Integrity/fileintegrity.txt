@@ -69,7 +69,7 @@ When parity operation is running=Cuando la operación de paridad está en marcha
 >
 > MD5 es el método más utilizado y debe seleccionarse cuando se requiere compatibilidad con programas externos, BLAKE2 es el método más rápido y tiene el mayor grado de detección, aunque es una solución propietaria.
 > SHA2 es el estándar oficial y se selecciona por defecto. Sin embargo, es el más lento de los tres métodos. La opción BLAKE2 se desactiva si su procesador no la soporta.
-> Todos los métodos requieren una gran potencia de cálculo del procesador y un procesador demasiado débil puede no estar a la altura de las expectativas.
+> Todos los métodos requieren una gran potencia de cálculo del procesador y un procesador demasiado lento puede no estar a la altura de las expectativas.
 :end
 
 :integrity_flash_plug:
@@ -91,13 +91,13 @@ When parity operation is running=Cuando la operación de paridad está en marcha
 > El programa cron puede ejecutarse de forma diaria, semanal o mensual.
 >
 > Se pueden crear una o varias tareas, cada una de las cuales contiene uno o varios discos. Todos los discos bajo la misma tarea se verifican en paralelo. Esto disminuye el tiempo total de ejecución, pero aumenta el
-> carga del procesador. Asegúrese de que su procesador puede soportar esta carga y cambie la agrupación en consecuencia. En un extremo se pueden poner todos los discos en una sola tarea, lo que resulta en la mayor concurrencia.
-> En el otro extremo, cada disco puede colocarse en su propia tarea, lo que da lugar a la menor carga del procesador.
+> de carga del procesador. Asegúrese de que su procesador puede soportar esta carga y cambie la agrupación en consecuencia. En un extremo se pueden poner todos los discos en una sola tarea, lo que resulta en la mayor concurrencia.
+> En el otro extremo, cada disco puede colocarse en su propia tarea, lo que da lugar a una menor carga del procesador.
 >
-> Un disco con una casilla de suma de comprobación desactivada y un fondo rojo, indica que un proceso de verificación en segundo plano está actualmente en curso para este disco. No se puede detener.
+> Un disco con una casilla de suma de comprobación desactivada y un fondo rojo, indica que un proceso de verificación en segundo plano está actualmente en curso para ese disco. No se puede detener.
 >
 > Cuando existen múltiples tareas, cada una de ellas se ejecuta en el siguiente horario de forma rotativa. Por ejemplo, si ha establecido un programa semanal con 3 tareas, cada semana
-> se ejecuta otra tarea y después de 3 semanas la función de verificación ha realizado todos los discos seleccionados.
+> se ejecuta otra tarea y después de 3 semanas la función de verificación se ha realizado sobre todos los discos seleccionados.
 >
 > Cuando el programa de verificación está desactivado, se requiere un control manual para verificar la corrección de los archivos.
 :end
@@ -125,10 +125,10 @@ When parity operation is running=Cuando la operación de paridad está en marcha
 
 :integrity_notifications_plug:
 > Establezca en SÍ si desea recibir notificaciones cuando se detecte la corrupción de archivos.
-> Consulte la configuración de las notificaciones para saber cómo configurar y recibir notificaciones de "alerta".
+> Consulte la configuración de las notificaciones para saber cómo configurar y recibir notificaciones de las "alertas".
 :end
 
 :integrity_logging_plug:
-> El registro de errores, incluyendo la información de detección de corrupción de archivos se puede dar en el registro del sistema, o guardar como un archivo en flash.
+> El registro de errores, incluyendo la información de detección de corrupción de archivos se puede dar en el registro del sistema, o guardar como un archivo en la memoria flash.
 > Si se desactiva el registro de errores se suprime la creación de registros, pero sigue siendo posible recibir notificaciones.
 :end
