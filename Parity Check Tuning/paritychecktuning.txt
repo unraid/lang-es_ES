@@ -8,7 +8,7 @@ Parity Check Tuning=Ajuste de la comprobación de paridad
 automatic=automático
 Basic=Básico
 below critical disk temperature threshold=por debajo del umbral de temperatura crítica del disco
-below warning disk temperature threshold=por debajo del umbral de temperatura del disco de advertencia
+below warning disk temperature threshold=por debajo del umbral de temperatura de advertencia del disco
 CAUTION=PRECAUCIÓN
 Click to show parity-check history=Haga clic para mostrar el historial de comprobaciones de paridad
 Data Rebuild=Reconstrucción de datos
@@ -21,12 +21,12 @@ Increment frequency=Frecuencia de incremento
 Increment pause time=Incrementar el tiempo de pausa
 Increment resume time=Incrementar el tiempo de reanudación
 No parity check entries found in syslog=No se han encontrado entradas de comprobación de paridad en el syslog
-ParityRead-Check History=Historial de paridad/lectura=
+ParityRead-Check History=Historial de paridad/lectura
 Parity Check=Comprobación de paridad
 Parity Check Tuning logging=Registro de ajuste de comprobación de paridad
 Parity Sync=Sincronización de paridad
-Pause an array operation at=Ponga en pausa una operación del Array en
-Pause and Resume array operations if disks overheat=Pausa y reanudación de las operaciones del Array si los discos se sobrecalientan
+Pause an array operation at=Pausar una operación del Array en
+Pause and Resume array operations if disks overheat=Pausar y reanudar las operaciones del Array si los discos se sobrecalientan
 Read Check=Verificación de la lectura
 Requires unRaid 67 or later=Requiere unRaid 6.7 o posterior
 Resume an array operation at=Reanudar una operación del Array en
@@ -94,11 +94,11 @@ Following drives overheated=Las siguientes unidades se sobrecalientan
 IMPORTANT=IMPORTANTE
 Increments=Incrementos
 Non-Correcting=No se corrige
-Pause a running array operation=Ponga en pausa una operación del Array en curso
+Pause a running array operation=Pausar una operación del Array en curso
 Resume a paused array operation=Reanudar una operación del Array en pausa
 Sent notification=Notificación enviada
 Show the status of a running parity check=Mostrar el estado de una comprobación de paridad en curso
-Shutdown=Apagado
+Shutdown=Apagar
 Start a correcting parity check=Iniciar una comprobación de paridad correctora
 Start a correcting parity check=Iniciar una comprobación de paridad correctora
 Start a parity check with scheduled settings=Iniciar una comprobación de paridad con ajustes programados
@@ -154,7 +154,7 @@ On most systems a disk Clear operation does not adversely affect performance so 
 Only enable this option if the operation is adversely affecting system use and you are not worried about the extra time that will elapse before the system is once again in a protected state=Active esta opción sólo si la operación afecta negativamente al uso del sistema y no le preocupa el tiempo extra que transcurrirá antes de que el sistema vuelva a estar en estado protegido
 Pause and Resume times=Tiempos de pausa y reanudación
 Pausing a disk Clear operation extends the time before the disk is successfully added to the array and becomes ready for formatting and then used for data storage=La pausa de una operación de borrado de disco prolonga el tiempo antes de que el disco se añada con éxito al Array y esté listo para ser formateado y luego utilizado para el almacenamiento de datos.
-Pausing an operation that is building parity or rebuilding a failed disk has a level of risk as your array is not back in a protected state until=a operación de creación de paridad o de reconstrucción de un disco defectuoso tiene un nivel de riesgo, ya que su matriz no vuelve a estar en un estado protegido hasta que
+Pausing an operation that is building parity or rebuilding a failed disk has a level of risk as your array is not back in a protected state until=La operación de creación de paridad o de reconstrucción de un disco defectuoso tiene un nivel de riesgo, ya que el Array no vuelve a estar en un estado protegido hasta que
 Temperature Pause and Resume=Pausa y reanudación de la temperatura
 Testing mode is normally only used by the plugin author or when gathering evidence of a suspected bug in the plugin=El modo de prueba normalmente sólo es utilizado por el autor del plugin o cuando se recogen pruebas de un presunto error en el plugin
 Testing mode is very verbose and generates a lot of additional log entries so you do not want it enabled unless this is really necessary=El modo de prueba es muy verboso y genera una gran cantidad de entradas de registro adicionales, por lo que no es conveniente activarlo a menos que sea realmente necesario
@@ -180,7 +180,7 @@ appears to be a regular scheduled check=parece ser una revisión regular program
 already running=ya está en marcha
 array drives=unidades de disco del Array
 Array operation paused but drives not cooled enough to resume=El funcionamiento del Array se ha detenido, pero las unidades no se han enfriado lo suficiente como para reanudarlo.
-Array operation paused but not for temperature related reason=Funcionamiento del Array en pausa pero no por razón de temperatura
+Array operation paused but not for temperature related reason=Funcionamiento del Array en pausa pero no por razones de temperatura
 Array stopping=Parada del Array
 Array stopping while %s was in progress %s=El Array se detuvo mientras %s estaba en progreso %s
 but no action currently taken on started event=pero no se ha realizado ninguna acción en el evento iniciado
@@ -188,7 +188,7 @@ but no parity check was in progress when array stopped=pero no había ninguna co
 Cancel request=Cancelar la solicitud
 cool=fresco
 created cron entries for running increments=crear entradas cron para ejecutar incrementos
-created cron entry for monitoring disk temperatures=creado una entrada cron para monitorear las temperaturas de los discos
+created cron entry for monitoring disk temperatures=creada una entrada cron para monitorear las temperaturas de los discos
 Detected that array has not yet been started=Se ha detectado que el Array aún no se ha iniciado
 Detected that array has just been started=Se ha detectado que el Array acaba de ser iniciado
 detected that mdcmd had been called from %s with command %s=detectó que mdcmd había sido llamado desde %s con el comando %s
@@ -212,7 +212,7 @@ Temperature monitoring switched off=Control de la temperatura desactivado
 Unscheduled array operation in progress=Operación del Array no programada en curso
 using scheduled mode of %s=utilizando el modo programado de %s
 warm=caliente
-with all array drives below temperature threshold for a Pause=con todas las unidades de la matriz por debajo del umbral de temperatura para una pausa
+with all array drives below temperature threshold for a Pause=con todas las unidades del Array por debajo del umbral de temperatura para una pausa
 
 ; Syslog messages (with testing logging enabled)
 ; (almost certainly not worth translating these as they are mainly of use to the plugin developer)
@@ -234,12 +234,12 @@ Method used to specify start and stop points=
 ; These could perhaps be left in English to keep translation task easier)
 
 :parity_tune_explain_plug:
-> El objetivo principal de este plugin es permitirle limitar las operaciones de la matriz, como las comprobaciones de paridad, para que se ejecuten en momentos que no le causen molestias.
+> El objetivo principal de este plugin es permitirle limitar las operaciones del Array, como las comprobaciones de paridad, para que se ejecuten en momentos que no le causen molestias.
 >
 >Si lo ha configurado como **No**, obtendrá el comportamiento por defecto del sistema, que consiste en que las comprobaciones de paridad se ejecuten sin interrupción hasta su finalización, a menos que las detenga/pause/cancele de forma manual.
 >
 > Si se establece esta opción en **Sí** se especifica que las comprobaciones de paridad deben realizarse en incrementos repartidos en varios días.
-> Como ejemplo de lo que puede hacer este plugin suponga
+> Como ejemplo de lo que se supone que puede hacer este plugin
 > Tiene un control de paridad que ha programado para que comience el primero de cada mes a medianoche
 >* Su experiencia pasada ha demostrado que si la comprobación de paridad se ejecuta de forma ininterrumpida, tarda 30 horas en completarse.
 >* Este plugin se configura para utilizar incrementos de 3 horas empezando a medianoche y terminando a las 3.00 A.M.
@@ -248,7 +248,7 @@ Method used to specify start and stop points=
 >* A usted no le preocupa este aumento del tiempo transcurrido y agradecerá la mayor capacidad de respuesta del sistema durante el uso normal.
 >* El resto del mes este plugin no hará nada ya que no hay ninguna comprobación de paridad activa en curso cuando llega la hora de inicio de un incremento.
 >
->**CUIDADO:** Si el Array se detiene mientras una operación de matriz está incompleta, el progreso hasta el momento se pierde y sólo se puede reiniciar desde el principio
+>**PRECAUCION:** Si el Array se detiene mientras una operación del Array está incompleta, el progreso hasta el momento se pierde y sólo se puede reiniciar desde el principio
 :end
 
 :parity_tune_increments_plug:
@@ -256,7 +256,7 @@ Method used to specify start and stop points=
 >
 >Si lo ha configurado como **No**, obtendrá el comportamiento por defecto del sistema, que consiste en que las comprobaciones de paridad se ejecuten sin interrupción hasta su finalización, a menos que las detenga/pause/cancele de forma manual.
 >
->**CAUCIÓN:** El comportamiento por defecto de unRaid es que si el Array se detiene mientras una operación de la matriz está incompleta entonces el progreso hasta el momento se pierde y sólo se puede reiniciar desde el principio.
+>**PRECAUCION:** El comportamiento por defecto de unRaid es que si el Array se detiene mientras una operación del Array está incompleta entonces el progreso hasta el momento se pierde y sólo se puede reiniciar desde el principio.
 :end
 
 :parity_tune_frequency_plug:
@@ -271,7 +271,7 @@ Method used to specify start and stop points=
 :end
 
 :parity_tune_automatic_plug:
-> Si el sistema unRaid no se apaga limpiamente, la próxima vez que se inicie el array unRaid iniciará automáticamente una comprobación de paridad sin corrección (o una comprobación de lectura si no tiene disco de paridad). Esto puede ocurrir por una amplia variedad de razones que van desde la pérdida de energía, problemas de hardware y problemas de software.  La comprobación automática se ejecuta porque si hay algún error de paridad, esto puede comprometer la capacidad de recuperación de un fallo de la unidad de matriz en una fecha posterior, por lo que usted quiere volver a tener paridad válida tan pronto como sea práctico.
+> Si el sistema unRaid no se apaga limpiamente, la próxima vez que se inicie el Array unRaid iniciará automáticamente una comprobación de paridad sin corrección (o una comprobación de lectura si no tiene disco de paridad). Esto puede ocurrir por una amplia variedad de razones que van desde la pérdida de energía, problemas de hardware y problemas de software.  La comprobación automática se ejecuta porque si hay algún error de paridad, esto puede comprometer la capacidad de recuperación de un fallo de la unidad del Array en una fecha posterior, por lo que usted quiere volver a tener paridad válida tan pronto como sea práctico.
 >
 > Si se establece esta opción, se permitirá que la comprobación se ejecute durante unos minutos (ya que lo más probable es que cualquier error después de un cierre sucio se encuentre al principio de los discos, ya que no se desmontaron limpiamente) y, a continuación, se pondrá automáticamente la comprobación en estado de pausa (si está fuera del tiempo especificado para los incrementos de ejecución) y, posteriormente, el resto de la comprobación se ejecutará en incrementos de acuerdo con las franjas de tiempo especificadas para los incrementos de ejecución.
 :end
@@ -312,7 +312,7 @@ Method used to specify start and stop points=
 >
 >Este tipo de comprobación sólo se ejecutará si existe potencialmente algún problema con su Array y se están tomando medidas para devolverla a un estado protegido.
 >
->**IMPORTANTE**: Hasta que no se complete esta operación, su matriz no estará totalmente protegida, por lo que se supone que la mayoría de la gente querrá dejar esta opción en **No**.
+>**IMPORTANTE**: Hasta que no se complete esta operación, el Array no estará totalmente protegido, por lo que se supone que la mayoría de la gente querrá dejar esta opción en **No**.
 > No seleccione **Sí** a menos que esté absolutamente seguro de que es lo que quiere.
 :end
 
@@ -329,38 +329,38 @@ Method used to specify start and stop points=
 >* El Array se cerró de forma ordenada
 >* El usuario no debe haber hecho ningún cambio en la configuración del Array.
 >
-> Mientras se cumplan estos criterios, la próxima vez que se inicie el Array, la operación se reanudará desde el punto alcanzado anteriormente.
+> Mientras se cumplan estos criterios, la próxima vez que se inicie el Array, la operación se reanudará desde el punto donde estaba anteriormente.
 >
 >**NOTAS:**
->* Si la operación de la matriz estaba dentro del tiempo establecido para que se ejecutara un incremento programado, al reiniciar la operación de la matriz se pondrá en pausa si ahora está fuera del tiempo establecido para ejecutar incrementos.
->* Si la operación de la matriz se pausó manualmente, la operación de la matriz reiniciada también se pausará
->* Si desea utilizar esta función simplemente deteniendo el array sin utilizar inmediatamente los botones **Reboot** o **Shutdown**, primero debe **Pausar** manualmente el funcionamiento del Array antes de utilizar el botón **Stop**.  Si haces esto y detienes el Array con éxito, la operación del Array se reanudará si simplemente **Inicias** el Array de nuevo, y también en el siguiente inicio del Array después de **Reboot** o **Shutdown**.
+>* Si la operación del Array estaba dentro del tiempo establecido para que se ejecutara un incremento programado, al reiniciar la operación del Array se pondrá en pausa si ahora está fuera del tiempo establecido para ejecutar incrementos.
+>* Si la operación del Array se pausó manualmente, la operación del Array reiniciada también se pausará
+>* Si desea utilizar esta función simplemente deteniendo el Array sin utilizar inmediatamente los botones **Reboot** o **Shutdown**, primero debe **Pausar** manualmente el funcionamiento del Array antes de utilizar el botón **Stop**.  Si haces esto y detienes el Array con éxito, la operación del Array se reanudará si simplemente **Inicias** el Array de nuevo, y también en el siguiente inicio del Array después de **Reboot** o **Shutdown**.
 :end
 
 :parity_tune_hot_plug:
-> Ponga en pausa una operación de la matriz (Comprobación de paridad, Sincronización de paridad/Reconstrucción de disco, Borrado de disco) si las temperaturas del disco superan los límites que ha establecido.
+> Ponga en pausa una operación del Array (Comprobación de paridad, Sincronización de paridad/Reconstrucción de disco, Borrado de disco) si las temperaturas del disco superan los límites que has establecido.
 >
->Las temperaturas se comparan con los umbrales establecidos para los niveles de temperatura de los discos de advertencia. Si se ha definido un umbral para un accionamiento individual (al que se accede haciendo clic en el accionamiento en la pestaña Principal), éste es el valor utilizado.  Si no es así, el ajuste global (set via *Settings->Display Settings*) se utilizará.  Se supone que normalmente se desea que la operación del array se detenga antes del valor establecido en el nivel de unRaid como Umbral de Advertencia.
+>Las temperaturas se comparan con los umbrales establecidos para los niveles de advertencia de temperatura de los discos. Si se ha definido un umbral para un accionamiento individual (al que se accede haciendo clic en el accionamiento en la pestaña Principal), éste es el valor utilizado.  Si no es así, el ajuste global (configurar via *Settings->Display Settings*) se utilizará.  Se supone que normalmente se desea que la operación del Array se detenga antes del valor establecido en el nivel de unRaid como Umbral de Advertencia.
 >
 >Una solución mucho mejor es mejorar la refrigeración de la caja para que los discos nunca se sobrecalienten.   En la práctica, esto no siempre resulta práctico.
 >
->Si la operación de matriz era parte de la ejecución de un incremento, entonces no se reanudará fuera del tiempo asignado para el incremento.   Si la operación de la matriz se inició por cualquier otra razón, el comportamiento de Pausa/Reanudación de la temperatura está siempre activo.
+>Si la operación del Array era parte de la ejecución de un incremento, entonces no se reanudará fuera del tiempo asignado para el incremento. Si la operación del Array se inició por cualquier otra razón, el comportamiento de Pausa/Reanudación de la temperatura está siempre activo.
 :end
 
 :parity_tune_warn_plug:
-> Este valor indica cuán cerca del valor establecido para el Umbral de Temperatura de Disco de Advertencia se permite que llegue la temperatura de los discos antes de que se active una **pausa** de una operación de matriz en curso. Si se ha definido un umbral explícito para un disco individual, este será el valor utilizado.  Si no se ha definido un umbral explícito para una unidad individual, se utilizará este valor.
+> Este valor indica como de cerca del valor establecido para el Umbral de Temperatura de Disco de Advertencia se permite que llegue la temperatura de los discos antes de que se active una **pausa** de una operación del Array en curso. Si se ha definido un umbral explícito para un disco individual, este será el valor utilizado.  Si no se ha definido un umbral explícito para una unidad individual, se utilizará este valor.
 >
 > Normalmente se desea un valor positivo pequeño para activar la pausa antes de que Unraid le envíe una notificación de que se ha alcanzado el umbral de advertencia de temperatura para un disco.
 >
 > Por ejemplo, si el umbral de advertencia de un accionamiento es de 50C, si se establece un valor de pausa de 5, el complemento detendrá el funcionamiento si el accionamiento alcanza los 45C (50-5).
 >
->Si no hay ninguna operación de matriz activa, no se tomará ninguna acción aunque las temperaturas de los discos superen el umbral especificado.
+>Si no hay ninguna operación del Array activa, no se tomará ninguna acción aunque las temperaturas de los discos superen el umbral especificado.
 >
-> Si no hay ninguna operación de matriz en marcha, no se realizará ninguna acción.
+> Si no hay ninguna operación del Array en marcha, no se realizará ninguna acción.
 :end
 
 :parity_tune_low_plug:
-> Este valor indica cuánto por debajo del umbral de temperatura de advertencia de una unidad debe alcanzar antes de que se emita una **reanudación** de una operación de matriz.
+> Este valor indica cuánto por debajo del umbral de temperatura de advertencia de una unidad debe alcanzar antes de que se emita una **reanudación** de una operación del Array.
 >
 >Hay que conseguir un buen equilibrio entre que las operaciones de la matriz se reanuden demasiado pronto (y así llegar rápidamente al nivel para iniciar otra pausa) y perder mucho tiempo.
 >
@@ -370,22 +370,22 @@ Method used to specify start and stop points=
 :end
 
 :parity_tune_temp_notify_plug:
-> Si se establece esta opción en **Sí**, se le enviará una notificación cada vez que el plugin Pausa o Reanuda una operación de matriz debido a la temperatura de sus unidades.<br>Si prefiere no recibir dichas notificaciones, deje esta opción establecida en **No**.    La notificación se envía como un mensaje de categoría **Notice** a los objetivos especificados en *<a href="Settings/Notifications">Settings->Notification Settings</a>*.
+> Si se establece esta opción en **Sí**, se le enviará una notificación cada vez que el plugin Pausa o Reanuda una operación del Array debido a la temperatura de sus unidades.<br>Si prefiere no recibir dichas notificaciones, deje esta opción establecida en **No**. La notificación se envía como un mensaje de categoría **Notice** a los objetivos especificados en *<a href="Settings/Notifications">Settings->Notification Settings</a>*.
 :end
 
 :parity_tune_shutdown_plug:
-> Si se establece en **Sí**, se inicia automáticamente un apagado ordenado del servidor si algún disco de la matriz o de un grupo de caché alcanza el umbral de temperatura definido.
+> Si se establece en **Sí**, se inicia automáticamente un apagado ordenado del servidor si algún disco del Array o de un grupo de caché alcanza el umbral de temperatura definido.
 > Las temperaturas se comparan con los umbrales establecidos para los niveles de temperatura **Críticos** del disco. Si se ha definido una temperatura crítica para una unidad individual (a la que se accede haciendo clic en la unidad en la pestaña Principal), éste es el valor utilizado.  Si no es así, se utiliza la configuración global (*<a href="Settings/DisplaySettings">Settings->Display Settings</a>) se utilizará.
 >
 >Esta opción está pensada para activarse si por alguna razón el sistema de refrigeración del sistema es insuficiente o si ha fallado de alguna manera. La idea es que se quiera hacer un apagado ordenado antes de que los discos se dañen debido a un mal sobrecalentamiento.   El apagado que se desencadena es funcionalmente el mismo que se produciría al pulsar el botón de apagado en la página principal de la interfaz gráfica de usuario de unRaid.  Si las notificaciones están habilitadas, se le enviará una para indicarle que esto ha sucedido.
 >
 >Cuando el servidor se reinicie después de un apagado de este tipo, cuando se inicie el array se le notificará que se ha producido un apagado relacionado con la temperatura en caso de que no fuera consciente del motivo.
 >
->**PREOCUPACIÓN:** Si la matriz se detiene mientras una operación de matriz está incompleta, se pierde el progreso hasta el momento y sólo se puede reiniciar desde el principio.
+>**PRECAUCION:** Si el Array se detiene mientras una operación del Array está incompleta, se pierde el progreso hasta el momento y sólo se puede reiniciar desde el principio.
 :end
 
 :parity_tune_critical_plug:
-> Este valor indica cuán cerca del valor establecido para el Umbral de Temperatura Crítica del Disco se permite que llegue la temperatura de los discos antes de que se active un apagado del servidor.
+> Este valor indica como de cerca del valor establecido para el Umbral de Temperatura Crítica del Disco se permite que llegue la temperatura de los discos antes de que se active un apagado del servidor.
 > Es posible que desee un valor positivo pequeño para activar la pausa antes de que unRaid le envíe una notificación de que se ha alcanzado el umbral crítico de temperatura para un disco.
 >
 >Si se ha definido un umbral explícito para un accionamiento individual, éste será el valor utilizado.  En caso contrario, se utilizará el ajuste global.
@@ -407,7 +407,7 @@ Method used to specify start and stop points=
 >
 >Se agradecen los comentarios sobre si merece la pena introducir alguna opción intermedia que emita mensajes de tipo informativo sobre la actividad del plugin, omitiendo algunos de los detalles de nivel inferior que tienen como objetivo diagnosticar cualquier problema que se pueda encontrar mientras el plugin está funcionando.
 >
->Si tiene configurado el modo de prueba para el registro, puede elegir dónde quiere que se registren los mensajes de registro.  El valor por defecto es el syslog estándar del sistema y esta es la única opción permitida en el modo Básico.  El syslog se mantiene en la memoria RAM, por lo que no causa excesivas escrituras en la unidad flash.
+>Si tiene configurado el modo de prueba para el registro, puede elegir dónde quiere que se guarden los mensajes de registro.  El valor por defecto es el syslog estándar del sistema y esta es la única opción permitida en el modo Básico.  El syslog se mantiene en la memoria RAM, por lo que no causa excesivas escrituras en la unidad flash.
 >Para facilitar la depuración de problemas, en el modo de prueba puede registrar los mensajes en la unidad flash en lugar del syslog o además del syslog. El archivo parityTuning.log resultante se almacenará en la carpeta del plugin en la unidad flash y proporcionar este archivo al desarrollador ayudará a diagnosticar cualquier comportamiento inesperado que encuentre.
 :end
 
