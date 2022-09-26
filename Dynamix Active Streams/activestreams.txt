@@ -1,17 +1,17 @@
-Halt=
-Host Address=
-Host=
-No active streams=
-Playtime=
-Stop stream=
-Stream=
-User Name=
-User=
+Halt=Detener
+Host Address=Dirección del Host
+Host=Host
+No active streams=No hay secuencias activas
+Playtime=Tiempo de descanso
+Stop stream=Detener la secuencia de información
+Stream=Secuencia
+User Name=Nombre de usuario
+User=Usuario
 
 :streams_plug:
-> Give symbolic names to IP addresses, which are displayed on the active streams page.
+> Dar nombres simbólicos a las direcciones IP, que se muestran en la página de flujos activos.
 >
-> New IP addresses are automatically added to the list when detected.
+> Las nuevas direcciones IP se añaden automáticamente a la lista cuando se detectan.
 >
-> To remove a name association, clear the respective user name box and press apply.
+> Para eliminar una asociación de nombres, desactive la casilla correspondiente al nombre del usuario y pulse aplicar.
 :end
