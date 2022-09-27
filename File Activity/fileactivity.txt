@@ -31,9 +31,9 @@ Enable for Cache and Pool Disks=Habilitar para cache y pool de discos
 :end
 
 :file_activity_enable_cache_plug:
-> Set to **Yes** to enable File Activity monitoring for the Cache and Pool Disks.  Pool disks only apply in Unraid 6.9.
+> Establezca en **Sí** para habilitar la monitorización de la actividad de los archivos para los discos de caché y de pool.  Los discos Pool sólo se aplican en Unraid 6.9.
 :end
 
 :file_activity_log_by_plug:
-> Set to **Disk** to log disk activity.  Set to **Share** to log share activity.
+> Establecer en **Disco** para registrar la actividad del disco.  Establecer en **Compartir** para registrar la actividad de los recursos compartidos.
 :end
