@@ -139,68 +139,68 @@ You will need to enter credentials to list the shares=Deberá ingresar las crede
 ; Help
 ;
 :unassgned_devices_switches_plug:
-> Turn on the **Disks** switch to change the web page to show disk devices. Turn off the **Disks** switch to change the web page to hide disk devices.
+> Active el interruptor **Discos** para que la página web muestre los dispositivos de disco. Apague el interruptor **Discos** para cambiar la página web y ocultar los dispositivos de disco.
 >
-> Turn on the **Shares** switch to change the web page to show shares. Turn off the **Shares** switch to change the web page to hide shares.
+> Activa el interruptor **Shares** para que la página web muestre las acciones. Desactive el interruptor **Shares** para cambiar la página web y ocultar las acciones.
 >
-> Turn on the **Historical** switch to show Historical disk devices. Turn off **Historical** switch to switch back to not show Historical disk devices.
+> Active el interruptor **Histórico** para mostrar los dispositivos de disco históricos. Desactive el interruptor **Histórico** para volver a no mostrar los dispositivos de disco históricos.
 >
-> Click on the <i style='color:black;font-weight:bold;' class="fa fa-refresh"></i> icon to refresh disks and configuration.
+> Haga clic en <i style='color:black;font-weight:bold;' class="fa fa-refresh"></i> icono para refrescar los discos y la configuración.
 >
-> Click on the <i style='color:black;font-weight:bold;' class="fa fa-gear"></i> icon to go to the UD Settings.
+> Haga clic en <i style='color:black;font-weight:bold;' class="fa fa-gear"></i> icono para ir a la configuración de la UD.
 >
-> You can spin a disk up or down by clicking on the disk ball <i class='fa fa-circle orb green-orb'></i>or <i class='fa fa-circle orb grey-orb'></i>indicator. Applies to version 6.9 RC2 and later only.
+> Puedes hacer girar un disco hacia arriba o hacia abajo haciendo clic en la bola del disco <i class='fa fa-circle orb green-orb'></i>or <i class='fa fa-circle orb grey-orb'></i>indicator. Sólo se aplica a la versión 6.9 RC2 y posteriores.
 :end
 
 :unassigned_devices_general_help_plug:
-> **Unassigned Devices is called UD for short.**
+> **Unassigned Devices se denomina UD para abreviar.**
 >
-> Hover your mouse over an any active area on the UD page and a tool tip will show you what clicking that area does.
-> You can mount USB devices, sata drives, Remote SMB/NFS shares, and ISO Files with UD.  Any devices with the auto mount switch on will be mounted when the array is started.  All drives and SMB/NFS Mounts are unmounted when the array is stopped on the 'stopping_svcs' event.
-> If you want to share your drive, you can turn on the Share switch.  The default for Remote SMB shares is Public read/write access.  Enable SMB Security by user in the Unassigned Devices Settings.  NFS shares are exported and access is read/write.  The export of NFS devices is enabled in the Unassigned Devices settings. You can also enable a common script that will be executed on every disk mount.  In order to share any UD device, sharing needs to be enabled in the UD Settings and the switch turned on to share the particular device.  SMB/NFS remove shares and ISO mounts are always shared.
-> After entering a mount point, press &lt;Enter&gt; to save the change.
+> Pase el ratón por encima de cualquier área activa de la página de la UD y un consejo sobre la herramienta le mostrará lo que hace al hacer clic en esa área.
+> Puede montar dispositivos USB, unidades sata, recursos compartidos SMB/NFS remotos y archivos ISO con UD.  Cualquier dispositivo con el interruptor de montaje automático activado se montará cuando se inicie el array.  Todas las unidades y montajes SMB/NFS se desmontan cuando el array se detiene en el evento 'stopping_svcs'.
+> Si quiere compartir su unidad, puede activar el interruptor de compartir.  El valor predeterminado para los recursos compartidos SMB remotos es el acceso público de lectura/escritura.  Active la seguridad SMB por usuario en la configuración de los dispositivos no asignados.  Los recursos compartidos NFS se exportan y el acceso es de lectura/escritura.  La exportación de dispositivos NFS se habilita en la configuración de Dispositivos no asignados. También se puede habilitar un script común que se ejecutará en cada montaje de disco.  Para compartir cualquier dispositivo UD, es necesario habilitar el uso compartido en la configuración de UD y activar el interruptor para compartir el dispositivo en particular.  Los recursos compartidos de eliminación SMB/NFS y los montajes ISO siempre se comparten.
+> Después de introducir un punto de montaje, pulse &lt;Enter&gt; para guardar el cambio.
 >
-> Additional options are available when you click on the <i style='color:black;font-weight:bold;' class="fa fa-plus-square"></i> icon by device identification.  When the disk is unmounted, the mount point of the device can be changed.  The disk label will also be changed.  A disk can be formatted and an fsck run to check the disk.
+> Las opciones adicionales están disponibles cuando se hace clic en el botón <i style='color:black;font-weight:bold;' class="fa fa-plus-square"></i> icono por la identificación del dispositivo.  Cuando se desmonta el disco, se puede cambiar el punto de montaje del dispositivo.  La etiqueta del disco también se cambiará.  Se puede formatear un disco y ejecutar un fsck para comprobar el disco.
 >
-> The 'Settings->Unassigned Devices' security settings for SMB and NFS must be set correctly for SMB and NFS sharing to work properly.
+> La 'Configuración->Dispositivos no asignados' configuración de seguridad para SMB y NFS debe estar configurada correctamente para que el uso compartido de SMB y NFS funcione correctamente.
 >
-> If the mount button is grayed out for a SMB/NFS remote share, the remote server is not responding to a ping.  The remote share server must respond to a ping or UD will consider it off-line.
+> Si el botón de montaje está en gris para un recurso compartido remoto SMB/NFS, el servidor remoto no responde a un ping.  El servidor remoto compartido debe responder a un ping o UD lo considerará fuera de línea.
 >
-> The 'Add Root Share' button is disabled when 'Enable disk shares' is enabled and any Root Shares previously added will not mount.
+> El botón "Añadir recurso compartido raíz" se desactiva cuando se activa "Habilitar recursos compartidos de disco" y cualquier recurso compartido raíz añadido previamente no se montará.
 >
-> UD has a destructive mode that allows deleting disk partitions and formatting disks.	If Destructive Mode is not turned on in the UD Settings, you WILL NOT be able to format a disk or remove partitions.  Go the the 'Settings->Unassigned Devices' to set the destructive mode.
+> La UD tiene un modo destructivo que permite borrar particiones de disco y formatear discos.	Si el modo destructivo no está activado en la configuración de la UD, NO podrá formatear un disco o eliminar particiones.  Vaya a 'Configuración->Dispositivos no asignados' para activar el modo destructivo.
 >
-> **To format a disk:**
+> **Para formatear un disco:**
 >
-> + Destructive mode must be enabled.
-> + Disk must have all partitions removed.  Unmount disk, click on the <i style='color:black;font-weight:bold;' class='fa fa-plus-square'></i> icon,, and click on all <i style='color:red;font-weight:bold;' class='fa fa-remove hdd'></i> icons to delete partitions.
-> + If the disk has been precelared and shows a grayed 'Format' button, click on the <i style='color:black;font-weight:bold;' class='fa fa-plus-square'></i> icon, then click on the <i style='color:red;font-weight:bold;' class='fa fa-remove hdd'></i> icon to delete the preclear status file.
+> + El modo destructivo debe estar activado.
+> + El disco debe tener todas las particiones eliminadas.  Desmonte el disco, haga clic en el botón <i style='color:black;font-weight:bold;' class='fa fa-plus-square'></i> y haga clic en todos los <i style='color:red;font-weight:bold;' class='fa fa-remove hdd'></i> iconos para eliminar las particiones.
+> + Si el disco ha sido precelado y muestra un botón gris de "Formato", haga clic en el botón <i style='color:black;font-weight:bold;' class='fa fa-plus-square'></i> y, a continuación, haga clic en el icono <i style='color:red;font-weight:bold;' class='fa fa-remove hdd'></i> para borrar el archivo de estado del preclear.
 >
-> **Note: A disk partitioned in UD is compatible with the array disk partitioning and can be added to the array.  Supported file formats are XFS, XFS encrypted, BTRFS and BTRFS encrypted.**
+> **Nota: Un disco particionado en UD es compatible con el particionamiento del disco de la matriz y puede ser añadido a la misma.  Los formatos de archivo compatibles son XFS, XFS cifrado, BTRFS y BTRFS cifrado.**
 >
-> **Encrypted Disks:**
+> **Discos encriptados:**
 >
-> + Any disk formatted in UD that is encrypted will use the array password/passphrase and can be incorporated into the array.  Or you can set a unique password when it is formatted.  If you set a password on the disk when it is formatted, you will need to enter a disk password in Unassignd Devices->Settings for that disk.
-> + Any disk that was not encrypted with the Array password/passphrase can be mounted by setting a per disk passord set in Unassigned Devices->Settings.
+> + Cualquier disco formateado en UD que esté encriptado utilizará la contraseña/frase de paso del array y podrá incorporarse al mismo.  O se puede establecer una contraseña única cuando se formatea.  Si establece una contraseña en el disco cuando se formatea, tendrá que introducir una contraseña de disco en Dispositivos no asignados->Configuración para ese disco.
+> + Cualquier disco que no haya sido encriptado con la contraseña/frase de paso de la matriz puede montarse estableciendo una contraseña por disco en Dispositivos no asignados->Configuración.
 >
-> **Unassigned devices script:**
+> **Script de dispositivos no asignados:**
 >
-> UD includes a script that is used for mounting and unmounting devices and SMB/NFS mounts. These scripts can be used from the command line or in your scripts as necessary.
+> UD incluye un script que se utiliza para montar y desmontar dispositivos y montajes SMB/NFS. Estos scripts se pueden utilizar desde la línea de comandos o en sus scripts según sea necesario.
 >
-> + '/usr/local/sbin/rc.unassigned mount autodevices' - all devices set to auto mount will be mounted.
-> + '/usr/local/sbin/rc.unassigned mount autoshares' - all SMB/NFS mounts set to auto mount will be mounted.
-> + '/usr/local/sbin/rc.unassigned umount auto' - all devices and SMB/NFS mounts set to auto mount will be unmounted.
-> + '/usr/local/sbin/rc.unassigned umount all' - all devices and SMB/NFS mounts are unmounted in preparation for shutting down the array.
-> + '/usr/local/sbin/rc.unassigned mount /dev/sdX or devX' - mount device sdX where 'X' is the device designator.  The devX is the device name in the UD page.  If the device name is 'Dev 1', then use dev1 as the device to mount.
-> + '/usr/local/sbin/rc.unassigned mount name=diskname' - mount device by disk name.
-> + '/usr/local/sbin/rc.unassigned umount /dev/sdX or devX' - unmount device sdX where 'X' is the device designator. The devX is the device name in the UD page.  If the device name is 'Dev 1', then use dev1 as the device to unmount. You can use this command in a UD script to unmount the device when the script has completed.
-> + '/usr/local/sbin/rc.unassigned umount name=diskname' - unmount device by disk name.
-> + '/usr/local/sbin/rc.unassigned spindown devX' - spin down a disk.  The devX is the device name in the UD page.  If the device name is 'Dev 1', then use dev1 as the device to spin down.  SSDs will not spin down.
-> + '/usr/local/sbin/rc.unassigned spindown name=diskname' - spin down a disk by disk name.
-> + '/usr/local/sbin/rc.unassigned mount SOURCE' - where SOURCE is the SMB/NFS source.
-> + '/usr/local/sbin/rc.unassigned umount SOURCE' - where SOURCE is the SMB/NFS source.
+> + '/usr/local/sbin/rc.unassigned mount autodevices' - todos los dispositivos configurados para el montaje automático se montarán.
+> + '/usr/local/sbin/rc.unassigned mount autoshares' - se montarán todos los montajes SMB/NFS configurados como montaje automático.
+> + '/usr/local/sbin/rc.unassigned umount auto' - todos los dispositivos y montajes SMB/NFS configurados para el montaje automático serán desmontados.
+> + '/usr/local/sbin/rc.unassigned umount all' - todos los dispositivos y montajes SMB/NFS se desmontan para preparar el apagado de la matriz.
+> + '/usr/local/sbin/rc.unassigned mount /dev/sdX or devX' - mount device sdX donde 'X' es el designador del dispositivo.  El devX es el nombre del dispositivo en la página UD.  Si el nombre del dispositivo es 'Dev 1', entonces use dev1 como el dispositivo a montar.
+> + '/usr/local/sbin/rc.unassigned mount name=diskname' - montar el dispositivo por el nombre del disco.
+> + '/usr/local/sbin/rc.unassigned umount /dev/sdX or devX' - Desmontar dispositivo sdX donde 'X' es el designador del dispositivo. El devX es el nombre del dispositivo en la página UD.  Si el nombre del dispositivo es 'Dev 1', entonces use dev1 como el dispositivo a desmontar. Puede utilizar este comando en un script de UD para desmontar el dispositivo cuando el script haya finalizado.
+> + '/usr/local/sbin/rc.unassigned umount name=diskname' - Desmontar dispositivo por nombre de disco.
+> + '/usr/local/sbin/rc.unassigned spindown devX' - Poner en reposo.  El devX es el nombre del dispositivo en la página UD.  Si el nombre del dispositivo es 'Dev 1', entonces use dev1 como el dispositivo a girar.  Los discos SSD no se desconectarán.
+> + '/usr/local/sbin/rc.unassigned spindown name=diskname' - Poner en reposo un disco por nombre de disco.
+> + '/usr/local/sbin/rc.unassigned mount SOURCE' - donde SOURCE es la fuente SMB/NFS.
+> + '/usr/local/sbin/rc.unassigned umount SOURCE' - donde SOURCE es la fuente SMB/NFS.
 >
-> Be careful using the /dev/sdX designation because it can change after a reboot.
+> Tenga cuidado al usar la designación /dev/sdX porque puede cambiar después de un reinicio.
 :end
 
 ; Note: September 16, 2022 - 2 missing translations
