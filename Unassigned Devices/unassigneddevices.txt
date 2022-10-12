@@ -149,7 +149,7 @@ You will need to enter credentials to list the shares=Deberá ingresar las crede
 >
 > Haga clic en <i style='color:black;font-weight:bold;' class="fa fa-gear"></i> icono para ir a la configuración de la UD.
 >
-> Puedes hacer girar un disco hacia arriba o hacia abajo haciendo clic en la bola del disco <i class='fa fa-circle orb green-orb'></i>or <i class='fa fa-circle orb grey-orb'></i>indicator. Sólo se aplica a la versión 6.9 RC2 y posteriores.
+> Puedes encender o poner en reposo los discos haciendo clic en la bola del disco <i class='fa fa-circle orb green-orb'></i>or <i class='fa fa-circle orb grey-orb'></i>indicator. Sólo se aplica a la versión 6.9 RC2 y posteriores.
 :end
 
 :unassigned_devices_general_help_plug:
@@ -174,28 +174,28 @@ You will need to enter credentials to list the shares=Deberá ingresar las crede
 >
 > + El modo destructivo debe estar activado.
 > + El disco debe tener todas las particiones eliminadas.  Desmonte el disco, haga clic en el botón <i style='color:black;font-weight:bold;' class='fa fa-plus-square'></i> y haga clic en todos los <i style='color:red;font-weight:bold;' class='fa fa-remove hdd'></i> iconos para eliminar las particiones.
-> + Si el disco ha sido precelado y muestra un botón gris de "Formato", haga clic en el botón <i style='color:black;font-weight:bold;' class='fa fa-plus-square'></i> y, a continuación, haga clic en el icono <i style='color:red;font-weight:bold;' class='fa fa-remove hdd'></i> para borrar el archivo de estado del preclear.
+> + Si al disco se le ha hecho un preclear y muestra un botón gris de "Formato", haga clic en el botón <i style='color:black;font-weight:bold;' class='fa fa-plus-square'></i> y, a continuación, haga clic en el icono <i style='color:red;font-weight:bold;' class='fa fa-remove hdd'></i> para borrar el archivo de estado del preclear.
 >
-> **Nota: Un disco particionado en UD es compatible con el particionamiento del disco de la matriz y puede ser añadido a la misma.  Los formatos de archivo compatibles son XFS, XFS cifrado, BTRFS y BTRFS cifrado.**
+> **Nota: Un disco particionado en UD es compatible con el particionamiento del disco del Array y puede ser añadido a la misma.  Los formatos de archivo compatibles son XFS, XFS cifrado, BTRFS y BTRFS cifrado.**
 >
 > **Discos encriptados:**
 >
 > + Cualquier disco formateado en UD que esté encriptado utilizará la contraseña/frase de paso del array y podrá incorporarse al mismo.  O se puede establecer una contraseña única cuando se formatea.  Si establece una contraseña en el disco cuando se formatea, tendrá que introducir una contraseña de disco en Dispositivos no asignados->Configuración para ese disco.
-> + Cualquier disco que no haya sido encriptado con la contraseña/frase de paso de la matriz puede montarse estableciendo una contraseña por disco en Dispositivos no asignados->Configuración.
+> + Cualquier disco que no haya sido encriptado con la contraseña/frase de paso del Array puede montarse estableciendo una contraseña por disco en Dispositivos no asignados->Configuración.
 >
 > **Script de dispositivos no asignados:**
 >
 > UD incluye un script que se utiliza para montar y desmontar dispositivos y montajes SMB/NFS. Estos scripts se pueden utilizar desde la línea de comandos o en sus scripts según sea necesario.
 >
 > + '/usr/local/sbin/rc.unassigned mount autodevices' - todos los dispositivos configurados para el montaje automático se montarán.
-> + '/usr/local/sbin/rc.unassigned mount autoshares' - se montarán todos los montajes SMB/NFS configurados como montaje automático.
-> + '/usr/local/sbin/rc.unassigned umount auto' - todos los dispositivos y montajes SMB/NFS configurados para el montaje automático serán desmontados.
-> + '/usr/local/sbin/rc.unassigned umount all' - todos los dispositivos y montajes SMB/NFS se desmontan para preparar el apagado de la matriz.
-> + '/usr/local/sbin/rc.unassigned mount /dev/sdX or devX' - mount device sdX donde 'X' es el designador del dispositivo.  El devX es el nombre del dispositivo en la página UD.  Si el nombre del dispositivo es 'Dev 1', entonces use dev1 como el dispositivo a montar.
+> + '/usr/local/sbin/rc.unassigned mount autoshares' - se montarán todos los recuersos SMB/NFS configurados como montaje automático.
+> + '/usr/local/sbin/rc.unassigned umount auto' - todos los dispositivos y recursos SMB/NFS configurados para el montaje automático serán desmontados.
+> + '/usr/local/sbin/rc.unassigned umount all' - todos los dispositivos y recursos SMB/NFS se desmontan para preparar el apagado del Array.
+> + '/usr/local/sbin/rc.unassigned mount /dev/sdX or devX' - montar el dispositivo sdX donde 'X' es el designador del dispositivo.  El devX es el nombre del dispositivo en la página UD.  Si el nombre del dispositivo es 'Dev 1', entonces use dev1 como el dispositivo a montar.
 > + '/usr/local/sbin/rc.unassigned mount name=diskname' - montar el dispositivo por el nombre del disco.
-> + '/usr/local/sbin/rc.unassigned umount /dev/sdX or devX' - Desmontar dispositivo sdX donde 'X' es el designador del dispositivo. El devX es el nombre del dispositivo en la página UD.  Si el nombre del dispositivo es 'Dev 1', entonces use dev1 como el dispositivo a desmontar. Puede utilizar este comando en un script de UD para desmontar el dispositivo cuando el script haya finalizado.
+> + '/usr/local/sbin/rc.unassigned umount /dev/sdX or devX' - desmontar dispositivo sdX donde 'X' es el designador del dispositivo. El devX es el nombre del dispositivo en la página UD.  Si el nombre del dispositivo es 'Dev 1', entonces use dev1 como el dispositivo a desmontar. Puede utilizar este comando en un script de UD para desmontar el dispositivo cuando el script haya finalizado.
 > + '/usr/local/sbin/rc.unassigned umount name=diskname' - Desmontar dispositivo por nombre de disco.
-> + '/usr/local/sbin/rc.unassigned spindown devX' - Poner en reposo.  El devX es el nombre del dispositivo en la página UD.  Si el nombre del dispositivo es 'Dev 1', entonces use dev1 como el dispositivo a girar.  Los discos SSD no se desconectarán.
+> + '/usr/local/sbin/rc.unassigned spindown devX' - poner en reposo. El devX es el nombre del dispositivo en la página UD.  Si el nombre del dispositivo es 'Dev 1', entonces use dev1 como el dispositivo a poner en reposo.  Los discos SSD no se pondrán en reposo.
 > + '/usr/local/sbin/rc.unassigned spindown name=diskname' - Poner en reposo un disco por nombre de disco.
 > + '/usr/local/sbin/rc.unassigned mount SOURCE' - donde SOURCE es la fuente SMB/NFS.
 > + '/usr/local/sbin/rc.unassigned umount SOURCE' - donde SOURCE es la fuente SMB/NFS.
