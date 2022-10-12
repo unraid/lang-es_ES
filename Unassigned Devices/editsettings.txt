@@ -47,7 +47,7 @@ Volume=Volumen
 :end
 
 :ud_edit_user_script_choose_name_plug:
-> Si tiene instalado el plugin de Scripts de Usuario, puede hacer que
+> Si tiene instalado el plugin User Scripts, puede hacer que
 Dispositivos no asignados muestren el estado de ejecución del Script de Usuario que
 que utilizará este dispositivo. Este campo sólo se activará cuando exista un Archivo de Script de Dispositivo.
 :end
