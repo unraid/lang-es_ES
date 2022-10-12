@@ -36,7 +36,7 @@ Use only when directed for support=Utilizar sólo cuando se indique para el sopo
 ; Help
 ;
 :ud_settings_plus_plug:
-> **Nota:** Es necesario instalar el plugin 'Unassigned Devices Plus' para poder montar los formatos de disco HFS+ y exFAT, y habilitar el modo desctrtivo.
+> **Nota:** Es necesario instalar el plugin 'Unassigned Devices Plus' para poder montar los formatos de disco HFS+ y exFAT, y habilitar el modo destructivo.
 :end
 
 :ud_settings_common_script_plug:
@@ -52,13 +52,13 @@ Use only when directed for support=Utilizar sólo cuando se indique para el sopo
 :end
 
 :ud_settings_discard_plug:
-> Monta los SSD que soportan el descarte con la opción 'discard'.  Si utiliza la configuración de recorte de SSD para realizar un recorte periódico de los SSD, puede establecer esta opción en **No**.
+> Monta los SSD que soportan el descarte con la opción 'discard'.  Si utiliza la configuración SSD Trim para realizar un recorte periódico de los SSD, puede establecer esta opción en **No**.
 :end
 
 :ud_settings_symlinks_plug:
-> Establecer a **Sí** para crear enlaces simbólicos para /mnt/remotes/ en /mnt/discos/.
+> Establecer a **Sí** para crear enlaces simbólicos para /mnt/remotes/ en /mnt/disks/.
 >
-> Esto es para la compatibilidad con los mapeos de VM y Docker Container al punto de montaje /mnt/disks/.
+> Esto es para la compatibilidad con los mapeos de VM y Contenedores Docker al punto de montaje /mnt/disks/.
 > Se recomienda cambiar las asignaciones al punto de montaje /mnt/remotes/.
 >
 > Si no necesita la compatibilidad hacia atrás, déjelo en **No**.
@@ -91,10 +91,10 @@ Use only when directed for support=Utilizar sólo cuando se indique para el sopo
 :end
 
 :ud_settings_smb_security_plug:
-> Establezca el nivel de usuario de la seguridad SMB.
+> Establezca el nivel de seguridad del usuario sobre SMB.
 >
-> + Establecer en **Sí** para habilitar la Seguridad SMB en los recursos compartidos SMB.  Establezca el acceso por usuario para permitir el acceso y si el usuario puede o no escribir en el recurso compartido.
-> Establezca en **Ocultos** para habilitar la seguridad SMB en los recursos compartidos SMB que no serán visibles.  Establezca el acceso por usuario para permitir el acceso y si el usuario puede o no escribir en el recurso compartido.
+> + Establecer en **Sí** para habilitar la Seguridad sobre SMB en los recursos compartidos SMB. Establezca el acceso por usuario para permitir el acceso y si el usuario puede o no escribir en el recurso compartido.
+> Establezca en **Ocultos** para habilitar la seguridad sobre SMB en los recursos compartidos SMB que no serán visibles. Establezca el acceso por usuario para permitir el acceso y si el usuario puede o no escribir en el recurso compartido.
 > + Si se establece en **No** se compartirán dispositivos, SMB/NFS y montajes iso públicos con acceso de lectura y escritura.
 :end
 
@@ -115,16 +115,13 @@ Use only when directed for support=Utilizar sólo cuando se indique para el sopo
 :end
 
 :ud_settings_nfs_shares_plug:
-> Establecer en **Sí** para exportar recursos compartidos NFS.  Los recursos compartidos se exportan de forma pública con acceso de lectura y escritura o de forma privada con la regla que se establezca.  El acceso se controla con la configuración de permisos en archivos y carpetas.
+> Establecer en **Sí** para exportar recursos compartidos NFS. Los recursos compartidos se exportan de forma pública con acceso de lectura y escritura o de forma privada con la regla que se establezca.  El acceso se controla con la configuración de permisos en archivos y carpetas.
 :end
 
 :ud_settings_disk_pass_plug:
-> Seleccione el disco al que desea establecer una Contraseña.  Esta es la contraseña sólo para este disco y no afecta a la contraseña/frase de paso del array.  Deje la contraseña en blanco para utilizar la contraseña/frase de paso de la matriz.
+> Seleccione el disco al que le desea establecer una Contraseña. Esta contraseña sólo es para este disco y no afecta a la contraseña/frase del Array. Deje la contraseña en blanco para utilizar la contraseña/frase del Array.
 :end
 
 :ud_settings_change_uuid_plug:
 > Seleccione el disco al que desea cambiar el UUID.  Esto es útil cuando un disco ha sido retirado del array y tiene el mismo UUID que un disco del array.  El disco debe estar desmontado para cambiar el UUID.
 :fin
-*** Translated with www.DeepL.com/Translator (free version) ***
-
-
