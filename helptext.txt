@@ -2118,7 +2118,7 @@ El *pool de red del túnel* debe ser una red única que no exista ya en el servi
 Los túneles de WireGuard necesitan una dirección IP interna. Asigne un grupo de redes utilizando la red IPv4 por defecto <?=$netpool['wgX']?>/24 o
 la red IPv6 por defecto <?=$netpool6['wgX']?>/64 o asignar su propio pool de red desde el que se puede hacer una asignación automática tanto para este servidor como para cualquier peer.
 
-El *pool de red del túnel* debe ser una red única que no exista ya en el servidor ni en ninguno de los pares.
+El *pool de red del túnel* debe ser una red única que no exista ya en el servidor ni en ninguno de los peers.
 :end
 
 :wg_local_tunnel_address_help:
@@ -2131,25 +2131,25 @@ Este campo se rellena automáticamente cuando se crea un grupo de redes de túne
 
 :wg_local_endpoint_help:
 Este campo se rellena automáticamente con el nombre del dominio público de gestión *www.&lt;hash&gt;.unraid.net* o la dirección pública del servidor.<br>
-Esto permite establecer túneles VPN desde pares externos al servidor.<br>
+Esto permite establecer túneles VPN desde peers externos al servidor.<br>
 
 Configure el reenvío de puertos correcto en su router (el puerto por defecto es <?=$netport['wg0']?> pero esto puede cambiarse) para permitir que cualquier conexión entrante llegue al servidor.
 
-Los usuarios con un nombre de dominio registrado pueden utilizar este campo para especificar cómo se conoce su servidor en Internet. E.g. www.myserver.mydomain.<br>
+Los usuarios con un nombre de dominio registrado pueden utilizar este campo para especificar cómo se conoce su servidor en Internet. Ej. www.myserver.mydomain.<br>
 De nuevo, asegúrate de que tu router está bien configurado.
 
-Nota para los usuarios de Cloudflare: el proxy de Cloudflare está diseñado para el tráfico http, no es capaz de proxy de tráfico VPN. Debe desactivar el proxy de Cloudflare para poder utilizar la VPN con su dominio.
+Nota para los usuarios de Cloudflare: el proxy de Cloudflare está diseñado para el tráfico http, no hace de proxy de tráfico VPN. Debe desactivar el proxy de Cloudflare para poder utilizar la VPN con su dominio.
 :end
 
 :wg_local_endpoint_X_help:
 Este campo se rellena automáticamente con el nombre del dominio público de gestión *www.&lt;hash&gt;.unraid.net* o la dirección pública del servidor.<br>
-Esto permite establecer túneles VPN desde pares externos al servidor.<br>
+Esto permite establecer túneles VPN desde peers externos al servidor.<br>
 Configure el reenvío de puertos correcto en su router (el puerto por defecto es <?=$netport['wgX']?> pero esto puede cambiarse) para permitir que cualquier conexión entrante llegue al servidor.
 
-Los usuarios con un nombre de dominio registrado pueden utilizar este campo para especificar cómo se conoce su servidor en Internet. E.g. www.myserver.mydomain.<br>
+Los usuarios con un nombre de dominio registrado pueden utilizar este campo para especificar cómo se conoce su servidor en Internet. Ej. www.myserver.mydomain.<br>
 De nuevo, asegúrese de que su router está correctamente configurado.
 
-Nota para los usuarios de Cloudflare: el proxy de Cloudflare está diseñado para el tráfico http, no es capaz de proxy tráfico VPN. Debe desactivar el proxy de Cloudflare para poder utilizar la VPN con su dominio.
+Nota para los usuarios de Cloudflare: el proxy de Cloudflare está diseñado para el tráfico http, no hace de proxy de tráfico VPN. Debe desactivar el proxy de Cloudflare para poder utilizar la VPN con su dominio.
 :end
 
 :wg_local_server_uses_nat_help:
@@ -2198,15 +2198,15 @@ Cada peer debe tener una dirección IP de túnel única.
 :end
 
 :wg_peer_endpoint_help:
-Cuando este campo se deja vacío, el servidor opera en *modo pasivo* para establecer el túnel. Debe ser el par el que inicie el túnel.
+Cuando este campo se deja vacío, el servidor opera en *modo pasivo* para establecer el túnel. Debe ser el peer el que inicie el túnel.
 
-Cuando se introduce una dirección IP para conectarse al par, el servidor opera en *modo activo* y establece el túnel hacia el par en cuanto hay datos que enviar.
+Cuando se introduce una dirección IP para conectarse al peer, el servidor opera en *modo activo* y establece el túnel hacia el peer en cuanto hay datos que enviar.
 
 *Nota: este campo es obligatorio para las conexiones "servidor a servidor" y "LAN a LAN".
 :end
 
 :wg_peer_allowed_ips_help:
-TEste campo se rellena automáticamente con la dirección del túnel del par. Esto permite que el servidor llegue al par a través del túnel.<br>
+Este campo se rellena automáticamente con la dirección del túnel del peer. Esto permite que el servidor llegue al peer a través del túnel.<br>
 Cuando el peer es otro servidor o router con redes adicionales, entonces sus subredes pueden ser añadidas aquí para hacer que estas redes sean alcanzables a través del túnel.
 :end
 
@@ -2229,7 +2229,7 @@ El pool seleccionado está disponible para las acciones de los usuarios.
 :end
 
 :docker_timeout_help:
-El tiempo en segundos para permitir que un contenedor se detenga con gracia antes de forzarlo a detenerse
+El tiempo en segundos para permitir que un contenedor se detenga correctamente antes de forzarlo a detenerse
 :end
 
 :docker_vdisk_type_help:
@@ -2241,7 +2241,7 @@ Puede ser un archivo de imagen con un tamaño específico o una carpeta dedicada
 :docker_vdisk_directory_help:
 Debe especificar una carpeta para Docker. El sistema creará automáticamente esta carpeta cuando el servicio Docker se inicie por primera vez.
 
-Se recomienda crear esta carpeta bajo un recurso compartido que resida en el grupo de caché (configuración: cache=Only). Para un mejor rendimiento se prefieren los dispositivos SSD.
+Se recomienda crear esta carpeta bajo un recurso compartido que resida en el grupo de Caché (configuración: cache=Only). Para un mejor rendimiento se prefieren los dispositivos SSD.
 :end
 
 :docker_client_additional_requirements_help:
@@ -2263,9 +2263,9 @@ Cambie esta configuración a **Sí** para dividir las comprobaciones de paridad 
 :parity_accumulation_frequency_help:
 Especifica cómo se ejecutan los períodos de acumulación.
 
-**Diariamente** significa que cada día subsiguiente la comprobación de paridad es continua hasta su finalización
+**Diariamente** significa que cada día siguiente a la comprobación de paridad esta continua hasta su finalización
 
-**Semanal** significa que cada semana siguiente la comprobación de paridad es continua hasta su finalización
+**Semanal** significa que cada semana siguiente a la comprobación de paridad esta continua hasta su finalización
 :end
 
 :parity_accumulation_duration_help:
@@ -2305,7 +2305,7 @@ Cuando la función 2FA transparente para el acceso remoto está activada, usted 
 :myservers_local_t2fa_help:
 Cuando la función 2FA transparente para el acceso local esté activada, accederá a su servidor haciendo clic en el enlace "Acceso local" en el <a href="https://forums.unraid.net/my-servers/" target="_blank" rel="noopener noreferrer">My Servers dashboard</a>. <br> El sistema solicitará de forma transparente un token 2FA a su servidor y lo incrustará en el formulario de inicio de sesión del servidor. Su servidor denegará cualquier intento de inicio de sesión en Local Access que no incluya un token válido. Cada token sólo puede utilizarse una vez, y sólo es válido durante cinco minutos.
 
-Esto es bastante extremo para el Acceso Local, y en la mayoría de los casos no es necesario. Requiere una conexión sólida a Internet. Si necesita acceder a la webgui mientras que el Internet está abajo, SSH al servidor y ejecutar 'use_ssl no', esto le dará acceso a través de http://<?=['NGINX_LANIP']?><?=['NGINX_PORT'] !== '80' ? ':'.['NGINX_PORT'] : '' ?>
+Esto es bastante extremo para el Acceso Local, y en la mayoría de los casos no es necesario. Requiere una conexión sólida a Internet. Si necesita acceder a la webgui mientras que el Internet está caido, SSH al servidor y ejecutar 'use_ssl no', esto le dará acceso a través de http://<?=['NGINX_LANIP']?><?=['NGINX_PORT'] !== '80' ? ':'.['NGINX_PORT'] : '' ?>
 :end
 
 ; New entries (1) - 2022-05-07
