@@ -36,92 +36,92 @@ Use only when directed for support=Utilizar sólo cuando se indique para el sopo
 ; Help
 ;
 :ud_settings_plus_plug:
-> **Note:** The 'Unassigned Devices Plus' plugin must be installed in order to mount HFS+ and exFAT disk formats, and enable desctrctive mode.
+> **Nota:** Es necesario instalar el plugin 'Unassigned Devices Plus' para poder montar los formatos de disco HFS+ y exFAT, y habilitar el modo destructivo.
 :end
 
 :ud_settings_common_script_plug:
-> If set, this script will run before the device script.  The action is in the environment variable **$ACTION**. Be sure you reference all commands with their full path.
+> Si se establece, este script se ejecutará antes que el script del dispositivo.  La acción está en la variable de entorno **$ACTION**. Asegúrese de hacer referencia a todos los comandos con su ruta completa.
 :end
 
 :ud_settings_destructive_plug:
-> If enabled, this will allow you to erase and format partitions using Unassigned Devices. This cannot be enabled unless the 'Unassigned Devices Plus' plugin is installed.
+> Si está habilitado, le permitirá borrar y formatear particiones utilizando Dispositivos No Asignados. Esto no puede ser habilitado a menos que el plugin 'Unassigned Devices Plus' esté instalado.
 :end
 
 :ud_settings_mount_usb_devices_plug:
-> When set to **Yes**, will auto mount a new USB device and share it without user intervention.
+> Cuando se establece en **Sí**, montará automáticamente un nuevo dispositivo USB y lo compartirá sin la intervención del usuario.
 :end
 
 :ud_settings_discard_plug:
-> Mount SSDs that support discard with 'discard' option.  If you are using the SSD Trim Settings to do a periodic trim of SSDs you can set this to **No**.
+> Monta los SSD que soportan el descarte con la opción 'discard'.  Si utiliza la configuración SSD Trim para realizar un recorte periódico de los SSD, puede establecer esta opción en **No**.
 :end
 
 :ud_settings_symlinks_plug:
-> Set to **Yes** to create symlinks for /mnt/remotes/ at /mnt/disks/.
+> Establecer a **Sí** para crear enlaces simbólicos para /mnt/remotes/ en /mnt/disks/.
 >
-> This is for backwards compatibility of VM and Docker Container mappings to the /mnt/disks/ mount point.
-> You are encouraged to change your mappings to the /mnt/remotes/ mount point.
+> Esto es para la compatibilidad con los mapeos de VM y Contenedores Docker al punto de montaje /mnt/disks/.
+> Se recomienda cambiar las asignaciones al punto de montaje /mnt/remotes/.
 >
-> If you do not need the backwards compatibility, leave it set to **No**.
+> Si no necesita la compatibilidad hacia atrás, déjelo en **No**.
 :end
 
 :ud_settings_specify_smb_vers_plug:
-> Set to **No** for Unassigned Devices to first try to mount remote shares by not setting the SMB version when mounting.
+> Establecer a **No** para que los dispositivos no asignados intenten montar primero los recursos compartidos remotos no estableciendo la versión SMB al montar.
 >
-> Set to **Yes** for Unassigned Devices to only mount SMB remote shares specifying the SMB version.
+> Establecer a **Sí** para que los Dispositivos No Asignados sólo monten recursos compartidos remotos SMB especificando la versión SMB.
 >
-> Some remote servers need to have the version specified.
+> Algunos servidores remotos necesitan que se especifique la versión.
 :end
 
 :ud_settings_debug_level_plug:
-> Setting a Debug Log Level adds additional logging in specific areas of UD for troubleshooting.
+> La configuración de un nivel de registro de depuración añade un registro adicional en áreas específicas de UD para la resolución de problemas.
 >
-> Set to **None** to turn off debug logging.
+> Establezca el valor **None** para desactivar el registro de depuración.
 >
-> Set the Debug Log Level to a numeric value to debug a specific area of UD.
+> Establezca el nivel de registro de depuración en un valor numérico para depurar un área específica de la unidad de disco duro.
 >
-> **Note:** Don't leave the Debug Log Level on for extended periods of time.  It can add a lot of log messages to the syslog.
+> Nota:** No deje el nivel de registro de depuración activado durante largos periodos de tiempo.  Puede añadir muchos mensajes de registro al syslog.
 :end
 
 :ud_settings_specify_nfs_vers_plug:
-> Set to **NFSv3** to mount all NFS Remote Shares with NFSv3.
+> Establezca **NFSv3** para montar todos los recursos compartidos remotos NFS con NFSv3.
 >
-> Set to **NFSv4** to mount all NFS Remote Shares with NFSv4.
+> Establezca **NFSv4** para montar todos los recursos compartidos remotos NFS con NFSv4.
 >
-> All NFS remote shares will be mounted with the specified version.
+> Todos los recursos compartidos remotos NFS se montarán con la versión especificada.
 :end
 
 :ud_settings_smb_security_plug:
-> Set the user level of SMB Security.
+> Establezca el nivel de seguridad del usuario sobre SMB.
 >
-> + Set to **Yes** to enable SMB Security on SMB shares.  Set access by user to allow access and whether or not the user can write to the share.
-> + Set to **Hidden** to enable SMB Security on SMB shares that will not be visible.  Set access by user to allow access and whether or not the user can write to the share.
-> + Set to **No** will share devices, SMB/NFS, and iso Mounts Public with read and write access.
+> + Establecer en **Sí** para habilitar la Seguridad sobre SMB en los recursos compartidos SMB. Establezca el acceso por usuario para permitir el acceso y si el usuario puede o no escribir en el recurso compartido.
+> Establezca en **Ocultos** para habilitar la seguridad sobre SMB en los recursos compartidos SMB que no serán visibles. Establezca el acceso por usuario para permitir el acceso y si el usuario puede o no escribir en el recurso compartido.
+> + Si se establece en **No** se compartirán dispositivos, SMB/NFS y montajes iso públicos con acceso de lectura y escritura.
 :end
 
 :ud_settings_case_sensitive_plug:
-> Controls whether filenames are case-sensitive.
+> Controla si los nombres de los archivos distinguen entre mayúsculas y minúsculas.
 >
-> The default setting of **Auto** allows clients that support case sensitive filenames (Linux CIFSVFS) to tell the Samba server on a per-packet basis that they wish to access the file system in a case-sensitive manner (to support UNIX case sensitive semantics). No Windows system supports case-sensitive filenames so setting this option to auto is the same as setting it to No for them; however, the case of filenames passed by a Windows client will be preserved. This setting can result in reduced performance with very large directories because Samba must do a filename search and match on passed names.
+> La configuración por defecto de **Auto** permite a los clientes que soportan nombres de archivos que distinguen entre mayúsculas y minúsculas (Linux CIFSVFS) indicar al servidor Samba, en cada paquete, que desean acceder al sistema de archivos distinguiendo entre mayúsculas y minúsculas (para soportar la semántica de UNIX que distingue entre mayúsculas y minúsculas). Ningún sistema Windows admite nombres de archivo que distingan entre mayúsculas y minúsculas, por lo que establecer esta opción en auto es lo mismo que establecerla en No para ellos; sin embargo, se conservarán las mayúsculas y minúsculas de los nombres de archivo pasados por un cliente Windows. Esta configuración puede resultar en un rendimiento reducido con directorios muy grandes porque Samba debe hacer una búsqueda de nombres de archivo y coincidir con los nombres pasados.
 >
-> A setting of **Yes** means that files are created with the case that the client passes, and only accessible using this same case. This will speed very large directory access, but some Windows applications may not function properly with this setting. For example, if "MyFile" is created but a Windows app attempts to open "MYFILE" (which is permitted in Windows), it will not be found.
+> Una configuración de **Sí** significa que los archivos se crean con el caso que el cliente pasa, y sólo son accesibles usando este mismo caso. Esto acelerará el acceso a directorios muy grandes, pero algunas aplicaciones de Windows pueden no funcionar correctamente con esta configuración. Por ejemplo, si se crea "MiArchivo" pero una aplicación de Windows intenta abrir "MIArchivo" (lo cual está permitido en Windows), no se encontrará.
 >
-> A value of **Forced lower** is special: the case of all incoming client filenames, not just new filenames, will be set to lower-case. In other words, no matter what mixed case name is created on the Windows side, it will be stored and accessed in all lower-case. This ensures all Windows apps will properly find any file regardless of case, but case will not be preserved in folder listings.
+> Un valor de **Minúsculas forzadas** es especial: las mayúsculas y minúsculas de todos los nombres de archivo entrantes del cliente, no sólo de los nuevos, se establecerán en minúsculas. En otras palabras, no importa qué nombre mixto se cree en el lado de Windows, se almacenará y se accederá a él en minúsculas. Esto asegura que todas las aplicaciones de Windows encontrarán correctamente cualquier archivo independientemente de las mayúsculas y minúsculas, pero las mayúsculas y minúsculas no se conservarán en los listados de carpetas.
 :end
 
 :ud_settings_force_user_plug:
-> There are times when permissions on SMB shares aren't handled as expected.  Turning this feature on can help with those permissions.
-> This applies to all devices mounted with Unassigned Devices.
-> The down side is that it overrides Linux group permissions.  If you are unsure about whether or not this is necessary, leave it enabled.
+> Hay veces que los permisos en los recursos compartidos SMB no se manejan como se espera.  Activar esta función puede ayudar con esos permisos.
+> Esto se aplica a todos los dispositivos montados con Dispositivos No Asignados.
+> El lado negativo es que anula los permisos de grupo de Linux.  Si no está seguro de si esto es necesario o no, déjelo activado.
 :end
 
 :ud_settings_nfs_shares_plug:
-> Set to **Yes** to export NFS shares.  Shares are exported Public with read and write access or Private with the rule you set.  Access is controlled with permission settings on files and folders.
+> Establecer en **Sí** para exportar recursos compartidos NFS. Los recursos compartidos se exportan de forma pública con acceso de lectura y escritura o de forma privada con la regla que se establezca.  El acceso se controla con la configuración de permisos en archivos y carpetas.
 :end
 
 :ud_settings_disk_pass_plug:
-> Select the disk that you want to set a Password.  This is the password for this disk only and does not affect the array password/passphrase.  Leave password blank to use the array password/passphrase.
+> Seleccione el disco al que le desea establecer una Contraseña. Esta contraseña sólo es para este disco y no afecta a la contraseña/frase del Array. Deje la contraseña en blanco para utilizar la contraseña/frase del Array.
 :end
 
 :ud_settings_change_uuid_plug:
-> Select the disk that you want to change the UUID.  This is useful when a disk has been removed from the array and has the same UUID as an array disk.  Drive must be unmounted to change the UUID.
-:end
+> Seleccione el disco al que desea cambiar el UUID.  Esto es útil cuando un disco ha sido retirado del array y tiene el mismo UUID que un disco del array.  El disco debe estar desmontado para cambiar el UUID.
+:fin

@@ -43,23 +43,23 @@ Volume=Volumen
 :end
 
 :ud_edit_script_choose_name_plug:
-> This is the Script File that runs when the device is mounted. Choose your Script File name from the file selection dropdown, or enter your desired script.
+> Este es el Archivo de Script que se ejecuta cuando se monta el dispositivo. Elija el nombre de su Archivo de Script en el menú desplegable de selección de archivos, o introduzca el script que desee.
 :end
 
 :ud_edit_user_script_choose_name_plug:
-> If you have the User Scripts plugin installed, you can have
-Unassigned Devices show the running status of the User Script that
-will be using this device. This field will only be enabled when a Device Script File exists.
+> Si tiene instalado el plugin User Scripts, puede hacer que
+Dispositivos no asignados muestren el estado de ejecución del Script de Usuario que
+que utilizará este dispositivo. Este campo sólo se activará cuando exista un Archivo de Script de Dispositivo.
 :end
 
 :ud_edit_script_run_background_plug:
-> Turn on the **Run in Background** to have the Device Script run as a
-background task. This can keep the Unassigned Devices UI from hanging when the Device Script is run from the UI.
+> Active la opción **Ejecución en segundo plano** para que el Script del dispositivo se ejecute como una
+tarea en segundo plano. Esto puede evitar que la interfaz de usuario de los dispositivos no asignados se cuelgue cuando el script de dispositivo se ejecuta desde la interfaz de usuario.
 :end
 
 :ud_edit_script_buttons_plug:
-> Click the **Save** button to commit the current edits. Click **Reset** to undo any changes you make (before Saving). Click **Done** to exit this page.
+> Haga clic en el botón **Guardar** para confirmar las ediciones actuales. Haga clic en **Reset** para deshacer los cambios realizados (antes de guardar). Haga clic en **Hecho** para salir de esta página.
 >
-> Click the **Default** button to initialize the edit box with a Default Device Script.
-> You still need to click **Save** in order to commit the change.
-:end
+> Haga clic en el botón **Predeterminado** para inicializar el cuadro de edición con un Script de dispositivo predeterminado.
+> Todavía tiene que hacer clic en **Guardar** para confirmar el cambio.
+:fin
