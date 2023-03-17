@@ -65,8 +65,8 @@ Esto puede ser mucho más rápido que tener que ejecutar una comprobación de pa
 :end
 ; fields
 Click to show Error Sectors from syslog=Haga clic para mostrar los sectores de error del syslog
-End point for check=Punto final del control
-Method used to specify start and stop points=Método utilizado para especificar los puntos de inicio y finalización
+End point for check=
+Method used to specify start and stop points=
 Only read checks can be performed=Sólo se pueden realizar comprobaciones de lectura
 percent=por ciento
 Percentage=Porcentaje
@@ -87,10 +87,10 @@ Array shutdown=Apagado del Array
 Cancel a running parity check=Cancelar una comprobación de paridad en curso
 Correcting=Corrección de
 Detected a change to the disk configuration=Se ha detectado un cambio en la configuración del disco
-Drives cooled down=Las unidades se han enfriado
+Drives cooled down=Las unidades se enfriaron
 Elapsed Time=Tiempo transcurrido
 ERROR=ERROR
-Following drives overheated=Las siguientes unidades se sobrecalientan
+Following drives overheated=Las siguientes unidades se han sobrecalentado
 IMPORTANT=IMPORTANTE
 Increments=Incrementos
 Non-Correcting=No se corrige
@@ -260,7 +260,9 @@ Method used to specify start and stop points=
 :end
 
 :parity_tune_frequency_plug:
-> The frequency at which parity check increments should be run.<br><br>In normal operation it is expected that the <strong>Daily</strong> option will be the one that most users will want to use so this is the default.   To support any user looking for other frequencies there is the option to set up <strong>Custom</strong> schedules which will allow for more complicated schedules for the Pause and Resume times.  When you use this option you are given the option to specify the time as used by the Linux <a href="https://en.wikipedia.org/wiki/Cron#Overview"  target="_blank">crontab</a> utility
+> La frecuencia con la que se deben ejecutar los incrementos de comprobación de paridad.
+>
+>En funcionamiento normal se espera que el **Daily** será la que la mayoría de los usuarios querrán utilizar, por lo que es la opción por defecto.   Para apoyar a cualquier usuario que busque otras frecuencias existe la opción de configurar **Custom** que permitirán programaciones más complicadas para los tiempos de Pausa y Reanudación.  Cuando se utiliza esta opción se le da la opción de especificar la hora tal y como la utiliza Linux <a href="https://en.wikipedia.org/wiki/Cron#Overview"  target="_blank">crontab</a> utility.
 :end
 
 :parity_tune_manual_plug:
@@ -455,3 +457,5 @@ Method used to specify start and stop points=
 > que extrae las entradas del syslog que han mostrado cualquier sector para el que se muestra cualquier paridad
 > sector se muestra y si el estaba siendo corregido o es un error de paridad.
 :end
+
+; Note: March 17, 2023 - 4 missing translations

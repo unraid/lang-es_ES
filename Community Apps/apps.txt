@@ -146,7 +146,10 @@ This usually means your flash drive is corrupted or has dropped offline The rest
 Fatal Docker Image Error=Error fatal de imagen de Docker
 Your docker image or folder is either read-only or completely full Issues will result because of this You should create a new post in the Unraid forums and include your diagnostics=La imagen docker es de solo lectura o está completamente llena lo que producirán problemas. Debe crear una nueva publicación en los foros de Unraid e incluir sus diagnósticos.
 This template is set up to use a custom network You may have to adjust the network or IP address etc to match your system=Esta plantilla está configurada para usar una red personalizada. Es posible que deba ajustar la red o la dirección IP para que coincida con su sistema
+This template is set up to run as Privileged This is a possible security risk and usually does not need to be enabled Note that some applications require privileged in order to operate correctly=
 One or more ports used by this application are already in use by another service or app running on your server You will need to adjust the host ports accordingly on the template=Uno o varios puertos utilizados por esta aplicación ya están en uso por otro servicio o aplicación. Deberá ajustar los puertos de host según corresponda en la plantilla.
+Not Enough Memory=
+Community Applications (and Unraid OS) have a minimum required installed memory of 4G CA cannot run without those mimimums being met=
 
 ; CA Sections Keep the length reasonable
 Home=Inicio
@@ -308,6 +311,7 @@ Current Version=Versión Actual
 Min OS=Min. S.O.
 Max OS=Max. S.O.
 Total Downloads=Descargas Totales
+Popularity=
 Licence=Licencia
 Ranked #%s=Posición #%s
 ; as in Trending up or down arrow
@@ -441,4 +445,4 @@ An error occurred - Could not determine configuration=Error - No se puede determ
 Click Install to download and install the Community Applications plugin=Haga clic en **Instalar** para descargar e instalar el plugin **Community Applications**
 
 
-; Note: September 16, 2022 - 1 missing translations
+; Note: March 17, 2023 - 5 missing translations

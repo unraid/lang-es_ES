@@ -4,8 +4,8 @@ Hide Incompatible Applications=Ocultar aplicaciones incompatibles
 This setting will hide applications that are listed as being incompatible with your version of Unraid=Esta opción oculta las aplicaciones que no sean compatibles con su versión de Unraid
 Allow install of second instance=Permitir instalación en segundo plano
 This option enables another button on the cards and popups which will allow you to reinstall an installed application using its default template values This option can be confusing at times, and is only generally used if you wish to install and have an application running twice simultaneously=Esta opción habilita un botón adicional para reinstalar una aplicación utilizando su plantilla de configuración por defecto. Esta opción puede ser confusa y generalmente solo se utiliza si desea instalar y ejecutar al mismo tiempo dos aplicaciones iguales
-Show descriptions on application cards=Mostrar descripción en las tarjetas de la aplicación
-This option dictates whether the descriptions appear on the cards or not=Esta opción establece si las descripciones aparecen en las tarjetas o no.
+Automatically open the sidebar=
+Allows CA to automatically open the sidebar for more information when hovering over an application's icon=
 Allow CA to check for updates to applications=Permitir que CA busque actualizaciones de las aplicaciones
 This setting enables CA to check for updates to applications Note that Community Applications will always check for updates to itself=Esta configuración permite que CA compruebe las actualizaciones de las aplicaciones Tenga en cuenta que las aplicaciones comunitarias siempre comprobarán las actualizaciones de sí mismas
 Allow CA to send any emergency notifications=Permitir que CA envíe notificaciones de emergencia
@@ -18,3 +18,5 @@ Only enable this when advised to from the author of Community Applications=Habil
 Enable developer mode=Activar modo desarrollador
 This unlocks some extra features within CA generally only used by developers Not recommended to enable=Esto desbloquea algunas funciones adicionales dentro de CA que generalmente solo usan los desarrolladores. No se recomienda habilitar
 Support Thread=Sitio de Soporte
+
+; Note: March 17, 2023 - 2 missing translations
