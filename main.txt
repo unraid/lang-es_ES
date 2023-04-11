@@ -195,6 +195,8 @@ raidz3=
 Raw Value=Valor Raw
 Raw View=Vista de Archivo
 Read-Check in progress=Comprobación de Lectura en curso
+Read errors corrected=
+Read errors detected=
 Reading=Leyendo
 Reboot in safe mode=Reiniciar el sistema en modo seguro
 Registration Key Manager=Gestionar licencia
@@ -373,4 +375,4 @@ System in sleep mode=Sistema en modo de reposo
 This will put the system in sleep mode=Esto pondrá el sistema en modo de reposo
 wiki entry=entrada en la wiki
 
-; Note: March 17, 2023 - 28 missing translations
+; Note: April 11, 2023 - 30 missing translations
