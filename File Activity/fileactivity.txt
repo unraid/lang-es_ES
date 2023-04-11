@@ -3,7 +3,7 @@ File Activity Monitoring=Monitorizando actividad de archivo
 Start File Activity=Iniciar Actividad de archivo
 Stop File Activity Monitoring=Parar monitorización de actividad de archivo
 Clear the File Activity log=Borrar el registro de actividad de archivo
-Refresh log=Actualizar registro
+Refresh Page=
 Enable File Activity Monitoring=Habilitar monitorización de archivo
 Enable for Unassigned Devices=Habilitar para dispositivos no asignados
 Enable for Cache and Pool Disks=Habilitar para cache y pool de discos
@@ -34,6 +34,5 @@ Enable for Cache and Pool Disks=Habilitar para cache y pool de discos
 > Establezca en **Sí** para habilitar la monitorización de la actividad de los archivos para los discos de Caché y de Pool.  Los discos Pool sólo se aplican en Unraid 6.9.
 :end
 
-:file_activity_log_by_plug:
-> Establecer en **Disco** para registrar la actividad del disco.  Establecer en **Compartir** para registrar la actividad de los recursos compartidos.
-:end
+
+; Note: April 11, 2023 - 1 missing translations

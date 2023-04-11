@@ -19,6 +19,7 @@ Change ISO File Mount Point=Cambiar el punto de montaje del archivo ISO
 Change Remote Share Mount Point=Cambiar punto de montaje de recurso compartido remoto
 Change SMB=Cambiar SMB
 Changing the Mount Point will also change the disk label=Cambiar el punto de montaje también cambiará la etiqueta del disco
+Clear=
 Click to select ISO file=Haga clic para seleccionar el archivo ISO
 Click to view/hide partitions and mount points=Haga clic para ver/ocultar las particiones y los puntos de montaje
 Complete=Completo
@@ -139,6 +140,7 @@ You must enable SMB in Settings->SMB to mount SMB shares=Debe habilitar SMB en C
 You must enable the Destructive Mode in UD Settings before you can Format this disk=Debe habilitar el modo destructivo en la configuración de UD antes de poder formatear este disco
 You WILL have problems if you do=Tendrá problemas si lo haces
 You will need to enter credentials to list the shares=Deberá ingresar las credenciales para enumerar los recursos compartidos
+ZFS Pool Name=
 
 :unassigned_devices_general_help_plug:
 > **Unassigned Devices se denomina UD para abreviar.**
@@ -191,4 +193,4 @@ You will need to enter credentials to list the shares=Deberá ingresar las crede
 > Tenga cuidado al usar la designación /dev/sdX porque puede cambiar después de un reinicio.
 :end
 
-; Note: March 17, 2023 - 7 missing translations
+; Note: April 11, 2023 - 9 missing translations
