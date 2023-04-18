@@ -72,4 +72,4 @@ User Shares=Carpetas Compartidas
 Write=Exportar
 You cannot use the following within share names=No use los siguientes caracteres en el nombre de la carpeta compartida
 
-; Note: April 18, 2023 - 9 missing translations
+; Note: April 18, 2023 - 8 missing translations
