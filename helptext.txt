@@ -2291,11 +2291,11 @@ Proporcione una lista separada por comas de las urls que pueden acceder a la unr
 :end
 
 :myservers_remote_t2fa_help:
-Cuando la función 2FA transparente para el acceso remoto está activada, usted accederá a su servidor haciendo clic en el enlace "Acceso remoto" en el <a href="https://forums.unraid.net/my-servers/" target="_blank" rel="noopener noreferrer">My Servers dashboard</a>. <br> El sistema solicitará de forma transparente un token 2FA a su servidor y lo incrustará en el formulario de inicio de sesión del servidor. Su servidor denegará cualquier intento de inicio de sesión en Remote Access que no incluya un token válido. Cada token sólo puede utilizarse una vez y sólo es válido durante cinco minutos.
+Cuando la función 2FA transparente para el acceso remoto está activada, usted accederá a su servidor haciendo clic en el enlace "Acceso remoto" en el <a href="https://forums.unraid.net/my-servers/" target="_blank" rel="noopener noreferrer">Go to Connect</a>. <br> El sistema solicitará de forma transparente un token 2FA a su servidor y lo incrustará en el formulario de inicio de sesión del servidor. Su servidor denegará cualquier intento de inicio de sesión en Remote Access que no incluya un token válido. Cada token sólo puede utilizarse una vez y sólo es válido durante cinco minutos.
 :end
 
 :myservers_local_t2fa_help:
-Cuando la función 2FA transparente para el acceso local esté activada, accederá a su servidor haciendo clic en el enlace "Acceso local" en el <a href="https://forums.unraid.net/my-servers/" target="_blank" rel="noopener noreferrer">My Servers dashboard</a>. <br> El sistema solicitará de forma transparente un token 2FA a su servidor y lo incrustará en el formulario de inicio de sesión del servidor. Su servidor denegará cualquier intento de inicio de sesión en Local Access que no incluya un token válido. Cada token sólo puede utilizarse una vez, y sólo es válido durante cinco minutos.
+Cuando la función 2FA transparente para el acceso local esté activada, accederá a su servidor haciendo clic en el enlace "Acceso local" en el <a href="https://forums.unraid.net/my-servers/" target="_blank" rel="noopener noreferrer">Go to Connect</a>. <br> El sistema solicitará de forma transparente un token 2FA a su servidor y lo incrustará en el formulario de inicio de sesión del servidor. Su servidor denegará cualquier intento de inicio de sesión en Local Access que no incluya un token válido. Cada token sólo puede utilizarse una vez, y sólo es válido durante cinco minutos.
 
 Esto es bastante extremo para el Acceso Local, y en la mayoría de los casos no es necesario. Requiere una conexión sólida a Internet. Si necesita acceder a la webgui mientras que el Internet está caido, SSH al servidor y ejecutar 'use_ssl no', esto le dará acceso a través de http://<?=['NGINX_LANIP']?><?=['NGINX_PORT'] !== '80' ? ':'.['NGINX_PORT'] : '' ?>
 :end
@@ -2348,4 +2348,40 @@ NOTE: You can also specify a network source on a per-VM basis.
 
 **IMPORTANT: Neither Libvirt nor Unraid automatically brings up an interface that is assigned to a Libvirt network.
 Before you use a Libvirt network, please go to Settings -> Network Settings and, if necessary, manually set the associated interface to up.**
+:end
+
+; New entries (5) - 2023-04-25
+
+:share_edit_exclusive_access_help:
+When set to "yes" indicates a bind-mount directly to a pool has been set up for the share in the /mnt/user tree, provided the following
+conditions are met:
+
+- Primary storage is a pool.
+- Secondary storage is set to **none**.
+- The share does not exist on any other volumes.
+:end
+
+:share_edit_primary_storage_help:
+**Primary storage** is where *new files and folders* are created.  If
+Primary storage is below the minimum free space setting then new files
+and folders will be created in **Secondary storage**, if configured.
+
+**Important:** For *Exclusive accss* shares, the Min free space
+settings are ignored.
+:end
+
+:share_edit_secondary_storage_help:
+**Secondary storage** is where new files and directories are created if no
+room on Primary storage.  When both Primary and Secondary storage are
+configured the 'mover' will transfer files between them.
+:end
+
+:share_edit_mover_action_help:
+This defines the direction of file transfer between Primary and
+Secondary storage when both are configured.
+:end
+
+:vms_console_help:
+For setting the console options to show on context menus. Web will show only inbuild web clients(VNC and SPICE), 
+Virtual Manager Remote Viewer will only show the Remote Viewer option. Both will show both Web and Remote Viewer.
 :end
