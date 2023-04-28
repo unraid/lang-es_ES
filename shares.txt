@@ -39,7 +39,6 @@ next user share=siguiente carpeta compartida
 Only=Solo
 Prefer=Preferir
 previous user share=carpeta compartida anterior
-Primary storage for new files and folders=Primary storage (for new files and folders)
 Read=Importar
 Recompute=Recalcular
 Rule=Regla
@@ -64,7 +63,7 @@ User Shares=Carpetas Compartidas
 Write=Exportar
 You cannot use the following within share names=No use los siguientes caracteres en el nombre de la carpeta compartida
 
-; Note: April 28, 2023 - 16 missing translations
+; Note: April 29, 2023 - 17 missing translations
 Calculated free space value=
 Clean Up=
 CLEAN UP=
@@ -75,6 +74,7 @@ Mover transfers files from Secondary storage to Primary storage=
 No unused share configurations present=
 Not used=
 Primary storage %s=
+Primary storage for new files and folders=Primary storage (for new files and folders)
 Primary storage to Secondary storage=
 Remove unused share configurations=
 Removed share configurations=

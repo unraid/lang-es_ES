@@ -146,7 +146,6 @@ In use by Unraid=En uso por Unraid
 Kernel driver in use vfio-pci=Controlador del Kernel en uso: vfio-pci
 No changes=Sin cambios
 PCI Devices and IOMMU Groups=Dispositivos PCI y Grupos IOMMU
-PCI Devices No IOMMU Groups Available=PCI Devices (No IOMMU Groups Available)
 Reboot to take effect=Es necesario reiniciar para que tenga efecto
 SCSI Devices=Dispositivos SCSI
 The below list doesnt not reflect the way IOMMU would naturally group devices=La lista mostrada abajo no refleja la forma con la que IOMMU agruparía los dispositivos por defecto
@@ -313,7 +312,7 @@ no es único (esto es común con los lectores de tarjetas de memoria USB).
 Para más información, por favor [Contacte con el Soporte de Unraid](https://lime-technology.com/contact).
 :end
 
-; Note: April 28, 2023 - 24 missing translations
+; Note: April 29, 2023 - 25 missing translations
 Alert Message=
 Alerts=
 All Categories=
@@ -338,3 +337,4 @@ This will delete the selected notification files=
 View Log=
 Warnings Only=
 Warnings=
+PCI Devices No IOMMU Groups Available=PCI Devices (No IOMMU Groups Available)
