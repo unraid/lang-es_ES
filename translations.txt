@@ -620,7 +620,6 @@ Confirm closure then continue to webGUI=Confirme el cierre y luego continúe con
 Confirm Password=Confirmar Contraseña
 Confirm=Confirmar
 Connect your Unraidnet account to get started=Conecta tu cuenta de unraid.net para empezar
-Connected to Mothership=Conectado a la nave nodriza
 Continue to Unraid=Continuar con Unraid
 Continue Trial=Continuar Prueba
 Copied key url=URL de clave copiada
@@ -843,7 +842,7 @@ Your Unraid registration key is ineligible for replacement as it has been replac
 Your Unraid registration key is ineligible for replacement as it is blacklisted=Su clave de registro Unraid no es elegible para reemplazo ya que está en la lista negra
 Your USB Flash GUID and other relevant server data will also be sent=También se enviarán su GUID del flash USB y otros datos relevantes del servidor
 
-; Note: April 28, 2023 - 72 missing translations
+; Note: April 28, 2023 - 73 missing translations
 Calculated free space value=
 Job=
 Max password length is 128 characters=
@@ -881,15 +880,16 @@ Confirm Connect plugin removal=
 Connect Error=
 Connect plugin install failed=
 Connect=
+Connected=
 Continue using Connect=
 Customizable Dashboard Tiles=
 Deep Linking=
+Disconnected=
 Download latest backup from Connect Dashboard before signing out=
 Download latest backup from Go to Connect before signing out=
 Download unraid-api Logs=
 Dynamic Remote Access=
 Enhance your experience with Connect=
-Executes `unraid-api start`; no terminal needed=
 For best results, use one of these urls=
 Get quick real-time info on the status of your servers such as storage, container, and VM usage=
 Go to Connect=

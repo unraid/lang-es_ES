@@ -65,8 +65,6 @@ Esto puede ser mucho más rápido que tener que ejecutar una comprobación de pa
 :end
 ; fields
 Click to show Error Sectors from syslog=Haga clic para mostrar los sectores de error del syslog
-End point for check=
-Method used to specify start and stop points=
 Only read checks can be performed=Sólo se pueden realizar comprobaciones de lectura
 percent=por ciento
 Percentage=Porcentaje
@@ -227,8 +225,6 @@ updated cron settings are in %s=la configuración actualizada de cron está en %
 
 ; PART 2 - TEXT Blocks ant HELP text
 
-End point for check=
-Method used to specify start and stop points=
 
 ; Help text on settings page
 ; These could perhaps be left in English to keep translation task easier)
@@ -458,4 +454,8 @@ Method used to specify start and stop points=
 > sector se muestra y si el estaba siendo corregido o es un error de paridad.
 :end
 
-; Note: March 17, 2023 - 4 missing translations
+; Note: April 28, 2023 - 4 missing translations
+End point for check=
+Method used to specify start and stop points=
+End point for check=
+Method used to specify start and stop points=

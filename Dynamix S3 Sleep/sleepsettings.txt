@@ -72,7 +72,7 @@ Yes, exclude Cache=Sí, excluir la caché
 
 :s3sleep_network_plug:
 > Seleccione si la actividad de la red debe ser tomada como condición antes de pasar al estado de reposo o apagado.
-:fin
+:end
 
 :s3sleep_ethernet_plug:
 > En el caso de múltiples interfaces de red, seleccione aquí la interfaz que se utilizará para comprobar la actividad de la red.

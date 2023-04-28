@@ -1,6 +1,6 @@
 Configuration=Configuración
 Colors=Colores
-Syslog Colors= Colores del Registro del Sistema
+Syslog Colors=Colores del Registro del Sistema
 Custom Match=Eventos Personalizados
 Custom Syslog Match Strings=Expresiones Personalizadas Presentes en el Registro del Sistema
 Syslog Filter=Filtro del Registro del Sistema
@@ -24,7 +24,7 @@ Error Highlight Color=Color de resaltado de 'Errores'
 Minor Issues Highlight Color=Color de resaltado de 'Problemas Menores'
 Lime Tech Highlight Color=Color de resaltado de 'Lime Technology, Inc.'
 Array Highlight Color=Color de resaltado de 'Array'
-System Highlight Color= Color de resaltado de 'Sistema'
+System Highlight Color=Color de resaltado de 'Sistema'
 File System Highlight Color=Color de resaltado de 'Sistema de Archivos'
 Drive Related Highlight Color=Color de resaltado de 'Dispositivos'
 Network Highlight Color=Color de resaltado de 'Red'

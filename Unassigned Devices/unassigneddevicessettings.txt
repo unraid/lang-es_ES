@@ -124,4 +124,9 @@ Use only when directed for support=Utilizar sólo cuando se indique para el sopo
 
 :ud_settings_change_uuid_plug:
 > Seleccione el disco al que desea cambiar el UUID.  Esto es útil cuando un disco ha sido retirado del array y tiene el mismo UUID que un disco del array.  El disco debe estar desmontado para cambiar el UUID.
-:fin
+:end
+
+; Note: April 28, 2023 - 3 missing translations
+Command times=
+Refresh and Update=
+Udev and Hotplug=

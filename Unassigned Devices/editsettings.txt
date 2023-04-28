@@ -62,4 +62,4 @@ tarea en segundo plano. Esto puede evitar que la interfaz de usuario de los disp
 >
 > Haga clic en el botón **Predeterminado** para inicializar el cuadro de edición con un Script de dispositivo predeterminado.
 > Todavía tiene que hacer clic en **Guardar** para confirmar el cambio.
-:fin
+:end

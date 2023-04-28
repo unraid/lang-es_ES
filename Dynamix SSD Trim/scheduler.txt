@@ -38,4 +38,3 @@ Time of the day=Hora del día
 >
 > Para los demás horarios, elija aquí la hora del día en que debe comenzar el recorte.
 :end
-

@@ -1,12 +1,10 @@
 After a reboot from a lockup or hung server, you can view the saved log using the Syslog viewer=Después de reiniciar un servidor bloqueado o colgado, puede ver el registro guardado utilizando el visor de Syslog
 Check the=Compruebe el
-Available User Watches=
 Click on Help for more information=Haga clic en Ayuda para obtener más información
 Correct any problems that are identified before doing any tweaking=Corregir cualquier problema que se identifique antes de hacer cualquier ajuste
 Current Disk Cache Settings=Configuración actual de la caché de disco
 Current Inotify Settings=Configuración actual de Inotify
 Current NIC settings=Configuración actual del NIC
-Current User Watches=
 Disable NIC Flow Control=Desactivar 'NIC Flow Control'
 Disable NIC Offload=Desactivar 'NIC Offload'
 Disk Cache=Disco caché
@@ -36,8 +34,6 @@ Make changes slowly=Realice los cambios lentamente
 Make one change at a time and verify if it improves your situation=Haz un cambio a la vez y comprueba si mejora tu situación
 Making changes here can briefly interrupt your network operation=Hacer cambios aquí puede interrumpir brevemente el funcionamiento de la red
 Many plugins are no longer compatible with older Unraid versons=Muchos plugins ya no son compatibles con las versiones anteriores de Unraid
-Max SMB Open Files=
-Max User Watches=
 NIC Offload=NIC Offload
 NIC Rx Buffer=NIC Rx Buffer
 NIC Tx Buffer=NIC Tx Buffer
@@ -69,7 +65,6 @@ Tips=Consejos
 Tips and Tweaks wiki=Wiki de consejos y ajustes
 Tweaks=Ajustes
 Use the Update Assistant that is part of the Fix Common Problems plugin=Utilice el Asistente de Actualización que forma parte del plugin Fix Common Problems
-Version 6.11.4 and later=
 You can check CPU frequencies on the command line with=Puede comprobar las frecuencias de la CPU en la línea de comandos con
 You may actually cause more problems than you solve if there are problems with your Unraid configuration=En realidad, puede causar más problemas de los que resuelve si hay problemas con su configuración de Unraid
 
@@ -197,4 +192,9 @@ You may actually cause more problems than you solve if there are problems with y
 :end
 
 
-; Note: March 17, 2023 - 5 missing translations
+; Note: April 28, 2023 - 5 missing translations
+Available User Watches=
+Current User Watches=
+Max SMB Open Files=
+Max User Watches=
+Version 6.11.4 and later=
