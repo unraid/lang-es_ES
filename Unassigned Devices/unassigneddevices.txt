@@ -183,14 +183,20 @@ You will need to enter credentials to list the shares=Deberá ingresar las crede
 > Tenga cuidado al usar la designación /dev/sdX porque puede cambiar después de un reinicio.
 :end
 
-; Note: April 29, 2023 - 10 missing translations
+; Note: June 18, 2023 - 16 missing translations
 An XFS, BTRFS, or ZFS disk partitioned in UD is compatible with the array disk partitioning and can be added to the array=
 Clear=
 Historical Device is=
+Invalid Configuration - Remove and Re-add=
 is offline=
+Not Enabled=
+Note: With User Shares, files on the Cache and Pool Devices will not show in the Root Share=
 offilne=
 Remote share mounts are dependent on a solid and reliable network connection and that is difficult to achieve=
 Select the Mount Point to Root Share=
 Serial Number Mount Point=Serial Number (Mount Point)
+User and Pool Shares will include all files in User Shares, Cache and Pool Devices=
+User Shares will allow access to User Shares, but the Root Share will not include Cache and Pool Device files=
 Working=
 ZFS Pool Name=
+ZFS Volume=

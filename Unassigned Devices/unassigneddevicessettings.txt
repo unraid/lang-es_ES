@@ -2,7 +2,7 @@ Add=Añadir
 Auto Mount USB Devices=Montaje automático de dispositivos USB
 Change Disk UUID=Cambiar el UUID del disco
 Change UUID=Cambiar el UUID
-Change the disk UUID=Cambiado el UUID del disco
+Change Disk UUID=Cambiar el UUID del disco
 Common Script=Script común
 Common Settings=Ajustes comunes
 Destructive Mode=Modo destructivo
@@ -18,7 +18,6 @@ NFS Settings=Configuración NFS
 NFS must be enabled in Settings->NFS to enable NFS Export=NFS debe estar habilitado en Configuración->NFS para habilitar la Exportación NFS
 NFS Version to use when Mounting Remote Shares=Versión de NFS a utilizar cuando se montan recursos compartidos remotos
 Rule=Regla
-SMB Security=Seguridad SMB
 Select Disk=Seleccionar disco
 Set Encrypted Disk Password=Establecer la contraseña del disco encriptado
 Set Password=Establecer contraseña
@@ -31,7 +30,6 @@ The Unassigned Devices Plus plugin must be installed to enable Destructive Mode=
 to SMB share config=a la configuración del recurso compartido SMB
 Unassigned Devices=Dispositivos no asignados
 Unraid 6.10 or later is required for NFSv4 support=Se requiere Unraid 6.10 o posterior para el soporte de NFSv4
-Use only when directed for support=Utilizar sólo cuando se indique para el soporte
 
 ; Help
 ;
@@ -62,6 +60,11 @@ Use only when directed for support=Utilizar sólo cuando se indique para el sopo
 > Se recomienda cambiar las asignaciones al punto de montaje /mnt/remotes/.
 >
 > Si no necesita la compatibilidad hacia atrás, déjelo en **No**.
+:end
+
+:ud_settings_remote_share_wait_plug:
+> This is the time in seconds to wait before mounting remote shares when the array is first started.
+>
 :end
 
 :ud_settings_specify_smb_vers_plug:
@@ -114,6 +117,10 @@ Use only when directed for support=Utilizar sólo cuando se indique para el sopo
 > El lado negativo es que anula los permisos de grupo de Linux.  Si no está seguro de si esto es necesario o no, déjelo activado.
 :end
 
+:ud_settings_nfs_security_plug:
+> Set to **Yes** to export Unassigned Devices with NFS sharing. Shares are exported Public with read and write access or Private with the rule you set. Access is controlled with permission settings on files and folders.
+:end
+
 :ud_settings_nfs_shares_plug:
 > Establecer en **Sí** para exportar recursos compartidos NFS. Los recursos compartidos se exportan de forma pública con acceso de lectura y escritura o de forma privada con la regla que se establezca.  El acceso se controla con la configuración de permisos en archivos y carpetas.
 :end
@@ -126,7 +133,14 @@ Use only when directed for support=Utilizar sólo cuando se indique para el sopo
 > Seleccione el disco al que desea cambiar el UUID.  Esto es útil cuando un disco ha sido retirado del array y tiene el mismo UUID que un disco del array.  El disco debe estar desmontado para cambiar el UUID.
 :end
 
-; Note: April 28, 2023 - 3 missing translations
+; Note: June 18, 2023 - 10 missing translations
 Command times=
+Disabled=
+Public=
+Private=
+Private Hidden=
 Refresh and Update=
+Remote Share Mount Wait Time=
+SMB Settings=
 Udev and Hotplug=
+Use only when directed for support because the messages can flood the log=
