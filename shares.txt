@@ -63,7 +63,7 @@ User Shares=Carpetas Compartidas
 Write=Exportar
 You cannot use the following within share names=No use los siguientes caracteres en el nombre de la carpeta compartida
 
-; Note: April 29, 2023 - 17 missing translations
+; Note: July 9, 2023 - 18 missing translations
 Calculated free space value=
 Clean Up=
 CLEAN UP=
@@ -80,4 +80,5 @@ Remove unused share configurations=
 Removed share configurations=
 Secondary storage to Primary storage=
 Secondary storage=
+Share name contains invalid characters for ZFS use=
 Storage=
