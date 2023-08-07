@@ -56,6 +56,10 @@ Update Recycle Bin Size in Background=Actualizar el tamaño de la papelera de re
 > To hide the Recycle Bin folder, set 'Hide Dot Files to 'Yes' in the SMB settings <a href='/Settings/SMB'>here</a>.
 :end
 
+:recycle_bin_hide_folder_plug:
+> Set to **No** to show the Recycle Bin folder in user shares.  The SMB setting "Hide dot files" controls if hidden folders show in user shares.
+:end
+
 :recycle_bin_background_plug:
 > Establézcalo 'Sí' para permitir que el Tamaño de la Papelera de reciclaje se actualice en segundo plano cada minuto. Esto puede hacer que la configuración de la papelera de reciclaje y las páginas de recursos compartidos sean más receptivas y evite la rotación de los discos al acceder a la papelera de reciclaje. El tamaño de la Papelera de reciclaje puede tardar hasta un minuto en actualizarse cuando está habilitado.
 :end
