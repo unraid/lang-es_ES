@@ -131,7 +131,5 @@ Was this container created using this plugin=Se creó este contenedor usando est
 Web=Web
 WebUI=Interfaz Web
 Writable=Grabable
-
-; Note: April 28, 2023 - 2 missing translations
-Lock sortable items=
-Unlock sortable items=
+Lock sortable items=Bloquear elementos ordenables
+Unlock sortable items=Desbloquear elementos ordenables
