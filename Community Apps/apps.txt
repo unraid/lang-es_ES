@@ -89,6 +89,7 @@ Added=Añadido
 Install Plugin=Instalar plugin
 Update Plugin=Actualizar Plugin
 
+Requirements not met=Requerimientos no cumplidos
 The requirements for this upgrade have not been met on your system=Los requisitos para esta actualización no se han cumplido en este sistema
 The sidebar for the app click info will list the details=En la barra lateral de la aplicación (haga clic en información) aparecerán los detalles
 
@@ -145,7 +146,14 @@ This usually means your flash drive is corrupted or has dropped offline The rest
 Fatal Docker Image Error=Error fatal de imagen de Docker
 Your docker image or folder is either read-only or completely full Issues will result because of this You should create a new post in the Unraid forums and include your diagnostics=La imagen docker es de solo lectura o está completamente llena lo que producirán problemas. Debe crear una nueva publicación en los foros de Unraid e incluir sus diagnósticos.
 This template is set up to use a custom network You may have to adjust the network or IP address etc to match your system=Esta plantilla está configurada para usar una red personalizada. Es posible que deba ajustar la red o la dirección IP para que coincida con su sistema
-One or more ports used by this application are already in use by another service or app running on your server You will need to adjust the host ports accordingly on the template=Uno o varios puertos utilizados por esta aplicación ya están en uso por otro servicio o aplicación. Deberá ajustar los puertos de host según corresponda en la plantilla.
+This template is set up to run as Privileged This is a possible security risk and usually does not need to be enabled Note that some applications require privileged in order to operate correctly=Esta plantilla está configurada para ejecutarse como Privilegiada. Este es un posible riesgo de seguridad y normalmente no es necesario habilitarla. Tenga en cuenta que algunas aplicaciones requieren privilegios para funcionar correctamente
+One or more ports used by this application are already in use by another service or app running on your server You will need to adjust the host ports accordingly on the template=Uno o varios puertos utilizados por esta aplicación ya están en uso por otro servicio o aplicación. Deberá ajustar los puertos de host según corresponda en la plantilla
+Not Enough Memory=Memoria insuficiente
+Community Applications and Unraid OS have a minimum required installed memory of 4G CA cannot run without those mimimums being met=Aplicaciones comunitarias y el sistema operativo Unraid requieren una memoria instalada mínima requerida de 4G. CA no puede ejecutarse sin que se cumplan esos mínimos
+Installation already in progress=La instalación ya está en progreso
+Another plugin installation or update is already in progress and this one cannot start Wait until the current installation or update is completed and try again=Ya se está realizando otra instalación o actualización de plugins y ésta no puede iniciarse. Espere hasta que se complete la instalación o actualización actual y vuelva a intentarlo.
+%s is incompatible with your OS version Please update the OS to proceed=%s es incompatible con la versión de su sistema operativo. Actualice el sistema operativo para continuar.
+%s is incompatible with your OS version Either uninstall %s or update the OS=%s es incompatible con la versión de su sistema operativo. Desinstale %s o actualice el sistema operativo
 
 ; CA Sections Keep the length reasonable
 Home=Inicio
@@ -220,6 +228,7 @@ Check out these newly added applications from our awesome community=Mostrar apli
 Check out these up and coming apps=Echa un vistazo a estas aplicaciones emergentes
 These apps have the highest percentage of new installs=Aplicaciones frecuentemente instaladas
 An assortment of randomly chosen apps=Aplicaciones elegidas al azar
+Featured Applications=Aplicaciones destacadas
 
 ; Categories try not to be excessively long This is displayed on the left of CA screen
 
@@ -307,6 +316,7 @@ Current Version=Versión Actual
 Min OS=Min. S.O.
 Max OS=Max. S.O.
 Total Downloads=Descargas Totales
+Popularity=Popularidad
 Licence=Licencia
 Ranked #%s=Posición #%s
 ; as in Trending up or down arrow
@@ -438,16 +448,3 @@ Would you like CA to attempt to determine any applicable paths, ports, and varia
 An error occurred - Could not determine configuration=Error - No se puede determinar la configuración
 ; WebGui
 Click Install to download and install the Community Applications plugin=Haga clic en **Instalar** para descargar e instalar el plugin **Community Applications**
-
-
-; Note: April 28, 2023 - 10 missing translations
-Requirements not met=
-This template is set up to run as Privileged This is a possible security risk and usually does not need to be enabled Note that some applications require privileged in order to operate correctly=
-Not Enough Memory=
-Community Applications and Unraid OS have a minimum required installed memory of 4G CA cannot run without those mimimums being met=
-Installation already in progress=
-Another plugin installation or update is already in progress and this one cannot start Wait until the current installation or update is completed and try again=
-%s is incompatible with your OS version Please update the OS to proceed=
-%s is incompatible with your OS version Either uninstall %s or update the OS=
-Featured Applications=
-Popularity=
