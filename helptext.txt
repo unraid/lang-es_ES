@@ -1433,13 +1433,13 @@ Cambia el color de fondo por defecto del encabezado de página. Se puede usar pa
 :end
 
 :display_custom_banner_help:
-Image will be scaled to 1920x90 pixels. The maximum image file upload size is 512 kB (524,288 bytes).
+La imagen se escalará a 1920x90 píxeles. El tamaño máximo de carga de archivos de imagen es 512 kB (524,288 bytes).
 :end
 
 :display_temperature_unit_help:
-Selects the temperature unit for the disk temperature thresholds. Changing the unit will adjust the existing value in the disk temperature thresholds as appropriate.
+Selecciona la unidad de temperatura para los umbrales de temperatura del disco. Cambiar la unidad ajustará el valor existente en los umbrales de temperatura del disco según corresponda.
 
-Make sure any newly entered values represent the selected temperature unit.
+Asegúrese de que los valores recién ingresados ​​representen la unidad de temperatura seleccionada.
 :end
 
 :vms_enable_help:
@@ -1682,22 +1682,22 @@ Especifíque un identificador único a cada VLAN. Use números en el rango del 1
 :end
 
 :eth_network_rules_help:
-The interface assignment rules can be changed here and might be necessary to set the preferred interface for managing Unraid - *use with care, usually there is no need to change*.
+Las reglas de asignación de interfaz se pueden cambiar aquí y puede ser necesario configurar la interfaz preferida para administrar Unraid - *úselo con cuidado, generalmente no hay necesidad de cambiar*.
 
-**eth0** is the main interface used to manage the Unraid system. The other interfaces are optional and may be used as desired.
-Every interface must be uniquely identified by its MAC (hardware) address.
+**eth0** es la interfaz principal utilizada para administrar el sistema Unraid. Las otras interfaces son opcionales y pueden usarse según se desee.
+Cada interfaz debe identificarse de forma única por su dirección MAC (hardware).
 
-The interface assignment is stored on the flash device under */config/network-rules.cfg*. This file can be viewed with any editor, but it is recommended to make changes via the webGUI only.<br>
-Deleting the file *network-rules.cfg* from the flash device will restore automatic interface assignment after a system reboot.
+La asignación de interfaz se almacena en el dispositivo flash en */config/network-rules.cfg*. Este archivo se puede ver con cualquier editor, pero se recomienda realizar cambios únicamente a través de la GUI web.<br>
+Eliminar el archivo *network-rules.cfg* del dispositivo flash restaurará la asignación automática de la interfaz después de reiniciar el sistema.
 :end
 
 :eth_routing_table_help:
-Enter a valid IPv4 route in the format *nnn.nnn.nnn.nnn/xx*, e.g. *192.168.1.0/24*<br>
-or enter a valid IPv6 route in the format *nnnn:nnnn:nnnn::nnnn/xxx*, e.g. *fe80::3ad8:2fff:fe25:9709/64*
+Introduzca una ruta IPv4 válida en el formato *nnn.nnn.nnn.nnn/xx*, p.e. *192.168.1.0/24*<br>
+o introduzca una ruta IPv6 válida en el formato *nnnn:nnnn:nnnn::nnnn/xxx*, p.e. *fe80::3ad8:2fff:fe25:9709/64*
 
-Select the gateway from the dropdown list or enter a valid IPv4/IPv6 address as gateway value.
+Seleccione la puerta de enlace de la lista desplegable o ingrese una dirección IPv4/IPv6 válida como valor de puerta de enlace.
 
-The metric value is optional, it defaults to 1. Use it to select the prefered gateway when more than one entry of the same route exist.
+El valor de la métrica es opcional, su valor predeterminado es 1. Úselo para seleccionar la puerta de enlace preferida cuando exista más de una entrada de la misma ruta.
 :end
 
 :apc_ups_daemon_help:
