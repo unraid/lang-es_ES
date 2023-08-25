@@ -417,7 +417,7 @@ Attention=Atención
 Repository=Repositorio
 Why we picked it=Por qué lo elegimos
 Application Spotlight %s=Aplicación destacada %s
-Unraid Staff=Unraid Staff
+Unraid Staff=Personal de Unraid
 
 ; Page Navigation
 Displaying %s - %s of %s=Mostrando %1$s - %2$s (de %3$s)
