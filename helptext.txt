@@ -2033,31 +2033,31 @@ Para obtener más información, consulte este enlace: <a href="https://docs.dock
 
 ; sysdevs help - added May 18, 2020
 :sysdevs_iommu_groups_help:
-This displays a list of IOMMU groups available on your system along with the output of the `lspci` command for each IOMMU group.  The numeric identifiers are used to configure PCI pass-through.
+Esto muestra una lista de grupos IOMMU disponibles en su sistema junto con el resultado del comando `lspci` para cada grupo IOMMU. Los identificadores numéricos se utilizan para configurar el paso PCI.
 
-Devices you select will be bound to the vfio-pci driver at boot, which makes them available for assignment to a virtual machine, and also prevents the Linux kernel from automatically binding them to any present host driver.
+Los dispositivos que seleccione estarán vinculados al controlador vfio-pci en el arranque, lo que los deja disponibles para su asignación a una máquina virtual y también evita que el kernel de Linux los vincule automáticamente a cualquier controlador de host presente.
 
-**Note that selecting a device will bind not only the specified device(s), but *all* other devices in the same IOMMU group as well.**
+**Tenga en cuenta que seleccionar un dispositivo vinculará no solo los dispositivos especificados, sino también *todos* los demás dispositivos en el mismo grupo IOMMU.**
 
-&nbsp;<i class="fa fa-circle orb green-orb middle"></i>&nbsp;This symbol indicates the device is currently bound to the vfio-pci driver.
+&nbsp;<i class="fa fa-circle orb green-orb middle"></i>&nbsp;Este símbolo indica que el dispositivo está actualmente vinculado al controlador vfio-pci.
 
-&nbsp;<i class="fa fa-retweet grey-orb middle"></i>&nbsp;&nbsp;&nbsp;This symbol indicates the device supports FLR (Function Level Reset).
+&nbsp;<i class="fa fa-retweet grey-orb middle"></i>&nbsp;&nbsp;&nbsp;Este símbolo indica que el dispositivo admite FLR (restablecimiento de nivel de función).
 
-<input type="checkbox" value="" disabled>&nbsp;&nbsp;If a checkbox is greyed out it means the device is in use by Unraid and can not be passed through.
+<input type="checkbox" value="" disabled>&nbsp;&nbsp;Si una casilla de verificación está atenuada, significa que Unraid está utilizando el dispositivo y no se puede pasar a través de él.
 :end
 
 :sysdevs_thread_pairings_help:
-This displays a list of CPU thread pairings.
+Esto muestra una lista de pares de subprocesos de CPU.
 :end
 
 :sysdevs_usb_devices_help:
-This displays the output of the `lsusb` command.  The numeric identifiers are used to configure PCI pass-through.
+Esto muestra el resultado del comando `lsusb`. Los identificadores numéricos se utilizan para configurar el paso PCI.
 :end
 
 :sysdevs_scsi_devices_help:
-This displays the output of the `lsscsi` command.  The numeric identifiers are used to configure PCI pass-through.
+Esto muestra el resultado del comando `lsscsi`. Los identificadores numéricos se utilizan para configurar el paso PCI.
 
-Note that linux groups ATA, SATA and SAS devices with true SCSI devices.
+Tenga en cuenta que Linux agrupa dispositivos ATA, SATA y SAS con dispositivos SCSI verdaderos.
 :end
 
 ; unraid.net help - added March 11, 2021
@@ -2170,7 +2170,7 @@ Déjelo en el modo automático por defecto para seleccionar el tamaño de la MTU
 
 :wg_peer_configuration_help:
 El <i class='fa fa-fw fa-eye'></i> icono se utiliza para ver la configuración de un peer. Se puede descargar una configuración o leerla directamente para configurar el peer al instante.<br>
-The icon is disabled when no peer configuration exists or the user has made changes to the existing settings which are not applied yet.
+El icono está deshabilitado cuando no existe ninguna configuración de pares o el usuario ha realizado cambios en la configuración existente que aún no se ha aplicado.
 
 El <i class='fa fa-fw fa-key'></i> icono se utiliza para mostrar u ocultar las claves privadas, públicas y precompartidas. Tenga en cuenta que estos campos siempre se muestran cuando no hay claves establecidas.
 :end
@@ -2311,104 +2311,104 @@ Cuando se establece en "Sí", se habilita el soporte multicanal SMB en el servid
 ; New entries (4) - 2023-03-17
 
 :docker_readmore_help:
-Some systems with a lot of docker containers may experience lag using the main Docker page.
+Algunos sistemas con muchos contenedores Docker pueden experimentar retrasos al utilizar la página principal de Docker.
 
-Setting this to "No" may help speed up general page usage by disabling the use of readmore-js.
-Instead of chevrons indicating more data for Port and Volume mapping, all data is displayed.
+Establecer esto en "No" puede ayudar a acelerar el uso general de la página al deshabilitar el uso de readmore-js.
+En lugar de que los galones indiquen más datos para la asignación de puertos y volúmenes, se muestran todos los datos.
 :end
 
 :docker_custom_network_type_help:
-The **ipvlan** type is best when connection to the physical network is not needed.
-Please read <u><a style="color:blue" href='https://docs.docker.com/network/ipvlan/', target='_blank'>this</a></u> on implementing an ipvlan network.<br>
+El tipo **ipvlan** es mejor cuando no se necesita conexión a la red física.
+Por favor lea <u><a style="color:blue" href='https://docs.docker.com/network/ipvlan/', target='_blank'>esto</a></u> sobre la implementación de una red ipvlan.<br>
 
-The **macvlan** type of network allows direct connection to the physical network.
-Please read <u><a style="color:blue" href='https://docs.docker.com/network/macvlan/', target='_blank'>this</a></u> on implementing a macvlan network.<br>
+El tipo de red **macvlan** permite la conexión directa a la red física.
+Por favor lea <u><a style="color:blue" href='https://docs.docker.com/network/macvlan/', target='_blank'>esto</a></u> sobre la implementación de una red macvlan.<br>
 
-**Note:** Docker uses its own dhcp service, which is the **DHCP Pool** setting.
-When you use multiple Unraid servers, then each server must have a different Docker **DHCP Pool** range configured.
+**Nota:** Docker utiliza su propio servicio dhcp, que es la configuración **DHCP Pool**.
+Cuando utiliza varios servidores Unraid, cada servidor debe tener configurado un rango Docker **DHCP Pool** diferente.
 :end
 
 :mgmt_local_access_urls_help:
-The Local Access URLs shown above are based on your current settings. 
-To adjust URLs or redirects, see the help text for "Use SSL/TLS".
+Las URL de acceso local que se muestran arriba se basan en su configuración actual. 
+Para ajustar las URL o los redireccionamientos, consulte el texto de ayuda para "Usar SSL/TLS".
 :end
 
 :vms_network_source_help:
-Select the name of the network you wish to use as default for your VMs.
-You can choose between **'bridges'** created under network settings or
-**'libvirt'** created with virsh command in the terminal.
-The bridge **'virbr0'** and the associated virtual network **'default'** are
-created by libvirt.  
-Both utilizes NAT (network address translation) and act as a DHCP server to hand out IP addresses to virtual machines directly.
-More optional selections are present for bridges under network settings or for libvirt networks with the virsh command in the terminal.
+Seleccione el nombre de la red que desea utilizar como predeterminada para sus máquinas virtuales.
+Puedes elegir entre **'bridges'** creados en la configuración de red o
+**'libvirt'** creado con el comando virsh en la terminal.
+El puente **'virbr0'** y la red virtual asociada **'default'** son
+creados por libvirt.  
+Ambos utilizan NAT (traducción de direcciones de red) y actúan como un servidor DHCP para entregar direcciones IP directamente a las máquinas virtuales.
+Hay más selecciones opcionales para puentes en la configuración de red o para redes libvirt con el comando virsh en la terminal.
 
-**If your are unsure, choose 'virbr0' as the recommended Unraid default.**
+**Si no está seguro, elija 'virbr0' como el valor predeterminado Unraid recomendado.**
 
-NOTE: You can also specify a network source on a per-VM basis.
+NOTA: También puede especificar una fuente de red por máquina virtual.
 
-**IMPORTANT: Neither Libvirt nor Unraid automatically brings up an interface that is assigned to a Libvirt network.
-Before you use a Libvirt network, please go to Settings -> Network Settings and, if necessary, manually set the associated interface to up.**
+**IMPORTANTE: Ni Libvirt ni Unraid muestran automáticamente una interfaz asignada a una red Libvirt.
+Antes de utilizar una red Libvirt, vaya a Configuración -> Configuración de red y, si es necesario, configure manualmente la interfaz asociada.**
 :end
 
 ; New entries (5) - 2023-04-25
 
 :share_edit_exclusive_access_help:
-When set to "yes" indicates a bind-mount directly to a pool has been set up for the share in the /mnt/user tree, provided the following
-conditions are met:
+Cuando se establece en "sí", indica que se ha configurado un montaje vinculado directamente a un grupo para el recurso compartido en el árbol /mnt/user, siempre que se cumplan 
+las siguientes condiciones:
 
-- Primary storage is a pool.
-- Secondary storage is set to **none**.
-- The share does not exist on any other volumes.
+- El almacenamiento principal es una pool.
+- El almacenamiento secundario está configurado en **ninguno**.
+- La compartición no existe en ningún otro volumen.
 :end
 
 :share_edit_primary_storage_help:
-**Primary storage** is where *new files and folders* are created.  If
-Primary storage is below the minimum free space setting then new files
-and folders will be created in **Secondary storage**, if configured.
+**El Almacenamiento Principal** es donde se crean *nuevos archivos y carpetas*. Si el almacenamiento
+ principal está por debajo de la configuración mínima de espacio libre, los archivos
+ nuevos y las carpetas se crearán en **Almacenamiento Secundario**, si está configurado.
 
-**Important:** For *Exclusive access* shares, the Min free space
-settings are ignored.
+**Importante:** Para acciones de *Acceso exclusivo*, el espacio libre mínimo
+configurado es ignorado.
 :end
 
 :share_edit_secondary_storage_help:
-**Secondary storage** is where new files and directories are created if no
-room on Primary storage.  When both Primary and Secondary storage are
-configured the 'mover' will transfer files between them.
+El **Almacenamiento secundario** es donde se crean nuevos archivos y directorios si no hay
+espacio en el almacenamiento principal. Cuando tanto el almacenamiento primario como  
+el secundario están configurados con 'mover', se transferirán archivos entre ellos.
 :end
 
 :share_edit_mover_action_help:
-This defines the direction of file transfer between Primary and
-Secondary storage when both are configured.
+Esto define la dirección de transferencia de archivos entre el almacenamiento 
+principal y el almacenamiento secundario cuando ambos están configurados.
 :end
 
 :vms_console_help:
-For setting the console options to show on context menus. Web will show only inbuild web clients(VNC and SPICE), 
-Virtual Manager Remote Viewer will only show the Remote Viewer option. Both will show both Web and Remote Viewer.
+Para configurar las opciones de la consola para que se muestren en los menús contextuales. Web mostrará solo clientes web incorporados (VNC y SPICE), 
+Virtual Manager Remote Viewer solo mostrará la opción Visor remoto. Ambos mostrarán tanto el Visor Web como el Visor Remoto.
 :end
 
 ; New entries (3) - 2023-06-02
 
 :shares_exclusive_shares_help:
-If set to Yes, share directories under /mnt/user are actually symlinks to the share directory on a storage volume
-provided the following conditions are met:
+Si se establece en "Sí", los directorios compartidos en /mnt/user son en realidad enlaces simbólicos al directorio compartido en un 
+volumen de almacenamiento, siempre que se cumplan las siguientes condiciones:
 
-* The Primary storage for a share is set to a pool.
-* The Secondary storage for a share is set to **none**.
-* The share exists on a single volume.
-* The share is **not** exported over NFS.
+* El almacenamiento principal de un recurso compartido se establece en un grupo.
+* El almacenamiento secundario para un recurso compartido está establecido en **ninguno**.
+* La carpeta existe en un solo volumen.
+* La carpeta **no** se exporta a través de NFS.
 
-The advantage of *exclusive* shares is that transfers bypass the FUSE layer which may significantly
-increase I/O performance.
+La ventaja de las acciones *exclusivas* es que las transferencias evitan la capa FUSE, lo que puede afectar 
+significativamente aumentar el rendimiento de E/S.
 :end
 
 :eth_network_extra_include_help:
-Enter one or more interface names or IP addresses which will be included in the list of listening interfaces for local system services.
+Ingrese uno o más nombres de interfaz o direcciones IP que se incluirán en la lista de interfaces de escucha para los servicios del sistema local.
 
-This is particularly useful when you have created custom interfaces (e.g. tailscale VPN tunnel) which are used to access local system services.
+Esto es particularmente útil cuando ha creado interfaces personalizadas (por ejemplo, un túnel VPN de escala final) que se utilizan para acceder a los servicios del sistema local.
 :end
 
 :eth_network_extra_exclude_help:
-Enter one or more interface names or IP addresses which will be excluded from the list of listening interfaces for local system services.
+Ingrese uno o más nombres de interfaz o direcciones IP que se excluirán de la lista de interfaces de escucha para los servicios del sistema local.
 
-This can be used to exclude dedicated local interfaces (e.g. p-t-p connections) or exclude dynamic interfaces (WireGuard tunnels) from using local system services.
+Esto se puede utilizar para excluir interfaces locales dedicadas (por ejemplo, conexiones p-t-p) o excluir interfaces dinámicas (túneles WireGuard) del uso de servicios del sistema local.
 :end
