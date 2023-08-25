@@ -1,4 +1,5 @@
 %s An update is available=%s Hay una actualización disponible
+Alert Message=Mensaje de alerta
 anonymous=anónimo
 Author=Autor
 Check For Updates=Buscar actualizaciones
@@ -9,6 +10,7 @@ Delete Plugin=Eliminar Plugin
 DOWNGRADE TO VERSION=VOLVER A LA VERSIÓN ANTERIOR
 Enter URL of remote plugin file or local plugin file=Introduzca la URL del plugin remoto o la ruta local del plugin
 ERROR=ERROR
+I have read the release notes=He leído las notas de la versión
 Install Plugin=Instalar Plugin
 Install=Instalar
 install=instalar
@@ -26,6 +28,7 @@ Plugin Update Check=Buscar Actualizaciones de Plugin
 Plugin=Plugin
 Release Notes=Notas de la versión
 Remove Plugin=Eliminar Plugin
+Remove Selected Plugins=Eliminar complementos seleccionados
 remove=eliminar
 Select local plugin file=Seleccione el archivo local del Plugin
 Stable=Estable
@@ -33,12 +36,7 @@ STALE=OBSOLETO
 Support Thread=Sitio de soporte
 Uninstall=Desinstalar
 Update All Plugins=Actualizar todos los Plugins
+Update Incompatible=Actualización incompatible
 Update Plugin=Actualizar Plugin
 Upgrade=Actualizar
 View Release Notes=Ver Notas de la versión
-
-; Note: July 9, 2023 - 4 missing translations
-Alert Message=
-I have read the release notes=
-Remove Selected Plugins=
-Update Incompatible=
