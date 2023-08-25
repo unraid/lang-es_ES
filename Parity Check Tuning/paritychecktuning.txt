@@ -114,7 +114,7 @@ where action is one of=donde la acción es una de
 aborted due to Unclean shutdown=abortado debido a un cierre no limpio
 array stopping so progress will be lost=el Array se detiene por lo que el progreso de la tarea se perderá
 ; The type of array operation (parity check, clear, rebuild) will be appended to the following text
-Automatic unRaid=Automatic unRaid
+Automatic unRaid=unRaid automático
 Average Speed=Velocidad media
 completed=completado
 Correcting Parity Check=Corrección de la comprobación de la paridad
