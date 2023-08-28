@@ -20,26 +20,26 @@ Save=Guardar
 Share Device with SMB and NFS=Compartir dispositivo mediente SMB y NFS
 Share Remote Mount with SMB and NFS=Compartir montaje remoto mediante SMB y NFS
 Mark this Device as passed through to a VM or Docker=Marcar este Dispositivo como pasado a una VM o Docker
-Unassigned Devices Settings=Configuración Unassigned Devices
+Unassigned Devices Settings=Configuración de dispositivos no asignados
 Undo your changes since last Save=Deshacer los cambios desde el último guardado
 Volume=Volumen
 ;
 ; Help
 ;
 :ud_edit_script_device_settings_plug:
-> Select the options for this device/mount point. These changes are made immediately. You don't need to click **Save** to save them.
+> Seleccione las opciones para este dispositivo/punto de montaje. Estos cambios se realizan de inmediato. No es necesario hacer clic en **Guardar** para guardarlos.
 :end
 
 :ud_disk_name_plug:
-> Enter the alias name for this device.  This is the name you want to use to refer to this drive.  Leave the name blank and the 'devX' will be assigned.
+> Ingrese el nombre de alias para este dispositivo. Este es el nombre que desea utilizar para referirse a esta unidad. Deje el nombre en blanco y se asignará el 'devX'.
 >
-> **Name:** 8 characters max, spaces converted to '_', minimal special characters allowed, name is case sensitive.
+> **Nombre:** 8 caracteres como máximo, espacios convertidos a '_', se permiten caracteres especiales mínimos, el nombre distingue entre mayúsculas y minúsculas.
 >
-> **Note:** Cannot contain "dev" as the first characters.  This is reserved for the 'devX' devices.
+> **Nota:** No puede contener "dev" como primer carácter. Esto está reservado para los dispositivos 'devX'.
 :end
 
 :ud_apfs_volume_plug:
-> Enter the volume to mount on this apfs partition. Click **Save** to commit this setting.
+> Ingrese el volumen para montar en esta partición apfs. Haga clic en **Guardar** para confirmar esta configuración.
 :end
 
 :ud_edit_script_choose_name_plug:
@@ -49,7 +49,7 @@ Volume=Volumen
 :ud_edit_user_script_choose_name_plug:
 > Si tiene instalado el plugin User Scripts, puede hacer que
 Dispositivos no asignados muestren el estado de ejecución del Script de Usuario que
-que utilizará este dispositivo. Este campo sólo se activará cuando exista un Archivo de Script de Dispositivo.
+utilizará este dispositivo. Este campo sólo se activará cuando exista un Archivo de Script de Dispositivo.
 :end
 
 :ud_edit_script_run_background_plug:

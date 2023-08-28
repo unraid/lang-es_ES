@@ -3,9 +3,11 @@ Auto Mount USB Devices=Montaje automático de dispositivos USB
 Change Disk UUID=Cambiar el UUID del disco
 Change UUID=Cambiar el UUID
 Change Disk UUID=Cambiar el UUID del disco
+Command times=Tiempos de comando
 Common Script=Script común
 Common Settings=Ajustes comunes
 Destructive Mode=Modo destructivo
+Disabled=Deshabilitado
 Disk spin down is managed by Unraid=El apagado del disco es gestionado por Unraid
 Enable NFS export=Activar la exportación NFS
 Enable SMB Security=Activar la seguridad SMB
@@ -17,7 +19,13 @@ NFS Security=Seguridad NFS
 NFS Settings=Configuración NFS
 NFS must be enabled in Settings->NFS to enable NFS Export=NFS debe estar habilitado en Configuración->NFS para habilitar la Exportación NFS
 NFS Version to use when Mounting Remote Shares=Versión de NFS a utilizar cuando se montan recursos compartidos remotos
+Public=Público
+Private=Privado
+Private Hidden=Privado oculto
+Refresh and Update=Refrescar y actualizar
+Remote Share Mount Wait Time=Tiempo de espera de montaje de recurso compartido remoto
 Rule=Regla
+SMB Settings=Configuración SMB
 Select Disk=Seleccionar disco
 Set Encrypted Disk Password=Establecer la contraseña del disco encriptado
 Set Password=Establecer contraseña
@@ -28,8 +36,10 @@ Specify SMB Version when Mounting Remote Shares=Especificar la versión de SMB a
 Spin down disks=Poner discos en reposo
 The Unassigned Devices Plus plugin must be installed to enable Destructive Mode=El plugin Unassigned Devices Plus debe estar instalado para activar el Modo Destructivo
 to SMB share config=a la configuración del recurso compartido SMB
+Udev and Hotplug=Udev y Hotplug
 Unassigned Devices=Dispositivos no asignados
 Unraid 6.10 or later is required for NFSv4 support=Se requiere Unraid 6.10 o posterior para el soporte de NFSv4
+Use only when directed for support because the messages can flood the log=Úselo solo cuando se le indique soporte porque los mensajes pueden inundar el registro
 
 ; Help
 ;
@@ -132,15 +142,3 @@ Unraid 6.10 or later is required for NFSv4 support=Se requiere Unraid 6.10 o pos
 :ud_settings_change_uuid_plug:
 > Seleccione el disco al que desea cambiar el UUID.  Esto es útil cuando un disco ha sido retirado del array y tiene el mismo UUID que un disco del array.  El disco debe estar desmontado para cambiar el UUID.
 :end
-
-; Note: June 18, 2023 - 10 missing translations
-Command times=
-Disabled=
-Public=
-Private=
-Private Hidden=
-Refresh and Update=
-Remote Share Mount Wait Time=
-SMB Settings=
-Udev and Hotplug=
-Use only when directed for support because the messages can flood the log=

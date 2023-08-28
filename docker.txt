@@ -59,6 +59,7 @@ Icon URL=URL del icono
 Image ID=ID de la imagen
 Key=Licencia
 Label=Etiqueta
+Lock sortable items=Bloquear elementos ordenables
 Management=Administración
 MediaApp=App multimedia
 MediaServer=Servidor multimedia
@@ -119,6 +120,7 @@ The command finished successfully=El comando se completó con éxito
 TOTAL DATA PULLED=DATOS TOTALES DESCARGADOS
 Total size=Tamaño total
 Unknown action=Acción desconocida
+Unlock sortable items=Desbloquear elementos ordenables
 Update All=Actualizar todos
 update ready=Actualización lista
 Value=Valor
@@ -131,7 +133,3 @@ Was this container created using this plugin=Se creó este contenedor usando est
 Web=Web
 WebUI=Interfaz Web
 Writable=Grabable
-
-; Note: April 28, 2023 - 2 missing translations
-Lock sortable items=
-Unlock sortable items=

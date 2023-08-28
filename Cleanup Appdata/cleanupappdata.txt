@@ -15,5 +15,5 @@ Delete Selected=Eliminar lo seleccionado
 Done=Hecho
 Credits=Créditos
 For support for this plugin, visit here=Para obtener soporte de este plugin, acceder aquí
-HERE=AQUI
+HERE=AQUÍ
 Plugin Version=Versión del plugin
