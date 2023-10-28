@@ -1446,6 +1446,19 @@ Asegúrese de que los valores recién ingresados ​​representen la unidad de 
 Al detener el servicio de máquinas virtuales (VMs) se intentará apagar todas las VMs en ejecución. Si pasados 60 segundos alguna VM sigue activa, se forzará su apagado.
 :end
 
+:shares_exclusive_shares_help:
+Si se establece en "Sí", los directorios compartidos en /mnt/user son en realidad enlaces simbólicos al directorio compartido en un 
+volumen de almacenamiento, siempre que se cumplan las siguientes condiciones:
+
+* El almacenamiento principal de un recurso compartido se establece en un grupo.
+* El almacenamiento secundario para un recurso compartido está establecido en **ninguno**.
+* La carpeta existe en un solo volumen.
+* La carpeta **no** se exporta a través de NFS.
+
+La ventaja de las acciones *exclusivas* es que las transferencias evitan la capa FUSE, lo que puede afectar 
+significativamente aumentar el rendimiento de E/S.
+:end
+
 :vms_libvirt_volume_help:
 Este es el volumen de libvirt.
 :end
@@ -1698,6 +1711,18 @@ o introduzca una ruta IPv6 válida en el formato *nnnn:nnnn:nnnn::nnnn/xxx*, p.e
 Seleccione la puerta de enlace de la lista desplegable o ingrese una dirección IPv4/IPv6 válida como valor de puerta de enlace.
 
 El valor de la métrica es opcional, su valor predeterminado es 1. Úselo para seleccionar la puerta de enlace preferida cuando exista más de una entrada de la misma ruta.
+:end
+
+:eth_network_extra_include_help:
+Ingrese uno o más nombres de interfaz o direcciones IP que se incluirán en la lista de interfaces de escucha para los servicios del sistema local.
+
+Esto es particularmente útil cuando ha creado interfaces personalizadas (por ejemplo, un túnel VPN de escala final) que se utilizan para acceder a los servicios del sistema local.
+:end
+
+:eth_network_extra_exclude_help:
+Ingrese uno o más nombres de interfaz o direcciones IP que se excluirán de la lista de interfaces de escucha para los servicios del sistema local.
+
+Esto se puede utilizar para excluir interfaces locales dedicadas (por ejemplo, conexiones p-t-p) o excluir interfaces dinámicas (túneles WireGuard) del uso de servicios del sistema local.
 :end
 
 :apc_ups_daemon_help:
@@ -2386,29 +2411,8 @@ Para configurar las opciones de la consola para que se muestren en los menús co
 Virtual Manager Remote Viewer solo mostrará la opción Visor remoto. Ambos mostrarán tanto el Visor Web como el Visor Remoto.
 :end
 
-; New entries (3) - 2023-06-02
 
-:shares_exclusive_shares_help:
-Si se establece en "Sí", los directorios compartidos en /mnt/user son en realidad enlaces simbólicos al directorio compartido en un 
-volumen de almacenamiento, siempre que se cumplan las siguientes condiciones:
 
-* El almacenamiento principal de un recurso compartido se establece en un grupo.
-* El almacenamiento secundario para un recurso compartido está establecido en **ninguno**.
-* La carpeta existe en un solo volumen.
-* La carpeta **no** se exporta a través de NFS.
 
-La ventaja de las acciones *exclusivas* es que las transferencias evitan la capa FUSE, lo que puede afectar 
-significativamente aumentar el rendimiento de E/S.
-:end
 
-:eth_network_extra_include_help:
-Ingrese uno o más nombres de interfaz o direcciones IP que se incluirán en la lista de interfaces de escucha para los servicios del sistema local.
 
-Esto es particularmente útil cuando ha creado interfaces personalizadas (por ejemplo, un túnel VPN de escala final) que se utilizan para acceder a los servicios del sistema local.
-:end
-
-:eth_network_extra_exclude_help:
-Ingrese uno o más nombres de interfaz o direcciones IP que se excluirán de la lista de interfaces de escucha para los servicios del sistema local.
-
-Esto se puede utilizar para excluir interfaces locales dedicadas (por ejemplo, conexiones p-t-p) o excluir interfaces dinámicas (túneles WireGuard) del uso de servicios del sistema local.
-:end
