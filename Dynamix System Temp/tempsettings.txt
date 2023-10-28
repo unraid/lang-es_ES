@@ -11,12 +11,12 @@ Processor temperature=Temperatura del procesador
 Rescan=Volver a escanear
 Save=Guardar
 Sensors=Sensores
-Unload drivers=Descarga drivers
+Unload drivers=Descargar drivers
 
 :temp_drivers_plug:
 > Utilice 'detect' para buscar los controladores disponibles utilizando el 'sensors-detect' script. Tras la detección, proceda a guardar la lista.<br>
 > Utilice 'save' para almacenar la lista de controladores en el disco, el campo de controladores puede editarse antes de guardar (por ejemplo, añadir un controlador no especificado). Guardar es obligatorio.<br>
-> Utilice 'load drivers / unload drivers' para cargar o descargar manualmente los módulos de controladores disponibles.
+> Utilice 'Cargar controladores / Descargar controladores' para cargar o descargar manualmente los módulos de controladores disponibles.
 :end
 
 :temp_processor_plug:
