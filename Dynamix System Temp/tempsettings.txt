@@ -1,8 +1,8 @@
 Array fan speed=Velocidad de los ventiladores del array
-Available drivers=Drivers disponibles
+Available drivers=Controladores disponibles
 Click DETECT=Haga clic en DETECTAR
 Detect=Detectar
-Load drivers=Cargar drivers
+Load drivers=Cargar controladores
 Mainboard temperature=Temperatura de la placa base
 No drivers detected=No se han detectado controladores
 Not used=No utilizado
