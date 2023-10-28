@@ -371,7 +371,7 @@ Docker Application Installation finished=La instalación de las aplicaciones Doc
 ; Application Cards
 Actions=Opciones
 Pending=Pendiente
-This application is a driver plugin=Esta aplicación es un driver (plugin)
+This application is a driver plugin=Esta aplicación es un complemento del controlador
 This is a language pack=Paquete de idiomas
 This application is a docker container=Aplicación Docker
 This application is a plugin=Aplicación plugin
