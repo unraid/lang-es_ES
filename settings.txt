@@ -543,7 +543,7 @@ Priority in header=Enviar con importancia alta
 Protocol=Protocolo
 Provision=Aprovisionar
 QEMU version=Versión QEMU
-Questions See the documentation=¿Dudas? Consulte <a href="https://wiki.unraid.net/Connect" target="_blank">la documentación</a>.
+Questions See the documentation=¿Dudas? Consulte la <a href="https://wiki.unraid.net/Connect" target="_blank">documentación</a>.
 readmodifywrite=leer/modificar/escribir
 recommended=recomendado
 reconstruct write=reconstruir escritura
