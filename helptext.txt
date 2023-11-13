@@ -1446,6 +1446,19 @@ Asegúrese de que los valores recién ingresados ​​representen la unidad de 
 Al detener el servicio de máquinas virtuales (VMs) se intentará apagar todas las VMs en ejecución. Si pasados 60 segundos alguna VM sigue activa, se forzará su apagado.
 :end
 
+:shares_exclusive_shares_help:
+Si se establece en "Sí", los directorios compartidos en /mnt/user son en realidad enlaces simbólicos al directorio compartido en un 
+volumen de almacenamiento, siempre que se cumplan las siguientes condiciones:
+
+* El almacenamiento principal de un recurso compartido se establece en un grupo.
+* El almacenamiento secundario para un recurso compartido está establecido en **ninguno**.
+* La carpeta existe en un solo volumen.
+* La carpeta **no** se exporta a través de NFS.
+
+La ventaja de las acciones *exclusivas* es que las transferencias evitan la capa FUSE, lo que puede afectar 
+significativamente aumentar el rendimiento de E/S.
+:end
+
 :vms_libvirt_volume_help:
 Este es el volumen de libvirt.
 :end
@@ -1698,6 +1711,18 @@ o introduzca una ruta IPv6 válida en el formato *nnnn:nnnn:nnnn::nnnn/xxx*, p.e
 Seleccione la puerta de enlace de la lista desplegable o ingrese una dirección IPv4/IPv6 válida como valor de puerta de enlace.
 
 El valor de la métrica es opcional, su valor predeterminado es 1. Úselo para seleccionar la puerta de enlace preferida cuando exista más de una entrada de la misma ruta.
+:end
+
+:eth_network_extra_include_help:
+Ingrese uno o más nombres de interfaz o direcciones IP que se incluirán en la lista de interfaces de escucha para los servicios del sistema local.
+
+Esto es particularmente útil cuando ha creado interfaces personalizadas (por ejemplo, un túnel VPN de escala final) que se utilizan para acceder a los servicios del sistema local.
+:end
+
+:eth_network_extra_exclude_help:
+Ingrese uno o más nombres de interfaz o direcciones IP que se excluirán de la lista de interfaces de escucha para los servicios del sistema local.
+
+Esto se puede utilizar para excluir interfaces locales dedicadas (por ejemplo, conexiones p-t-p) o excluir interfaces dinámicas (túneles WireGuard) del uso de servicios del sistema local.
 :end
 
 :apc_ups_daemon_help:
@@ -2214,8 +2239,6 @@ Un temporizador de mantenimiento de la vida mantendrá la conexión abierta, par
 Tenga en cuenta que para los dispositivos móviles esto utilizará más datos y agotará su batería más rápidamente.
 :end
 
-; New entries (5) - 2021-09-18
-
 :info_share_assignment_help:
 El pool seleccionado está disponible para las acciones de los usuarios.
 :end
@@ -2240,13 +2263,9 @@ Se recomienda crear esta carpeta bajo un recurso compartido que resida en el gru
 Cualquier requisito adicional que tenga el contenedor.  Admite el marcado HTML básico.
 :end
 
-; New entries (1) - 2021-11-07
-
 :docker_client_readme_help:
 Enlace a un archivo o página "Léame"
 :end
-
-; New entries (3) - 2021-12-16
 
 :parity_cumulative_check_help:
 Cambie esta configuración a **Sí** para dividir las comprobaciones de paridad de larga duración en varios períodos. Esto es útil si el sistema necesita estar disponible y una comprobación de paridad se ejecuta sólo durante las horas de descanso.
@@ -2263,8 +2282,6 @@ Especifica cómo se ejecutan los períodos de acumulación.
 :parity_accumulation_duration_help:
 Especifica la duración de cada periodo acumulado, expresada en horas. La **Hora del día** especifica la hora de inicio del periodo.
 :end
-
-; New entries (7) - 2022-02-19
 
 :display_tty_size_help:
 Cambia el tamaño de la fuente de las ventanas del terminal.
@@ -2300,15 +2317,11 @@ Cuando la función 2FA transparente para el acceso local esté activada, acceder
 Esto es bastante extremo para el Acceso Local, y en la mayoría de los casos no es necesario. Requiere una conexión sólida a Internet. Si necesita acceder a la webgui mientras que el Internet está caido, SSH al servidor y ejecutar 'use_ssl no', esto le dará acceso a través de http://<?=['NGINX_LANIP']?><?=['NGINX_PORT'] !== '80' ? ':'.['NGINX_PORT'] : '' ?>
 :end
 
-; New entries (1) - 2022-05-07
-
 :smb_multi_channel_help:
 Cuando se establece en "Sí", se habilita el soporte multicanal SMB en el servidor. Desde
 [microsoft](https://docs.microsoft.com/en-us/azure-stack/hci/manage/manage-smb-multichannel):
 "SMB Multichannel permite que los servidores de archivos utilicen varias conexiones de red simultáneamente". 
 :end
-
-; New entries (4) - 2023-03-17
 
 :docker_readmore_help:
 Algunos sistemas con muchos contenedores Docker pueden experimentar retrasos al utilizar la página principal de Docker.
@@ -2350,8 +2363,6 @@ NOTA: También puede especificar una fuente de red por máquina virtual.
 Antes de utilizar una red Libvirt, vaya a Configuración -> Configuración de red y, si es necesario, configure manualmente la interfaz asociada.**
 :end
 
-; New entries (5) - 2023-04-25
-
 :share_edit_exclusive_access_help:
 Cuando se establece en "sí", indica que se ha configurado un montaje vinculado directamente a un grupo para el recurso compartido en el árbol /mnt/user, siempre que se cumplan 
 las siguientes condiciones:
@@ -2386,29 +2397,10 @@ Para configurar las opciones de la consola para que se muestren en los menús co
 Virtual Manager Remote Viewer solo mostrará la opción Visor remoto. Ambos mostrarán tanto el Visor Web como el Visor Remoto.
 :end
 
-; New entries (3) - 2023-06-02
+:sysdrivers_intro_help:
+Esta página muestra todos los controladores disponibles en el sistema. Filtre la lista según si el controlador está en uso o no, o busque un controlador específico si lo desea.
 
-:shares_exclusive_shares_help:
-Si se establece en "Sí", los directorios compartidos en /mnt/user son en realidad enlaces simbólicos al directorio compartido en un 
-volumen de almacenamiento, siempre que se cumplan las siguientes condiciones:
+Cualquier controlador de terceros instalado mediante un complemento tendrá un símbolo de soporte al lado; haga clic aquí para obtener soporte para el complemento.
 
-* El almacenamiento principal de un recurso compartido se establece en un grupo.
-* El almacenamiento secundario para un recurso compartido está establecido en **ninguno**.
-* La carpeta existe en un solo volumen.
-* La carpeta **no** se exporta a través de NFS.
-
-La ventaja de las acciones *exclusivas* es que las transferencias evitan la capa FUSE, lo que puede afectar 
-significativamente aumentar el rendimiento de E/S.
-:end
-
-:eth_network_extra_include_help:
-Ingrese uno o más nombres de interfaz o direcciones IP que se incluirán en la lista de interfaces de escucha para los servicios del sistema local.
-
-Esto es particularmente útil cuando ha creado interfaces personalizadas (por ejemplo, un túnel VPN de escala final) que se utilizan para acceder a los servicios del sistema local.
-:end
-
-:eth_network_extra_exclude_help:
-Ingrese uno o más nombres de interfaz o direcciones IP que se excluirán de la lista de interfaces de escucha para los servicios del sistema local.
-
-Esto se puede utilizar para excluir interfaces locales dedicadas (por ejemplo, conexiones p-t-p) o excluir interfaces dinámicas (túneles WireGuard) del uso de servicios del sistema local.
+Haga clic en el botón editar para agregar/modificar/eliminar cualquier archivo de configuración modprobe.d en el directorio config/modprobe.d de la unidad flash.
 :end
