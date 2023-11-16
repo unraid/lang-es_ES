@@ -142,3 +142,7 @@ Use only when directed for support because the messages can flood the log=Úselo
 :ud_settings_change_uuid_plug:
 > Seleccione el disco al que desea cambiar el UUID.  Esto es útil cuando un disco ha sido retirado del array y tiene el mismo UUID que un disco del array.  El disco debe estar desmontado para cambiar el UUID.
 :end
+
+:ud_settings_zfs_upgrade_plug:
+> Select the disk that you want to upgrade to the latest ZFS version. Drive must be mounted to upgrade ZFS.
+:end

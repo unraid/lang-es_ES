@@ -18,7 +18,6 @@ Change Disk Mount Point=Cambiar el punto de montaje del disco
 Change ISO File Mount Point=Cambiar el punto de montaje del archivo ISO
 Change Remote Share Mount Point=Cambiar punto de montaje de recurso compartido remoto
 Change SMB=Cambiar SMB
-Changing the Mount Point will also change the disk label=Cambiar el punto de montaje también cambiará la etiqueta del disco
 Clear=Limpiar
 Click to select ISO file=Haga clic para seleccionar el archivo ISO
 Click to view/hide partitions and mount points=Haga clic para ver/ocultar las particiones y los puntos de montaje
@@ -80,7 +79,6 @@ No Unassigned Disks available=No hay discos sin asignar
 Not Enabled=No está activado
 not installed=no instalado
 Note=Nota
-offilne=desconectado
 You must enable NFS in Settings->NFS to mount NFS shares=Debe habilitar NFS en Configuración->NFS para montar recursos compartidos NFS
 You must enable SMB in Settings->SMB to mount SMB shares=Debe habilitar SMB en Configuración->SMB para montar recursos compartidos SMB
 Open=Abierto
@@ -91,8 +89,6 @@ Read only=Sólo lectura
 Reboot=Reiniciar
 Refresh Disks and Configuration=Actualizar discos y configuración
 Remember your password It cannot be recovered=Recuerde su contraseña, esta no se puede recuperar
-Remote Share is=El recurso compartido es
-Remote share mounts are dependent on a solid and reliable network connection and that is difficult to achieve=Los montajes de recursos compartidos remotos dependen de una conexión de red sólida y confiable y eso es difícil de lograr
 Remove Device configuration=Eliminar configuración del dispositivo
 Remove ISO File Share=Quitar el archivo compartido ISO
 Remove Partition=Eliminar Partición
@@ -119,7 +115,7 @@ Show SMB/NFS/ISO Shares=Mostrar los recursos compartidos SMB/NFS/ISO
 Show Disk Devices=Mostrar dispositivos de disco
 This is a way to gather Unraid shares into one Root Share=Esta es una forma de reunir las acciones de Unraid en una sola acción raíz
 This will remove the ISO file share for=Esto eliminará el archivo compartido ISO para
-This will remove the remote=Esto eliminará el recurso remoto
+This will remove the=Esto eliminará el
 This will remove the saved configuration of=Esto eliminará la configuración guardada de
 This will remove the=Esto eliminará el
 to confirm=para confirmar
@@ -198,3 +194,13 @@ ZFS Volume=Volumen ZFS
 >
 > Tenga cuidado al usar la designación /dev/sdX porque puede cambiar después de un reinicio.
 :end
+
+; Note: November 16, 2023 - 8 missing translations
+Changing the Mount Point will also change the disk label on all disks and the pool name on a ZFS disk=
+Enter the server name and it will be added to the local DNS names and will then resolve by name=
+failed to=
+If the IP address of the server shows in the list after searching, your DNS server is not resolving the name=
+If shares do not show, check your credentials=
+offline=
+Remote Server is=
+Remote share mounts are dependent on a solid and reliable network connection and that can be difficult to achieve=

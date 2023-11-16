@@ -1,7 +1,7 @@
 After a reboot from a lockup or hung server, you can view the saved log using the Syslog viewer=Después de reiniciar un servidor bloqueado o colgado, puede ver el registro guardado utilizando el visor de Syslog
 Check the=Compruebe el
-Click on Help for more information=Haga clic en Ayuda para obtener más información
 Available User Watches=Relojes de usuario disponibles
+Click on Help for more information=Haga clic en Ayuda para obtener más información
 Correct any problems that are identified before doing any tweaking=Corregir cualquier problema que se identifique antes de hacer cualquier ajuste
 Current Disk Cache Settings=Configuración actual de la caché de disco
 Current Inotify Settings=Configuración actual de Inotify
@@ -195,3 +195,4 @@ You may actually cause more problems than you solve if there are problems with y
 >
 > Nota: Tenga cuidado con los procesos que mata aquí.  Podrías perder datos.
 :end
+
