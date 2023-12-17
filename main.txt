@@ -62,10 +62,8 @@ Date of purchase=Fecha de compra
 Date=Fecha
 Delete Pool=Eliminar grupo de almacenamiento
 detected=detectado
-Device contents invalid, in standby mode spun-down=Device contents invalid, in standby mode (spun-down)
 Device encrypted and unlocked=Dispositivo cifrado y desbloqueado
 Device encrypted=Dispositivo cifrado
-Device is missing disabled=Device is missing (disabled)
 Device is part of a pool=El dispositivo es parte de un grupo de almacenamiento
 Device locked unknown error=Dispositivo bloqueado: error desconocido
 Device locked wrong encryption key=Dispositivo bloqueado: clave de cifrado incorrecta
@@ -378,15 +376,17 @@ System in sleep mode=Sistema en modo de reposo
 This will put the system in sleep mode=Esto pondrá el sistema en modo de reposo
 wiki entry=entrada en la wiki
 
-; Note: December 17, 2023 - 17 missing translations
+; Note: December 17, 2023 - 19 missing translations
 Add Subpool=
 Add ZFS Subpool=
 cache - Cache Devices=
 Critical NVME temperature threshold=
 Critical SSD temperature threshold=
 dedup - Deduplication Tables=
+Device contents invalid, in standby mode spun-down=Device contents invalid, in standby mode (spun-down)
 Device contents invalid=
 Device is disabled=
+Device is missing disabled=Device is missing (disabled)
 logs - ZFS Intent Log=
 Missing pool disk=
 Power=
