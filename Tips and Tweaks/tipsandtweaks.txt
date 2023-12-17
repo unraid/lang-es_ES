@@ -12,7 +12,6 @@ Disable NIC Offload=Desactivar 'NIC Offload'
 Disk Cache=Disco caché
 Dont change the Disk Cache settings until you read and understand this=No cambie la configuración de la Caché de disco hasta que lea y entienda esto
 Driver=Controlador
-Enable Intel TurboAMD Performance Boost=Activar Intel TurboAMD Performance Boost
 Enable syslog Archiving=Activar el archivo syslog
 Ethernet NIC Rx Buffer=Ethernet NIC Rx Buffer
 Ethernet NIC Tx Buffer=Ethernet NIC Tx Buffer
@@ -139,6 +138,18 @@ You may actually cause more problems than you solve if there are problems with y
 > The default is 40960 and the allowed range is 40960 to 65535.
 :end
 
+:tips_tweak_turbo_plug:
+> Poner en 'Sí' para activar el modo Intel Turbo o AMD Performance Boost.
+:end
+
+:tips_tweaks_turbo_state_off_plug:
+> Enter the time you want to set Intel Turbo/AMD Performance Boost Off in 24 hour format hh:mm.
+:end
+
+:tips_tweaks_turbo_state_on_plug:
+> Enter the time you want to set Intel Turbo/AMD Performance Boost On in 24 hour format hh:mm.
+:end
+
 :tips_tweaks_cpu_governor_plug:
 > Seleccione el Regulador de Escalado de CPU que desea utilizar.
 >
@@ -196,3 +207,9 @@ You may actually cause more problems than you solve if there are problems with y
 > Nota: Tenga cuidado con los procesos que mata aquí.  Podrías perder datos.
 :end
 
+
+; Note: December 17, 2023 - 4 missing translations
+Enable Intel TurboAMD Performance Boost=Enable Intel Turbo/AMD Performance Boost
+Intel TurboAMD Performance Boost=Intel Turbo/AMD Performance Boost
+Time to set TurboPerformance Boost Off=Time to set Turbo/Performance Boost Off
+Time to set TurboPerformance Boost On=Time to set Turbo/Performance Boost On
