@@ -809,7 +809,7 @@ Transient errors in this log can be ignored unless you are having issues=Los err
 Unraid API extra origins=Orígenes extra de la API de Unraid
 View Flash Backup Error Log=Ver el registro de errores de la copia de seguridad de Flash
 
-; Note: December 17, 2023 - 50 missing translations
+; Note: December 25, 2023 - 51 missing translations
 a value of zero means no automatic closure=
 Auto-close=
 Both Web Virt-Manager Remote Viewer=Both Web & Virt-Manager Remote Viewer
@@ -827,6 +827,7 @@ Encryption Key Update=
 Ensure the primary network card eth0 has an IP address=Ensure the primary network card eth0 has an IP address.
 Enter existing passphrase=
 Existing encryption key=
+GRUB Configuration=
 if you have trouble logging in, close all other tabs pointing to this server and clear your browsers cache=if you have trouble logging in, close all other tabs pointing to this server and clear your browser's cache
 Incorrect existing key=
 is a self-signed certificate, ignore the browsers warning and proceed to the GUI=is a self-signed certificate, ignore the browser's warning and proceed to the GUI
