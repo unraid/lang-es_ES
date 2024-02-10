@@ -132,6 +132,12 @@ You may actually cause more problems than you solve if there are problems with y
 > El valor predeterminado es 524288.
 :end
 
+:tips_tweaks_max_instances_plug:
+> This is maximum number of inotify instances that a user can create.
+>
+> The default is 128.
+:end
+
 :tips_tweaks_max_files_plug:
 > This value is used by samba to set the maximum number of open files allowed in SMB shares.
 >
@@ -208,8 +214,10 @@ You may actually cause more problems than you solve if there are problems with y
 :end
 
 
-; Note: December 17, 2023 - 4 missing translations
+; Note: February 10, 2024 - 6 missing translations
 Enable Intel TurboAMD Performance Boost=Enable Intel Turbo/AMD Performance Boost
 Intel TurboAMD Performance Boost=Intel Turbo/AMD Performance Boost
+Max User Instances=
+Power Saving Settings=
 Time to set TurboPerformance Boost Off=Time to set Turbo/Performance Boost Off
 Time to set TurboPerformance Boost On=Time to set Turbo/Performance Boost On

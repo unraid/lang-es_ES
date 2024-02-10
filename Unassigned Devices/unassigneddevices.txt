@@ -79,11 +79,11 @@ No Unassigned Disks available=No hay discos sin asignar
 Not Enabled=No está activado
 not installed=no instalado
 Note=Nota
+User Shares=Compartición de los usuarios
 You must enable NFS in Settings->NFS to mount NFS shares=Debe habilitar NFS en Configuración->NFS para montar recursos compartidos NFS
 You must enable SMB in Settings->SMB to mount SMB shares=Debe habilitar SMB en Configuración->SMB para montar recursos compartidos SMB
 Open=Abierto
 Partition and Format Disk=Participar y formatear disco
-Pass Thru=Pasar a través de
 Password=Contraseña
 Read only=Sólo lectura
 Reboot=Reiniciar
@@ -97,11 +97,8 @@ Remove partition=Eliminar partición
 Running=Ejecutando
 Script=Script
 Search For Servers=Buscar servidores
-Search for Servers, or enter the Server nameIP address manually=Busque servidores, o ingrese el nombre del servidor dirección IP manualmente
 Search for Shares or enter the Share name manually=Busque recursos compartidos o ingrese el nombre del recurso compartido manualmente
 Searching=Buscando
-Select the Mount Point to Root Share=Seleccione el punto de montaje para Root Share
-Serial Number Mount Point=Número de serie del punto de montaje
 Shares=Shares
 Share Type=Compartir Tipo
 share for=Compartir para
@@ -124,10 +121,7 @@ Unmount=Desmontar
 Unmounting=Desmontando
 Use caution when gathering shares into one Root Share=Tenga cuidado cuando reúna las acciones en una Acción Raíz
 Used=Usado
-User and Pool Shares=Compartición de los usuarios y grupo
 User Shares=Compartición de los usuarios
-User and Pool Shares will include all files in User Shares, Cache and Pool Devices=Los recursos compartidos de usuario y grupo incluirán todos los archivos en recursos compartidos de usuario, caché y dispositivos de grupo
-User Shares will allow access to User Shares, but the Root Share will not include Cache and Pool Device files=Los recursos compartidos de usuario permitirán el acceso a los recursos compartidos de usuario, pero el recurso compartido raíz no incluirá archivos de caché ni de dispositivo de grupo
 Username=Nombre de usuario
 View Device Script Log=Ver el registro de scripts del dispositivo
 View ISO File Script Log=Ver el registro del script del archivo ISO
@@ -143,6 +137,36 @@ You WILL have problems if you do=Tendrá problemas si lo haces
 You will need to enter credentials to list the shares=Deberá ingresar las credenciales para enumerar los recursos compartidos
 ZFS Pool Name=Nombre del grupo ZFS
 ZFS Volume=Volumen ZFS
+
+:unassgned_devices_switches_plug:
+> Turn on the **Disks** switch to change the web page to show disk devices. Turn off the **Disks** switch to change the web page to hide disk devices.
+>
+> Turn on the **Shares** switch to change the web page to show shares. Turn off the **Shares** switch to change the web page to hide shares.
+>
+> Turn on the **Historical** switch to show Historical disk devices. Turn off **Historical** switch to switch back to not show Historical disk devices.
+>
+> Click on the <i class="fa fa-refresh"></i> icon to refresh disks and configuration.
+>
+> Click on the <i class="fa fa-gear"></i> icon to go to the UD Settings.
+>
+> You can spin a disk up or down by clicking on the disk ball <i class='fa fa-circle orb green-orb'></i>or <i class='fa fa-circle orb grey-orb'></i>indicator.  Applies to version 6.9 RC2 and later only.
+>
+> Click on the <i class="fa fa-gears"></i> icon to go to the Device Settings configuration.  This is where you configure a device script and certain device characteristics.
+> 
+> Click on the <i class="icon-nvme"></i> or <i class="fa fa-hdd-o"></i> icon to display syslog entries specific to this disk device.
+>
+> **Mount Point icons:**
+>
+> When the <i class='fa fa-pencil'></i> icon shows next to the mount point it indicates the mount point can be changed when the mount point is clicked.
+>
+> When the <i class='fa fa-external-link'></i> icon shows next to the mount point it indicates the clicking on the mount point will browse the files on that partition.
+>
+> Click on the <i class="fa fa-align-left"></i> icon to display the device script log.  This is the log specific to the device script.
+>
+> Click on the <i class="fa fa-check"></i> icon to perform a file system check.  BTRFS and ZFS file systems need to be mounted to do a file check.  The file check on BTRFS and ZFS file systems is a scrub.
+>
+> Click on the <i class="fa fa-flash"></i> icon to run your device script as if it was hot plugged.  This only applies to disk devices.
+:end
 
 :unassigned_devices_general_help_plug:
 > **Unassigned Devices se denomina UD para abreviar.**
@@ -195,12 +219,28 @@ ZFS Volume=Volumen ZFS
 > Tenga cuidado al usar la designación /dev/sdX porque puede cambiar después de un reinicio.
 :end
 
-; Note: November 16, 2023 - 8 missing translations
+; Note: February 10, 2024 - 24 missing translations
 Changing the Mount Point will also change the disk label on all disks and the pool name on a ZFS disk=
+Encrypt CIFS Mount=
 Enter the server name and it will be added to the local DNS names and will then resolve by name=
 failed to=
 If the IP address of the server shows in the list after searching, your DNS server is not resolving the name=
 If shares do not show, check your credentials=
 offline=
+User Shares without Pools=
+Partition=
+Passed=
+Passed Through=
+Pool=
+Preclear=
 Remote Server is=
+Remote Shares=
 Remote share mounts are dependent on a solid and reliable network connection and that can be difficult to achieve=
+Search for Servers, or enter the Server name or IP address manually=
+Select the Root Share=
+Serial Number Mount Point=Serial Number (Mount Point)
+Unassigned Devices=
+Unassigned Disks=
+User Shares without Pools=
+User Shares - allow access to User Shares, including Cache and Pool files=
+User Shares without Pools - allow access to User Shares, but the Root Share will not include Cache and Pool files=
