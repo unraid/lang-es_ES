@@ -144,5 +144,5 @@ Use only when directed for support because the messages can flood the log=Úselo
 :end
 
 :ud_settings_zfs_upgrade_plug:
-> Select the disk that you want to upgrade to the latest ZFS version. Drive must be mounted to upgrade ZFS.
+> Seleccione el disco que desea actualizar a la última versión de ZFS. La unidad debe estar montada para actualizar ZFS.
 :end
