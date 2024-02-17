@@ -4,7 +4,7 @@
 9p Mode=Modo 9p
 Allocation=Asignado
 and if using graphics device passthrough it too needs UEFI=y si quiere acceder directamente (passthrough) a una tarjeta gráfica, ésta también necesita soporte UEFI
-Are you sure=Está seguro
+Are you sure=Estás seguro
 Array must be started to view Virtual Machines=El array debe estar **Iniciado** para ver las Máquinas Virtuales
 Autostart=Auto-Iniciar
 Back=Atrás
