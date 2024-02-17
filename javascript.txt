@@ -1,6 +1,6 @@
 also remove image=eliminar también la imagen
 Apply=Aplicar
-Are you sure=¿Está seguro?
+Are you sure=¿Estás seguro?
 Cancel=Cancelar
 checking=Comprobando
 Completely REMOVE=Eliminar Completamente
