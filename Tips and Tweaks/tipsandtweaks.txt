@@ -12,6 +12,7 @@ Disable NIC Offload=Desactivar 'NIC Offload'
 Disk Cache=Disco caché
 Dont change the Disk Cache settings until you read and understand this=No cambie la configuración de la Caché de disco hasta que lea y entienda esto
 Driver=Controlador
+Enable Intel TurboAMD Performance Boost=Habilite Intel TurboAMD Performance Boost
 Enable syslog Archiving=Activar el archivo syslog
 Ethernet NIC Rx Buffer=Ethernet NIC Rx Buffer
 Ethernet NIC Tx Buffer=Ethernet NIC Tx Buffer
@@ -28,6 +29,7 @@ If you dont Unraid may not detect the Master Browser for all network interfaces 
 If you have an Intel Processor, it may appear that all CPUs are constantly running at full speed=Si tiene un procesador Intel, puede parecer que todas las CPUs están funcionando constantemente a toda velocidad
 If you set the 'Power Save' CPU Governor, you may see your processors stuck at 800 MHz=Si se configura el regulador de la CPU como "ahorro de energía", es posible que los procesadores se queden atascados en 800 MHz
 Install the Fix Common Problems plugin and resolve any Unraid configuration problems=Instale el plugin Fix Common Problems y resuelva cualquier problema de configuración de Unraid
+Intel TurboAMD Performance Boost=Intel Turbo/AMD Performance Boost
 It is recommended that you update Unraid to the latest stable version to get the latest features, bug fixes, and security updates=Se recomienda actualizar Unraid a la última versión estable para obtener las últimas características, correcciones de errores y actualizaciones de seguridad
 It is recommended to use the pstate driver on Intel processors if you want the most performance=Se recomienda utilizar el controlador pstate en los procesadores Intel si desea obtener el máximo rendimiento
 It is recommended you use the 'Performance' Governor for best performance and power savings=Se recomienda utilizar el regulador "Performance" para obtener el mejor rendimiento y ahorro de energía
@@ -36,6 +38,7 @@ Make one change at a time and verify if it improves your situation=Haz un cambio
 Making changes here can briefly interrupt your network operation=Hacer cambios aquí puede interrumpir brevemente el funcionamiento de la red
 Many plugins are no longer compatible with older Unraid versons=Muchos plugins ya no son compatibles con las versiones anteriores de Unraid
 Max SMB Open Files=Archivos abiertos SMB máximos
+Max User Instances=Instancias de usuario máximas
 Max User Watches=Relojes de usuario máximo
 NIC Offload=NIC Offload
 NIC Rx Buffer=NIC Rx Buffer
@@ -44,6 +47,7 @@ Normal CPU Scaling Governor=Regulador de escala normal de la CPU
 Note=Nota
 Number of syslogs to Archive=Número de syslogs a archivar
 post=post
+Power Saving Settings=Configuración de ahorro de energía
 Power Saving CPU Scaling Governor=Controlador de ahorro de energía de la CPU
 Processes to kill before Array is Stopped=Procesos a matar antes de que el Array se detenga
 Put the IP address of your server in the Remote syslog server field=Ponga la dirección IP de su servidor en el campo Remote syslog server
@@ -64,6 +68,8 @@ This will log all your server log enries to the Syslog Server and save the log t
 This seems to be occurring more now because of the large amounts of memory being installed in Unraid and the default Disk Cache settings too high=Esto parece estar ocurriendo más ahora debido a las grandes cantidades de memoria que se instalan en Unraid y la configuración por defecto de la Caché de disco demasiado alta
 Time to set Normal CPU Scaling=Hora de ajustar el escalado normal de la CPU
 Time to set Power Saving CPU Scaling=Hora de ajustar el escalado de ahorro de energía de la CPU
+Time to set TurboPerformance Boost Off=Hora para activar Turbo/Performance Boost
+Time to set TurboPerformance Boost On=Hora para desactivar Turbo/Performance Boost
 Tips=Consejos
 Tips and Tweaks wiki=Wiki de consejos y ajustes
 Tweaks=Ajustes
@@ -212,12 +218,3 @@ You may actually cause more problems than you solve if there are problems with y
 >
 > Nota: Tenga cuidado con los procesos que mata aquí.  Podrías perder datos.
 :end
-
-
-; Note: February 10, 2024 - 6 missing translations
-Enable Intel TurboAMD Performance Boost=Enable Intel Turbo/AMD Performance Boost
-Intel TurboAMD Performance Boost=Intel Turbo/AMD Performance Boost
-Max User Instances=
-Power Saving Settings=
-Time to set TurboPerformance Boost Off=Time to set Turbo/Performance Boost Off
-Time to set TurboPerformance Boost On=Time to set Turbo/Performance Boost On
