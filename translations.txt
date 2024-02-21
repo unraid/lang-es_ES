@@ -1125,7 +1125,7 @@ Sign Out requires the local unraid-api to be running=Cerrar sesión requiere que
 
 ; web component additions 2023-11-08
 %1s out of %2s allowed devices – upgrade your key to support more devices=%1s de %2dispositivos permitidos: actualice su clave para admitir más dispositivos
-%1s out of %2s devices=%1 de %2 dispositivos
+%1s out of %2s devices=%1s de %2s dispositivos
 %s Release Notes=Notas de la Versión %s
 %s Update Available=Actualización Disponible (%s)
 %s devices=%s dispositivos
