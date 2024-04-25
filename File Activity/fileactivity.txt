@@ -4,9 +4,9 @@ Start File Activity=Iniciar Actividad de archivo
 Stop File Activity Monitoring=Parar monitorización de actividad de archivo
 Clear the File Activity log=Borrar el registro de actividad de archivo
 Refresh Page=Actualizar página
-Enable File Activity Monitoring=Habilitar monitorización de archivo
-Enable for Unassigned Devices=Habilitar para dispositivos no asignados
-Enable for Cache and Pool Disks=Habilitar para cache y pool de discos
+Enable File Activity Monitoring=¿Habilitar monitorización de archivo
+Enable for Unassigned Devices=¿Habilitar para dispositivos no asignados
+Enable for Cache and Pool Disks=¿Habilitar para cache y pool de discos
 ;
 ; Help
 ;
@@ -33,4 +33,3 @@ Enable for Cache and Pool Disks=Habilitar para cache y pool de discos
 :file_activity_enable_cache_plug:
 > Establezca en **Sí** para habilitar la monitorización de la actividad de los archivos para los discos de Caché y de Pool.  Los discos Pool sólo se aplican en Unraid 6.9.
 :end
-
