@@ -1,5 +1,6 @@
 Add=Añadir
 Auto Mount USB Devices=Montaje automático de dispositivos USB
+Case-sensitive names=Nombres que distinguen entre mayúsculas y minúsculas
 Change Disk UUID=Cambiar el UUID del disco
 Change UUID=Cambiar el UUID
 Change Disk UUID=Cambiar el UUID del disco
@@ -10,7 +11,8 @@ Destructive Mode=Modo destructivo
 Disabled=Deshabilitado
 Disk spin down is managed by Unraid=El apagado del disco es gestionado por Unraid
 Enable NFS export=Activar la exportación NFS
-Enable SMB Security=Activar la seguridad SMB
+Enable SMB Security=Activar la Seguridad SMB
+Enable Time Machine=Activar Máquina del Tiempo
 Enter Disk Password=Introduzca la contraseña del disco
 Enter Pool Mount Point=Entrar en el punto de montaje del Pool
 Legacy Mount Point Compatibility=Compatibilidad del punto de montaje heredado
@@ -26,6 +28,7 @@ Refresh and Update=Refrescar y actualizar
 Remote Share Mount Wait Time=Tiempo de espera de montaje de recurso compartido remoto
 Rule=Regla
 SMB Settings=Configuración SMB
+SMB Sharing=Compartir SMB
 Select Disk=Seleccionar disco
 Set Encrypted Disk Password=Establecer la contraseña del disco encriptado
 Set Password=Establecer contraseña
@@ -35,7 +38,8 @@ Set the disk Password=Establecer la contraseña del disco
 Specify SMB Version when Mounting Remote Shares=Especificar la versión de SMB al montar recursos compartidos remotos
 Spin down disks=Poner discos en reposo
 The Unassigned Devices Plus plugin must be installed to enable Destructive Mode=El plugin Unassigned Devices Plus debe estar instalado para activar el Modo Destructivo
-to SMB share config=a la configuración del recurso compartido SMB
+Time Machine volume size limit=Límite de tamaño de volumen de Máquina del Tiempo
+to SMB share config=a la configuración compartida de SMB
 Udev and Hotplug=Udev y Hotplug
 Unassigned Devices=Dispositivos no asignados
 Unraid 6.10 or later is required for NFSv4 support=Se requiere Unraid 6.10 o posterior para el soporte de NFSv4
@@ -119,6 +123,14 @@ Use only when directed for support because the messages can flood the log=Úselo
 > Una configuración de **Sí** significa que los archivos se crean con el caso que el cliente pasa, y sólo son accesibles usando este mismo caso. Esto acelerará el acceso a directorios muy grandes, pero algunas aplicaciones de Windows pueden no funcionar correctamente con esta configuración. Por ejemplo, si se crea "MiArchivo" pero una aplicación de Windows intenta abrir "MIArchivo" (lo cual está permitido en Windows), no se encontrará.
 >
 > Un valor de **Minúsculas forzadas** es especial: las mayúsculas y minúsculas de todos los nombres de archivo entrantes del cliente, no sólo de los nuevos, se establecerán en minúsculas. En otras palabras, no importa qué nombre mixto se cree en el lado de Windows, se almacenará y se accederá a él en minúsculas. Esto asegura que todas las aplicaciones de Windows encontrarán correctamente cualquier archivo independientemente de las mayúsculas y minúsculas, pero las mayúsculas y minúsculas no se conservarán en los listados de carpetas.
+:end
+
+:ud_time_machine_plug:
+> Configúrelo en **Sí** para habilitar la configuración de Time Machine en los recursos compartidos de SMB.
+:end
+
+:ud_time_machine_vol_size_plug:
+> Esto limita el tamaño del volumen informado, lo que impide que Time Machine utilice todo el espacio real en disco para la copia de seguridad. Por ejemplo, establecer este valor en "1024" limitaría el espacio en disco informado a 1 GB.
 :end
 
 :ud_settings_force_user_plug:
