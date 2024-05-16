@@ -66,7 +66,7 @@ If you add the disk to the array and the pre-clear signature is removed, Unraid 
 Invalid Configuration - Remove and Re-add=Configuración inválida - Eliminar y volver a agregar
 is offline=está desconectado
 ISO File is=Archivo ISO
-ISO File Shares=Archivos compartidos ISO
+ISO File Shares=Archivos ISO Compartidos
 If using a disk password be sure to enter the password for this disk in UD Settings so it can be mounted=Si utiliza una contraseña de disco, asegúrese de introducir la contraseña para este disco en la configuración de la UD para que pueda ser montado
 Device=Dispositivo
 Leave blank to use the array passwordpassphrase=Déjelo en blanco para usar la passwordpassphrase del array
@@ -110,7 +110,7 @@ Remote Shares=Recursos compartidos remotos
 Remote Shares online status will be reset=Se restablecerá el estado en línea de los recursos compartidos remotos
 Remote share mounts are dependent on a solid and reliable network connection and that can be difficult to achieve=Los montajes de recursos compartidos remotos dependen de una conexión de red sólida y confiable y eso puede ser difícil de lograr
 Remove Device configuration=Eliminar configuración del dispositivo
-Remove ISO File Share=Quitar el archivo compartido ISO
+Remove ISO File Share=Quitar el archivo ISO compartido
 Remove Partition=Eliminar Partición
 Remove Remote SMB=Elminar SMB remoto
 Remove partition=Eliminar partición
