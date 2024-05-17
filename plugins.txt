@@ -39,4 +39,4 @@ Update All Plugins=Actualizar todos los Plugins
 Update Incompatible=Actualización incompatible
 Update Plugin=Actualizar Plugin
 Upgrade=Actualizar
-View Release Notes=Ver Notas de la versión
+View Release Notes=Ver Notas de la Versión
