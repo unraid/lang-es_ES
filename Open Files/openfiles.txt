@@ -1,5 +1,7 @@
+Enable Kill Button=Habilitar el Botón de Finalizar
 Process=Proceso
 Kill Process=Finalizando proceso
+Kill this Process holding files open=Elimine este Proceso que mantiene abiertos los archivos
 Process ID=ID del proceso
 Open=Abrir
 May prevent shutdown=Puede impedir el cierre

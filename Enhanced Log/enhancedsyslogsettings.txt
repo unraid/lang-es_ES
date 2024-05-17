@@ -153,6 +153,7 @@ Other Highlight Color=Color de resaltado de 'Otros' (Personalizado)
 :enhanced_log_filter_plug:
 > Puede filtrar las entradas del Registro del Sistema para evitar mensajes excesivos o redundantes. Únicamente debe filtrar las entradas del registro que sepa con seguridad que son innecesarias o redundantes.
 > Debido a que el Registro del Sistema es muy importante para resolver problemas, no filtre mensajes sin necesidad.
+>
 > Introduzca las expresiones de registro que desea filtrar del Registro del Sistema. Cada expresión a filtrar tiene que estar entre comillas y en una línea nueva.
 :end
 
