@@ -723,7 +723,7 @@ Type new passphrase=Escriba una nueva frase de acceso
 UDP=UDP
 Unable to register this Unraid Server=No se puede registrar este servidor Unraid
 ; Keep the original plugin name in settings
-Unassigned Devices=Dispositivos no asignados
+Unassigned Devices=Unassigned Devices
 Unlimited=Ilimitado
 Unraid Connect=Unraid Connect
 Unraid Lets Encrypt certificate=Certificado Unraid Let's Encrypt
