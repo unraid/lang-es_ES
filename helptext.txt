@@ -1343,9 +1343,9 @@ los cuales representan un subconjunto de los discos incluidos/excluidos definido
 :end
 
 :shares_tunable_hard_links_help:
-Si la opción 'Sí' está seleccionada, la operación de vínculo físico (hard link) está soportada.
+Si la opción 'Sí' está seleccionada, la operación de vínculo físico (hard link) será soportada.
 
-Si la opción 'Sí' está seleccionada, los vínculos físicos no están soportados.
+Si la opción 'No' está seleccionada, los vínculos físicos no serán soportados.
 
 Notas:
 
