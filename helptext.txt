@@ -956,7 +956,7 @@ Para cambiar el tamaño del archivo de imagen, especifique el nuevo tamaño aqu�
 :end
 
 :docker_vdisk_size_help:
-Debe especificar un archivo de imagen para Docker. El sistema creará automáticamente este archivo cuando el servicio Docker sea iniciado por primera vez.
+Debe especificar un archivo de imagen para Docker. El sistema creará automáticamente este archivo cuando el servicio Máquinas Virtuales sea iniciado por primera vez.
 
 El archivo de imagen debe tener la extensión .img, de lo contrario la entrada no será aceptada y será resaltada en rojo.
 
