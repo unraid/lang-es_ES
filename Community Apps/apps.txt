@@ -143,8 +143,8 @@ Unknown error happened Please post a screenshot in the support thread of the Sta
 Something really wrong happened Reloading the Apps tab will probably fix the problem=Ha sucedido un error. Para solucionar este problema es probable que tenga que recargar la página de su navegador.
 This plugin has a duplicated name from another plugin %s This will impact your ability to install both plugins simultaneously=Este plugin tiene el mismo nombre que el plugin %s . Debido a esto no podrá instalar ambos plugins a la vez.
 You have been logged out=Su sesión ha sido cerrada
-Fatal Flash Drive Error=Error fatal de la unidad de memoria flash
-This usually means your flash drive is corrupted or has dropped offline The rest of the Unraid GUI will also be affected Post a new thread in the Unraid forums if this error continues=Esto generalmente significa que su unidad flash está dañada o se ha desconectado. El resto de la GUI de Unraid también se verá afectada. Publique un nuevo hilo en los foros de Unraid si este error continúa.
+Fatal Flash Drive Error=Error fatal de la unidad de memoria Flash
+This usually means your flash drive is corrupted or has dropped offline The rest of the Unraid GUI will also be affected Post a new thread in the Unraid forums if this error continues=Esto generalmente significa que su unidad Flash está dañada o se ha desconectado. El resto de la GUI de Unraid también se verá afectada. Publique un nuevo hilo en los foros de Unraid si este error continúa.
 Fatal Docker Image Error=Error fatal de imagen de Docker
 Your docker image or folder is either read-only or completely full Issues will result because of this You should create a new post in the Unraid forums and include your diagnostics=La imagen docker es de solo lectura o está completamente llena lo que producirán problemas. Debe crear una nueva publicación en los foros de Unraid e incluir sus diagnósticos.
 This template is set up to use a custom network You may have to adjust the network or IP address etc to match your system=Esta plantilla está configurada para usar una red personalizada. Es posible que deba ajustar la red o la dirección IP para que coincida con su sistema
