@@ -216,6 +216,7 @@ Docker LOG maximum file size=Tamaño máximo del registro de Docker
 Docker LOG number of files=Número de archivos del registro de Docker
 Docker LOG rotation=Rotación del registro de Docker
 Docker only=Solo Docker
+Docker PID Limit=Límite de Docker PID
 Docker service=Servicio Docker
 Docker Stop Timeout=Tiempo de espera de parada Docker
 Docker update notification=Notificación de actualización de Dockers
