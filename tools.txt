@@ -1,4 +1,4 @@
-A registration replacement key has been created for USB Flash GUID=Se ha creado una licencia de reemplazo para el dispositivo flash USB con GUID
+A registration replacement key has been created for USB Flash GUID=Se ha creado una licencia de reemplazo para el dispositivo USB Flash con GUID
 About=Acerca de
 Alert Message=Mensaje de alerta
 alert=alerta
