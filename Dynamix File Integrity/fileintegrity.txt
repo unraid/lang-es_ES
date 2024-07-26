@@ -33,7 +33,7 @@ MD5=MD5
 Output file=Archivo de salida
 Placement of file integrity control=Colocación del control de integridad de los archivos
 Process priority=Prioridad del proceso
-Save new hashing results to flash=Guardar los nuevos resultados del hashing en la memoria flash
+Save new hashing results to flash=Guardar los nuevos resultados del hashing en la memoria Flash
 saved files=archivos guardados
 Send notifications=Enviar notificaciones
 SHA2=SHA2
@@ -73,7 +73,7 @@ When parity operation is running=Cuando la operación de paridad está en marcha
 :end
 
 :integrity_flash_plug:
-> Cuando se activa, se crea un archivo diario en el dispositivo flash, que contiene los resultados de la suma de comprobación de todos los archivos nuevos o modificados de ese día en particular.
+> Cuando se activa, se crea un archivo diario en el dispositivo Flash, que contiene los resultados de la suma de comprobación de todos los archivos nuevos o modificados de ese día en particular.
 > El formato de este archivo es el mismo que el del archivo de exportación estándar. El archivo diario se guarda como */config/plugins/dynamix.file.integrity/saved/disks.export.&lt;date&gt;.new.hash*.
 :end
 
@@ -129,6 +129,6 @@ When parity operation is running=Cuando la operación de paridad está en marcha
 :end
 
 :integrity_logging_plug:
-> El registro de errores, incluyendo la información de detección de corrupción de archivos se puede dar en el registro del sistema, o guardar como un archivo en la memoria flash.
+> El registro de errores, incluyendo la información de detección de corrupción de archivos se puede dar en el registro del sistema, o guardar como un archivo en la memoria Flash.
 > Si se desactiva el registro de errores se suprime la creación de registros, pero sigue siendo posible recibir notificaciones.
 :end
