@@ -179,7 +179,7 @@ ZFS Volume=Volumen ZFS
 >
 > Haga clic en el icono <i class="fa fa-gear"></i> para ir a la Configuración de UD.
 >
-> Puedes girar un disco hacia arriba o hacia abajo haciendo clic en la bola del disco <i class='fa fa-circle orb green-orb'></i>o <i class='fa fa-circle orb grey-orb'>< /i>indicador. Se aplica únicamente a la versión 6.9 RC2 y posteriores.
+> Puedes girar un disco hacia arriba o hacia abajo haciendo clic en la bola del disco <i class='fa fa-circle orb green-orb'></i>o <i class='fa fa-circle orb grey-orb'></i>indicador. Se aplica únicamente a la versión 6.9 RC2 y posteriores.
 >
 > Haga clic en el icono <i class="fa fa-gears"></i> para ir a la Configuración del dispositivo. Aquí es donde configura un script de dispositivo y ciertas características del dispositivo.
 > 
