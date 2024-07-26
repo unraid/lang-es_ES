@@ -169,33 +169,33 @@ ZFS Pool Name=Nombre del grupo ZFS
 ZFS Volume=Volumen ZFS
 
 :unassgned_devices_switches_plug:
-> Turn on the **Disks** switch to change the web page to show disk devices. Turn off the **Disks** switch to change the web page to hide disk devices.
+> Active el interruptor **Discos** para mostrar los dispositivos de disco. Desactive el interruptor **Discos** para ocultar los dispositivos de disco.
 >
-> Turn on the **Shares** switch to change the web page to show shares. Turn off the **Shares** switch to change the web page to hide shares.
+> Active el interruptor **Shares** para mostrar recursos compartidos. Desactive el interruptor **Shares** para ocultar los recursos compartidos.
 >
-> Turn on the **Historical** switch to show Historical disk devices. Turn off **Historical** switch to switch back to not show Historical disk devices.
+> Active el interruptor **Histórico** para mostrar los dispositivos de disco históricos. Desactive el interruptor **Histórico** para no mostrar los dispositivos de disco históricos.
 >
-> Click on the <i class="fa fa-refresh"></i> icon to refresh disks and configuration.
+> Haga clic en el icono <i class="fa fa-refresh"></i> para actualizar los discos y la configuración.
 >
-> Click on the <i class="fa fa-gear"></i> icon to go to the UD Settings.
+> Haga clic en el icono <i class="fa fa-gear"></i> para ir a la Configuración de UD.
 >
-> You can spin a disk up or down by clicking on the disk ball <i class='fa fa-circle orb green-orb'></i>or <i class='fa fa-circle orb grey-orb'></i>indicator.  Applies to version 6.9 RC2 and later only.
+> Puedes girar un disco hacia arriba o hacia abajo haciendo clic en la bola del disco <i class='fa fa-circle orb green-orb'></i>o <i class='fa fa-circle orb grey-orb'>< /i>indicador. Se aplica únicamente a la versión 6.9 RC2 y posteriores.
 >
-> Click on the <i class="fa fa-gears"></i> icon to go to the Device Settings configuration.  This is where you configure a device script and certain device characteristics.
+> Haga clic en el icono <i class="fa fa-gears"></i> para ir a la Configuración del dispositivo. Aquí es donde configura un script de dispositivo y ciertas características del dispositivo.
 > 
-> Click on the <i class="icon-nvme"></i> or <i class="fa fa-hdd-o"></i> icon to display syslog entries specific to this disk device.
+> Haga clic en el icono <i class="icon-nvme"></i> or <i class="fa fa-hdd-o"></i> para mostrar entradas de syslog específicas de este dispositivo de disco.
 >
-> **Mount Point icons:**
+> **Iconos de punto de montaje:**
 >
-> When the <i class='fa fa-pencil'></i> icon shows next to the mount point it indicates the mount point can be changed when the mount point is clicked.
+> Cuando el icono <i class='fa fa-pencil'></i> se muestra junto al punto de montaje, indica que el punto de montaje se puede cambiar cuando se hace clic en el punto de montaje.
 >
-> When the <i class='fa fa-external-link'></i> icon shows next to the mount point it indicates the clicking on the mount point will browse the files on that partition.
+> Cuando el icono <i class='fa fa-external-link'></i> se muestra junto al punto de montaje, indica que al hacer clic en el punto de montaje se buscarán los archivos en esa partición.
 >
-> Click on the <i class="fa fa-align-left"></i> icon to display the device script log.  This is the log specific to the device script.
+> Haga clic en el icono <i class="fa fa-align-left"></i> para mostrar el registro de secuencias de comandos del dispositivo. Este es el registro específico del script del dispositivo.
 >
-> Click on the <i class="fa fa-check"></i> icon to perform a file system check.  BTRFS and ZFS file systems need to be mounted to do a file check.  The file check on BTRFS and ZFS file systems is a scrub.
+> Haga clic en el icono <i class="fa fa-check"></i> to perform a file system check.  BTRFS and ZFS file systems need to be mounted to do a file check.  The file check on BTRFS and ZFS file systems is a scrub.
 >
-> Click on the <i class="fa fa-flash"></i> icon to run your device script as if it was hot plugged.  This only applies to disk devices.
+> Haga clic en el icono <i class="fa fa-flash"></i> para ejecutar el script de su dispositivo como si estuviera conectado en caliente. Esto sólo se aplica a los dispositivos de disco.
 :end
 
 :unassigned_devices_general_help_plug:
