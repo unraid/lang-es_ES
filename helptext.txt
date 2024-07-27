@@ -103,9 +103,9 @@ para que mueva periódicamente el contenido de las carpetas compartidas seleccio
 :end
 
 :boot_device_help:
-El dispositivo USB Flash contiene configuración vital del array; por esta razón, debe mantenerlo conectado
+El dispositivo Flash USB contiene configuración vital del Array; por esta razón, debe mantenerlo conectado
 al servidor.  Haga clic en [Flash](/Main/Flash?name=flash) para ver el GUID, hacer una copia de seguridad
-y/o acceder a los ajustes para compartir la unidad en red.  Como el dispositivo USB Flash tiene formato FAT,
+y/o acceder a los ajustes para compartir la unidad en red. Como el dispositivo Flash USB tiene formato FAT,
 solo puede ser compartido usando el protocolo SMB.
 :end
 
@@ -408,7 +408,7 @@ array o al disco/grupo de caché.
 :end
 
 :flash_backup_help:
-Haga clic en *Copia de Seguridad* para crear un archivo zip con la copia de seguridad del dispositivo USB Flash que se guardará localmente.
+Haga clic en *Copia de Seguridad* para crear un archivo zip con la copia de seguridad del dispositivo Flash USB que se guardará localmente.
 :end
 
 :syslinux_cfg_help:
@@ -1103,7 +1103,7 @@ Ingrese el puerto TELNET, el puerto por defecto es 23.
 
 :mgmt_use_ssh_help:
 SSH está habilitado por defecto y ofrece una manera segura de acceso por línea de comando (CLI). Durante el inicio del servidor, las llaves SSH son automáticamente generadas
-si aún no existen y son almacenadas en la carpeta */config/ssh* del dispositivo USB Flash.
+si aún no existen y son almacenadas en la carpeta */config/ssh* del dispositivo Flash USB.
 :end
 
 :mgmt_ssh_port_help:
@@ -1141,7 +1141,7 @@ ejecutándose en segundo plano cambiando este campo a **Sí**.
 
 **Detalles de la manipulación del certificado por nginx**
 
-El script de inicio de nginx busca el certificado SSL en el dispositivo USB Flash de arranque siguiendo este orden:<br>
+El script de inicio de nginx busca el certificado SSL en el dispositivo Flash USB de arranque siguiendo este orden:<br>
 `config/ssl/certs/certificate_bundle.pem`<br>
 `config/ssl/certs/<server-name>_unraid_bundle.pem`
 
@@ -1392,10 +1392,10 @@ Esto enviará una copia de los mensajes syslog al servidor designado.
 :end
 
 :syslog_mirror_flash_help:
-Esta opción está en 'No' por defecto y debe ser usada con cuidado para evitar el desgaste innecesario del dispositivo USB Flash.
+Esta opción está en 'No' por defecto y debe ser usada con cuidado para evitar el desgaste innecesario del dispositivo Flash USB.
 
 Seleccione 'Sí' cuando se requiera investigar un problema y no sea posible obtener la información de diagnóstico regular.
-Se guardará una copia del archivo de registro syslog en el directorio **logs** del dispositivo USB Flash.
+Se guardará una copia del archivo de registro syslog en el directorio **logs** del dispositivo Flash USB.
 :end
 
 :confirm_reboot_help:
@@ -1864,7 +1864,7 @@ Escoja la posición en la que las notificaciones aparecen en pantalla. Las notif
 
 :notifications_store_flash_help:
 Por defecto todas las notificaciones son almacenadas en la memoria RAM y se pierden al reiniciar el sistema.
-Esta opción hace que las notificaciones se almacenen permanentemente en el directorio '/boot/config/plugins/dynamix' del dispositivo USB Flash en lugar de la RAM.
+Esta opción hace que las notificaciones se almacenen permanentemente en el directorio '/boot/config/plugins/dynamix' del dispositivo Flash USB en lugar de la RAM.
 :end
 
 :notifications_system_help:
@@ -1983,7 +1983,7 @@ Seleccione una plantilla predeterminada cuando sea la primera vez que configura 
 
 **Plantillas definidas por el usuario**<br>
 Una vez que haya agregado una aplicación a su sistema a través de una plantilla predeterminada,
-la configuración que especificó se guarda en su dispositivo USB Flash para facilitar la reconstrucción de sus aplicaciones en caso de que falle una actualización o si ocurre otro problema.
+la configuración que especificó se guarda en su dispositivo Flash USB para facilitar la reconstrucción de sus aplicaciones en caso de que falle una actualización o si ocurre otro problema.
 Para reconstruir, simplemente seleccione la aplicación cargada previamente de la lista definida por el usuario y aparecerán todos los ajustes del contenedor tal y como los tenía configurados previamente.
 Al hacer clic en crear, se descargarán los archivos necesarios para la aplicación y debería dejarla lista para su funcionamiento.
 Para eliminar una plantilla definida por el usuario, selecciónela de la lista anterior y haga clic en la X roja situada a su derecha.
@@ -2092,7 +2092,7 @@ Puerto SSL del servidor Unraid para un tráfico web seguro.
 :end
 
 :unraidnet_inactivespanel_help:
-Haga clic en Activar para configurar un repositorio de git local para su dispositivo de arranque USB Flash local y conéctese a un control remoto dedicado en unraid.net vinculado a este servidor.
+Haga clic en Activar para configurar un repositorio de git local para su dispositivo de arranque Flash USB local y conéctese a un control remoto dedicado en unraid.net vinculado a este servidor.
 :end
 
 :unraidnet_changespanel_help:
