@@ -1,4 +1,4 @@
-A registration replacement key has been created for USB Flash GUID=Se ha creado una licencia de reemplazo para el dispositivo USB Flash con GUID
+A registration replacement key has been created for USB Flash GUID=Se ha creado una licencia de reemplazo para el dispositivo Flash USB con GUID
 About=Acerca de
 Alert Message=Mensaje de alerta
 alert=alerta
@@ -17,7 +17,7 @@ Array slots=Ranuras en el Array
 Array=Array
 Author=Autor
 Beta=Beta
-Blacklisted USB Flash GUID=GUID del dispositivo USB Flash en la lista negra
+Blacklisted USB Flash GUID=GUID del dispositivo Flash USB en la lista negra
 Branch=Rama
 By using this software, you agree with our=Al usar este programa, está de acuerdo con nuestro
 Cache slots=Espacios para discos de caché
@@ -27,7 +27,7 @@ Clear Log=Limpiar registro
 click Install Key=haga clic en <i>Instalar Licencia</i>
 collecting diagnostic information this may take several minutes=recolectando información de diagnóstico (esto puede tardar varios minutos)
 Component=Componente
-Creating Flash backup=Creando copia de seguridad del USB Flash
+Creating Flash backup=Creando copia de seguridad del Flash USB
 Creation error=Error de creación
 Credits=Créditos
 Data slots=Espacios para discos de datos
@@ -45,7 +45,7 @@ Driver=Controlador
 Edit Modprobe config=Editar configuración de Modprobe
 End-User License Agreement=Acuerdo de Licencia de Usuario Final
 Enter URL of language pack XML file=Introduzca la URL del archivo XML del paquete de idioma
-Error accessing your physical USB Flash boot device=Error al acceder a su dispositivo USB Flash de arranque
+Error accessing your physical USB Flash boot device=Error al acceder a su dispositivo Flash USB de arranque
 Error reporting level=Nivel de informe de errores
 Errors Only=Solo errores
 EULA=EULA (Acuerdo de Licencia con el Usuario Final)
@@ -109,7 +109,7 @@ Rebuild Modules=Reconstruir módulos
 Registered GUID=GUID Registrado
 Registered on=Fecha de Registro de Licencia
 Registered to=Propietario de la Licencia
-registering USB Flash GUID=registrando GUID del dispositivo USB Flash
+registering USB Flash GUID=registrando GUID del dispositivo Flash USB
 Release has been withdrawn=Esta versión ha sido retirada
 Remove custom modprobed configuration=¿Eliminar la configuración personalizada de modprobe.d?
 Remove the installed language=Eliminar el idioma instalado
@@ -134,10 +134,10 @@ System Drivers=Controladores del Sistema
 System Update Check=Buscar actualización del sistema
 Text=Texto
 Thank you for choosing Unraid OS=Gracias por elegir Unraid OS
-Thank you for registering USB Flash GUID=Gracias por registrar el GUID del dispositivo USB Flash
+Thank you for registering USB Flash GUID=Gracias por registrar el GUID del dispositivo Flash USB
 Thank you for trying Unraid OS=Gracias por probar Unraid OS
-The registered GUID does not match the USB Flash boot device GUID=El GUID registrado no coincide con el GUID del dispositivo USB Flash de arranque
-There is a physical problem accessing your USB Flash boot device=Hay un problema físico al acceder a su dispositivo USB Flash de arranque
+The registered GUID does not match the USB Flash boot device GUID=El GUID registrado no coincide con el GUID del dispositivo Flash USB de arranque
+There is a physical problem accessing your USB Flash boot device=Hay un problema físico al acceder a su dispositivo Flash USB de arranque
 this may take several minutes=esto puede tardar varios minutos
 This release has been withdrawn for use with Trial keys=Esta versión ha sido retirada del uso con *Versiones de Prueba*
 This server has %s attached storage device=Este servidor tiene %s dispositivo de almacenamiento conectado
@@ -283,7 +283,7 @@ Tenga en cuenta que esta herramienta puede afectar negativamente cualquier conte
 El servidor no estará operativo hasta que compre una Licencia o active la *Versión de Prueba* gratuita de 30 días. La *Versión de Prueba*
 proporciona la misma funcionalidad que una Licencia *Pro*.
 
-Las licencias están ligadas al número de serie del dispositivo USB Flash de arranque (GUID). Por favor, utilice un dispositivo de un fabricante de calidad con
+Las licencias están ligadas al número de serie del dispositivo Flash USB de arranque (GUID). Por favor, utilice un dispositivo de un fabricante de calidad con
 al menos 1GB de capacidad.
 
 Nota: Los lectores de tarjetas de memoria USB por lo general **no** son están soportados debido a que la mayoría no tiene números de serie únicos.
@@ -311,14 +311,14 @@ La mayoría de las solicitudes para extender la *Versión de Prueba* se procesan
 :registration_5_plug:
 No es posible activar la *Versión de Prueba* con la instalación existente de Unraid OS.
 
-Puede comprar una Licencia que será registrada con este dispositivo USB Flash para continuar usando esta instalación.
+Puede comprar una Licencia que será registrada con este dispositivo Flash USB para continuar usando esta instalación.
 
 Para más información, por favor [Contacte con el Soporte de Unraid](https://lime-technology.com/contact).
 :end
 
 :registration_6_plug:
 Parece que su archivo de Licencia está dañado o no existe.  El archivo Licencia debería encontrarse en el directorio
-[config](/Registration/Browse?dir&#61;/boot/config) de su dispositivo USB Flash de arranque.
+[config](/Registration/Browse?dir&#61;/boot/config) de su dispositivo Flash USB de arranque.
 
 Si no tiene una copia de seguridad de su archivo de Licencia, [Contacte con el Soporte de Unraid](https://lime-technology.com/contact).
 
@@ -326,28 +326,28 @@ Si se trata de una *Versión de Prueba*, puede comprar una Licencia.
 :end
 
 :registration_7_plug:
-Las *Versiones de Prueba* solo son válidas con el dispositivo USB Flash registrado originalmente.
+Las *Versiones de Prueba* solo son válidas con el dispositivo Flash USB registrado originalmente.
 
-Para continuar usando esta instalación de Unraid OS con este dispositivo USB Flash, puede comprar una Licencia.
+Para continuar usando esta instalación de Unraid OS con este dispositivo Flash USB, puede comprar una Licencia.
 :end
 
 :registration_8_plug:
-El archivo de Licencia no corresponde al dispositivo USB Flash de arranque.
+El archivo de Licencia no corresponde al dispositivo Flash USB de arranque.
 Por favor, copie el archivo Licencia correcto al directorio [config](/Registration/Browse?dir&#61;/boot/config)
-en su dispositivo USB Flash de arranque. Si no tiene una copia de seguridad de su archivo de Licencia, [Contacte con el Soporte de Unraid](https://lime-technology.com/contact).
+en su dispositivo Flash USB de arranque. Si no tiene una copia de seguridad de su archivo de Licencia, [Contacte con el Soporte de Unraid](https://lime-technology.com/contact).
 
-Si quiere reemplazar su Licencia por una nueva ligada a este dispositivo USB Flash, haga clic en Reemplazar Licencia. Una Licencia original puede ser
+Si quiere reemplazar su Licencia por una nueva ligada a este dispositivo Flash USB, haga clic en Reemplazar Licencia. Una Licencia original puede ser
 reemplazada en cualquier momento. Tras esto, una Licencia de reemplazo puede ser reemplazada de nuevo tras pasar un año. Si necesita
 reemplazar su Licencia antes de este periodo, [Contacte con el Soporte de Unraid](https://lime-technology.com/contact).
 
-**Nota:** Reemplazar una Licencia hará que el GUID del dispositivo USB Flash usado previamente sea incluido de forma permanente en la lista negra, y no se pueda volver a usar con esta instalación de Unraid OS.
+**Nota:** Reemplazar una Licencia hará que el GUID del dispositivo Flash USB usado previamente sea incluido de forma permanente en la lista negra, y no se pueda volver a usar con esta instalación de Unraid OS.
 :end
 
 :registration_9_plug:
-Este dispositivo USB Flash de arranque está en la *lista negra*. Esto puede ocurrir como resultado de la transferencia de su Licencia a
-otro dispositivo USB Flash de reemplazo, y actualmente ha arrancado el sistema desde su antiguo dispositivo USB Flash.
+Este dispositivo Flash USB de arranque está en la *lista negra*. Esto puede ocurrir como resultado de la transferencia de su Licencia a
+otro dispositivo Flash USB de reemplazo, y actualmente ha arrancado el sistema desde su antiguo dispositivo USB Flash.
 
-Un dispositivo USB Flash también puede ser incluido en la *lista negra* si no tiene número de serie o si el número de serie
+Un dispositivo Flash USB también puede ser incluido en la *lista negra* si no tiene número de serie o si el número de serie
 no es único (esto es común con los lectores de tarjetas de memoria USB).
 
 Para más información, por favor [Contacte con el Soporte de Unraid](https://lime-technology.com/contact).
