@@ -12,7 +12,7 @@ Community Applications works best when cookies are enabled in your browser Certa
 Backup Server Active Some icons may not appear, and plugin installations may be affected=Servidor de reserva de CA activo. No se ha podido obtener la lista de aplicaciones del servidor principal. Puede que algunos iconos no aparezcan y se vea afectada la instalación de plugins.
 Debugging enabled This significantly increases the memory used by your browser=Depuración habilitada. Esto aumenta significativamente la memoria utilizada por su navegador
 Browser translation detected Display issues may result=Traducción del navegador detectada. Se pueden producir problemas de visualización
-Action Centre Enabled=Centro de acción habilitado
+Action Centre Enabled=Centro de Acción Habilitado
 Deprecated OS version No further updates to Community Applications will be issued for this OS version=Versión obsoleta del sistema operativo. No se publicarán más actualizaciones de Comunity Applications (CA) para esta versión del sistema operativo
 
 ; Sorting Options
