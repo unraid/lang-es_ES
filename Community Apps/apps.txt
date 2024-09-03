@@ -167,8 +167,8 @@ Home=Inicio
 Installed Apps=Apps Instaladas
 Previous Apps=Apps Anteriores
 Pinned Apps=Apps Ancladas
-Favourite Repo=Repo. favoritos
-Action Centre=Noticias
+Favourite Repo=Repos favoritos
+Action Centre=Centro de Acción
 Recently Added=Añadido recientemente
 Random Apps=Aplicaciones aleatorias
 Top New Installs=Top nuevas instalaciones
@@ -239,10 +239,10 @@ Featured Applications=Aplicaciones destacadas
 
 ; Categories try not to be excessively long This is displayed on the left of CA screen
 
-Backup=Copia de Seguridad
+Backup=Copias de Seguridad
 Cloud=Nube
 Crypto Currency=Criptomonedas
-Downloaders=Gestores de descarga
+Downloaders=Gestores de Descargas
 Drivers=Controladores
 Game Servers=Servidores de Juegos
 Home Automation=Automatización del Hogar
@@ -433,9 +433,9 @@ Updating Content=Actualizando Contenido
 Language=Idioma
 Switch to this language=Cambiar a este idioma
 Country Code=Código de País
-Install Language Pack=Instalar el Paquete de Idioma
-Remove Language Pack=Eliminar el Paquete de Idioma
-Update Language Pack=Actualizar el Paquete de Idioma
+Install Language Pack=Instalar Paquete de Idioma
+Remove Language Pack=Eliminar Paquete de Idioma
+Update Language Pack=Actualizar Paquete de Idioma
 Installed Version=Versión Instalada
 A note about translations=Nota acerca de las traducciones
 Click here to view the language changelog=Haga clic aquí para ver el registro de cambios de la traducción
