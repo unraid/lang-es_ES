@@ -2457,7 +2457,7 @@ Un valor de cero desactivará el umbral crítico (incluidas las notificaciones).
 :syslog_shutdown_flash_help:
 Esta configuración está activado de forma predeterminada y permite que el sistema copie el archivo syslog al dispositivo USB al apagarlo o reiniciarlo.
 
-Después de reiniciar, el syslog de esta ejecución será visible en Herramientas > Syslog > syslog-previous;
+Después de reiniciar, el syslog de esta ejecución será visible en Herramientas > Registro del Sistema > syslog-previous;
 también se incluirá en los diagnósticos como logs/syslog-previous.txt
 :end
 
