@@ -125,7 +125,7 @@ User defined options=Opciones definidas por el usuario
 
 :cachedirs_logging_plug:
 > Seleccione si el registro está activado o desactivado. El registro se realizará en /var/log/cache_dirs.log y /var/log/cache_dirs_lost_cache.csv.
-> Tenga en cuenta que los registros de cache_dirs se colocan en la memoria de unRAID y no se contraen automáticamente.
+> Tenga en cuenta que los registros de cache_dirs se colocan en la memoria de Unraid y no se contraen automáticamente.
 :end
 
 :cachedirs_user_defined_plug:
