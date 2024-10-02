@@ -40,8 +40,8 @@ User defined options=Opciones definidas por el usuario
 :end
 
 :cachedirs_function_plug:
-> Seleccione si el almacenamiento en caché de la carpeta está activado o desactivado. El almacenamiento en caché sólo se producirá efectivamente cuando se inicie el array.
-> La función de almacenamiento en caché se reinicia o detiene automáticamente cuando el array se inicia o se detiene.
+> Seleccione si el almacenamiento en caché de la carpeta está activado o desactivado. El almacenamiento en caché sólo se producirá efectivamente cuando se inicie el Array.
+> La función de almacenamiento en caché se reinicia o detiene automáticamente cuando el Array se inicia o se detiene.
 :end
 
 :cachedirs_pressure_plug:
