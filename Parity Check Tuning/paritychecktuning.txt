@@ -320,13 +320,13 @@ Method used to specify start and stop points=Método utilizado para especificar 
 
 
 :parity_tune_clear_plug:
-> En caso de que las operaciones de limpieza del disco se ejecuten utilizando incrementos.<br><br>Una operación de borrado de disco se produce cuando se añade un nuevo disco (que no ha sido previamente borrado (usando el plugin Pre-Clear) a un array que está protegido por paridad.  El proceso de Clear escribe ceros en cada sector del nuevo disco para que pueda ser añadido al Array sin afectar a la paridad existente. Hasta que no se haya completado la operación de Clear no podrás formatear el disco en unRaid y empezar a utilizarlo para almacenar datos.
+> En caso de que las operaciones de limpieza del disco se ejecuten utilizando incrementos.<br><br>Una operación de borrado de disco se produce cuando se añade un nuevo disco (que no ha sido previamente borrado (usando el plugin Pre-Clear) a un Array que está protegido por paridad.  El proceso de Clear escribe ceros en cada sector del nuevo disco para que pueda ser añadido al Array sin afectar a la paridad existente. Hasta que no se haya completado la operación de Clear no podrás formatear el disco en unRaid y empezar a utilizarlo para almacenar datos.
 >
 >Dado que hasta que la operación de borrado se complete el disco no estará disponible para su uso, es probable que la mayoría de la gente quiera dejar esta opción en **No**.   Además, una operación de borrado no suele suponer una gran carga para el sistema, por lo que es menos probable que afecte al rendimiento en el uso diario normal.
 :end
 
 :parity_tune_restart_plug:
-> Unraid normalmente abandonará la comprobación de paridad si el sistema se apaga, se reinicia o se detiene el array (con la única opción de reiniciar la comprobación de paridad desde el principio).
+> Unraid normalmente abandonará la comprobación de paridad si el sistema se apaga, se reinicia o se detiene el Array (con la única opción de reiniciar la comprobación de paridad desde el principio).
 > La configuración de esta opción permite que las comprobaciones de paridad sean reiniciadas por este plugin desde el punto en el que se encontraban siempre que se cumplan los siguientes criterios:
 >* El Array se cerró de forma ordenada
 >* El usuario no debe haber hecho ningún cambio en la configuración del Array.
@@ -381,7 +381,7 @@ Method used to specify start and stop points=Método utilizado para especificar 
 >
 >Esta opción está pensada para activarse si por alguna razón el sistema de refrigeración del sistema es insuficiente o si ha fallado de alguna manera. La idea es que se quiera hacer un apagado ordenado antes de que los discos se dañen debido a un mal sobrecalentamiento.   El apagado que se desencadena es funcionalmente el mismo que se produciría al pulsar el botón de apagado en la página principal de la interfaz gráfica de usuario de unRaid.  Si las notificaciones están habilitadas, se le enviará una para indicarle que esto ha sucedido.
 >
->Cuando el servidor se reinicie después de un apagado de este tipo, cuando se inicie el array se le notificará que se ha producido un apagado relacionado con la temperatura en caso de que no fuera consciente del motivo.
+>Cuando el servidor se reinicie después de un apagado de este tipo, cuando se inicie el Array se le notificará que se ha producido un apagado relacionado con la temperatura en caso de que no fuera consciente del motivo.
 >
 >**PRECAUCION:** Si el Array se detiene mientras una operación del Array está incompleta, se pierde el progreso hasta el momento y sólo se puede reiniciar desde el principio.
 :end
