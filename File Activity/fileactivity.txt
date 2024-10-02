@@ -6,7 +6,7 @@ Clear the File Activity log=Borrar el registro de actividad de archivo
 Refresh Page=Actualizar página
 Enable File Activity Monitoring=¿Habilitar monitorización de archivo
 Enable for Unassigned Devices=¿Habilitar para dispositivos no asignados
-Enable for Cache and Pool Disks=¿Habilitar para cache y pool de discos
+Enable for Cache and Pool Disks=¿Habilitar para caché y Pool de discos
 ;
 ; Help
 ;
