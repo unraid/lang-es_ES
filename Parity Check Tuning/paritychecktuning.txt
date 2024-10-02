@@ -364,7 +364,7 @@ Method used to specify start and stop points=Método utilizado para especificar 
 :parity_tune_low_plug:
 > Este valor indica cuánto por debajo del umbral de temperatura de advertencia de una unidad debe alcanzar antes de que se emita una **reanudación** de una operación del Array.
 >
->Hay que conseguir un buen equilibrio entre que las operaciones de la matriz se reanuden demasiado pronto (y así llegar rápidamente al nivel para iniciar otra pausa) y perder mucho tiempo.
+>Hay que conseguir un buen equilibrio entre que las operaciones del Array se reanuden demasiado pronto (y así llegar rápidamente al nivel para iniciar otra pausa) y perder mucho tiempo.
 >
 >Si un disco se pone a girar, la temperatura no está disponible, por lo que se asumirá que este criterio se ha cumplido.
 >
