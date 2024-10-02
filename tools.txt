@@ -345,7 +345,7 @@ reemplazar su Licencia antes de este periodo, [Contacte con el Soporte de Unraid
 
 :registration_9_plug:
 Este dispositivo Flash USB de arranque está en la *lista negra*. Esto puede ocurrir como resultado de la transferencia de su Licencia a
-otro dispositivo Flash USB de reemplazo, y actualmente ha arrancado el sistema desde su antiguo dispositivo USB Flash.
+otro dispositivo Flash USB de reemplazo, y actualmente ha arrancado el sistema desde su antiguo dispositivo Flash USB.
 
 Un dispositivo Flash USB también puede ser incluido en la *lista negra* si no tiene número de serie o si el número de serie
 no es único (esto es común con los lectores de tarjetas de memoria USB).
