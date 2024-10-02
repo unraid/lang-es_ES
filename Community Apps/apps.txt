@@ -165,7 +165,7 @@ Attempt to Fix Via Reload Page=Intente solucionarlo recargando la página
 ; CA Sections Keep the length reasonable
 Home=Inicio
 Installed Apps=Apps Instaladas
-Previous Apps=Apps Anteriores
+Previous Apps=Apps Instaladas Previamente
 Pinned Apps=Apps Ancladas
 Favourite Repo=Repos favoritos
 Action Centre=Centro de Acción
@@ -336,7 +336,7 @@ This application is not compatible with your version of Unraid=Esta aplicación 
 Another browser tab or device has updated the displayed templates Some actions are not available=Otra pestaña del navegador o dispositivo ha actualizado las plantillas mostradas. Algunas acciones no están disponibles.
 WebUI=Interfaz Web
 Reinstall=Reinstalar
-Reinstall From Previous Apps=Reinstalación de aplicaciones anteriores
+Reinstall From Previous Apps=Reinstalación de aplicaciones instaladas previamente
 Install=Instalar
 Uninstall=Desinstalar
 Project=Proyecto
@@ -358,7 +358,7 @@ Multi Language Support=Soporte para Múltiples Idiomas
 Support Forum=Foro de soporte
 ; as in more than 100000
 More than %s=Más de %s
-Remove from Previous Apps=Eliminar de las aplicaciones previas
+Remove from Previous Apps=Eliminar de las aplicaciones instaladas previamente
 Remove=Eliminar
 See All Apps=Mostrar todas las aplicaciones
 Favourite=Favorito
