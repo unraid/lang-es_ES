@@ -47,8 +47,8 @@ Yes, update it=Sí, actualizar
 Yes=Sí
 
 ; footer messages
-Array Copying=Copiando array
-Array Clearing=Limpiando array
+Array Copying=Copiando Array
+Array Clearing=Limpiando Array
 Array Starting=Iniciando Array
 Array Stopping=Deteniendo Array
 Mounting disks=Montando discos
