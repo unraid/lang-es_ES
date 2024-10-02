@@ -232,7 +232,7 @@ ZFS Volume=Volumen ZFS
 >
 > **Discos encriptados:**
 >
-> + Cualquier disco formateado en UD que esté encriptado utilizará la contraseña/frase de paso del array y podrá incorporarse al mismo.  O se puede establecer una contraseña única cuando se formatea.  Si establece una contraseña en el disco cuando se formatea, tendrá que introducir una contraseña de disco en Dispositivos no asignados->Configuración para ese disco.
+> + Cualquier disco formateado en UD que esté encriptado utilizará la contraseña/frase de paso del Array y podrá incorporarse al mismo.  O se puede establecer una contraseña única cuando se formatea.  Si establece una contraseña en el disco cuando se formatea, tendrá que introducir una contraseña de disco en Dispositivos no asignados->Configuración para ese disco.
 > + Cualquier disco que no haya sido encriptado con la contraseña/frase de paso del Array puede montarse estableciendo una contraseña por disco en Dispositivos no asignados->Configuración.
 >
 > **Script de dispositivos no asignados:**
