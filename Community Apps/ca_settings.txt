@@ -3,7 +3,7 @@ This setting hides deprecated applications from the list of available apps Depre
 Hide Incompatible Applications=Ocultar aplicaciones incompatibles
 This setting will hide applications that are listed as being incompatible with your version of Unraid=Esta opción oculta las aplicaciones que no sean compatibles con su versión de Unraid
 Allow install of second instance=Permitir instalación en segundo plano
-This option enables another button on the cards and popups which will allow you to reinstall an installed application using its default template values This option can be confusing at times, and is only generally used if you wish to install and have an application running twice simultaneously=Esta opción habilita un botón adicional para reinstalar una aplicación utilizando su plantilla de configuración por defecto. Esta opción puede ser confusa y generalmente solo se utiliza si desea instalar y ejecutar al mismo tiempo dos aplicaciones iguales
+This option enables another button on the cards and popups which will allow you to reinstall an installed application using its default template values This option can be confusing at times, and is only generally used if you wish to install and have an application running twice simultaneously=Esta opción habilita un botón adicional para reinstalar una aplicación utilizando su plantilla de configuración por defecto. Esta opción puede ser confusa y generalmente solo se utiliza si desea instalar y ejecutar dos aplicaciones iguales al mismo tiempo
 Automatically open the sidebar=Abrir la barra lateral automáticamente
 Allows CA to automatically open the sidebar for more information when hovering over an application's icon=Permite que CA abra automáticamente la barra lateral para obtener más información al pasar el cursor sobre el ícono de una aplicación
 Allow CA to check for updates to applications=Permitir que CA busque actualizaciones de las aplicaciones
@@ -11,12 +11,12 @@ This setting enables CA to check for updates to applications Note that Community
 Disable Mouse Wheel Page Changes=Deshabilitar los cambios de página de la rueda del ratón
 This setting disables using left or right on a mouse wheel to change the page=Esta configuración desactiva el uso de la rueda izquierda o derecha del mouse para cambiar de página
 Allow CA to send any emergency notifications=Permitir que CA envíe notificaciones de emergencia
-This setting allows CA to periodically scan your system and alert you to the presence of=Esta opción permite que el plugin Aplicaciones de la Comunidad (CA) escanee su sistema y le notifique la presencia de:
+This setting allows CA to periodically scan your system and alert you to the presence of=Esta opción permite que el plugin Community Applications (CA) escanee su sistema y le notifique la presencia de:
 1 Known malware and security vulnerabilities within applications=1. Malware conocido y vulnerabilidades de seguridad de las aplicaciones
 2 Critical security vulnerabilities within Unraid OS=2. Vulnerabilidades críticas de seguridad en Unraid OS
 3 Any installed applications which may seriously hinder the operation of your server=3. Cualquier aplicación instalada que pudiera perjudicar seriamente la operación del servidor
 Save CA debugging information=Guardar información de depuración de CA
 Only enable this when advised to from the author of Community Applications=Habilite esto solo cuando se lo aconseje el autor de Community Applications.
 Enable developer mode=Activar modo desarrollador
-This unlocks some extra features within CA generally only used by developers Not recommended to enable=Esto desbloquea algunas funciones adicionales dentro de CA que generalmente solo usan los desarrolladores. No se recomienda habilitar
-Support Thread=Sitio de Soporte
+This unlocks some extra features within CA generally only used by developers Not recommended to enable=Esto desbloquea algunas funciones adicionales dentro de CA que generalmente solo usan los desarrolladores. No se recomienda habilitarlo
+Support Thread=Sitio de soporte
