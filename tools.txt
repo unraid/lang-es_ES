@@ -236,13 +236,13 @@ en los mensajes que envían al registro del sistema.*
 :end
 
 :newconfig_plug:
-Esta utilidad sirve para restablecer la configuración discos del array, de forma que todos todos los discos aparezcan como dispositivos "Nuevos", como
+Esta utilidad sirve para restablecer la configuración discos del Array, de forma que todos todos los discos aparezcan como dispositivos "Nuevos", como
 si fuera un servidor recién creado.
 
 Esto es útil cuando ha añadido o quitado varias unidades y quiere reconstruir la paridad basándose en
 la nueva configuración.
 
-Utilice *'Conservar asignaciones actuales'* para seleccionar en la lista desplegable el/los grupo(s) de discos que quiere que mantenga(n) su configuración actual ***tras*** haber restablecido el array. Por defecto, **no** se mantiene la configuración de ningún grupo de discos.
+Utilice *'Conservar asignaciones actuales'* para seleccionar en la lista desplegable el/los grupo(s) de discos que quiere que mantenga(n) su configuración actual ***tras*** haber restablecido el Array. Por defecto, **no** se mantiene la configuración de ningún grupo de discos.
 
 ** NO UTILICE ESTA UTILIDAD PENSANDO QUE RECONSTRUIRÁ UN DISCO DEFECTUOSO ** - Tendrá el efecto contrario, y
 hará que sea ***imposible*** reconstruir una unidad defectuosa existente - ¡Tenga en cuenta esta advertencia!
@@ -255,7 +255,7 @@ Seleccione **TODOS LOS DISCOS** al realizar esta acción única.
 Esta utilidad también es útil para restaurar la propiedad/permisos predeterminados de archivos y
 directorios al realizar la transición de Active Directory a una integración que no sea Active Directory.
 
-La utilidad inicia un proceso en segundo plano que accede a cada uno de sus discos del array, discos de caché y carpetas compartidas
+La utilidad inicia un proceso en segundo plano que accede a cada uno de sus discos del Array, discos de caché y carpetas compartidas
 seleccionadas y cambia la propiedad de archivos y directorios a *nobody/users* (ej. uid/gid to 99/100), y establece los siguientes
 permisos:
 :end
@@ -297,7 +297,7 @@ Nota: Los lectores de tarjetas de memoria USB por lo general **no** son están s
 :registration_3_plug:
 La *Versión de Prueba* proporciona la misma funcionalidad y soporte de dispositivos que una Licencia *Pro*.
 
-Cuando la *Versión de Prueba* haya caducado, su servidor **seguirá funcionando normalmente** hasta la siguiente vez que **Detenga** el array.
+Cuando la *Versión de Prueba* haya caducado, su servidor **seguirá funcionando normalmente** hasta la siguiente vez que **Detenga** el Array.
 
 En ese momento, puede comprar una Licencia o solicitar una extensión de la *Versión de Prueba*.
 :end
@@ -345,7 +345,7 @@ reemplazar su Licencia antes de este periodo, [Contacte con el Soporte de Unraid
 
 :registration_9_plug:
 Este dispositivo Flash USB de arranque está en la *lista negra*. Esto puede ocurrir como resultado de la transferencia de su Licencia a
-otro dispositivo Flash USB de reemplazo, y actualmente ha arrancado el sistema desde su antiguo dispositivo USB Flash.
+otro dispositivo Flash USB de reemplazo, y actualmente ha arrancado el sistema desde su antiguo dispositivo Flash USB.
 
 Un dispositivo Flash USB también puede ser incluido en la *lista negra* si no tiene número de serie o si el número de serie
 no es único (esto es común con los lectores de tarjetas de memoria USB).

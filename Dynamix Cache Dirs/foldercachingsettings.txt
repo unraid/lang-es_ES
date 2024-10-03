@@ -40,8 +40,8 @@ User defined options=Opciones definidas por el usuario
 :end
 
 :cachedirs_function_plug:
-> Seleccione si el almacenamiento en caché de la carpeta está activado o desactivado. El almacenamiento en caché sólo se producirá efectivamente cuando se inicie el array.
-> La función de almacenamiento en caché se reinicia o detiene automáticamente cuando el array se inicia o se detiene.
+> Seleccione si el almacenamiento en caché de la carpeta está activado o desactivado. El almacenamiento en caché sólo se producirá efectivamente cuando se inicie el Array.
+> La función de almacenamiento en caché se reinicia o detiene automáticamente cuando el Array se inicia o se detiene.
 :end
 
 :cachedirs_pressure_plug:
@@ -125,7 +125,7 @@ User defined options=Opciones definidas por el usuario
 
 :cachedirs_logging_plug:
 > Seleccione si el registro está activado o desactivado. El registro se realizará en /var/log/cache_dirs.log y /var/log/cache_dirs_lost_cache.csv.
-> Tenga en cuenta que los registros de cache_dirs se colocan en la memoria de unRAID y no se contraen automáticamente.
+> Tenga en cuenta que los registros de cache_dirs se colocan en la memoria de Unraid y no se contraen automáticamente.
 :end
 
 :cachedirs_user_defined_plug:

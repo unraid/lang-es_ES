@@ -1,4 +1,4 @@
-Array fan speed=Velocidad de los ventiladores del array
+Array fan speed=Velocidad de los ventiladores del Array
 Available drivers=Controladores disponibles
 Click DETECT=Haga clic en DETECTAR
 Detect=Detectar

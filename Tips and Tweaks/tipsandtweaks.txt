@@ -214,7 +214,7 @@ You may actually cause more problems than you solve if there are problems with y
 :end
 
 :tips_tweaks_kill_processes_plug:
-> Introduzca los nombres de los procesos a matar antes de detener el Array, separados por comas.  Por ejemplo, 'ssh' y 'bash'.  Estos procesos pueden evitar que los discos del array se desmonten y que Unraid se cuelgue cuando el array se detenga.
+> Introduzca los nombres de los procesos a matar antes de detener el Array, separados por comas.  Por ejemplo, 'ssh' y 'bash'.  Estos procesos pueden evitar que los discos del Array se desmonten y que Unraid se cuelgue cuando el Array se detenga.
 >
 > Nota: Tenga cuidado con los procesos que mata aquí.  Podrías perder datos.
 :end

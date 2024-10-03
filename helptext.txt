@@ -32,7 +32,7 @@ al sistema de archivos del disco, aunque el disco esté completamente vacío, el
 borradas en cualquier momento desde a la sección Estado del Array mostrada más abajo.
 
 **Errores** cuenta el número de errores *irrecuperables* reportados por el controlador del dispositivo.
-Los datos que falten debido a errores irrecuperables de lectura del array, son reconstruidos en tiempo real con ayuda
+Los datos que falten debido a errores irrecuperables de lectura del Array, son reconstruidos en tiempo real con ayuda
 del dispositivo de paridad (y se intenta sobrescribir esos datos en el sector o sectores que hayan fallado). Cualquier
 error irrecuperable de escritura hará que el disco sea *deshabilitado*.
 
@@ -41,17 +41,17 @@ error irrecuperable de escritura hará que el disco sea *deshabilitado*.
 **Ver** esta columna contiene el icono de una carpeta indicando que el dispositivo está *montado*. Haga clic en el icono
 para explorar los contenidos del disco.
 
-Si la opción "Mostrar estadísticas totales del array" está habilitada en la página [Ajustes de Pantalla](Settings/DisplaySettings),
-se muestra una fila adicional con los valores totales de las estadísticas de todos los discos del array, incluyendo la
+Si la opción "Mostrar estadísticas totales del Array" está habilitada en la página [Ajustes de Pantalla](Settings/DisplaySettings),
+se muestra una fila adicional con los valores totales de las estadísticas de todos los discos del Array, incluyendo la
 temperatura media de los dispositivos.
 
 El Array debe estar Detenido para poder cambiar la asignación de dispositivos del Array.
 
-Un array de Unraid está compuesto por uno o varios discos de almacenamiento de Datos y uno o dos discos de Paridad. Los discos de
+Un Array de Unraid está compuesto por uno o varios discos de almacenamiento de Datos y uno o dos discos de Paridad. Los discos de
 Datos se usan exclusivamente para guardar archivos del usuario, mientras que el/los disco(s) de Paridad proporciona(n)
 la redundancia necesaria para mantener a salvo todos los datos en caso de que falle algún disco.
 
-Como ningún archivo individual es dividido entre los discos del array, el/los disco(s) de paridad deben tener una capacidad igual o superior a
+Como ningún archivo individual es dividido entre los discos del Array, el/los disco(s) de paridad deben tener una capacidad igual o superior a
 la del mayor disco de datos.  El disco de Paridad también debería ser de ser el de mayor rendimiento.
 
 Cada disco de Datos tiene su propio sistema de archivos y puede ser compartido
@@ -76,8 +76,8 @@ El número mínimo de espacios es 2, y debe asignar al menos 1 dispositivo al Ar
 
 <i class='fa fa-square orb grey-orb'></i>No hay dispositivo, posición vacía.
 
-Un **Grupo de Almacenamiento** puede estar formado por uno o múltiples dispositivos *externos* al array de Unraid.  Cada dispositivo puede ser compartido en red
-como cualquier otro dispositivo del array. Al estar fuera del array de Unraid, la velocidad de escritura en disco es significativamente más rápida.
+Un **Grupo de Almacenamiento** puede estar formado por uno o múltiples dispositivos *externos* al Array de Unraid.  Cada dispositivo puede ser compartido en red
+como cualquier otro dispositivo del Array. Al estar fuera del Array de Unraid, la velocidad de escritura en disco es significativamente más rápida.
 
 Un Grupo de Almacenamiento se puede configurar de dos formas:
 
@@ -95,11 +95,11 @@ sean guardados a la vez en dos dispositivos diferentes.  Por lo tanto, tolera el
 Cuando las [Carpetas Compartidas](/Settings/ShareSettings) están habilitadas, éstas pueden ser configuradas
 para que automáticamente hagan uso del Grupo de Almacenamiento para
 mejorar la velocidad de escritura.  Es posible programar un servicio especial (ejecutado en segundo plano) llamado *Mover*
-para que mueva periódicamente el contenido de las carpetas compartidas seleccionadas del Caché al Array.
+para que mueva periódicamente el contenido de las carpetas compartidas seleccionadas del caché al Array.
 :end
 
 :cache_slots_help:
-**Espacios** seleccione el número de espacios reservados para los discos usados como dispositivos Caché.
+**Espacios** seleccione el número de espacios reservados para los discos usados como dispositivos caché.
 :end
 
 :boot_device_help:
@@ -125,24 +125,24 @@ solo puede ser compartido usando el protocolo SMB.
 :array_devices_help:
 #### Asignando Dispositivos
 
-Un array de Unraid consiste en un disco de Paridad y uno o varios discos para el almacenamiento
+Un Array de Unraid consiste en un disco de Paridad y uno o varios discos para el almacenamiento
 de datos. Los discos de datos son exclusivamente para guardar archivos del usuario, mientras
 que el disco de Paridad proporciona la redundancia necesaria para mantener a salvo los datos en caso de que falle un único disco.
 
-Tenga en cuenta que tenemos cuidado al usar el termino *disco* cuando nos referimos a un dispositivo de almacenamiento del array. Solo
+Tenga en cuenta que tenemos cuidado al usar el termino *disco* cuando nos referimos a un dispositivo de almacenamiento del Array. Solo
 utilizamos el término *disco duro* para referirnos al dispositivo físico del hardware (HDD).
 Diferenciamos ambos términos, porque en un sistema RAID es posible ejecutar operaciones de lectura/escritura en un disco
-del array, aunque su disco duro correspondiente esté deshabilitado o incluso falte! Además, es conveniente poder usar expresiones como, "¿Qué dispositivo está asignado
+del Array, aunque su disco duro correspondiente esté deshabilitado o incluso falte! Además, es conveniente poder usar expresiones como, "¿Qué dispositivo está asignado
 como disco de paridad" o "¿Qué dispositivo corresponde al disk2?".
 
-Por lo tanto, es necesario que exista la manera de asignar discos duros a discos del array. Esto se hace desde aquí, en la
-página Principal cuando el array está detenido. Cada disco del array tiene su propio menú desplegable con todos
+Por lo tanto, es necesario que exista la manera de asignar discos duros a discos del Array. Esto se hace desde aquí, en la
+página Principal cuando el Array está detenido. Cada disco del Array tiene su propio menú desplegable con todos
 los dispositivos sin asignar. Para asignar un dispositivo, simplemente selecciónelo en el desplegable. Cada vez que
 se asigna un nuevo dispositivo, el sistema actualiza un archivo de configuración que guarda las asignaciones de todos los discos.
 
 #### Requisitos
 
-A diferencia de los sistemas RAID tradicionales que dividen los archivos a nivel individual entre todos los dispositivos del array, en un servidor Unraid
+A diferencia de los sistemas RAID tradicionales que dividen los archivos a nivel individual entre todos los dispositivos del Array, en un servidor Unraid
 los archivos se almacenan en cada disco duro individualmente. Como resultado, en todas las operaciones de escritura se
 utiliza el disco de datos donde se guarda el archivo y el disco de paridad. Por estas razones,
 
@@ -154,7 +154,7 @@ y
 
 #### Instrucciones
 
-Estos son los pasos que debe seguir cuando esté configurando su array de Unraid:
+Estos son los pasos que debe seguir cuando esté configurando su Array de Unraid:
 
 1. Decida qué disco duro va a usar para la paridad, y qué discos duros de datos va a usar para
 disk1, disk 2, etc. y etiquételos de alguna forma. También apunte el número de serie de cada disco duro,
@@ -171,19 +171,19 @@ discos de datos, seleccione el disco duro correspondiente para cada caso basánd
 
 También puede *conectar en caliente* discos duros al servidor si el hardware lo soporta. Por ejemplo,
 si utiliza cajas externas de discos duros, las podría conectar al servidor mientras esté encendido y
-el array esté detenido. Al hace esto, deberá recargar la página Principal para ver los nuevos dispositivos sin asignar
+el Array esté detenido. Al hace esto, deberá recargar la página Principal para ver los nuevos dispositivos sin asignar
 en los menús desplegables.
 
 #### Próximos Pasos
 
-Una vez tenga asignados todos los discos duros, podrá Iniciar el array desde la sección Estado del Array
+Una vez tenga asignados todos los discos duros, podrá Iniciar el Array desde la sección Estado del Array
 mostrada más abajo.
 :end
 
 :encryption_help:
 #### Cifrado
 
-Con el array detenido, el usuario puede especificar una nueva clave de cifrado. Tenga en cuenta que una vez un dispositivo
+Con el Array detenido, el usuario puede especificar una nueva clave de cifrado. Tenga en cuenta que una vez un dispositivo
 es formateado con una clave en particular, solo se podrá acceder a él con esa misma clave. Si se cambia la clave de cifrado,
 los dispositivos cifrados deberán ser reformateados **provocando una perdida permanente de todos los datos en estos dispositivos.**
 
@@ -404,7 +404,7 @@ Esta lista muestra las especificaciones SMART de este disco.
 
 :open_devices_help:
 Estos son dispositivos que están instalados en su servidor, pero no están asignados al
-array o al disco/grupo de caché.
+Array o al disco/grupo de caché.
 :end
 
 :flash_backup_help:
@@ -485,7 +485,7 @@ Si no hay un sufijo, se asume un conteo de bloques de 1024-bytes.
 
 :share_edit_global1_help:
 Una *Carpeta Compartida* es un tipo de Recurso Compartido. Se trata de un directorio existente en la raíz de uno o varios de sus dispositivos de
-almacenamiento (array y/o caché), el cual tiene sus propios permisos de acceso en red que pueden ser modificados por el administrador. Cuando se accede a una carpeta compartida,
+almacenamiento (Array y/o caché), el cual tiene sus propios permisos de acceso en red que pueden ser modificados por el administrador. Cuando se accede a una carpeta compartida,
 Unraid muestra una vista combinada de todos sus archivos y subdirectorios, los cuales pueden estar distribuidos entre varios dispositivos de almacenamiento.
 
 *Importar los ajustes de* se usa para preconfigurar un nuevo recurso compartido con los ajustes de un recurso compartido ya existente.
@@ -522,7 +522,7 @@ cantidad de espacio disponible superior a este *nivel de equilibrio*, se divide 
 
 El objetivo de **Equilibrar** es almacenar la mayor cantidad de datos posible en cada dispositivo (para maximizar el tiempo
 de los discos en estado de reposo), mientras que, al mismo tiempo, intenta mantener la misma cantidad de espacio disponible en
-cada disco (para distribuir los datos uniformemente por el array).
+cada disco (para distribuir los datos uniformemente por el Array).
 
 **Llenar**
 Escoge el disco con el número más bajo que todavía tenga una cantidad de espacio disponible superior al parámetro **Espacio mínimo disponible en
@@ -567,7 +567,7 @@ exista el directorio principal.
 
 :share_edit_included_disks_help:
 Especifique los discos que puedan ser usados por la carpeta compartida. Por defecto, todos los discos están incluidos; es decir,
-si no hay ningún disco seleccionado en el desplegable, el contenido de la carpeta compartida puede distribuirse entre *todos* discos del array.
+si no hay ningún disco seleccionado en el desplegable, el contenido de la carpeta compartida puede distribuirse entre *todos* discos del Array.
 :end
 
 :share_edit_excluded_disks_help:
@@ -583,17 +583,17 @@ El servicio *Mover* no llevará a cabo ninguna acción, por lo tanto, cualquier 
 
 **Sí** indica que todos los nuevos archivos y subdirectorios deben ser creados en el almacenamiento caché si tiene
 suficiente espacio disponible.
-Si no hay suficiente espacio disponible en el caché, los nuevos archivos y directorios se almacenan en el array.
-Cuando se inicia el servicio *Mover*, los archivos y directorios presentes en el caché son movidos al array.
+Si no hay suficiente espacio disponible en el caché, los nuevos archivos y directorios se almacenan en el Array.
+Cuando se inicia el servicio *Mover*, los archivos y directorios presentes en el caché son movidos al Array.
 
 **Solo** indica que todos los nuevos archivos y subdirectorios deben ser creados en el almacenamiento caché.
 Si no hay suficiente espacio disponible en el caché, las operaciones de *crear* nuevos archivos arrojarán un error por *espacio insuficiente*.
-El servicio *Mover* no llevará a cabo ninguna acción, por lo tanto, cualquier archivo de la carpeta compartida existente en el array se dejará allí.
+El servicio *Mover* no llevará a cabo ninguna acción, por lo tanto, cualquier archivo de la carpeta compartida existente en el Array se dejará allí.
 
 **Preferir** indica que todos los nuevos archivos y subdirectorios deben ser creados en el almacenamiento caché si tiene
 suficiente espacio disponible.
-Si no hay suficiente espacio disponible en el caché, los nuevos archivos y directorios se almacenan en el array.
-Cuando se inicia el servicio *Mover*, los archivos y directorios presentes en el array son movidos al caché.
+Si no hay suficiente espacio disponible en el caché, los nuevos archivos y directorios se almacenan en el Array.
+Cuando se inicia el servicio *Mover*, los archivos y directorios presentes en el Array son movidos al caché.
 
 **NOTA** el servicio Mover no moverá nunca los archivos que estén en uso.
 Esto significa que, si quiere mover archivos asociados a servicios del sistema como Docker o VMs, tiene que deshabilitar estos
@@ -795,8 +795,8 @@ Introduzca la fecha y la hora actuales.  Use el formato AAAA-MM-DD HH:MM:SS. Des
 
 :disk_enable_autostart_help:
 Si la opción 'Sí' está seleccionada y la configuración del dispositivo es correcta al momento de inicio del servidor,
-el array será iniciado automáticamente y los recursos compartidos estarán disponibles.<br>
-Si la opción 'No' está seleccionada el array deberá ser iniciado manualmente.
+el Array será iniciado automáticamente y los recursos compartidos estarán disponibles.<br>
+Si la opción 'No' está seleccionada el Array deberá ser iniciado manualmente.
 :end
 
 :disk_spindown_delay_help:
@@ -826,7 +826,7 @@ A menos que tenga un requerimiento específico, no cambie este ajuste de su valo
 :end
 
 :disk_default_file_system_help:
-Define el tipo de sistema de archivos por defecto a crear cuando un dispositivo *no montable* del array es formateado.
+Define el tipo de sistema de archivos por defecto a crear cuando un dispositivo *no montable* del Array es formateado.
 
 El sistema de archivos por defecto para uno o múltiples dispositivos de caché es siempre Btrfs.
 :end
@@ -841,7 +841,7 @@ Este valor define la frecuencia (en segundos) con la que los discos duros son es
 :end
 
 :disk_tunable_enable_ncq_help:
-Si la opción **No** está seleccionada, la función *cola de comandos nativa (NCQ)* está deshabilitada para todos los dispositivos del array que soportan NCQ.
+Si la opción **No** está seleccionada, la función *cola de comandos nativa (NCQ)* está deshabilitada para todos los dispositivos del Array que soportan NCQ.
 
 **Auto** deja el ajuste inalterado para cada dispositivo.
 
@@ -849,7 +849,7 @@ Nota: Es necesario reiniciar el servidor después de seleccionar Auto para que e
 :end
 
 :disk_tunable_scheduler_help:
-Esto define el parámetro `nr_requests` para todos los dispositivos del array. Su valor representa el número máximo de solicitudes de lectura y escritura que se pueden poner en cola a la vez.
+Esto define el parámetro `nr_requests` para todos los dispositivos del Array. Su valor representa el número máximo de solicitudes de lectura y escritura que se pueden poner en cola a la vez.
 
 **Auto** deja el ajuste inalterado para cada dispositivo.
 
@@ -857,7 +857,7 @@ Nota: si deja este campo vacío y hace clic en Aplicar, el ajuste volverá a su 
 :end
 
 :disk_tunable_md_num_stripes_help:
-Selecciona el planificador de entrada/salida del kernel a usar para todos los dispositivos del array.
+Selecciona el planificador de entrada/salida del kernel a usar para todos los dispositivos del Array.
 
 **Auto** deja el ajuste inalterado para cada dispositivo (mq-deadline).
 
@@ -866,7 +866,7 @@ Nota: Es necesario reiniciar el servidor después de seleccionar Auto para que e
 
 :disk_tunable_md_queue_limit_help:
 Este es el tamaño del *conjunto de franjas o secciones* (*stripe pool* en inglés) especificado en número de *franjas*.  Una *franja* se refiere a una estructura de datos que facilita las operaciones de lectura/escritura
-4K en paralelo necesarias para que el array esté protegido por paridad.
+4K en paralelo necesarias para que el Array esté protegido por paridad.
 
 Nota: si deja este campo vacío y hace clic en Aplicar, el ajuste volverá a su valor por defecto y será necesario reiniciar el servidor para que el cambio tenga efecto.
 :end
@@ -884,7 +884,7 @@ Nota: si deja este campo vacío y hace clic en Aplicar, el ajuste volverá a su 
 :end
 
 :disk_tunable_nr_requests_help:
-Seleccione el método de escritura para los discos de un array protegido por paridad.
+Seleccione el método de escritura para los discos de un Array protegido por paridad.
 
 *Auto* selecciona `leer/modificar/escribir`.
 :end
@@ -946,7 +946,7 @@ Esta sección es usada para modificar los ajustes globales de todos los discos. 
 :docker_repositories_help:
 Antes de que pueda iniciar el servicio Docker por primera vez, por favor, especifique un archivo de imagen para la instalación de Docker.
 
-Una vez iniciado, el servicio Docker siempre se iniciará automáticamente cuando el array haya sido iniciado.
+Una vez iniciado, el servicio Docker siempre se iniciará automáticamente cuando el Array haya sido iniciado.
 :end
 
 :docker_enable_help:
@@ -956,11 +956,11 @@ Para cambiar el tamaño del archivo de imagen, especifique el nuevo tamaño aqu�
 :end
 
 :docker_vdisk_size_help:
-Debe especificar un archivo de imagen para Docker. El sistema creará automáticamente este archivo cuando el servicio Máquinas Virtuales sea iniciado por primera vez.
+Debe especificar un archivo de imagen para Docker. El sistema creará automáticamente este archivo cuando el servicio Docker sea iniciado por primera vez.
 
 El archivo de imagen debe tener la extensión .img, de lo contrario la entrada no será aceptada y será resaltada en rojo.
 
-Se recomienda crear este archivo de imagen fuera del array, por ejemplo en el almacenamiento caché. Los dispositivos de estado sólido SSD proporcionan el mejor rendimiento.
+Se recomienda crear este archivo de imagen fuera del Array, por ejemplo en el almacenamiento caché. Los dispositivos de estado sólido SSD proporcionan el mejor rendimiento.
 :end
 
 :docker_vdisk_location_help:
@@ -968,19 +968,19 @@ Se puede especificar una carpeta en la que generar y almacenar de forma automát
 
 La ruta de la carpeta debe finalizar con un carácter de barra oblicua (/). De lo contrario la entrada no será aceptada y será resaltada en rojo.
 
-Se recomienda crear esta carpeta de imagen fuera del array, por ejemplo en el almacenamiento caché. Los dispositivos de estado sólido SSD proporcionan el mejor rendimiento.
+Se recomienda crear esta carpeta de imagen fuera del Array, por ejemplo en el almacenamiento caché. Los dispositivos de estado sólido SSD proporcionan el mejor rendimiento.
 
 Este ajuste solo tiene efecto cuando se instalan nuevas aplicaciones Docker. No afectará la edición de aplicaciones Docker existentes.
 :end
 
 :docker_appdata_location_help:
-You can specify a folder to automatically generate and store subfolders containing configuration files for each Docker app (via the /config mapped volume).
+Puedes especificar una carpeta para generar y almacenar automáticamente subcarpetas que contengan archivos de configuración para cada aplicación Docker (a través del volumen mapeado /config).
 
-The folder's path must end with a trailing slash (/) character. If not the input is not accepted and marked red.
+La ruta de la carpeta debe terminar con una barra diagonal (/). De lo contrario, la entrada no se acepta y se marca en rojo.
 
-It is recommended to create this folder outside the array, e.g. on the Cache pool. For best performance SSD devices are preferred.
+Se recomienda crear esta carpeta fuera del Array, por ejemplo, en el grupo de caché. Para obtener el mejor rendimiento se recomienda usar un disco SSD.
 
-Only used when adding new Docker apps. Editing existing Docker apps will not be affected by this setting.
+Solo se utiliza al agregar nuevas aplicaciones Docker. Esta configuración no afecta la edición de aplicaciones Docker existentes.
 :end
 
 :docker_log_rotation_help:
@@ -1305,7 +1305,7 @@ donde el valor de 330 indica 5 minutos y medio.  Se pueden introducir dos
 valores especiales:
 
 * 0 que significa que no almacene ningún nombre de archivos/directorios en caché, y
-* -1 que significa que mantenga los nombres de archivos/directorios en caché permanentemente (o hasta que el array sea detenido)
+* -1 que significa que mantenga los nombres de archivos/directorios en caché permanentemente (o hasta que el Array sea detenido)
 
 Un valor de 0 podría ser apropiado si habilita el protocolo NFS pero solo planea usarlo para acceder a discos compartidos,
 no a carpetas compartidas.
@@ -1330,12 +1330,12 @@ Si la opción 'Sí' está seleccionada, la función Carpetas Compartidas está a
 :end
 
 :shares_included_disks_help:
-Esta opción define el conjunto de discos del array que están *incluidos* en la función Carpetas Compartidas.
+Esta opción define el conjunto de discos del Array que están *incluidos* en la función Carpetas Compartidas.
 Deseleccionar todos los discos permite incluir a **todos** los discos.
 :end
 
 :shares_excluded_disks_help:
-Esta opción define el conjunto de discos del array que están *excluidos* de la función Carpetas Compartidas.
+Esta opción define el conjunto de discos del Array que están *excluidos* de la función Carpetas Compartidas.
 Deseleccionar todos los discos resulta en que ningún disco sea excluido.
 
 **Nota:** En la configuración individual de cada carpeta compartida también se puede especificar el conjunto de discos incluidos y excluidos,
@@ -1369,7 +1369,7 @@ La información de syslog es almacenada por dirección IP. Por lo tanto a cada s
 
 :syslog_local_folder_help:
 Seleccione la carpeta compartida en la que se almacenarán los registros syslog.
-Se recomienda el uso de una carpeta compartida ubicada en el disco caché para evitar activaciones de discos del array.
+Se recomienda el uso de una carpeta compartida ubicada en el disco caché para evitar activaciones de discos del Array.
 :end
 
 :syslog_local_rotation_help:
@@ -1403,7 +1403,7 @@ Elija si quiere que aparezca una ventana de confirmación al reiniciar o apagar 
 :end
 
 :confirm_array_stop_help:
-Elija si quiere que aparezca una ventana de confirmación al detener el array.
+Elija si quiere que aparezca una ventana de confirmación al detener el Array.
 :end
 
 :display_settings_help:
@@ -1440,6 +1440,10 @@ La imagen se escalará a 1920x90 píxeles. El tamaño máximo de carga de archiv
 Selecciona la unidad de temperatura para los umbrales de temperatura del disco. Cambiar la unidad ajustará el valor existente en los umbrales de temperatura del disco según corresponda.
 
 Asegúrese de que los valores recién ingresados ​​representen la unidad de temperatura seleccionada.
+:end
+
+:display_favorites_enabled_help:
+Habilita la compatibilidad con favoritos. Si se configura en no, dejará de mostrarse el ícono de corazón para las adiciones. Si se guardan los favoritos existentes, la pestaña de favoritos y las opciones guardadas previamente seguirán mostrándose y funcionando hasta que se eliminen todas.
 :end
 
 :vms_enable_help:
@@ -1888,7 +1892,7 @@ Use las casillas mostradas abajo para seleccionar el método de envío de las no
 :end
 
 :notifications_array_status_help:
-Iniciar una comprobación periódica del estado/salud del array (mantenimiento preventivo) y notificar al usuario el resultado de esta operación.
+Iniciar una comprobación periódica del estado/salud del Array (mantenimiento preventivo) y notificar al usuario el resultado de esta operación.
 :end
 
 :notifications_agent_selection_help:
@@ -2240,11 +2244,15 @@ Tenga en cuenta que para los dispositivos móviles esto utilizará más datos y 
 :end
 
 :info_share_assignment_help:
-El pool seleccionado está disponible para las acciones de los usuarios.
+El Pool seleccionado está disponible para las acciones de los usuarios.
 :end
 
 :docker_timeout_help:
 El tiempo en segundos para permitir que un contenedor se detenga correctamente antes de forzarlo a detenerse
+:end
+
+:docker_pid_limit_help:
+Establezca un límite de PIDs para limitar la cantidad de PIDs que puede usar un contenedor. El valor predeterminado es 2048. Establece cero para tener una cantidad ilimitada de PIDs (no recomendado).
 :end
 
 :docker_vdisk_type_help:
@@ -2256,7 +2264,7 @@ Puede ser un archivo de imagen con un tamaño específico o una carpeta dedicada
 :docker_vdisk_directory_help:
 Debe especificar una carpeta para Docker. El sistema creará automáticamente esta carpeta cuando el servicio Docker se inicie por primera vez.
 
-Se recomienda crear esta carpeta bajo un recurso compartido que resida en el grupo de Caché (configuración: cache=Only). Para un mejor rendimiento se prefieren los dispositivos SSD.
+Se recomienda crear esta carpeta bajo un recurso compartido que resida en el grupo de caché (configuración: cache=Only). Para un mejor rendimiento se prefieren los dispositivos SSD.
 :end
 
 :docker_client_additional_requirements_help:
@@ -2367,7 +2375,7 @@ Antes de utilizar una red Libvirt, vaya a Configuración -> Configuración de re
 Cuando se establece en "sí", indica que se ha configurado un montaje vinculado directamente a un grupo para el recurso compartido en el árbol /mnt/user, siempre que se cumplan 
 las siguientes condiciones:
 
-- El almacenamiento principal es una pool.
+- El almacenamiento principal es un Pool.
 - El almacenamiento secundario está configurado en **ninguno**.
 - La compartición no existe en ningún otro volumen.
 :end
@@ -2457,7 +2465,7 @@ Un valor de cero desactivará el umbral crítico (incluidas las notificaciones).
 :syslog_shutdown_flash_help:
 Esta configuración está activado de forma predeterminada y permite que el sistema copie el archivo syslog al dispositivo USB al apagarlo o reiniciarlo.
 
-Después de reiniciar, el syslog de esta ejecución será visible en Herramientas > Syslog > syslog-previous;
+Después de reiniciar, el syslog de esta ejecución será visible en Herramientas > Registro del Sistema > syslog-previous;
 también se incluirá en los diagnósticos como logs/syslog-previous.txt
 :end
 
