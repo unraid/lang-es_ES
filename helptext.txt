@@ -269,7 +269,14 @@ Para más información, por favor, consulte la documentación del balance-btrfs 
 **Depurar** ejecutará el programa de *depuración del btrfs* el cual inspeccionará los dispositivos de almacenamiento
 y detectará cualquier inconsistencia que encuentre en los datos.
 
-Si *Reparar bloques corruptos* esta seleccionada, la *depuración de btrfs* reparará los bloques corruptos si hay una copia disponible en buen estado.
+*btrfs scrub* reparará los bloques dañados si hay una copia correcta disponible.
+:end
+
+:info_zfs_scrub_help:
+**Scrub** ejecuta el programa *zfs scrub* que leerá todos los bloques de datos y metadatos de 
+todos los dispositivos y verificará las sumas de comprobación.
+
+Haga clic en el botón **Actualizar grupo** para actualizar el grupo ZFS y habilitar las funciones más recientes de ZFS.
 :end
 
 :info_scrub_cancel_help:
@@ -281,6 +288,10 @@ Si *Reparar bloques corruptos* esta seleccionada, la *depuración de btrfs* repa
 
 El campo de *Opciones* se inicializa con *--readonly* el cual especifica que sea solo una revisión. Si es necesario reparar algo, se
 recomienda ejecutar una segunda comprobación, configurando las *Opciones* con *--repair*; esto permitirá que el programa de *comprobación de btrfs* repare el sistema de archivos.
+
+ADVERTENCIA: **No utilice** *--repair* a menos que se lo recomiende un desarrollador o un usuario experimentado, 
+y solo después de haber aceptado que ningún fsck repara con éxito todos los tipos de corrupción del sistema de archivos. 
+Por ejemplo, otros errores de software o hardware pueden dañar fatalmente un volumen.
 
 Al empezar la comprobación, debe recargar la página para hacer el seguimiento del progreso y el estado. Dependiendo del
 tamaño del sistema de archivos y de los errores que puedan estar presentes, la operación puede tardar *mucho tiempo* (horas).
@@ -973,6 +984,15 @@ Se recomienda crear esta carpeta de imagen fuera del Array, por ejemplo en el al
 Este ajuste solo tiene efecto cuando se instalan nuevas aplicaciones Docker. No afectará la edición de aplicaciones Docker existentes.
 :end
 
+:docker_storage_driver_help:
+overlay2 (predeterminado): utilizará overlay2 como controlador de almacenamiento para Docker, independientemente del sistema de archivos subyacente.
+
+nativo: se utilizará el controlador de almacenamiento nativo para su sistema de archivos subyacente (XFS: overlay2 | ZFS: zfs | BTRFS: btrfs).
+
+ATENCIÓN: No es posible cambiar el tipo de almacenamiento de una instalación de Docker existente, primero debe eliminar su directorio de Docker, cambiar el tipo de almacenamiento y luego reinstalar sus contenedores.
+Se recomienda tomar una captura de pantalla de los contenedores de Docker antes de cambiar el tipo de almacenamiento. Después de eliminar y cambiar el tipo de almacenamiento, vuelva a instalar los contenedores haciendo clic en Agregar contenedor en la página de Docker y seleccione uno por uno en el menú desplegable para volver a instalarlos con la configuración anterior.
+:end
+
 :docker_appdata_location_help:
 Puedes especificar una carpeta para generar y almacenar automáticamente subcarpetas que contengan archivos de configuración para cada aplicación Docker (a través del volumen mapeado /config).
 
@@ -1043,6 +1063,10 @@ Introduzca el rango dentro de cada subred asignada usado por Docker para la asig
 
 :docker_vdisk_location_active_help:
 Ésta es la ubicación de la imagen de Docker.
+:end
+
+:docker_storage_driver_active_help:
+Este es el controlador de almacenamiento para Docker.
 :end
 
 :docker_appdata_location_active_help:
@@ -2176,6 +2200,8 @@ Nota para los usuarios de Cloudflare: el proxy de Cloudflare está diseñado par
 :wg_local_server_uses_nat_help:
 Cuando NAT está activado, el servidor utiliza su propia dirección LAN cuando reenvía el tráfico desde el túnel a otros dispositivos de la red LAN.
 Utilice esta configuración cuando no desee realizar modificaciones en el router, pero este enfoque no funciona con los contenedores Docker que utilizan direcciones IP personalizadas.
+
+Utiliza esta configuración cuando no se deseen modificaciones en el enrutador, pero este enfoque no funciona con contenedores de Docker que utilizan direcciones IP personalizadas.
 
 Cuando NAT está deshabilitado, el servidor utiliza la dirección del túnel de WireGuard cuando reenvía el tráfico.
 En este caso se requiere que la puerta de enlace por defecto (router) tenga una ruta estática configurada para remitir la dirección del túnel de vuelta al servidor.
