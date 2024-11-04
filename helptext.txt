@@ -2038,8 +2038,6 @@ Enlace al sitio de soporte en el foro de Lime-Technology.
 Enlace a la página del proyecto (eg:www.plex.tv)
 :end
 
-
-
 :docker_client_hub_url_help:
 Ruta a la ubicación del repositorio del contenedor en DockerHub.
 :end
@@ -2448,7 +2446,7 @@ Haga clic en el botón editar para agregar/modificar/eliminar cualquier archivo 
 ; Traducir
 
 :vms_disable_help:
-Stop VMs from Autostarting\Starting when VM Manager starts or open is run from the gui to start, error message will be seen.
+Evita que las máquinas virtuales (VM) se inicien automáticamente al iniciar el Administrador de VMs o cuando se inician desde la interfaz gráfica; se mostrará un mensaje de error.
 :end
 
 :notifications_auto_close_help:
@@ -2457,7 +2455,7 @@ Un valor de 0 desactiva el cierre automático.
 :end
 
 :console_keyboard_help:
-Seleccione su mapa de teclado predeterminado para la consola local (no la Terminal web).
+Elija la distribución de teclado predeterminada para la consola local (esto no afecta la Terminal web).
 :end
 
 :console_screen_help:
@@ -2469,11 +2467,11 @@ Seleccione su mapa de teclado predeterminado para la consola local (no la Termin
 :end
 
 :console_bash_help:
-Si se configura en "Sí", el historial de bash persistirá en los reinicios; configúrelo en "No" para deshabilitarlo.
+Si se habilita, el historial de bash persistirá en los reinicios.
 
-**ATENCIÓN:** El historial de bash se escribirá en el dispositivo de arranque USB, por lo que esto provocará un mayor desgaste.
+**ATENCIÓN:** El historial de bash se escribirá en la memoria Flash USB, por lo que esto provocará un mayor desgaste.
 
-**Nota:** Deshabilitar y habilitar eliminará todo el historial de bash.
+**Nota:** Deshabilitarlo eliminará todo el historial de bash.
 :end
 
 :ssd_default_warning_temperature_help:
