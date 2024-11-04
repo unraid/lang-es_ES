@@ -2440,7 +2440,7 @@ Haga clic en el botón editar para agregar/modificar/eliminar cualquier archivo 
 :end
 
 :display_width_help:
-**Caja** es la configuración heredada que limita el ancho del contenido a un máximo de 1920 píxeles
+**Encajado** es la configuración por defecto que limita el ancho del contenido a un máximo de 1920 píxeles
 
 **Ilimitado** permite que el contenido utilice todo el ancho disponible, lo que puede resultar útil en pantallas anchas
 :end
