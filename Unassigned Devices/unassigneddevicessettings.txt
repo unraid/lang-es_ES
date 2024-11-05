@@ -14,6 +14,7 @@ Enable NFS export=¿Activar la exportación NFS
 Enable SMB Security=Activar la Seguridad SMB
 Enable Time Machine=¿Activar Time Machine
 Enter Disk Password=Introduzca la contraseña del disco
+Enter the Remote Server name or IP address and the results from the Remote Server Test will show in the **Result** text area=Introduzca el nombre o la dirección IP del servidor remoto, y los resultados de la prueba aparecerán en la sección **Resultado**
 Enter Pool Mount Point=Entrar en el punto de montaje del Pool
 Legacy Mount Point Compatibility=¿Compatibilidad del punto de montaje heredado
 Mount SSDs with discard option=¿Montar discos SSD con opción de descarte
@@ -27,23 +28,32 @@ Private Hidden=Privado oculto
 Refresh and Update=Refrescar y actualizar
 Remote Share Mount Wait Time=Tiempo de espera de montaje de recurso compartido remoto
 Rule=Regla
+Select Disk=Seleccionar Disco
+See Help=Ver Ayuda
+Set Encrypted Disk Password=Establecer Contraseña de Disco Cifrado
+Set Password=Establecer Contraseña
+Set Pool Mount Point=Configurar Punto de Montaje del Pool
+Set the Pool Mount Point for this disk=Establecer el punto de montaje del Pool para este disco
+Set the disk Password=Establecer contraseña del disco
 SMB Settings=Configuración SMB
 SMB Sharing=Compartir SMB
-Select Disk=Seleccionar disco
-Set Encrypted Disk Password=Establecer la contraseña del disco encriptado
-Set Password=Establecer contraseña
-Set Pool Mount Point=Establecer el punto de montaje del Pool
-Set the Pool Mount Point for this disk=Establezca el punto de montaje del pool para este disco
-Set the disk Password=Establecer la contraseña del disco
 Specify SMB Version when Mounting Remote Shares=¿Especificar la versión de SMB al montar recursos compartidos remotos
 Spin down disks=Poner discos en reposo
+Test=Probar
+Testing=Probando
+Test the Remote Server=Probar el servidor remoto
 The Unassigned Devices Plus plugin must be installed to enable Destructive Mode=El plugin Unassigned Devices Plus debe estar instalado para activar el Modo Destructivo
+This is a tool to help troubleshoot Remote Servers ability to serve SMB and NFS shares=Esto es una herramienta para ayudar a resolver problemas en la capacidad de los servidores remotos para compartir recursos mediante SMB y NFS.
 Time Machine volume size limit=Límite de tamaño de volumen de Time Machine
 to SMB share config=a la configuración compartida de SMB
 Udev and Hotplug=Udev y Hotplug
 Unassigned Devices=Dispositivos no asignados
 Unraid 6.10 or later is required for NFSv4 support=Se requiere Unraid 6.10 o posterior para el soporte de NFSv4
+Upgrade ZFS Pool=Actualizar Pool ZFS
 Use only when directed for support because the messages can flood the log=Úselo solo cuando se le indique soporte porque los mensajes pueden inundar el registro
+Warning=Advertencia
+Windows may require a valid User to be defined even for Public shares=Es posible que Windows requiera que se defina un usuario válido incluso para recursos compartidos públicos
+Working=En proceso
 
 ; Help
 ;
@@ -140,11 +150,11 @@ Use only when directed for support because the messages can flood the log=Úselo
 :end
 
 :ud_settings_nfs_security_plug:
-> Set to **Yes** to export Unassigned Devices with NFS sharing. Shares are exported Public with read and write access or Private with the rule you set. Access is controlled with permission settings on files and folders.
+> Establezca **Sí** para exportar dispositivos no asignados con uso compartido de NFS. Los recursos compartidos se exportan como públicos con acceso de lectura y escritura o como privados con la regla que establezca. El acceso se controla con la configuración de permisos en archivos y carpetas.
 :end
 
-:ud_settings_nfs_shares_plug:
-> Establecer en **Sí** para exportar recursos compartidos NFS. Los recursos compartidos se exportan de forma pública con acceso de lectura y escritura o de forma privada con la regla que se establezca.  El acceso se controla con la configuración de permisos en archivos y carpetas.
+:ud_settings_nfs_rules_plug:
+> **Nota:** La regla normal utilizada por UD es '*(rw,sec=sys,insecure,anongid=100,anonuid=99,no_root_squash)'.
 :end
 
 :ud_settings_disk_pass_plug:
@@ -152,9 +162,45 @@ Use only when directed for support because the messages can flood the log=Úselo
 :end
 
 :ud_settings_change_uuid_plug:
-> Seleccione el disco al que desea cambiar el UUID.  Esto es útil cuando un disco ha sido retirado del Array y tiene el mismo UUID que un disco del Array.  El disco debe estar desmontado para cambiar el UUID.
+> Seleccione el disco al que desea cambiar el UUID.  Esto es útil cuando un disco ha sido retirado del Array y tiene el mismo UUID que un disco del Array. El disco debe estar desmontado para cambiar el UUID.
+>
+> **Nota:** No cambie el UUID de un disco en el Pool.
 :end
 
 :ud_settings_zfs_upgrade_plug:
 > Seleccione el disco que desea actualizar a la última versión de ZFS. La unidad debe estar montada para actualizar ZFS.
+:end
+
+:ud_remote_server_test_plug:
+> Los servidores remotos deben tener habilitados SMB o NFS. Esto comprobará que los puertos SMB o NFS estén abiertos. El comando 'showmount -e <server>' en Unraid también debe mostrar los montajes NFS disponibles.
+
+> Para que SMB esté en línea, el servidor remoto debe tener el puerto SMB abierto.
+
+> Para que NFS esté en línea, el servidor remoto debe tener el puerto NFS abierto y el comando 'showmount -e' debe mostrar los recursos compartidos de NFS.
+
+> Puede darse el caso en que el puerto esté abierto y 'showmount -e' no muestre los recursos compartidos NFS y tampoco no funcione.
+
+> Si showmount no devuelve ningún recurso compartido NFS en un servidor remoto accesible como Synology, generalmente significa una de las siguientes cosas:
+
+> No hay recursos compartidos NFS exportados:
+
+> Es posible que el servidor no tenga ningún directorio configurado para la exportación NFS. Compruebe la configuración NFS en el dispositivo Synology y asegúrese de que las carpetas destinadas al uso compartido NFS se exporten.
+
+> Restricciones de Acceso:
+
+> Los recursos compartidos NFS se pueden configurar con restricciones de acceso basadas en IP. Los dispositivos Synology le permiten especificar qué direcciones IP o redes pueden acceder a cada recurso compartido NFS. Si su dirección IP no está permitida, el recurso compartido NFS no aparecerá al ejecutar showmount.
+
+> Servicio NFS Inhabilitado:
+
+> Es posible que el servicio NFS en Synology no esté habilitado. Compruébelo en la configuración de Synology DSM en Panel de control > Servicios de archivos > NFS. Habilite NFS si está deshabilitado.
+
+> Configuración de Red o Firewall:
+
+> Es posible que el dispositivo Synology tenga reglas de Firewall que bloqueen la solicitud de showmount o la comunicación RPC requerida. Asegúrese de que la configuración del Firewall permita el tráfico en los puertos relacionados con NFS (normalmente 2049 para NFS y 111 para RPC).
+
+> Opciones de Exportación de Synology:
+
+> En ocasiones, la configuración de NFS de Synology puede requerir que se habilite **Habilitar NFS** a nivel superior y que se especifique **Permitir NFSv3** si está utilizando clientes que usan NFSv3. Consulte Panel de control > Servicios de archivos > NFS para asegurarse de que la configuración sea correcta.
+
+> Al asegurar que NFS esté habilitado, configurado con los permisos correctos y que los directorios exportados estén permitidos para la IP de su cliente, showmount debería enumerar las exportaciones disponibles.
 :end
