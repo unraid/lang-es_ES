@@ -143,8 +143,8 @@ This release has been withdrawn for use with Trial keys=Esta versión ha sido re
 This server has %s attached storage device=Este servidor tiene %s dispositivo de almacenamiento conectado
 This server has %s attached storage devices=Este servidor tiene %s dispositivos de almacenamiento conectados
 This utility is used for troubleshooting purposes=Esta utilidad se utiliza para solucionar problemas
-This will delete all notification files=Esto eliminará todos los archivos de notificación
-This will delete the selected notification files=Esto eliminará los archivos de notificación seleccionados
+This will delete all notification files=¡Esto eliminará todos los archivos de notificaciones
+This will delete the selected notification files=Esto eliminará los archivos de notificaciones seleccionados
 This will update folder file permissions=Esto actualizará los permisos de carpetas & archivos
 Time=Hora
 To install a registration key, paste the key file URL in the box below and click Install Key=Para instalar una licencia, pegue la URL del archivo de licencia en el siguiente campo y haga clic en **Instalar Licencia**
@@ -249,11 +249,11 @@ hará que sea ***imposible*** reconstruir una unidad defectuosa existente - ¡Te
 :end
 
 :newperms_1_plug:
-Esta es una acción obligatoria que ser realizada una única vez tras actualizar desde una versión de Unraid OS anterior a 5.0 a la versión 5.0 o posterior.
+Esta es una acción obligatoria que debe realizarse una sola vez después de actualizar Unraid a la v5 o posterior desde una versión de Unraid anterior a la 5.0
 Seleccione **TODOS LOS DISCOS** al realizar esta acción única.
 
-Esta utilidad también es útil para restaurar la propiedad/permisos predeterminados de archivos y
-directorios al realizar la transición de Active Directory a una integración que no sea Active Directory.
+Esta utilidad también es útil para restaurar la propiedad y los permisos predeterminados de archivos 
+y directorios al pasar de la integración con Active Directory a una integración sin Active Directory.
 
 La utilidad inicia un proceso en segundo plano que accede a cada uno de sus discos del Array, discos de caché y carpetas compartidas
 seleccionadas y cambia la propiedad de archivos y directorios a *nobody/users* (ej. uid/gid to 99/100), y establece los siguientes
@@ -274,7 +274,7 @@ Para archivos de solo lectura:
 :newperms_3_plug:
 Al hacer clic en **Iniciar** se abrirá otra ventana e iniciará el proceso en segundo plano.
 
-Cerrar la ventana antes de que se haya completado terminará el proceso en segundo plano, así que no lo haga. Este proceso puede tardar mucho tiempo si tiene muchos archivos.
+Cerrar la ventana antes de que finalice el proceso interrumpirá su ejecución; por lo tanto, no lo haga. Este proceso puede tardar mucho tiempo si tiene muchos archivos.
 
 Tenga en cuenta que esta herramienta puede afectar negativamente cualquier contenedor de Docker si permite que se incluya la carpeta appdata.
 :end
