@@ -119,17 +119,25 @@ You may actually cause more problems than you solve if there are problems with y
 :end
 
 :tips_tweaks_dirty_background_plug:
-> Para las VMs de streaming y de juegos, establezca los valores bajos en un solo dígito.  Los valores recomendados son: vm.dirty_background_ratio=2% y vm.dirty_ratio=3%.
-> Si tienes grandes cantidades de RAM, más pequeño es mejor.
-> Precaución: No aumente estos valores más allá de la configuración predeterminada a menos que tenga un SAI que apague Unraid de forma fiable.
+> Los valores recomendados son vm.dirty_background_ratio al 3% y vm.dirty_ratio al 5%.
+> Si tienes una gran cantidad de RAM, configura vm.dirty_background_ratio al 1% y vm.dirty_ratio al 2%.
+> Precaución: No aumente estos valores más allá de la configuración predeterminada a menos que tenga un SAI que apague de forma fiable Unraid.
 >
 > Establezca la 'vm.dirty_background_ratio' como un porcentaje de la memoria RAM total.
-> La configuración por defecto del 10% se recomienda en la mayoría de los casos.  Si tiene una VM de streaming de medios o de juegos, utilice un valor del 2%.  Si experimenta errores de OOM, se recomienda que establezca este valor al 1%.
+> Se recomienda la configuración predeterminada del 3% a menos que tenga grandes cantidades de RAM. Si tiene una VM de streaming de multimedia o de juegos, utilice un valor del 1%.
 :end
 
 :tips_tweaks_dirty_ratio_plug:
 > Establezca el 'vm.dirty_ratio' como un porcentaje de la memoria RAM total.
-> Establecer esto demasiado alto puede hacer que Linux termine algunos procesos para obtener más memoria.  La configuración por defecto del 20% se recomienda en la mayoría de los casos.  Si tiene una VM de streaming de medios o de juegos, utilice un valor del 3%.  Si experimenta errores de OOM, se recomienda que lo establezca en un 2%.
+> Si se establece en un valor demasiado alto, Linux puede terminar algunos procesos para ganar más memoria. Se recomienda la configuración predeterminada del 5 %, a menos que tenga una gran cantidad de RAM.
+:end
+
+:tips_tweaks_writeback_plug:
+> La configuración predeterminada para controlar la frecuencia con la que el kernel verifica si hay datos modificados que deben ser vaciados en segundo plano es de 200 centisegundos (2 segundos).
+:end
+
+:tips_tweaks_expire_plug:
+> El valor predeterminado para especificar cuánto tiempo pueden permanecer los datos modificados antes de ser considerados para ser escritos nuevamente es de 1000 centisegundos (10 segundos).
 :end
 
 :tips_tweaks_max_watches_plug:
