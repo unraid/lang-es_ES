@@ -256,7 +256,7 @@ Unraid utiliza estas opciones por defecto cuando está creando un grupo de almac
 
 `-dconvert=raid1 -mconvert=raid1`
 
-Para más información, por favor, consulte la documentación del balance-btrfs [Aquí](https://btrfs.wiki.kernel.org/index.php/Manpage/btrfs-balance)
+Para más información, por favor, consulte la documentación del balance-btrfs [Aquí](https://man7.org/linux/man-pages/man8/btrfs-balance.8.html)
 
 *Nota: raid5 y raid6 son generalmente considerados **experimentales** por la comunidad de Linux*
 :end
@@ -1194,6 +1194,14 @@ Introduzca el puerto HTTPS, por defecto es 443.
 Introduzca su dominio de nivel superior (TLD). Puede dejarse en blanco.
 :end
 
+:mgmt_wg_access_urls_help:
+Estas URL solo funcionarán cuando se conecten a través del túnel WireGuard apropiado configurado en ***Ajustes > Ajustes de VPN***
+:end
+
+:mgmt_tailscale_access_urls_help:
+Estas URL solo funcionarán cuando estén conectadas a la Tailnet de Tailscale adecuada.
+:end
+
 :mgmt_certificate_expiration_help:
 **Aprovisionar** puede ser usado para obtener un certificado SSL *gratis* de [Let's Encrypt](https://letsencrypt.org/es/) y
 cargarlo en el servidor. Nota: Es **altamente** recomendado el uso de una dirección IP fija en este caso.
@@ -2075,6 +2083,141 @@ Si se selecciona el tipo Host, la aplicación podrá comunicarse en red utilizan
 En términos generales, se recomienda dejar este ajuste en su valor predeterminado según lo especificado por la plantilla de la aplicación.
 
 NOTA IMPORTANTE: Si ajusta la asignación de puertos, no modifique la configuración para el puerto del contenedor ya que solo se puede ajustar el puerto del host.
+:end
+
+:docker_container_network_help:
+Esto permite que su contenedor utilice la configuración de red de otro contenedor. Seleccione el contenedor apropiado de la lista.<br/>Esta configuración puede ser particularmente beneficiosa si desea enrutar el tráfico de su contenedor a través de una VPN.
+:end
+
+:docker_tailscale_help:
+Habilite Tailscale para agregar este contenedor como una máquina en su Tailnet.
+:end
+
+:docker_tailscale_hostname_help:
+Proporcione el nombre de host para este contenedor. No es necesario que coincida con el nombre del contenedor, pero debe ser único en su Tailnet. Tenga en cuenta que se generará un certificado HTTPS para este nombre de host, lo que significa que se colocará en un registro público, así que use un nombre que no le importe que sea público.
+Para obtener más información, consulte <a href="https://tailscale.com/kb/1153/enabling-https" target="_blank">Habilitar HTTPS</a>.
+:end
+
+:docker_tailscale_be_exitnode_help:
+Habilite esto si otras máquinas en su Tailnet deben enrutar su tráfico de Internet a través de este contenedor; esto es más útil para contenedores que se conectan a servicios VPN comerciales.
+Asegúrese de autorizar este nodo de salida en su <a href="https://login.tailscale.com/admin/machines" target="_blank">Panel de administración de Tailscale</a>.
+Para obtener más detalles, consulte la documentación de Tailscale de <a href="https://tailscale.com/kb/1103/exit-nodes" target="_blank">Nodos de Salida</a>.
+:end
+
+:docker_tailscale_exitnode_ip_help:
+Opcionalmente, puede enrutar el tráfico saliente de Internet de este contenedor a través de un nodo de salida en su Tailnet. Seleccione el nodo de salida o ingrese su dirección IP de Tailscale.
+Para obtener más información, consulte <a href="https://tailscale.com/kb/1103/exit-nodes" target="_blank">Nodos de Salida</a>.
+:end
+
+:docker_tailscale_lanaccess_help:
+Solo se aplica cuando este contenedor utiliza un nodo de salida. Habilite esta opción para permitir que el contenedor acceda a la red local.
+
+<b>ADVERTENCIA:</b>&nbsp;Incluso con esta función habilitada, es posible que los sistemas en su LAN no puedan acceder al contenedor a menos que tengan Tailscale instalado.
+:end
+
+:docker_tailscale_userspace_networking_help:
+Cuando esté habilitado, este contenedor funcionará en un entorno restringido. El DNS de Tailscale no funcionará y el contenedor no podrá iniciar conexiones con otras máquinas de Tailscale. Sin embargo, otras máquinas de su Tailnet podrán comunicarse con este contenedor.
+
+Cuando está deshabilitado, este contenedor tendrá acceso total a su Tailnet. El DNS de Tailscale funcionará y el contenedor podrá comunicarse completamente con otras máquinas de su Tailnet.
+Sin embargo, es posible que los sistemas en su LAN no puedan acceder al contenedor a menos que tengan Tailscale instalado.
+:end
+
+:docker_tailscale_ssh_help:
+Tailscale SSH es similar a la opción "Consola" de Docker en la interfaz web de Unraid, excepto que se conecta con un cliente SSH y se autentica a través de Tailscale.
+Para obtener más información, consulte la <a href="https://tailscale.com/kb/1193/tailscale-ssh" target="_blank">documentación de Tailscale SSH</a>.
+:end
+
+:docker_tailscale_serve_mode_help:
+Al habilitar <b>Servir</b> se revertirá automáticamente el proxy del servicio web principal desde este contenedor y lo hará disponible en su Tailnet usando https con un certificado válido.
+
+Tenga en cuenta que al acceder a la URL de <b>Tailscale WebUI</b>, no se agrega ninguna capa de autenticación adicional más allá de restringirla a su Tailnet: el contenedor sigue siendo responsable de administrar los nombres de usuario y las contraseñas que tienen permiso para acceder a él. Según su configuración, también puede ser posible el acceso directo al contenedor.
+
+Para obtener más información, consulte la <a href="https://tailscale.com/kb/1312/serve" target="_blank">documentación de Tailscale Serve</a>.
+
+Si la documentación recomienda configuraciones adicionales para un caso de uso más complejo, habilite "Tailscale Show Advanced Settings". La compatibilidad con estas configuraciones avanzadas no está disponible más allá de confirmar que los comandos se pasan a Tailscale correctamente.
+
+<b>Funnel</b> es similar a <b>Serve</b>, excepto que el servicio web está disponible en Internet. Utilícelo con cuidado, ya que es probable que el servicio sea atacado. Al igual que con <b>Serve</b>, el contenedor en sí es responsable de gestionar cualquier autenticación.
+
+Recomendamos leer la <a href="https://tailscale.com/kb/1223/funnel" target="_blank">documentación de Tailscale Funnel</a> antes de habilitar esta función.
+
+<b>Nota:</b>&nbsp;Habilitar <b>Serve</b> o <b>Funnel</b> publicará el nombre del host de Tailscale en un registro público.
+Para obtener más detalles, consulte la documentación de Tailscale: <a href="https://tailscale.com/kb/1153/enabling-https" target="_blank">Activar HTTPS</a>.
+:end
+
+:docker_tailscale_serve_port_help:
+Este campo debe especificar el puerto para el servicio web principal que ofrece este contenedor. Nota: debe especificar el puerto en el contenedor, no un puerto que se reasignó en el host.
+
+El sistema intentó determinar el puerto correcto automáticamente. Si utilizó el valor incorrecto, es probable que haya un problema con el campo de interfaz de usuario web de este contenedor, que se puede ver al cambiar de "Vista básica" a "Vista avanzada" en la esquina superior derecha de esta página.
+
+En la mayoría de los casos, este puerto es todo lo que necesitará especificar para utilizar Serve en el sitio web de este contenedor, aunque hay opciones adicionales disponibles a continuación para contenedores más complejos.
+
+Este valor se pasa a porción `<serve_port>` que inicia Serve o Funnel:<br>
+`tailscale [serve|funnel] --bg --<protocol><protocol_port><path> http://localhost:`**`<serve_port>`**`<local_path>`<br>
+Para más detalles consulte la <a href="https://tailscale.com/kb/1242/tailscale-serve" target="_blank">documentación de Tailscale Serve Command Line</a>.
+:end
+
+:docker_tailscale_show_advanced_help:
+Here there be dragons!
+:end
+
+:docker_tailscale_serve_local_path_help:
+Cuando no se especifica, este valor predeterminado es una cadena vacía. Se pasa a la porción `<local_path>` de este comando que inicia Serve o Funnel:<br>
+`tailscale [serve|funnel] --bg --<protocol><protocol_port><path> http://localhost:<serve_port>`**`<local_path>`**<br>
+Para más detalles consulte la <a href="https://tailscale.com/kb/1242/tailscale-serve" target="_blank">documentación de Tailscale Serve Command Line</a>.
+:end
+
+:docker_tailscale_serve_protocol_help:
+Cuando no se especifica, el valor predeterminado es "https". Se pasa a la porción `<protocol>`  de este comando que inicia Serve o Funnel:<br>
+`tailscale [serve|funnel] --bg --`**`<protocol>`**`=<protocol_port><path> http://localhost:<serve_port><local_path>`<br>
+Para más detalles consulte la <a href="https://tailscale.com/kb/1242/tailscale-serve" target="_blank">documentación de Tailscale Serve Command Line</a>.
+:end
+
+:docker_tailscale_serve_protocol_port_help:
+Cuando no se especifica, el valor predeterminado es "=443". Se pasa a la porción `<protocol_port>` de este comando que inicia Serve o Funnel:<br>
+`tailscale [serve|funnel] --bg --<protocol>`**`<protocol_port>`**`<path> http://localhost:<serve_port><local_path>`<br>
+Para más detalles consulte la <a href="https://tailscale.com/kb/1242/tailscale-serve" target="_blank">documentación de Tailscale Serve Command Line</a>.
+:end
+
+:docker_tailscale_serve_path_help:
+Cuando no se especifica, este valor predeterminado es una cadena vacía. Se pasa a la porción `<path>` de este comando que inicia Serve o Funnel:<br>
+`tailscale [serve|funnel] --bg --<protocol><protocol_port>`**`<path>`** `http://localhost:<serve_port><local_path>`<br>
+Para más detalles consulte la <a href="https://tailscale.com/kb/1242/tailscale-serve" target="_blank">documentación de Tailscale Serve Command Line</a>.
+:end
+
+:docker_tailscale_serve_webui_help:
+Si <b>Serve</b> está habilitado, será una URL https con un nombre de dominio adecuado al que se puede acceder a través de Tailnet, y no se necesita puerto.
+
+Si <b>Funnel</b> está habilitado, la misma URL estará disponible en Internet.
+
+Si están deshabilitadas, la URL se generará desde el campo de interfaz de usuario web principal del contenedor, pero se modificará para utilizar la IP de Tailscale. Si se especifica el puerto incorrecto aquí, cambie de "Vista básica" a "Vista avanzada" y revise el campo de interfaz de usuario web de este contenedor.
+:end
+
+:docker_tailscale_advertise_routes_help:
+Si lo desea, especifique las rutas que se deben pasar al parámetro **`--advertise-routes=`**  cuando se corre **`tailscale up`**.
+Para más detalles consulte la <a href="https://tailscale.com/kb/1019/subnets#connect-to-tailscale-as-a-subnet-router" target="_blank">documentación de Subnet routers</a>.
+:end
+
+:docker_tailscale_accept_routes_help:
+Cuando está habilitado, esto aceptará sus rutas de subred desde otros dispositivos, agregando el parámetro **`--accept-routes`** cuando se corre **`tailscale up`**.
+Para más detalles consulte la siguiente documentación: <a href="https://tailscale.com/kb/1019/subnets?q=allow+routes#use-your-subnet-routes-from-other-devices" target="_blank">Use your subnet routes from other devices</a>.
+:end
+
+:docker_tailscale_daemon_extra_params_help:
+Especifique cualquier parámetro adicional que se deba pasar al correr **`tailscaled`**.
+Para más detalles consulte la <a href="https://tailscale.com/kb/1278/tailscaled" target="_blank">documentación de tailscaled</a>.
+:end
+
+:docker_tailscale_extra_param_help:
+Especifique cualquier parámetro adicional que se deba pasar al correr **`tailscale up`**.
+Para más detalles consulte la <a href="https://tailscale.com/kb/1080/cli#up" target="_blank">documentación de Tailscale CLI</a>.
+:end
+
+:docker_tailscale_statedir_help:
+Si la detección del directorio de estado falla durante el inicio, puede especificar un directorio persistente en el contenedor para anular la detección automática.
+:end
+
+:docker_tailscale_troubleshooting_packages_help:
+Habilite esto para instalar `ping`, `nslookup`, `curl`, y `speedtest-cli` en el contenedor para ayudar a solucionar problemas de red. Una vez que se resuelvan los problemas, recomendamos deshabilitar esta opción para reducir el tamaño del contenedor.
 :end
 
 :docker_privileged_help:
