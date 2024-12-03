@@ -33,7 +33,7 @@ Mount ISO File when Array is Started=Montar el archivo ISO cuando se inicia el A
 Mount Point=Punto de Montaje
 Mount Remote Share Read only=Montar recurso compartido remoto de sólo lectura
 Mount Remote SMB or NFS Share when Array is Started=Monte el recurso compartido SMB o NFS remoto cuando se inicie el Array
-Note: Enable SMB Sharing or NFS Export in Unassigned Devices Settings to share this device=Nota: habilite Compartir SMB o Exportar NFS en la Configuración de Unnasigned Devices para compartir este dispositivo
+Note: Enable SMB Sharing or NFS Export in Unassigned Devices Settings to share this device=Nota: habilite Compartir SMB o Exportar NFS en la Configuración de Unassigned Devices para compartir este dispositivo
 Passed Through=Pasado por
 Read Only=Sólo Lectura
 Run Device Script File in the background=Ejecutar el Script del dispositivo en segundo plano
@@ -44,7 +44,7 @@ Share Remote Mount with SMB and NFS=Compartir montaje remoto con SMB y NFS
 Show all partitions on this device by default=Mostrar todas las particiones en este dispositivo de forma predeterminada
 Show Partitions=Mostrar Particiones
 Source=Fuente
-Unassigned Devices Settings=Ajustes de Unnasigned Devices
+Unassigned Devices Settings=Ajustes de Unassigned Devices
 Undo your changes since last Save=Deshacer los cambios desde el último guardado
 User Script=Scripts del Usuario
 APFS Volume=Volumen APFS
@@ -82,7 +82,11 @@ ZFS Volume=Volumen ZFS
 :end
 
 :ud_encrypt_connection_plug:
-> Configúrelo en **Sí** para cifrar el montaje CIFS. Esto es mejor para montajes fuera del sitio debido a la sobrecarga del cifrado.
+> Seleccione **Sí** para cifrar el montaje CIFS. Esto es mejor para montajes fuera del sitio debido a la sobrecarga del cifrado.
+:end
+
+:compress_option_plug:
+> Seleccione **Sí** para montar un disco BTRFS o ZFS con la opción de compresión. La compresión para BTRFS es "zlib" y para ZFS es "lz4".
 :end
 
 :ud_edit_script_choose_name_plug:
@@ -91,7 +95,7 @@ ZFS Volume=Volumen ZFS
 
 :ud_edit_user_script_choose_name_plug:
 > Si tiene instalado el complemento User Scripts, puede hacer que
-Unnasigned Devices mostre el estado de ejecución del Script de usuario que utilizará este dispositivo. Este campo solo se habilitará cuando exista un Script del dispositivo.
+Unassigned Devices mostre el estado de ejecución del Script de usuario que utilizará este dispositivo. Este campo solo se habilitará cuando exista un Script del dispositivo.
 :end
 
 :ud_edit_script_run_background_plug:
