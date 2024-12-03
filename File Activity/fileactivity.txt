@@ -28,7 +28,7 @@ Enable for Cache and Pool Disks=¿Habilitar para caché y Pool de discos
 :end
 
 :file_activity_enable_ud_plug:
-> Establezca **Sí** para habilitar el Registro de Actividad de Archivos para dispositivos no asignados, si está instalado el complemento Unnasigned Devices.
+> Establezca **Sí** para habilitar el Registro de Actividad de Archivos para dispositivos no asignados, si está instalado el complemento Unassigned Devices.
 :end
 
 :file_activity_enable_cache_plug:
