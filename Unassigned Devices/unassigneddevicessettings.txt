@@ -14,7 +14,6 @@ Enable NFS export=¿Activar la exportación NFS
 Enable SMB Security=Activar la Seguridad SMB
 Enable Time Machine=¿Activar Time Machine
 Enter Disk Password=Introduzca la contraseña del disco
-Enter the Remote Server name or IP address and the results from the Remote Server Test will show in the **Result** text area=Introduzca el nombre o la dirección IP del servidor remoto, y los resultados de la prueba aparecerán en la sección **Resultado**
 Enter Pool Mount Point=Entrar en el punto de montaje del Pool
 Legacy Mount Point Compatibility=¿Compatibilidad del punto de montaje heredado
 Mount SSDs with discard option=¿Montar discos SSD con opción de descarte
@@ -204,3 +203,6 @@ Working=En proceso
 
 > Al asegurar que NFS esté habilitado, configurado con los permisos correctos y que los directorios exportados estén permitidos para la IP de su cliente, showmount debería enumerar las exportaciones disponibles.
 :end
+
+; Note: December 8, 2024 - 1 missing translations
+Enter the Remote Server name or IP address and the results from the Remote Server Test will show in the Result text area=Enter the Remote Server name or IP address and the results from the Remote Server Test will show in the **Result** text area

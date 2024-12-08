@@ -2,12 +2,10 @@ Adaptive=Adaptable
 Cache pressure of directories on system=Presión de la memoria caché de los directorios en el sistema
 Check HELP for filter example=Consulte la AYUDA para ver un ejemplo de filtro
 Disk Idle Timer=Temporizador de reposo del disco
-Excluded folders=Carpetas excluidas
 Folder caching function=Función de almacenamiento de la caché de carpetas
 for adaptive depth=para una profundidad adaptable
 Important - check HELP if disks spin up=Importante - compruebe si los discos giran
 Included folders=Carpetas incluidas
-Limit the memory available to the shell in which the script runs increase if it dies=Limitar la memoria disponible para el shell en el que se ejecuta el script (aumentar si muere)
 Logging=Registro
 Maximum interval between folder scans=Intervalo máximo entre exploraciones de carpetas
 Maximum level depth=Profundidad de nivel máxima
@@ -15,9 +13,6 @@ Minimum interval between folder scans=Intervalo mínimo entre escaneos de carpet
 Minimum level depth=Profundidad de nivel mínima
 or see=o ver
 Run scan of each disk in a separate thread=Ejecutar el escaneo de cada disco en un hilo separado
-Scan timeout for a scan during disk-idle period=Tiempo de espera para un escaneo durante el período de inactividad del disco
-Scan timeout for a scan during initial startup or less-idle period=Tiempo de espera para un escaneo durante el arranque inicial o el periodo de inactividad
-Scan timeout for a scan when all directories have been succesfully cached=Tiempo de espera de la exploración cuando todos los directorios se han almacenado con éxito en la caché
 Scan user shares mntuser=Escanear los recursos compartidos del usuario (/mnt/user)
 Suspend during Mover process=Suspender durante el proceso de 'Mover'
 unlimited=ilimitado
@@ -139,3 +134,9 @@ User defined options=Opciones definidas por el usuario
 >
 > Tenga en cuenta que las comillas simples alrededor del argumento de -a son importantes. Las comillas dobles no funcionan en la versión actual, por lo que lamentablemente no es posible filtrar con '-nombre "*Old" -prune'.
 :end
+
+; Note: December 8, 2024 - 4 missing translations
+Memory available to the cache_dirs script increase if it dies=Memory available to the cache_dirs script (increase if it dies)
+Timeout during disk-idle period=
+Timeout during initial startup or less-idle period=
+Timeout when all directories have been cached=

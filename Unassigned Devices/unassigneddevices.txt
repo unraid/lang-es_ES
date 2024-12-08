@@ -85,7 +85,6 @@ NFS Script=Script NFS
 NFS Share=NFS Remoto
 NFS Shares=NFS Compartido
 No Remote SMB=Sin SMB remoto
-No script file to execute=
 No Unassigned Disks available=No hay discos sin asignar
 Not Enabled=No está activado
 not installed=no instalado
@@ -124,7 +123,6 @@ Search for Servers, or enter the Server name or IP address manually=Busque servi
 Search for Shares or enter the Share name manually=Busque recursos compartidos o ingrese el nombre del recurso compartido manualmente
 Searching=Buscando
 Select the Root Share=Seleccione el recurso compartido raíz
-Serial Number Mount Point=Número de serie (Punto de Montaje)
 Shares=Shares
 Share Type=Compartir Tipo
 share for=Compartir para
@@ -163,7 +161,6 @@ View Device Script Log=Ver el registro del script del dispositivo
 View ISO File Script Log=Ver el registro del script de ISO
 View NFS Script Log=Ver el registro del script de NFS
 View SMB Script Log=Ver el registro del script de SMB
-View Remote SMB=Ver SMB remoto
 WARNING=ADVERTENCIA
 When you copy files between shares in the Root Share, the files may not end up on the expected disks=Cuando se copian archivos entre recursos compartidos en el recurso compartido raíz, es posible que los archivos no terminen en los discos esperados
 Working=Funcionando
@@ -173,7 +170,6 @@ You must enable NFS in Settings->NFS to mount NFS shares=Debe habilitar NFS en C
 You must enable SMB in Settings->SMB to mount SMB shares=Debe habilitar SMB en Configuración->SMB para montar recursos compartidos SMB
 You must enable the Destructive Mode in UD Settings before you can Format this disk=Debe habilitar el modo destructivo en la configuración de UD antes de poder formatear este disco
 You WILL have problems if you do=Tendrá problemas si lo haces
-You will need to enter credentials to list the shares=Deberá ingresar las credenciales para enumerar los recursos compartidos
 ZFS Pool Name=Nombre del grupo ZFS
 ZFS Volume=Volumen ZFS
 
@@ -259,3 +255,7 @@ ZFS Volume=Volumen ZFS
 >
 > Tenga cuidado al usar la designación /dev/sdX porque puede cambiar después de un reinicio. Es mejor utilizar los valores pasados al script UD para sdX (DEVICE) y devX (UD_DEVICE).
 :end
+
+; Note: December 8, 2024 - 2 missing translations
+No script file to execute=
+Serial Number Mount Point=Serial Number (Mount Point)

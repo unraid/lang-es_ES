@@ -24,8 +24,8 @@ Enter and Edit the Device Script that runs when a udev or operator event occurs=
 Enter the User Script File Name=Ingrese el nombre del archivo del Script del Usuario
 Enter the User Script that will be using this device=Ingrese el Script de Usuario que usará este dispositivo
 Enter the volume to mount on this apfs partition=Ingrese el volumen para montar en esta partición apfs
-Load the default Device Script=Cargue el Script predeterminado del Dispositivo 
-Run in background=Ejecutar en segundo plano 
+Load the default Device Script=Cargue el Script predeterminado del Dispositivo
+Run in background=Ejecutar en segundo plano
 Mark this Device as passed through to a VM or Docker=Marcar este dispositivo como pasado por una VM o Docker
 Mount Device Read only=Montar Dispositivo sólo Lectura
 Mount Device when Plugged in or Array is Started=Montar el Dispositivo cuando se enchufa o se inicia el Array
@@ -51,7 +51,7 @@ APFS Volume=Volumen APFS
 ZFS Volume=Volumen ZFS
 
 ;
-; Ayuda
+; Help
 ;
 :ud_edit_script_device_settings_plug:
 > Selecciona las opciones para este dispositivo y punto de montaje.

@@ -151,16 +151,16 @@ This template is set up to use a custom network You may have to adjust the netwo
 This template is set up to run as Privileged This is a possible security risk and usually does not need to be enabled Note that some applications require privileged in order to operate correctly=Esta plantilla está configurada para ejecutarse como Privilegiada. Este es un posible riesgo de seguridad y normalmente no es necesario habilitarla. Tenga en cuenta que algunas aplicaciones requieren privilegios para funcionar correctamente
 One or more ports used by this application are already in use by another service or app running on your server You will need to adjust the host ports accordingly on the template=Uno o varios puertos utilizados por esta aplicación ya están en uso por otro servicio o aplicación. Deberá ajustar los puertos de host según corresponda en la plantilla
 Not Enough Memory=Memoria insuficiente
+Community Applications and Unraid OS have a minimum required installed memory of 4G CA cannot run without those mimimums being met=Aplicaciones comunitarias y el sistema operativo Unraid requieren una memoria instalada mínima requerida de 4G. CA no puede ejecutarse sin que se cumplan esos mínimos
 Run Anyways=Ejecutar de todos modos
 Memory Requirements not met Problems may result=No se cumplen los requisitos de memoria. Pueden surgir problemas.
-Community Applications and Unraid OS have a minimum required installed memory of 4G CA cannot run without those mimimums being met=Aplicaciones comunitarias y el sistema operativo Unraid requieren una memoria instalada mínima requerida de 4G. CA no puede ejecutarse sin que se cumplan esos mínimos
 Installation already in progress=La instalación ya está en progreso
 Another plugin installation or update is already in progress and this one cannot start Wait until the current installation or update is completed and try again=Ya se está realizando otra instalación o actualización de plugins y ésta no puede iniciarse. Espere hasta que se complete la instalación o actualización actual y vuelva a intentarlo.
 Clear Flag=Eliminar Marca
 %s is incompatible with your OS version Please update the OS to proceed=%s es incompatible con la versión de su sistema operativo. Actualice el sistema operativo para continuar.
 %s is incompatible with your OS version Either uninstall %s or update the OS=%s es incompatible con la versión de su sistema operativo. Desinstale %s o actualice el sistema operativo
 Browser failed to communicate with Unraid Server=El navegador no pudo comunicarse con el servidor Unraid
-For unknown reasons, your browser was unable to communicate with Community Applications running on your server=Por razones desconocidas, su navegador no pudo comunicarse con Community Applications 
+For unknown reasons, your browser was unable to communicate with Community Applications running on your server=Por razones desconocidas, su navegador no pudo comunicarse con Community Applications
 Attempt to Fix Via Reload Page=Intente solucionarlo recargando la página
 External Link=Enlace externo
 Clicking OK will take you to a 3rd party website not associated with Limetech=Al hacer clic en aceptar, accederá a un sitio web de terceros que no está asociado con Limetech
@@ -344,7 +344,6 @@ Install=Instalar
 Uninstall=Desinstalar
 Project=Proyecto
 Read Me First=Leer primero
-Install second instance=Instalar otra instancia
 Install Using The Templates Default Tag=Instalar Usando la Etiqueta de la Plantilla Por Defecto
 Moderator Comments=Comentarios del Moderador:
 Note not all authors keep up to date on change logs=Tenga en cuenta que no todos los autores actualizan el registro de cambios
@@ -458,3 +457,7 @@ Would you like CA to attempt to determine any applicable paths, ports, and varia
 An error occurred - Could not determine configuration=Error - No se puede determinar la configuración
 ; WebGui
 Click Install to download and install the Community Applications plugin=Haga clic en **Instalar** para descargar e instalar el plugin **Community Applications**
+
+
+; Note: December 8, 2024 - 1 missing translations
+Install another instance=
