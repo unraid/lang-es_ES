@@ -379,7 +379,6 @@ Key successfully changed=Clave cambiada exitosamente
 Key=Licencia
 Keyfile=Archivo de Clave
 kyber=kyber
-LAN hub spoke access=LAN hub & spoke access
 LAN to LAN access=Acceso LAN a LAN
 Language update notification=Notificación de actualización de idioma
 Language update=Actualización de idioma
@@ -619,7 +618,6 @@ Send once a week=Enviar una vez a la semana
 Send three times a day=Enviar tres veces al día
 Send twice a day=Enviar dos veces al día
 Sending email address=Dirección email del remitente
-Server hub spoke access=Server hub & spoke access
 Server name=Nombre del servidor
 Server to server access=Acceso de servidor a servidor
 Server was unable to provision SSL certificate=El servidor no fue capaz de aprovisionar un certificado SSL
@@ -860,3 +858,7 @@ to the Unraid server at=al servidor de Unraid en
 Transient errors in this log can be ignored unless you are having issues=Los errores transitorios en este registro pueden ser ignorados a menos que tenga problemas
 Unraid API extra origins=Orígenes extra de la API de Unraid
 View Flash Backup Error Log=Ver el Registro de Errores del Backup de la unidad Flash
+
+; Note: December 8, 2024 - 2 missing translations
+LAN hub spoke access=LAN hub & spoke access
+Server hub spoke access=Server hub & spoke access
