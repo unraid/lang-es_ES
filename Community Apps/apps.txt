@@ -344,6 +344,7 @@ Install=Instalar
 Uninstall=Desinstalar
 Project=Proyecto
 Read Me First=Leer primero
+Install another instance=Instalar otra instancia
 Install Using The Templates Default Tag=Instalar Usando la Etiqueta de la Plantilla Por Defecto
 Moderator Comments=Comentarios del Moderador:
 Note not all authors keep up to date on change logs=Tenga en cuenta que no todos los autores actualizan el registro de cambios
@@ -457,7 +458,3 @@ Would you like CA to attempt to determine any applicable paths, ports, and varia
 An error occurred - Could not determine configuration=Error - No se puede determinar la configuración
 ; WebGui
 Click Install to download and install the Community Applications plugin=Haga clic en **Instalar** para descargar e instalar el plugin **Community Applications**
-
-
-; Note: December 8, 2024 - 1 missing translations
-Install another instance=
