@@ -29,6 +29,7 @@ If you dont Unraid may not detect the Master Browser for all network interfaces 
 If you have an Intel Processor, it may appear that all CPUs are constantly running at full speed=Si tiene un procesador Intel, puede parecer que todas las CPUs están funcionando constantemente a toda velocidad
 If you set the 'Power Save' CPU Governor, you may see your processors stuck at 800 MHz=Si se configura el regulador de la CPU como "ahorro de energía", es posible que los procesadores se queden atascados en 800 MHz
 Install the Fix Common Problems plugin and resolve any Unraid configuration problems=Instale el plugin Fix Common Problems y resuelva cualquier problema de configuración de Unraid
+Intel TurboAMD Performance Boost=Intel Turbo/AMD Performance Boost
 It is recommended that you update Unraid to the latest stable version to get the latest features, bug fixes, and security updates=Se recomienda actualizar Unraid a la última versión estable para obtener las últimas características, correcciones de errores y actualizaciones de seguridad
 It is recommended to use the pstate driver on Intel processors if you want the most performance=Se recomienda utilizar el controlador pstate en los procesadores Intel si desea obtener el máximo rendimiento
 It is recommended you use the 'Performance' Governor for best performance and power savings=Se recomienda utilizar el regulador "Performance" para obtener el mejor rendimiento y ahorro de energía
@@ -225,7 +226,3 @@ You may actually cause more problems than you solve if there are problems with y
 >
 > Nota: Tenga cuidado con los procesos que mata aquí.  Podrías perder datos.
 :end
-
-
-; Note: December 8, 2024 - 1 missing translations
-Intel TurboAMD Performance Boost=Intel Turbo/AMD Performance Boost
