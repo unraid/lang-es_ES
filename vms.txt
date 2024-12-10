@@ -38,6 +38,7 @@ define OS boot options=especifique las opciones de arranque del sistema operativ
 define the amount memory=especifique la cantidad de memoria
 define the maximum amount of memory=especifique la cantidad máxima de memoria
 define type of cpu presented to this vm=especifique el tipo de CPU para esta máquina virtual
+Description=Descripción
 description of virtual machine=descripción de la máquina virtual
 Disk devices=Dispositivos de disco
 Disk devicesVolume=Dispositivos de disco/Volumen
@@ -175,6 +176,7 @@ Stop All=Detener todas
 Tickpolicy=Política de Ticks
 Timer Source=Fuente del Temporizador
 Toggle VM autostart=Cambiar inicio automático de VM
+Top Image=Imagen Principal
 type of storage image=tipo de imagen de almacenamiento
 Unknown action=Acción desconocida
 Unknown version=Versión desconocida
@@ -224,7 +226,3 @@ Windows 7XP=Windows 7/XP
 Windows 82012, newer Linux distros=Windows 82012, distribuciones Linux recientes
 wsport for virtual console=wsport para la terminal virtual
 XML View=Vista XML
-
-; Note: December 8, 2024 - 2 missing translations
-Description=Description
-Top Image=Top Image

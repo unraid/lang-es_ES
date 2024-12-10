@@ -85,6 +85,7 @@ NFS Script=Script NFS
 NFS Share=NFS Remoto
 NFS Shares=NFS Compartido
 No Remote SMB=Sin SMB remoto
+No script file to execute=No hay ningún archivo de script para ejecutar
 No Unassigned Disks available=No hay discos sin asignar
 Not Enabled=No está activado
 not installed=no instalado
@@ -123,6 +124,7 @@ Search for Servers, or enter the Server name or IP address manually=Busque servi
 Search for Shares or enter the Share name manually=Busque recursos compartidos o ingrese el nombre del recurso compartido manualmente
 Searching=Buscando
 Select the Root Share=Seleccione el recurso compartido raíz
+Serial Number Mount Point=Número de Serie (Punto de Montaje)
 Shares=Shares
 Share Type=Compartir Tipo
 share for=Compartir para
@@ -255,7 +257,3 @@ ZFS Volume=Volumen ZFS
 >
 > Tenga cuidado al usar la designación /dev/sdX porque puede cambiar después de un reinicio. Es mejor utilizar los valores pasados al script UD para sdX (DEVICE) y devX (UD_DEVICE).
 :end
-
-; Note: December 8, 2024 - 2 missing translations
-No script file to execute=
-Serial Number Mount Point=Serial Number (Mount Point)

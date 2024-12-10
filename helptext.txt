@@ -1404,6 +1404,15 @@ Seleccione la carpeta compartida en la que se almacenarán los registros syslog.
 Se recomienda el uso de una carpeta compartida ubicada en el disco caché para evitar activaciones de discos del Array.
 :end
 
+:syslog_remote_system_identifier_help:
+Seleccione el identificador del sistema remoto (utilizado en el nombre del archivo de registro).
+
+* "Dirección IP" utiliza la dirección IP (IPv4 o IPv6) del sistema de envío.
+* "Nombre de host (del mensaje de syslog)" utiliza el nombre de host incluido en cada mensaje de syslog.
+* "Nombre de host (de la búsqueda inversa de DNS)" realiza una búsqueda inversa de DNS para la IP de envío y utiliza el resultado.
+
+:end
+
 :syslog_local_rotation_help:
 Por defecto la rotación de los registros está deshabilitada y creará un único archivo de registro de tamaño ilimitado.
 
@@ -2572,6 +2581,22 @@ Para configurar las opciones de la consola para que se muestren en los menús co
 Virtual Manager Remote Viewer solo mostrará la opción Visor remoto. Ambos mostrarán tanto el Visor Web como el Visor Remoto.
 :end
 
+:vms_rdpopt_help:
+Agrega una opción al menú para iniciar RDP. Se descarga el archivo RDP. Debe configurar el navegador para que se abra cuando esté listo.
+:end
+
+:vms_usage_timer_help:
+Configuración en segundos para el tiempo de actualización de las métricas.
+:end
+
+:apc_ups_override_ups_capacity_help:
+Si su dispositivo no informa de forma nativa la Potencia Nominal ('NOMPOWER') desde 'apcupsd', pero sí informa el Porcentaje de Carga ('LOADPCT'), puede definir manualmente la capacidad nominal del SAI en vatios (W) (este es el valor de 'potencia real' en vatios (W), no la 'potencia aparente' en voltamperios (VA), y debería estar detallado en el manual de su SAI o en la ficha del producto) y el plugin calculará dinámicamente una estimación virtual de la Potencia Nominal ('≈') comparando la Capacidad del SAI Definida (W) con el Porcentaje de Carga actual. Es solo una estimación, ya que no tiene en cuenta factores como la eficiencia del SAI24.
+:end
+
+:vms_usage_help:
+Muestra métricas para el porcentaje de CPU tanto del invitado como del host, memoria, E/S de disco y E/S de red.
+:end
+
 :sysdrivers_intro_help:
 Esta página muestra todos los controladores disponibles en el sistema. Filtre la lista según si el controlador está en uso o no, o busque un controlador específico si lo desea.
 
@@ -2640,6 +2665,9 @@ también se incluirá en los diagnósticos como logs/syslog-previous.txt
 Si se establece en sí, el daemon Unraidwold está configurado para ejecutarse.
 :end
 
+:WOL_run_docker_help:
+Si se establece en sí, cuando se reciben paquetes de activación en LAN, se realizan verificaciones de los acopladores; de lo contrario, se ignorarán.
+:end
 
 :WOL_run_VM_help:
 Si se establece en Sí cuando se reciben paquetes Wake on LAN, se realizan comprobaciones para las máquinas virtuales; de lo contrario, se ignorarán las máquinas virtuales.
@@ -2677,35 +2705,4 @@ Cuando se configura la habilitación y el apagado, si el servicio se está ejecu
 
 :WOL_run_shutdown_help:
 Si se establece en sí cuando se reciben paquetes de reactivación en LAN, se realizan verificaciones y, si está habilitado para el servicio y ese servicio se está ejecutando, la entidad se cerrará. El sistema debe estar configurado en Habilitado y Apagado para que entre en acción.
-:end
-
-; New entries (6) - 2024-12-08
-
-:syslog_remote_system_identifier_help:
-Select the identifier for the remote system (used in the logfile name). 
-
-* "IP Address" uses the IP address (IPv4 or IPv6) of the sending system.
-* "Hostname (from syslog message)" uses the hostname included in each syslog message.
-* "Hostname (from DNS reverse lookup)" performs a DNS reverse lookup for the sending IP and uses the result.
-
-:end
-
-:vms_rdpopt_help:
-Adds option to menu to start RDP. RDP file is downloaded. You need to set browser to open when ready.
-:end
-
-:vms_usage_help:
-Show metrics for CPU both guest and host percentage, memory, disk io and network io.
-:end
-
-:vms_usage_timer_help:
-Setting in seconds for metrics refresh time.
-:end
-
-:apc_ups_override_ups_capacity_help:
-If your device doesn't natively report Nominal Power ('NOMPOWER') from 'apcupsd', but does report the Load Percentage ('LOADPCT'), you can manually define the UPS capacity rating in Watts (W) (this is the 'real power' value in Watts (W), not the 'apparent power' in Volt Amps (VA), and should be detailed on your UPS manual or product listing) and the plugin will dynamically calculate a virtual Nominal Power estimate ('≈') by comparing the Override UPS Capacity (W) and the current Load Percentage. It is only an estimate, as it doesn't factor in things like the UPS' efficiency.
-:end
-
-:WOL_run_docker_help:
-If set to yes when wake on lan packets are received checks are carrried out for dockers otherwise dockers will be ignored.
 :end

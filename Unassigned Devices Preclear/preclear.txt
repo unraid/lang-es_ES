@@ -39,6 +39,7 @@ Set Preclear Queue=Establecer cola de Preclear
 Show Preclear Report=Mostrar informe de Preclear
 Skip Pre-read=Omitir pre-lectura
 Skip Post-Read=Omitir post-lectura
+Start Multiple Sessions=Iniciar varias sesiones
 Start New=Iniciar nuevo
 Start Preclear=Iniciar Preclear
 Stop all Sessions=Detener todas las sesiones
@@ -75,6 +76,3 @@ You can use Unassigned Devices to clear the disk=Puede utilizar Unassigned Devic
 >
 > El texto <em style='color:#00BE37;'>Precleared</em> al lado del número de serie del disco indica que el disco tiene una firma previamente autorizada. Esto solo se mostrará cuando el disco esté limpio y se hayan eliminado las estadísticas de Preclear.
 :end
-
-; Note: December 8, 2024 - 1 missing translations
-Start Multiple Sessions=
