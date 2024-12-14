@@ -2222,7 +2222,7 @@ Para más detalles consulte la <a href="https://tailscale.com/kb/1080/cli#up" ta
 :end
 
 :docker_tailscale_statedir_help:
-Si la detección del directorio de estado falla durante el inicio, puede especificar un directorio persistente en el contenedor para anular la detección automática.
+Si la detección del directorio de estado falla durante el inicio, puede especificar un directorio persistente en el contenedor para anular la detección automática, es decir `/container-path/.tailscale_state`
 :end
 
 :docker_tailscale_troubleshooting_packages_help:
