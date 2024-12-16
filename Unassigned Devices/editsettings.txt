@@ -53,8 +53,7 @@ utilizará este dispositivo. Este campo sólo se activará cuando exista un Arch
 :end
 
 :ud_edit_script_run_background_plug:
-> Active la opción **Ejecución en segundo plano** para que el Script del dispositivo se ejecute como una
-tarea en segundo plano. Esto puede evitar que la interfaz de usuario de los dispositivos no asignados se cuelgue cuando el script de dispositivo se ejecuta desde la interfaz de usuario.
+> Active la opción **Ejecución en segundo plano** para que el Script del dispositivo se ejecute como una tarea en segundo plano. Esto puede evitar que la interfaz de usuario de los dispositivos no asignados se cuelgue cuando el script de dispositivo se ejecuta desde la interfaz de usuario.
 :end
 
 :ud_edit_script_buttons_plug:
