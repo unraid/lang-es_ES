@@ -161,6 +161,7 @@ Clear Flag=Eliminar Marca
 %s is incompatible with your OS version Either uninstall %s or update the OS=%s es incompatible con la versión de su sistema operativo. Desinstale %s o actualice el sistema operativo
 Browser failed to communicate with Unraid Server=El navegador no pudo comunicarse con el servidor Unraid
 For unknown reasons, your browser was unable to communicate with Community Applications running on your server=Por razones desconocidas, su navegador no pudo comunicarse con Community Applications
+Additional information may be within Tools, PHPSettings - View Log=Puede encontrar información adicional en Herramientas, Configuración PHP - Ver Registro
 Attempt to Fix Via Reload Page=Intente solucionarlo recargando la página
 External Link=Enlace externo
 Clicking OK will take you to a 3rd party website not associated with Limetech=Al hacer clic en aceptar, accederá a un sitio web de terceros que no está asociado con Limetech

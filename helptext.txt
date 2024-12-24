@@ -710,6 +710,13 @@ Seleccione el recurso compartido existente y haga clic en **Importar** para copi
 Seleccione el/los recurso(s) compartido(s) a los que quiera copiar los ajustes de seguridad NFS presentes en pantalla y haga clic en **Exportar**.
 :end
 
+:nfs_security_rules_help:
+Coloque la regla para cada dirección IP en una línea separada y finalice la regla con una nueva línea.
+No se puede ingresar una regla en el formato IP1, IP2, etc. Unraid no formatea el archivo de exportaciones en ese formato.
+Las reglas predeterminadas para cada regla NFS son: async y no_subtree_check.
+**Nota:** La regla pública utilizada es '*(rw,sec=sys,insecure,anongid=100,anonuid=99,no_root_squash)'.
+:end
+
 :user_add_username_help:
 Los nombres de usuario pueden contener hasta 40 caracteres y deben comenzar con **una letra minúscula** o un guion bajo,
 seguido por **letras minúsculas**, números, guiones bajos, o guiones. Pueden terminar con un signo de dólar.
@@ -2222,7 +2229,7 @@ Para más detalles consulte la <a href="https://tailscale.com/kb/1080/cli#up" ta
 :end
 
 :docker_tailscale_statedir_help:
-Si la detección del directorio de estado falla durante el inicio, puede especificar un directorio persistente en el contenedor para anular la detección automática.
+Si la detección del directorio de estado falla durante el inicio, puede especificar un directorio persistente en el contenedor para anular la detección automática, es decir `/container-path/.tailscale_state`
 :end
 
 :docker_tailscale_troubleshooting_packages_help:
