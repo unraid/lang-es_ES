@@ -527,8 +527,8 @@ Notification Settings=Ajustes de Notificaciones
 Notifications display=Modo de notificación
 NTP interval=Intervalo NTP
 NTP server=Servidor NTP
-Number format=Formato de número
 NTP=NTP
+Number format=Formato de número
 Number scaling=Unidades de medida de almacenamiento
 Obtaining DNSv4 server=Obteniendo servidor DNSv4
 Obtaining DNSv6 server=Obteniendo servidor DNSv6
@@ -944,3 +944,7 @@ to the Unraid server at=al servidor de Unraid en
 Transient errors in this log can be ignored unless you are having issues=Los errores transitorios en este registro pueden ser ignorados a menos que tenga problemas
 Unraid API extra origins=Orígenes extra de la API de Unraid
 View Flash Backup Error Log=Ver el Registro de Errores del Backup de la unidad Flash
+
+; Note: December 28, 2024 - 2 missing translations
+No suitable interfaces found for PTP=
+Time state=
