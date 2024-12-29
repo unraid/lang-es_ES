@@ -166,7 +166,6 @@ Remove OpenELEC image=Eliminar imagen de OpenELEC
 Remove this LibreELEC file=Eliminar este archivo de LibreELEC
 Remove this OpenELEC file=Eliminar este archivo de OpenELEC
 Remove User Template=Eliminar Plantilla de Usuario
-Rename disabled, snapshots exists=Cambio de nombre deshabilitado, hay <?=$snapcount?> instantánea(s).
 Repeat=Repetir
 Requires guest agent installed=Requiere agente invitado instalado
 Requires guest running=Requiere invitado ejecutándose
