@@ -8,7 +8,7 @@ Required=Requerido
 Select Proxy=Seleccionar Proxy
 User=Usuario
 
-::outgoing_proxy_enable_plug:
+:outgoing_proxy_enable_plug:
 > Seleccione el proxy a utilizar. Sólo se podrán seleccionar proxies en línea.
 >
 > Si su entorno de red requiere un proxy http saliente, defínalo aquí.
