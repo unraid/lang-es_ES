@@ -62,6 +62,7 @@ Folder to save the OpenELEC image to=Carpeta para guardar la imagen de OpenELEC
 Form View=Vista de formulario
 free=libre
 grab options=opciones de captura
+FS Native Snapshot=Instantánea nativa de FS
 Grab Toggle=Alternar captura
 Grab=Capturar
 Graphics Card=Tarjeta Gráfica
@@ -260,10 +261,3 @@ Windows 7XP=Windows 7/XP
 Windows 82012, newer Linux distros=Windows 82012, distribuciones Linux recientes
 wsport for virtual console=wsport para la terminal virtual
 XML View=Vista XML
-
-; Note: December 29, 2024 - 5 missing translations
-Enter name=
-FS Native Snapshot=
-If name already exists it will be replaced=
-Name contains invalid characters or does not start with an alphanumberic for a ZFS storage locationOnly these special characters are valid Underscore _ Hyphen - Colon Period=Name contains invalid characters or does not start with an alphanumberic for a ZFS storage location<br>Only these special characters are valid Underscore (_) Hyphen (-) Colon (:) Period (.)
-Rename disabled, %s snapshots exists=Rename disabled, %s snapshot(s) exists
