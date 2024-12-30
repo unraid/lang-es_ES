@@ -112,7 +112,6 @@ Remote Shares=Recursos compartidos remotos
 Remote Shares online status will be reset=Se restablecerá el estado en línea de los recursos compartidos remotos
 Remote share mounts are dependent on a solid and reliable network connection and that can be difficult to achieve=Los montajes de recursos compartidos remotos dependen de una conexión de red sólida y confiable y eso puede ser difícil de lograr
 Remove Device configuration=Eliminar configuración del dispositivo
-Name contains invalid characters or does not start with an alphanumberic for a ZFS storage locationOnly these special characters are valid Underscore _ Hyphen - Colon Period=El nombre contiene caracteres no válidos o no comienza con un número alfanumérico para una ubicación de almacenamiento ZFS<br>Solo estos caracteres especiales son válidos: guión bajo (_) guion (-) dos puntos (:) punto (.)
 Remove ISO File Share=Quitar el archivo ISO compartido
 Remove Partition=Eliminar Partición
 Remove Remote SMB=Elminar SMB remoto
