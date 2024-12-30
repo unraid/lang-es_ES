@@ -53,6 +53,7 @@ eg=ej.
 Eject CD Drive=Extraer disco CD
 Emulated=Emulado
 Enable USB boot=Activar USB boot
+Enter name=Introduce un nombre
 ETA=ETA
 Evdev Device=Dispositivo Evdev
 Extracting=Extrayendo
