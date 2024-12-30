@@ -23,8 +23,6 @@ Check free space=Consultar espacio libre
 checking=comprobando...
 Click to toggle CPU chart=Haga clic para mostrar/ocultar gráficos de la CPU
 Click to toggle details=Haga clic para mostrar/ocultar los detalles
-Clock is synchronized using NTP, time offset is %s %s=El reloj está sincronizado mediante NTP, el desfase horario es %s %s
-Clock is synchronized using PTP, time offset is %s %s=El reloj está sincronizado mediante PTP, el desfase horario es %s %s
 Clock is unsynchronized with no NTP servers=El reloj está desincronizado sin servidores NTP
 Clock is unsynchronized with no PTP servers=El reloj está desincronizado sin servidores PTP
 Clock is unsynchronized, free-running clock=El reloj no está sincronizado y funciona libremente
@@ -195,3 +193,9 @@ VPN Connections=Conexiones VPN
 W=W
 Warnings=Advertencias
 ZFS=ZFS
+
+; Note: December 29, 2024 - 4 missing translations
+Clock is synchronized using %s NTP servers, time offset is %s %s=
+Clock is synchronized using %s PTP server, time offset is %s %s=
+grandmaster=
+master=
