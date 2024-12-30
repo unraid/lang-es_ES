@@ -507,6 +507,7 @@ No CPU pinning available. VM service must be started=Asignación de CPU no dispo
 no name=sin nombre
 No Parity disk present=Ningún disco de Paridad instalado
 No Reply=Sin repuesta
+No suitable interfaces found for PTP=No se encontraron interfaces adecuadas para PTP
 Nominal Power=Potencia Nominal
 Non-tabbed=Sin pestañas
 Not activated=No activado
@@ -758,6 +759,7 @@ This will unassign all devices from the pool but will NOT modify any device cont
 Time format=Formato de hora
 Time of the day=Hora del día
 Time on battery before shutdown=Tiempo en batería hasta iniciar apagado
+Time state=Estado del tiempo
 Time sync=Sincronización horaria
 Time zone=Zona horaria
 time-out=fuera de tiempo
@@ -944,7 +946,3 @@ to the Unraid server at=al servidor de Unraid en
 Transient errors in this log can be ignored unless you are having issues=Los errores transitorios en este registro pueden ser ignorados a menos que tenga problemas
 Unraid API extra origins=Orígenes extra de la API de Unraid
 View Flash Backup Error Log=Ver el Registro de Errores del Backup de la unidad Flash
-
-; Note: December 28, 2024 - 2 missing translations
-No suitable interfaces found for PTP=
-Time state=
