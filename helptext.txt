@@ -1355,6 +1355,15 @@ su cliente.  Tenga en cuenta que el valor -1 causará un incremento en el uso de
 archivos/directorios acceda vía NFS, esto podría o no causar un uso excesivo de memoria.
 :end
 
+:nfs_server_max_protocol_help:
+Seleccione la versión máxima del protocolo NFS que desea que su servidor Unraid admita.
+:end
+
+:nfs_threads_help:
+Establezca la cantidad de subprocesos para NFS. Para cargas NFS livianas, 8 es suficiente. Para cargas NFS más pesadas, una cantidad mayor de subprocesos puede ser adecuada.
+Si no hay suficientes subprocesos, NFS probablemente fallará.
+:end
+
 :shares_enable_disk_help:
 Si la opción 'No' está seleccionada, la función Discos Compartidos está desactivada de forma incondicional.
 
@@ -1397,6 +1406,10 @@ Notas:
 Esto incrementará el rendimiento en escritura pero posiblemente podría disminuir el rendimiento en lectura.
 
 *Automático* selecciona la opción No.
+:end
+
+:shares_fuse_file_descriptors_io_help:
+Establezca la cantidad de descriptores de archivos de fusión. Si hay mucha actividad de archivos en el Array, es posible que deba aumentar este valor.
 :end
 
 :syslog_local_server_help:
