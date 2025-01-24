@@ -154,7 +154,14 @@ Working=En proceso
 :end
 
 :ud_settings_nfs_rules_plug:
-> **Nota:** La regla normal utilizada por UD es '*(rw,sec=sys,insecure,anongid=100,anonuid=99,no_root_squash)'.
+> Coloque la regla para cada dirección IP en una línea separada y finalice la regla con una nueva línea.
+> No se puede ingresar una regla en el formato IP1,IP2,etc. Unraid no formatea el archivo de exportaciones en ese formato.
+> Las reglas predeterminadas para cada regla NFS son: async y no_subtree_check.
+> **Nota:**
+>
+> La regla pública predeterminada utilizada es '*(rw,sec=sys,insecure,anongid=100,anonuid=99,all_squash)'.
+>
+> La regla privada predeterminada utilizada es '*(rw,sec=sys,insecure,anongid=100,anonuid=99,no_root_squash)'.
 :end
 
 :ud_settings_disk_pass_plug:
