@@ -1252,3 +1252,19 @@ Open a bug report=Abrir un informe de error
 %s seconds=%s segundos
 %s year=%s año
 %s years=%s años
+
+; Note: April 21, 2025 - 14 missing translations
+Abort background operation=
+Abort background process=
+Alert Message=
+Attention - operation continues in background=
+Live Updates Paused=
+Move To End=
+Notifications=
+Rx=
+This may leave an unknown state=
+Tx=
+Unlock sortable items=
+WiFi connected=
+WiFi disconnected=
+WiFi status unavailable=

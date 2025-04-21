@@ -412,3 +412,9 @@ Sleeping=durmiendo
 System in sleep mode=Sistema en modo de reposo
 This will put the system in sleep mode=Esto pondrá el sistema en modo de reposo
 wiki entry=entrada en la wiki
+
+; Note: April 21, 2025 - 4 missing translations
+loopback=
+not set=
+Rx=
+Tx=

@@ -352,3 +352,6 @@ no es único (esto es común con los lectores de tarjetas de memoria USB).
 
 Para más información, por favor [Contacte con el Soporte de Unraid](https://lime-technology.com/contact).
 :end
+
+; Note: April 21, 2025 - 1 missing translations
+Log Viewer new=Log Viewer (new)

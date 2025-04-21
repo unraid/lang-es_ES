@@ -155,3 +155,7 @@ Was this container created using this plugin=¿Se creó este contenedor usando e
 Web=Web
 WebUI=Interfaz Web
 Writable=Grabable
+
+; Note: April 21, 2025 - 2 missing translations
+Container not found Try reloading this page to fix=Container not found. Try reloading this page to fix.
+For security reasons, containers with Network Type Host should not have Tailscale enabled Please disable Tailscale in this container or change the Network Type of the container=For security reasons, containers with Network Type "Host" should not have Tailscale enabled. Please disable Tailscale in this container or change the Network Type of the container.

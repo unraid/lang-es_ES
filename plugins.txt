@@ -40,3 +40,6 @@ Update Incompatible=Actualización incompatible
 Update Plugin=Actualizar Plugin
 Upgrade=Actualizar
 View Release Notes=Ver notas de la versión
+
+; Note: April 21, 2025 - 1 missing translations
+cannot check=
