@@ -197,3 +197,6 @@ VPN Connections=Conexiones VPN
 W=W
 Warnings=Advertencias
 ZFS=ZFS
+
+; Note: April 21, 2025 - 1 missing translations
+Share count %s with %s public SMB and %s public NFS=Share count: %s with %s public SMB and %s public NFS

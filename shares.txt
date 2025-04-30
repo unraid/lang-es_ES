@@ -90,3 +90,6 @@ User Shares=Carpetas Compartidas
 Warning: Configured Pool=Advertencia: Caché configurado
 Write=Exportar
 You cannot use the following within share names=No use los siguientes caracteres en el nombre de la carpeta compartida
+
+; Note: April 21, 2025 - 1 missing translations
+There are no mounted array or pool disks - cannot add shares=
