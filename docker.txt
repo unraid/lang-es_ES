@@ -28,6 +28,7 @@ Connection Type=Tipo de conexión
 Console shell command=Tipo de consola
 Container ID=ID del contenedor
 Container IP=IP del contenedor
+Container not found Try reloading this page to fix=Contenedor no encontrado. Intente recargar esta página para solucionarlo
 Container not running=Contenedor detenido
 Container Path=Ruta del contenedor
 Container Port=Puerto del contenedor
@@ -54,6 +55,7 @@ Exited=Terminado
 Expired RenewDisable key expiry=¡Caducó! ¡Renueve o desactive la caducidad de la clave!
 Extra Parameters=Parámetros adicionales
 Fixed IP address=Dirección IP fija
+For security reasons, containers with Network Type Host should not have Tailscale enabled Please disable Tailscale in this container or change the Network Type of the container=Por razones de seguridad, los contenedores con tipo de red "Host" no deben tener Tailscale habilitado. Desactive Tailscale en este contenedor o cambie su tipo de red
 force update=forzar actualización
 FTP=FTP
 Game Servers=Servidores de Juego
@@ -155,7 +157,3 @@ Was this container created using this plugin=¿Se creó este contenedor usando e
 Web=Web
 WebUI=Interfaz Web
 Writable=Grabable
-
-; Note: April 21, 2025 - 2 missing translations
-Container not found Try reloading this page to fix=Container not found. Try reloading this page to fix.
-For security reasons, containers with Network Type Host should not have Tailscale enabled Please disable Tailscale in this container or change the Network Type of the container=For security reasons, containers with Network Type "Host" should not have Tailscale enabled. Please disable Tailscale in this container or change the Network Type of the container.
