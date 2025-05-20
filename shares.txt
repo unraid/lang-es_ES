@@ -80,6 +80,7 @@ Storage=Almacenamiento
 There are no exportable disk shares=No hay discos disponibles para compartir
 There are no exportable user shares=No hay carpetas disponibles para compartir
 There are no mountable array or pool disks - cannot add shares=No hay discos de Pool ni de Array montables: no se pueden agregar recursos compartidos
+There are no mounted array or pool disks - cannot add shares=No hay discos en de Array/Pool: no se pueden agregar recursos compartidos
 This share is invalid=Esta carpeta es inválida
 Time Machine volume size limit=Tamaño límite del volumen de Time Machine
 Unknown cache usage=Uso de cache desconocido
@@ -90,6 +91,3 @@ User Shares=Carpetas Compartidas
 Warning: Configured Pool=Advertencia: Caché configurado
 Write=Exportar
 You cannot use the following within share names=No use los siguientes caracteres en el nombre de la carpeta compartida
-
-; Note: April 21, 2025 - 1 missing translations
-There are no mounted array or pool disks - cannot add shares=
