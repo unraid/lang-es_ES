@@ -73,6 +73,7 @@ Language=Idioma
 Log file cleared=Archivo de registro limpiado
 Log size=Tamaño del registro
 LOG size=Tamaño del registro
+Log Viewer new=Visor del Registro (nuevo)
 Missing Key File=Falta el Archivo de Licencia
 Missing Language=Falta el idioma
 Modprobed config file=Archivo de configuración modprobe.d
@@ -352,6 +353,3 @@ no es único (esto es común con los lectores de tarjetas de memoria USB).
 
 Para más información, por favor [Contacte con el Soporte de Unraid](https://lime-technology.com/contact).
 :end
-
-; Note: April 21, 2025 - 1 missing translations
-Log Viewer new=Log Viewer (new)
