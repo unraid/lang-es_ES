@@ -2726,3 +2726,9 @@ Cuando se configura la habilitación y el apagado, si el servicio se está ejecu
 :WOL_run_shutdown_help:
 Si se establece en sí cuando se reciben paquetes de reactivación en LAN, se realizan verificaciones y, si está habilitado para el servicio y ese servicio se está ejecutando, la entidad se cerrará. El sistema debe estar configurado en Habilitado y Apagado para que entre en acción.
 :end
+
+; New entries (2) - 2025-05-31
+
+:nfs_client_max_protocol_help:
+Select the max NFS Protocol version you want to use to mount your remote shares.
+:end
