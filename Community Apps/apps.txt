@@ -457,4 +457,3 @@ Would you like CA to attempt to determine any applicable paths, ports, and varia
 An error occurred - Could not determine configuration=Error - No se puede determinar la configuración
 ; WebGui
 Click Install to download and install the Community Applications plugin=Haga clic en **Instalar** para descargar e instalar el plugin **Community Applications**
-

@@ -1359,6 +1359,10 @@ archivos/directorios acceda vía NFS, esto podría o no causar un uso excesivo d
 Seleccione la versión máxima del protocolo NFS que desea que su servidor Unraid admita.
 :end
 
+:nfs_client_max_protocol_help:
+Seleccione la versión máxima del protocolo NFS que desea utilizar para montar sus recursos compartidos remotos.
+:end
+
 :nfs_threads_help:
 Establezca la cantidad de subprocesos para NFS. Para cargas NFS livianas, 8 es suficiente. Para cargas NFS más pesadas, una cantidad mayor de subprocesos puede ser adecuada.
 Si no hay suficientes subprocesos, NFS probablemente fallará.
@@ -2725,10 +2729,4 @@ Cuando se configura la habilitación y el apagado, si el servicio se está ejecu
 
 :WOL_run_shutdown_help:
 Si se establece en sí cuando se reciben paquetes de reactivación en LAN, se realizan verificaciones y, si está habilitado para el servicio y ese servicio se está ejecutando, la entidad se cerrará. El sistema debe estar configurado en Habilitado y Apagado para que entre en acción.
-:end
-
-; New entries (2) - 2025-05-31
-
-:nfs_client_max_protocol_help:
-Select the max NFS Protocol version you want to use to mount your remote shares.
 :end

@@ -147,6 +147,7 @@ Select Case Model=Seleccione un modelo de chasis
 Select time frame=Seleccione el periodo de tiempo
 Services=Servicios
 Share count %s with %s cache only and %s encrypted=Número de carpetas: %s con %s solo en caché y %s cifrada(s)
+Share count %s with %s public SMB and %s public NFS=Número de carpetas: %s con %s SMB público y %s NFS público
 Shares Information=Información de las carpetas
 Show details=Mostrar detalles
 Show Information=Mostrar información
@@ -197,6 +198,3 @@ VPN Connections=Conexiones VPN
 W=W
 Warnings=Advertencias
 ZFS=ZFS
-
-; Note: April 21, 2025 - 1 missing translations
-Share count %s with %s public SMB and %s public NFS=Share count: %s with %s public SMB and %s public NFS
